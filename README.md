@@ -37,8 +37,8 @@ basis by contributors to these repository.
 If you have an issue, go to the relevant repository, and:
 
 * Review install guide and FAQs
-* Review open and closed [issues](/issues)
-* Open a [new issue](/issues/new), following the issue template
+* Review open and closed issues
+* Open a new issue, following the issue template
 
 If you are able to resolve the issue, then close your issue with the resolution,
 and if you feel inclined, open a PR with your proposed changes so that we can
