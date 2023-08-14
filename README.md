@@ -1,11 +1,14 @@
+> **Warning**
+> This project is _community supported_. This means that you should not contact
+> Qlik Support for help with these apps. See below for additional information
+> on how to raise issues on this repository to ask for help.
+
 # Qlik Cloud Monitoring Apps
 
-This repository references community-built and supported Qlik Sense applications, which provide visibility of both operational and usage data in Qlik Cloud.
+This repository references community-built and supported Qlik Sense applications,
+which provide visibility of both operational and usage data in Qlik Cloud.
 
 ## Applications
-
-These applications form a set of community built and supported monitoring apps
-for Qlik Cloud.
 
 Monitoring apps for Enterprise (single tenant):
 
@@ -24,16 +27,16 @@ please review [this help page](https://help.qlik.com/en-US/sense-admin/latest/Su
 
 ## Support policy
 
-This app is provided as-is and is not supported by Qlik. Over time, the APIs and
-metrics used by the app may change, so it is advised to monitor this repository
-for updates, and to update the app promptly when new versions are available.
+These apps are provided as-is and is not supported by Qlik. Over time, the APIs and
+metrics used by the apps may change, so it is advised to monitor each repository
+for updates, and to update the apps promptly when new versions are available.
 
-If you have issues while using this app, support is provided on a best-efforts
-basis by contributors to this project.
+If you have issues while using these apps, support is provided on a best-efforts
+basis by contributors to these repository.
 
-If you have an issue:
+If you have an issue, go to the relevant repository, and:
 
-* Review the FAQ section in this readme to see if your issue is a common one
+* Review install guide and FAQs
 * Review open and closed [issues](/issues)
 * Open a [new issue](/issues/new), following the issue template
 
