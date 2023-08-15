@@ -5,8 +5,10 @@
 
 # Qlik Cloud Monitoring Apps
 
-This repository references community-built and supported Qlik Sense applications,
-which provide visibility of both operational and usage data in Qlik Cloud.
+This repository references community-built and community-supported Qlik Sense
+applications, which provide visibility of both operational and usage data in Qlik Cloud.
+
+The apps work with user-based subscriptions only.
 
 ## Applications
 
@@ -14,7 +16,7 @@ Monitoring apps for Enterprise (single tenant):
 
 * [Entitlement Analyzer](https://community.qlik.com/t5/Support-Updates/Latest-Version-of-Entitlement-Analyzer-for-Qlik-Sense-Enterprise/ba-p/1817404)
 * [App Analyzer](https://community.qlik.com/t5/Support-Updates/The-App-Analyzer-for-Qlik-SaaS-customers-is-available-NOW/ba-p/1734927)
-* [Reload Analyzer](https://community.qlik.com/t5/Support-Updates/The-Reload-Analyzer-for-Qlik-SaaS-customers-is-available-NOW/ba-p/1826163)
+* [Reload Analyzer Repository](https://github.com/qlik-oss/qlik-cloud-reload-analyzer) / [Reload Analyzer on Qlik Community](https://community.qlik.com/t5/Support-Updates/The-Reload-Analyzer-for-Qlik-SaaS-customers-is-available-NOW/ba-p/1826163)
 * [Access Evaluator](https://community.qlik.com/t5/Support-Updates/New-Monitoring-App-for-Qlik-Cloud-Access-Evaluator/ba-p/1954291)
 * [Qlik Application Automation Monitoring App](https://community.qlik.com/t5/Official-Support-Articles/How-to-automation-monitoring-app-for-tenant-admins-with-Qlik/ta-p/2025392)
 
