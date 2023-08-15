@@ -5,25 +5,27 @@
 
 # Qlik Cloud Monitoring Apps
 
-This repository references community-built and supported Qlik Sense applications,
-which provide visibility of both operational and usage data in Qlik Cloud.
+This repository references community-built and community-supported Qlik Sense
+applications, which provide visibility of both operational and usage data in Qlik Cloud.
+
+The apps work with user-based subscriptions only.
 
 ## Applications
 
-Monitoring apps for Enterprise (single tenant):
+Monitoring apps for Qlik Cloud (single tenant):
 
 * [Entitlement Analyzer](https://community.qlik.com/t5/Support-Updates/Latest-Version-of-Entitlement-Analyzer-for-Qlik-Sense-Enterprise/ba-p/1817404)
 * [App Analyzer](https://community.qlik.com/t5/Support-Updates/The-App-Analyzer-for-Qlik-SaaS-customers-is-available-NOW/ba-p/1734927)
-* [Reload Analyzer](https://community.qlik.com/t5/Support-Updates/The-Reload-Analyzer-for-Qlik-SaaS-customers-is-available-NOW/ba-p/1826163)
+* [Reload Analyzer](https://github.com/qlik-oss/qlik-cloud-reload-analyzer)
 * [Access Evaluator](https://community.qlik.com/t5/Support-Updates/New-Monitoring-App-for-Qlik-Cloud-Access-Evaluator/ba-p/1954291)
 * [Qlik Application Automation Monitoring App](https://community.qlik.com/t5/Official-Support-Articles/How-to-automation-monitoring-app-for-tenant-admins-with-Qlik/ta-p/2025392)
 
-Monitoring apps for OEM (multiple tenant):
+Monitoring apps for Qlik Cloud (multiple tenant):
 
 * [OEM Dashboard](https://community.qlik.com/t5/Support-Updates/OEM-Dashboard-Qlik-Cloud-Application-Developed/ba-p/1994719)
 
-If you are looking for the Qlik Sense Enterprise Client-Managed monitoring apps,
-please review [this help page](https://help.qlik.com/en-US/sense-admin/latest/Subsystems/DeployAdministerQSE/Content/Sense_DeployAdminister/QSEoW/Administer_QSEoW/Monitoring_QSEoW/Monitor-Qlik-Sense-site.htm).
+If you are looking for more information on Qlik monitoring apps, including Client-Managed monitoring apps,
+please review [this community article](https://community.qlik.com/t5/Official-Support-Articles/The-Qlik-Sense-Monitoring-Applications-for-Cloud-and-On-Premise/ta-p/1822454).
 
 ## Support policy
 
