@@ -27,12 +27,12 @@ please review [this help page](https://help.qlik.com/en-US/sense-admin/latest/Su
 
 ## Support policy
 
-These apps are provided as-is and is not supported by Qlik. Over time, the APIs and
+These apps are provided as-is and are not supported by Qlik. Over time, the APIs and
 metrics used by the apps may change, so it is advised to monitor each repository
 for updates, and to update the apps promptly when new versions are available.
 
 If you have issues while using these apps, support is provided on a best-efforts
-basis by contributors to these repository.
+basis by contributors to these repositories.
 
 If you have an issue, go to the relevant repository, and:
 
