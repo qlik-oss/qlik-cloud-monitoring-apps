@@ -15,8 +15,8 @@ The apps work with user-based subscriptions only.
 Monitoring apps for Qlik Cloud (single tenant):
 
 * [Access Evaluator](https://github.com/qlik-oss/qlik-cloud-access-evaluator)
-* [App Analyzer](https://community.qlik.com/t5/Support-Updates/The-App-Analyzer-for-Qlik-SaaS-customers-is-available-NOW/ba-p/1734927)
-* [Entitlement Analyzer](https://community.qlik.com/t5/Support-Updates/Latest-Version-of-Entitlement-Analyzer-for-Qlik-Sense-Enterprise/ba-p/1817404)
+* [App Analyzer](https://github.com/qlik-oss/qlik-cloud-app-analyzer)
+* [Entitlement Analyzer](https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer)
 * [Qlik Application Automation Monitoring App](https://community.qlik.com/t5/Official-Support-Articles/How-to-automation-monitoring-app-for-tenant-admins-with-Qlik/ta-p/2025392)
 * [Reload Analyzer](https://github.com/qlik-oss/qlik-cloud-reload-analyzer)
 
