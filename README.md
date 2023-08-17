@@ -22,7 +22,7 @@ Monitoring apps for Qlik Cloud (single tenant):
 
 Monitoring apps for Qlik Cloud (multiple tenant):
 
-* [OEM Dashboard](https://community.qlik.com/t5/Support-Updates/OEM-Dashboard-Qlik-Cloud-Application-Developed/ba-p/1994719)
+* [OEM Dashboard](https://github.com/qlik-oss/qlik-cloud-oem-dashboard)
 
 If you are looking for more information on Qlik monitoring apps, including Client-Managed monitoring apps,
 please review [this community article](https://community.qlik.com/t5/Official-Support-Articles/The-Qlik-Sense-Monitoring-Applications-for-Cloud-and-On-Premise/ta-p/1822454).
