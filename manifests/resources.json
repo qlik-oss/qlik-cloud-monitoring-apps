@@ -1,0 +1,176 @@
+[
+    {
+        "id": 10,
+        "name": "Console Settings Collector",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.0.0/Console-Settings-Collector.qvf",
+        "type": "both",
+        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "SET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "App Analyzer",
+        "version": "v5.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.0.0/App-Analyzer.qvf",
+        "type": "both",
+        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=5;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=5;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "SET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "Set vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "Set vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "Set vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "Set vu_is_parent_app"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Entitlement Analyzer",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.0.0/Entitlement-Analyzer.qvf",
+        "type": "both",
+        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=10;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=10;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "SET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Reload Analyzer",
+        "version": "v3.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v3.0.0/Reload-Analyzer.qvf",
+        "type": "both",
+        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "SET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "name": "Access Evaluator",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.0/Access-Evaluator.qvf",
+        "type": "both",
+        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "SET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
+    },
+    {
+        "id": 90,
+        "name": "OEM Dashboard",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.0.0/OEM-Dashboard.qvf",
+        "type": "source",
+        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=30;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
+        "reloadScheduleTarget": "",
+        "attributes": [
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "consoleSettings",
+                "lookup": "SET vConsoleSettingsCollector"
+            }
+        ]
+    }
+]
