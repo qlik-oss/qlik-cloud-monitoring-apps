@@ -1,0 +1,50 @@
+[
+    {
+        "id": 10,
+        "name": "Console Settings Collector",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.0.0/Console-Settings-Collector.qvf",
+        "qcmaInstaller": false,
+        "oemInstaller": true
+    },
+    {
+        "id": 20,
+        "name": "App Analyzer",
+        "version": "v5.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.0.0/App-Analyzer.qvf",
+        "qcmaInstaller": true,
+        "oemInstaller": true
+    },
+    {
+        "id": 30,
+        "name": "Entitlement Analyzer",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.0.0/Entitlement-Analyzer.qvf",
+        "qcmaInstaller": true,
+        "oemInstaller": true
+    },
+    {
+        "id": 40,
+        "name": "Reload Analyzer",
+        "version": "v3.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v3.0.0/Reload-Analyzer.qvf",
+        "qcmaInstaller": true,
+        "oemInstaller": true
+    },
+    {
+        "id": 50,
+        "name": "Access Evaluator",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.0/Access-Evaluator.qvf",
+        "qcmaInstaller": true,
+        "oemInstaller": true
+    },
+    {
+        "id": 90,
+        "name": "OEM Dashboard",
+        "version": "v2.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.0.0/OEM-Dashboard.qvf",
+        "qcmaInstaller": false,
+        "oemInstaller": true
+    }
+]
