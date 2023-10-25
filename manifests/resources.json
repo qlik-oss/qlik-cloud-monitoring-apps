@@ -2,8 +2,8 @@
     {
         "id": 10,
         "name": "Console Settings Collector",
-        "version": "v2.0.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.0.0/Console-Settings-Collector.qvf",
+        "version": "v2.1.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
         "oemInstaller": true
     },
@@ -42,8 +42,8 @@
     {
         "id": 90,
         "name": "OEM Dashboard",
-        "version": "v2.0.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.0.0/OEM-Dashboard.qvf",
+        "version": "v2.1.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
         "oemInstaller": true
     }
