@@ -10,16 +10,16 @@
     {
         "id": 20,
         "name": "App Analyzer",
-        "version": "v5.1.3",
-        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.1.3/App-Analyzer.qvf",
+        "version": "v5.2.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.2.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true
     },
     {
         "id": 30,
         "name": "Entitlement Analyzer",
-        "version": "v2.1.3",
-        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.1.3/Entitlement-Analyzer.qvf",
+        "version": "v2.2.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.2.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true
     },
