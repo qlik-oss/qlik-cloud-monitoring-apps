@@ -3,6 +3,11 @@
 > Qlik Support for help with these apps. See below for additional information
 > on how to raise issues on this repository to ask for help.
 
+> **Why not automate?**
+> If you're looking to leverage these apps in your tenant, consider reviewing the
+> automated options available for installing and maintaining them
+> [on Qlik Community](https://community.qlik.com/t5/Official-Support-Articles/Qlik-Cloud-Monitoring-Apps-Workflow-Guide/ta-p/2134140).
+
 # Qlik Cloud Monitoring Apps
 
 This repository references community-built and community-supported Qlik Sense
