@@ -4,8 +4,7 @@
 > on how to raise issues on this repository to ask for help.
 
 > [!NOTE]
-> *Why not automate?* If you're looking to leverage these apps in your tenant,
-> consider reviewing the automated options available for installing and maintaining them
+> **Why not automate?** Consider checking out the automated installation & management options
 > [on Qlik Community](https://community.qlik.com/t5/Official-Support-Articles/Qlik-Cloud-Monitoring-Apps-Workflow-Guide/ta-p/2134140).
 
 # Qlik Cloud Monitoring Apps
