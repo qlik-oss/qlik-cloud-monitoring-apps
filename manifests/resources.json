@@ -18,8 +18,8 @@
     {
         "id": 30,
         "name": "Entitlement Analyzer",
-        "version": "v2.2.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.2.0/Entitlement-Analyzer.qvf",
+        "version": "v2.2.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.2.1/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true
     },
