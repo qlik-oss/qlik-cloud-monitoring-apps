@@ -6,6 +6,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
         "type": "both",
         "qcmaInstaller": false,
+        "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
@@ -34,6 +35,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.2.0/App-Analyzer.qvf",
         "type": "both",
         "qcmaInstaller": true,
+        "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=5;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=5;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
@@ -66,6 +68,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.3.0/Entitlement-Analyzer.qvf",
         "type": "both",
         "qcmaInstaller": true,
+        "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=10;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=10;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
@@ -98,6 +101,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v3.1.7/Reload-Analyzer.qvf",
         "type": "both",
         "qcmaInstaller": true,
+        "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
@@ -130,6 +134,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
         "type": "both",
         "qcmaInstaller": true,
+        "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
@@ -162,6 +167,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
         "type": "source",
         "qcmaInstaller": false,
+        "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=30;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "",
         "attributes": [
