@@ -45,7 +45,7 @@
             },
             {
                 "attribute": "connectionRest",
-                "lookup": "SET vu_rest_connection"
+                "lookup": "Set vu_rest_connection"
             },
             {
                 "attribute": "connectionRemote",
