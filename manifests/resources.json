@@ -74,11 +74,11 @@
         "attributes": [
             {
                 "attribute": "tenant",
-                "lookup": "SET vu_tenant_fqdn"
+                "lookup": "LET vu_tenant_fqdn"
             },
             {
                 "attribute": "connectionRest",
-                "lookup": "SET vu_rest_connection"
+                "lookup": "Set vu_rest_connection"
             },
             {
                 "attribute": "connectionRemote",
