@@ -57,7 +57,7 @@
             },
             {
                 "attribute": "multitenancy",
-                "lookup": "SET vu_is_parent_app"
+                "lookup": "Set vu_is_parent_app"
             }
         ]
     },
@@ -107,7 +107,7 @@
         "attributes": [
             {
                 "attribute": "tenant",
-                "lookup": "SET vu_tenant_fqdn"
+                "lookup": "LET vu_tenant_fqdn"
             },
             {
                 "attribute": "connectionRest",
@@ -132,33 +132,12 @@
         "name": "Access Evaluator",
         "version": "v2.0.3",
         "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
-        "type": "both",
+        "type": "target",
         "qcmaInstaller": true,
         "multipleTenantInstaller": true,
         "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "attributes": [
-            {
-                "attribute": "tenant",
-                "lookup": "SET vu_tenant_fqdn"
-            },
-            {
-                "attribute": "connectionRest",
-                "lookup": "SET vu_rest_connection"
-            },
-            {
-                "attribute": "connectionRemote",
-                "lookup": "SET vu_qlik_meta_collection_parent_dir"
-            },
-            {
-                "attribute": "multitenancyEnabled",
-                "lookup": "SET vu_multi_tenant_enabled"
-            },
-            {
-                "attribute": "multitenancy",
-                "lookup": "SET vu_is_parent_app"
-            }
-        ]
+        "attributes": []
     },
     {
         "id": 90,
@@ -174,10 +153,6 @@
             {
                 "attribute": "connectionRemote",
                 "lookup": "SET vu_qlik_meta_collection_parent_dir"
-            },
-            {
-                "attribute": "multitenancy",
-                "lookup": "SET vu_is_parent_app"
             },
             {
                 "attribute": "consoleSettings",
