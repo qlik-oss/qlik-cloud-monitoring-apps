@@ -12,7 +12,7 @@
         "attributes": [
             {
                 "attribute": "tenant",
-                "lookup": "SET vu_tenant_fqdn"
+                "lookup": "LET vu_tenant_fqdn"
             },
             {
                 "attribute": "connectionRest",
