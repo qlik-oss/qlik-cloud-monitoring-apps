@@ -41,15 +41,15 @@
         "attributes": [
             {
                 "attribute": "tenant",
-                "lookup": "SET vu_tenant_fqdn"
+                "lookup": "Let vu_tenant_fqdn"
             },
             {
                 "attribute": "connectionRest",
-                "lookup": "Set vu_rest_connection"
+                "lookup": "SET vu_rest_connection"
             },
             {
                 "attribute": "connectionRemote",
-                "lookup": "Set vu_qlik_meta_collection_parent_dir"
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
             },
             {
                 "attribute": "multitenancyEnabled",
@@ -57,7 +57,7 @@
             },
             {
                 "attribute": "multitenancy",
-                "lookup": "Set vu_is_parent_app"
+                "lookup": "SET vu_is_parent_app"
             }
         ]
     },
