@@ -7,8 +7,6 @@
         "type": "both",
         "qcmaInstaller": false,
         "multipleTenantInstaller": true,
-        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -36,8 +34,6 @@
         "type": "both",
         "qcmaInstaller": true,
         "multipleTenantInstaller": true,
-        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=5;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=5;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -69,8 +65,6 @@
         "type": "both",
         "qcmaInstaller": true,
         "multipleTenantInstaller": true,
-        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=10;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=10;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -102,8 +96,6 @@
         "type": "both",
         "qcmaInstaller": true,
         "multipleTenantInstaller": true,
-        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -135,8 +127,6 @@
         "type": "target",
         "qcmaInstaller": true,
         "multipleTenantInstaller": true,
-        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "reloadScheduleTarget": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=0,6,12,18;BYMINUTE=15;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
         "attributes": []
     },
     {
@@ -147,8 +137,6 @@
         "type": "source",
         "qcmaInstaller": false,
         "multipleTenantInstaller": true,
-        "reloadScheduleSource": "RRULE:FREQ=WEEKLY;INTERVAL=1;BYHOUR=1,7,13,19;BYMINUTE=30;BYDAY=MO,TU,WE,TH,FR;BYSECOND=0",
-        "reloadScheduleTarget": "",
         "attributes": [
             {
                 "attribute": "connectionRemote",
