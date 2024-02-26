@@ -41,7 +41,7 @@
         "version": "v2.0.3",
         "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
         "qcmaInstaller": true,
-        "oemInstaller": true,
+        "oemInstaller": false,
         "licenseTypes": ["user","capacity"]
     },
     {
