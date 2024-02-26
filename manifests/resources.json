@@ -6,7 +6,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
         "oemInstaller": true,
-        "licenseTypes": ["user"]
+        "subscriptionTypes": ["user"]
     },
     {
         "id": 20,
@@ -15,7 +15,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.2.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
-        "licenseTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"]
     },
     {
         "id": 30,
@@ -24,7 +24,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.3.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
-        "licenseTypes": ["user"]
+        "subscriptionTypes": ["user"]
     },
     {
         "id": 40,
@@ -33,7 +33,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v3.1.7/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
-        "licenseTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"]
     },
     {
         "id": 50,
@@ -42,7 +42,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
         "qcmaInstaller": true,
         "oemInstaller": false,
-        "licenseTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"]
     },
     {
         "id": 90,
@@ -51,6 +51,6 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
         "oemInstaller": true,
-        "licenseTypes": ["user"]
+        "subscriptionTypes": ["user"]
     }
 ]
