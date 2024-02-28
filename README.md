@@ -1,4 +1,4 @@
-> **Warning**
+> [!IMPORTANT]
 > This project is _community supported_. This means that you should not contact
 > Qlik Support for help with these apps. See below for additional information
 > on how to raise issues on this repository to ask for help.
@@ -8,21 +8,19 @@
 This repository references community-built and community-supported Qlik Sense
 applications, which provide visibility of both operational and usage data in Qlik Cloud.
 
-The apps work with user-based subscriptions only.
-
 ## Applications
 
-Monitoring apps for Qlik Cloud (single tenant):
+These applications can be installed via an interactive Qlik Application Automation [installer](https://community.qlik.com/t5/Official-Support-Articles/Qlik-Cloud-Monitoring-Apps-Workflow-Guide/ta-p/2134140) or manually using the PDF guide in each repository.
 
-* [Access Evaluator](https://github.com/qlik-oss/qlik-cloud-access-evaluator)
-* [App Analyzer](https://github.com/qlik-oss/qlik-cloud-app-analyzer)
-* [Entitlement Analyzer](https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer)
-* [Qlik Application Automation Monitoring App](https://community.qlik.com/t5/Official-Support-Articles/How-to-automation-monitoring-app-for-tenant-admins-with-Qlik/ta-p/2025392)
-* [Reload Analyzer](https://github.com/qlik-oss/qlik-cloud-reload-analyzer)
+Monitoring apps may be designed for single or multiple tenant deployments, and additionally may be compatible with only specific Qlik Cloud subscription types, summarized below.
 
-Monitoring apps for Qlik Cloud (multiple tenant):
-
-* [OEM Dashboard](https://github.com/qlik-oss/qlik-cloud-oem-dashboard)
+| Monitoring Application                                                                                                                                                          | Compatible deployment modes    | Compatible subscription types |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|-------------------------------|
+| [Access Evaluator](https://github.com/qlik-oss/qlik-cloud-access-evaluator)                                                                                                     | Single tenant                  | User, Capacity                |
+| [App Analyzer](https://github.com/qlik-oss/qlik-cloud-app-analyzer)                                                                                                             | Single tenant, Multiple tenant | User, Capacity                |
+| [Entitlement Analyzer](https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer)                                                                                             | Single tenant, Multiple tenant | User                          |
+| [Reload Analyzer](https://github.com/qlik-oss/qlik-cloud-reload-analyzer)                                                                                                       | Single tenant, Multiple tenant | User, Capacity                |
+| [OEM Dashboard](https://github.com/qlik-oss/qlik-cloud-oem-dashboard)                                                                                                           | Multiple tenant                | User                          |
 
 If you are looking for more information on Qlik monitoring apps, including Client-Managed monitoring apps,
 please review [this community article](https://community.qlik.com/t5/Official-Support-Articles/The-Qlik-Sense-Monitoring-Applications-for-Cloud-and-On-Premise/ta-p/1822454).
