@@ -132,7 +132,16 @@
         "qcmaInstaller": true,
         "multipleTenantInstaller": true,
         "subscriptionTypes": ["user","capacity"],
-        "attributes": []
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            }
+        ]
     },
     {
         "id": 90,
