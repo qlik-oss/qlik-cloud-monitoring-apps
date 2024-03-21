@@ -128,20 +128,10 @@
         "name": "Access Evaluator",
         "version": "v2.0.3",
         "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
-        "multipleTenantAppTarget": "target",
         "qcmaInstaller": true,
-        "multipleTenantInstaller": true,
+        "multipleTenantInstaller": false,
         "subscriptionTypes": ["user","capacity"],
-        "attributes": [
-            {
-                "attribute": "tenant",
-                "lookup": "LET vu_tenant_fqdn"
-            },
-            {
-                "attribute": "connectionRest",
-                "lookup": "SET vu_rest_connection"
-            }
-        ]
+        "attributes": []
     },
     {
         "id": 90,
