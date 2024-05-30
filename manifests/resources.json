@@ -49,7 +49,7 @@
         "name": "Automation Analyzer",
         "version": "v1.0.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.0.0/Automation-Analyzer.qvf",
-        "qcmaInstaller": false,
+        "qcmaInstaller": true,
         "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
     },
