@@ -1,0 +1,108 @@
+name: Unbuild app
+
+on:
+    pull_request:
+        types: [opened, synchronize]
+        branches: [ "main" ]
+        paths:
+          - 'assets/**'
+
+    workflow_dispatch:
+  
+jobs:
+    unbuild:
+        runs-on: ubuntu-22.04
+        if: ${{ github.actor != 'dependabot[bot]' }} && ${{ github.actor != 'renovate[bot]' }}
+        steps:
+          - uses: actions/checkout@v4
+            with:
+              ref: ${{ github.event.pull_request.head.ref }}
+    
+          - name: Checkout repo
+            run: echo ${{ github.triggering_actor }}
+          
+          - name: Download qlik-cli and unzip
+            run: |
+                wget https://github.com/qlik-oss/qlik-cli/releases/download/v2.25.0/qlik-Linux-x86_64.tar.gz -O qlik-cli.tar.gz
+                # Unzip archive
+                tar -xf qlik-cli.tar.gz
+                # Remove archive
+                rm qlik-cli.tar.gz
+                # Update permissions to execute
+                chmod +x qlik
+          
+          - name: Retrieve qlik-cli version
+            run: ./qlik version
+        
+          - name: Create context in qlik-cli
+            run: |
+                ./qlik context create veritenant \
+                --server ${{ secrets.TENANT }} \
+                --oauth-client-id ${{ secrets.OAUTH_ID }} \
+                --oauth-client-secret ${{ secrets.OAUTH_SECRET }} \
+                --server-type cloud
+          
+          - name: Select context
+            run: ./qlik context use veritenant
+
+          - name: Delete any existing diff dir
+            run: rm -rf diff
+
+          - name: Config git
+            run: |
+                 git config --global user.name "qlik[bot]"
+                 git config --global user.email "username@users.noreply.github.com"
+          
+          - name: Unbuild apps
+            run: |
+                shopt -s globstar nocaseglob
+                qUrl_list=()
+                for FILE in ./assets/*.qvf; do
+                    FILENAME=$(basename "$FILE")
+                    cp "$FILE" ./import.qvf # Handle for weird filenames and qlik-cli handling
+                    
+                    APP_ID=$(./qlik raw post v1/apps/import --body-file "./import.qvf" | jq -r '.attributes.id')
+                    echo "Imported appId $APP_ID"
+        
+                    ./qlik app unbuild --app "$APP_ID" --dir "./diff/$FILENAME" --no-data
+        
+                    REPLACE_STRING="<appId>"
+                    find "./diff/$FILENAME" -type f | while read -r UBFILEA; do
+                        if [[ -f "$UBFILEA" ]]; then
+                            sed -i "s/$APP_ID/$REPLACE_STRING/g" "$UBFILEA"
+                        fi
+                    done
+
+                    MEDIA_LIST=$(./qlik raw get "v1/apps/$APP_ID/media/list" --query "show=recursive")
+                    IMAGE_LIST=$(echo "$MEDIA_LIST" | jq '[.[] | select(.type == "image") | {name: .name, link: .link}]')
+                    IMAGE_COUNT=$(echo "$IMAGE_LIST" | jq 'length')
+                    IMAGE_STORE_PATH="./diff/$FILENAME/images"
+                    echo "Number of images found: $IMAGE_COUNT"
+
+
+                    echo "$IMAGE_LIST" | jq -c '.[]' | while read -r IMAGE; do
+                        if [ ! -d "$IMAGE_STORE_PATH" ]; then
+                            mkdir -p "$IMAGE_STORE_PATH"
+                            echo "Created directory: $IMAGE_STORE_PATH"
+                        fi
+
+                        IMG_NAME=$(echo "$IMAGE" | jq -r '.name')
+                        IMG_LINK=$(echo "$IMAGE" | jq -r '.link')
+                        IMG_PATH="${IMG_LINK#/api/}"
+                        echo "Retrieving image: $IMG_NAME from: $IMG_PATH"
+                        ./qlik raw get "$IMG_PATH" --output-file "$IMAGE_STORE_PATH/$IMG_NAME"
+                    done
+                    
+                    ./qlik app rm "$APP_ID"
+                    
+                done <<< "$FILE"
+
+
+          - name: Remove qlik-cli
+            run: rm qlik
+
+          - name: Commit /diff if changes
+            run: |
+                 git add ./diff  
+                 git commit -m "Unbuilt .qvf files into /diff"
+                 git push
