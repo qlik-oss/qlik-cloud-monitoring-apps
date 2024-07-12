@@ -11,8 +11,8 @@
     {
         "id": 20,
         "name": "App Analyzer",
-        "version": "v5.2.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.2.0/App-Analyzer.qvf",
+        "version": "v6.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.0.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
         "subscriptionTypes": ["user","capacity"]
@@ -20,8 +20,8 @@
     {
         "id": 30,
         "name": "Entitlement Analyzer",
-        "version": "v2.3.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.3.0/Entitlement-Analyzer.qvf",
+        "version": "v2.4.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
         "subscriptionTypes": ["user"]
@@ -29,8 +29,8 @@
     {
         "id": 40,
         "name": "Reload Analyzer",
-        "version": "v3.1.7",
-        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v3.1.7/Reload-Analyzer.qvf",
+        "version": "v4.0.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.1/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
         "subscriptionTypes": ["user","capacity"]
@@ -38,8 +38,8 @@
     {
         "id": 50,
         "name": "Access Evaluator",
-        "version": "v2.0.3",
-        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
+        "version": "v2.1.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.0/Access-Evaluator.qvf",
         "qcmaInstaller": true,
         "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
@@ -47,8 +47,8 @@
     {
         "id": 60,
         "name": "Automation Analyzer",
-        "version": "v1.0.1",
-        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.0.1/Automation-Analyzer.qvf",
+        "version": "v1.1.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.1.0/Automation-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
