@@ -38,8 +38,8 @@
     {
         "id": 50,
         "name": "Access Evaluator",
-        "version": "v2.0.3",
-        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
+        "version": "v2.1.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.0/Access-Evaluator.qvf",
         "qcmaInstaller": true,
         "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
