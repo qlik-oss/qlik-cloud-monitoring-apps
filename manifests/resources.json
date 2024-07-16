@@ -29,8 +29,8 @@
     {
         "id": 40,
         "name": "Reload Analyzer",
-        "version": "v4.0.1",
-        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.1/Reload-Analyzer.qvf",
+        "version": "v4.0.2",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.2/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": true,
         "subscriptionTypes": ["user","capacity"]
@@ -38,8 +38,8 @@
     {
         "id": 50,
         "name": "Access Evaluator",
-        "version": "v2.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.0/Access-Evaluator.qvf",
+        "version": "v2.1.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.1/Access-Evaluator.qvf",
         "qcmaInstaller": true,
         "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
@@ -47,8 +47,8 @@
     {
         "id": 60,
         "name": "Automation Analyzer",
-        "version": "v1.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.1.0/Automation-Analyzer.qvf",
+        "version": "v1.1.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.1.1/Automation-Analyzer.qvf",
         "qcmaInstaller": true,
         "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
