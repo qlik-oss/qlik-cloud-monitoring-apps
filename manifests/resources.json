@@ -26,7 +26,6 @@
                 "lookup": "SET vu_is_parent_app"
             }
         ]
-        "subscriptionTypes": ["user"]
     },
     {
         "id": 20,
