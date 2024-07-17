@@ -5,7 +5,27 @@
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"]
+        "subscriptionTypes": ["user","capacity"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
     },
     {
         "id": 20,
@@ -13,7 +33,31 @@
         "version": "v6.0.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.0.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "Let vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "Set vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "Set vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "Set vu_is_parent_app"
+            }
+        ]
     },
     {
         "id": 30,
@@ -21,7 +65,31 @@
         "version": "v2.4.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user"]
+        "subscriptionTypes": ["user"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "Set vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
     },
     {
         "id": 40,
@@ -29,7 +97,31 @@
         "version": "v4.0.2",
         "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.2/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            }
+        ]
     },
     {
         "id": 50,
@@ -53,6 +145,18 @@
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"]
+        "subscriptionTypes": ["user"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "parent",
+        "attributes": [
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "consoleSettings",
+                "lookup": "SET vConsoleSettingsCollector"
+            }
+        ]
     }
 ]
