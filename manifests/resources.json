@@ -4,10 +4,10 @@
         "name": "Console Settings Collector",
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
-        "multipleTenantAppTarget": "both",
         "qcmaInstaller": false,
+        "subscriptionTypes": ["user","capacity"],
         "multipleTenantInstaller": true,
-        "subscriptionTypes": ["user"],
+        "multipleTenantAppType": "both",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -26,16 +26,17 @@
                 "lookup": "SET vu_is_parent_app"
             }
         ]
+        "subscriptionTypes": ["user"]
     },
     {
         "id": 20,
         "name": "App Analyzer",
-        "version": "v5.2.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v5.2.0/App-Analyzer.qvf",
-        "multipleTenantAppTarget": "both",
+        "version": "v6.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.0.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
-        "multipleTenantInstaller": true,
         "subscriptionTypes": ["user","capacity"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -62,12 +63,12 @@
     {
         "id": 30,
         "name": "Entitlement Analyzer",
-        "version": "v2.3.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.3.0/Entitlement-Analyzer.qvf",
-        "multipleTenantAppTarget": "both",
+        "version": "v2.4.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
-        "multipleTenantInstaller": true,
         "subscriptionTypes": ["user"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -94,12 +95,12 @@
     {
         "id": 40,
         "name": "Reload Analyzer",
-        "version": "v3.1.7",
-        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v3.1.7/Reload-Analyzer.qvf",
-        "multipleTenantAppTarget": "both",
+        "version": "v4.0.2",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.2/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
-        "multipleTenantInstaller": true,
         "subscriptionTypes": ["user","capacity"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
         "attributes": [
             {
                 "attribute": "tenant",
@@ -126,20 +127,17 @@
     {
         "id": 50,
         "name": "Access Evaluator",
-        "version": "v2.0.3",
-        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.0.3/Access-Evaluator.qvf",
+        "version": "v2.1.2",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.2/Access-Evaluator.qvf",
         "qcmaInstaller": true,
-        "multipleTenantInstaller": false,
-        "subscriptionTypes": ["user","capacity"],
-        "attributes": []
+        "subscriptionTypes": ["user","capacity"]
     },
     {
         "id": 60,
         "name": "Automation Analyzer",
-        "version": "v1.0.1",
-        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.0.1/Automation-Analyzer.qvf",
-        "qcmaInstaller": false,
-        "oemInstaller": false,
+        "version": "v1.1.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.1.1/Automation-Analyzer.qvf",
+        "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"]
     },
     {
@@ -147,10 +145,10 @@
         "name": "OEM Dashboard",
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
-        "multipleTenantAppTarget": "source",
         "qcmaInstaller": false,
-        "multipleTenantInstaller": true,
         "subscriptionTypes": ["user"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "parent",
         "attributes": [
             {
                 "attribute": "connectionRemote",

@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> This project is _community supported_. This means that you should not contact
-> Qlik Support for help with these apps. See below for additional information
+> The [Qlik Cloud Monitoring Apps](https://github.com/qlik-oss/qlik-cloud-monitoring-apps) project is _community supported_.
+> Qlik does not support these apps. See below for additional information
 > on how to raise issues on this repository to ask for help.
 
 # Qlik Cloud Monitoring Apps
