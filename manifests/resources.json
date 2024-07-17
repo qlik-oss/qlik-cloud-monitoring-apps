@@ -5,7 +5,6 @@
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
-        "oemInstaller": true,
         "subscriptionTypes": ["user"]
     },
     {
@@ -14,7 +13,6 @@
         "version": "v6.0.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.0.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
-        "oemInstaller": true,
         "subscriptionTypes": ["user","capacity"]
     },
     {
@@ -23,7 +21,6 @@
         "version": "v2.4.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
-        "oemInstaller": true,
         "subscriptionTypes": ["user"]
     },
     {
@@ -32,16 +29,14 @@
         "version": "v4.0.2",
         "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.2/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
-        "oemInstaller": true,
         "subscriptionTypes": ["user","capacity"]
     },
     {
         "id": 50,
         "name": "Access Evaluator",
-        "version": "v2.1.1",
-        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.1/Access-Evaluator.qvf",
+        "version": "v2.1.2",
+        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.2/Access-Evaluator.qvf",
         "qcmaInstaller": true,
-        "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
     },
     {
@@ -50,7 +45,6 @@
         "version": "v1.1.1",
         "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.1.1/Automation-Analyzer.qvf",
         "qcmaInstaller": true,
-        "oemInstaller": false,
         "subscriptionTypes": ["user","capacity"]
     },
     {
@@ -59,7 +53,6 @@
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
-        "oemInstaller": true,
         "subscriptionTypes": ["user"]
     }
 ]
