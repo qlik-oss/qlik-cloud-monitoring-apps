@@ -10,8 +10,8 @@
     {
         "id": 20,
         "name": "App Analyzer",
-        "version": "v6.0.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.0.0/App-Analyzer.qvf",
+        "version": "v6.1.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.1.1/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"]
     },
