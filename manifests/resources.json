@@ -26,8 +26,8 @@
     {
         "id": 40,
         "name": "Reload Analyzer",
-        "version": "v4.0.2",
-        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.2/Reload-Analyzer.qvf",
+        "version": "v4.0.3",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.3/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"]
     },
