@@ -5,7 +5,8 @@
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"]
+        "subscriptionTypes": ["user"],
+        "requiredRoles": ["TenantAdmin"]
     },
     {
         "id": 20,
@@ -13,7 +14,8 @@
         "version": "v6.1.1",
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.1.1/App-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"]
     },
     {
         "id": 30,
@@ -21,7 +23,8 @@
         "version": "v2.4.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user"]
+        "subscriptionTypes": ["user"],
+        "requiredRoles": ["TenantAdmin"]
     },
     {
         "id": 40,
@@ -29,7 +32,8 @@
         "version": "v4.0.4",
         "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.4/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"]
     },
     {
         "id": 50,
@@ -37,7 +41,8 @@
         "version": "v2.1.2",
         "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.2/Access-Evaluator.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"]
     },
     {
         "id": 60,
@@ -45,7 +50,8 @@
         "version": "v1.1.1",
         "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.1.1/Automation-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"]
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"]
     },
     {
         "id": 90,
@@ -53,6 +59,7 @@
         "version": "v2.1.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"]
+        "subscriptionTypes": ["user"],
+        "requiredRoles": ["TenantAdmin"]
     }
 ]
