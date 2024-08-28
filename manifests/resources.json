@@ -15,7 +15,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.1.1/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin"]
+        "requiredRoles": ["TenantAdmin","DataAdmin","AuditAdmin"]
     },
     {
         "id": 30,
