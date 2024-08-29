@@ -24,7 +24,7 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user"],
-        "requiredRoles": ["TenantAdmin"]
+        "requiredRoles": ["TenantAdmin","AnalyticsAdmin"]
     },
     {
         "id": 40,
