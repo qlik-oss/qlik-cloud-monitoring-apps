@@ -54,6 +54,15 @@
         "requiredRoles": ["TenantAdmin"]
     },
     {
+        "id": 70,
+        "name": "Answers Analyzer",
+        "version": "v1.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-answers-analyzer/releases/download/v1.0.0/Answers-Analyzer.qvf",
+        "qcmaInstaller": true,
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin","AuditAdmin"]
+    },
+    {
         "id": 90,
         "name": "OEM Dashboard",
         "version": "v2.1.0",
