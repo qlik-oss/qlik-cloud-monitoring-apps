@@ -17,6 +17,7 @@ Monitoring apps may be designed for single or multiple tenant deployments, and a
 | Monitoring Application                                                                                                                                                          | Compatible deployment modes    | Compatible subscription types |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|-------------------------------|
 | [Access Evaluator](https://github.com/qlik-oss/qlik-cloud-access-evaluator)                                                                                                     | Single tenant                  | User, Capacity                |
+| [Answers Analyzer](https://github.com/qlik-oss/qlik-cloud-answers-analyzer)                                                                                                   | Single tenant                  | User, Capacity                |
 | [App Analyzer](https://github.com/qlik-oss/qlik-cloud-app-analyzer)                                                                                                             | Single tenant, Multiple tenant | User, Capacity                |
 | [Automation Analyzer](https://github.com/qlik-oss/qlik-cloud-automation-analyzer)                                                                                               | Single tenant                  | User, Capacity                |
 | [Entitlement Analyzer](https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer)                                                                                             | Single tenant, Multiple tenant | User                          |
@@ -28,7 +29,7 @@ please review [this community article](https://community.qlik.com/t5/Official-Su
 
 ## Support policy
 
-These apps are provided as-is and are not supported by Qlik. Over time, the APIs and
+These apps are provided as-is and are not supported by Qlik. Over time, the APIs and
 metrics used by the apps may change, so it is advised to monitor each repository
 for updates, and to update the apps promptly when new versions are available.
 
