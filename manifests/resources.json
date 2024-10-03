@@ -68,7 +68,7 @@
         "version": "v1.0.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-report-analyzer/releases/download/v1.0.0/Report-Analyzer.qvf",
         "qcmaInstaller": true,
-        "subscriptionTypes": ["user"],
+        "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"]
     },
     {
