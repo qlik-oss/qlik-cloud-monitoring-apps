@@ -2,8 +2,8 @@
     {
         "id": 10,
         "name": "Console Settings Collector",
-        "version": "v2.2.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
+        "version": "v2.2.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
