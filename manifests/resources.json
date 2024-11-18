@@ -169,7 +169,7 @@
         "version": "v2.2.0",
         "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/raw/refs/heads/aqh/move-to-published-APIs/assets/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"],
+        "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
         "multipleTenantInstaller": true,
         "multipleTenantAppType": "parent",
