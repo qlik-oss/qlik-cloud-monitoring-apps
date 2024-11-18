@@ -1,0 +1,63 @@
+name: Verify manifest
+
+on:
+    pull_request:
+        types: [opened, synchronize]
+        branches: [ "main" ]
+
+    workflow_dispatch:
+  
+jobs:
+    verify_manifest:
+        if: contains(github.event.pull_request.changed_files, 'manifests/resources.json')
+        runs-on: ubuntu-24.04
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+
+        - name: Set up Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '14'
+
+        - name: Install dependencies
+          run: npm install axios
+
+        - name: Verify attributes & file paths
+          run: |
+            node -e "
+            const fs = require('fs');
+            const axios = require('axios');
+            const resources = JSON.parse(fs.readFileSync('manifests/resources.json', 'utf8'));
+            const requiredFields = ['id', 'name', 'version', 'source', 'qcmaInstaller', 'subscriptionTypes', 'requiredRoles'];
+            let allValid = true;
+
+            resources.forEach(resource => {
+              requiredFields.forEach(field => {
+                if (!resource.hasOwnProperty(field)) {
+                  console.error(\`Missing field \${field} in resource \${JSON.stringify(resource)}\`);
+                  allValid = false;
+                }
+              });
+            });
+
+            if (!allValid) {
+              process.exit(1);
+            }
+
+            const checkSource = async (url) => {
+              try {
+                await axios.head(url);
+              } catch (error) {
+                console.error(\`Source URL not found: \${url}\`);
+                process.exit(1);
+              }
+            };
+
+            const promises = resources.map(resource => checkSource(resource.source));
+            Promise.all(promises).then(() => {
+              console.log('All checks passed.');
+            }).catch(() => {
+              process.exit(1);
+            });
+            "
