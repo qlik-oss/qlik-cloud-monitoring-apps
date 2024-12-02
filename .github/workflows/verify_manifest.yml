@@ -8,7 +8,7 @@ on:
   
 jobs:
     verify_manifest:
-        if: contains(github.event.pull_request.changed_files, 'manifests/resources.json')
+        #if: contains(github.event.pull_request.changed_files, 'manifests/resources.json')
         runs-on: ubuntu-24.04
         steps:
         - name: Checkout repository
