@@ -11,8 +11,8 @@
     {
         "id": 20,
         "name": "App Analyzer",
-        "version": "v6.1.8",
-        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.1.8/App-Analyzer.qvf",
+        "version": "v6.3.7",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.3.7/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"]
