@@ -47,7 +47,7 @@ jobs:
             const checkSource = async (url) => {
                 try {
                 await axios.head(url);
-                console.log(`Verified path: ${url}`);
+                console.log(\`Verified path: \${url}\`);
               } catch (error) {
                 console.error(\`Source URL not found: \${url}\`);
                 process.exit(1);
