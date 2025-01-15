@@ -25,6 +25,10 @@
             {
                 "attribute": "multitenancy",
                 "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
             }
         ]
     },
@@ -58,6 +62,10 @@
             {
                 "attribute": "multitenancy",
                 "lookup": "Set vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
             }
         ]
     },
@@ -91,6 +99,10 @@
             {
                 "attribute": "multitenancy",
                 "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
             }
         ]
     },
@@ -124,6 +136,10 @@
             {
                 "attribute": "multitenancy",
                 "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
             }
         ]
     },
