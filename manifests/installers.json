@@ -2,10 +2,12 @@
   "installers": [
     {
       "template": "qcma",
+      "description": "Qlik Cloud monitoring app installer",
       "version": "1"
     },
     {
       "template": "qcmamt",
+      "description": "Qlik Cloud multiple tenant monitoring app installer",
       "version": "1"
     }
   ]
