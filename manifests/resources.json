@@ -9,7 +9,7 @@
         "requiredRoles": ["TenantAdmin"],
         "multipleTenantInstaller": true,
         "multipleTenantAppType": "both",
-        "attributes": [
+        "multipleTenantAttributes": [
             {
                 "attribute": "tenant",
                 "lookup": "LET vu_tenant_fqdn"
@@ -42,7 +42,7 @@
         "requiredRoles": ["TenantAdmin"],
         "multipleTenantInstaller": true,
         "multipleTenantAppType": "both",
-        "attributes": [
+        "multipleTenantAttributes": [
             {
                 "attribute": "tenant",
                 "lookup": "Let vu_tenant_fqdn"
@@ -79,7 +79,7 @@
         "requiredRoles": ["TenantAdmin"],
         "multipleTenantInstaller": true,
         "multipleTenantAppType": "both",
-        "attributes": [
+        "multipleTenantAttributes": [
             {
                 "attribute": "tenant",
                 "lookup": "LET vu_tenant_fqdn"
@@ -116,7 +116,7 @@
         "requiredRoles": ["TenantAdmin"],
         "multipleTenantInstaller": true,
         "multipleTenantAppType": "both",
-        "attributes": [
+        "multipleTenantAttributes": [
             {
                 "attribute": "tenant",
                 "lookup": "LET vu_tenant_fqdn"
@@ -189,7 +189,7 @@
         "requiredRoles": ["TenantAdmin"],
         "multipleTenantInstaller": true,
         "multipleTenantAppType": "parent",
-        "attributes": [
+        "multipleTenantAttributes": [
             {
                 "attribute": "connectionRemote",
                 "lookup": "SET vu_qlik_meta_collection_parent_dir"
