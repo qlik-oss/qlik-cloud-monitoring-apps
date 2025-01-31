@@ -2,11 +2,35 @@
     {
         "id": 10,
         "name": "Console Settings Collector",
-        "version": "v2.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/Console-Settings-Collector.qvf",
+        "version": "v2.2.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.0/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"],
-        "requiredRoles": ["TenantAdmin"]
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
+            }
+        ]
     },
     {
         "id": 20,
@@ -15,7 +39,35 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.4.0/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin"]
+        "requiredRoles": ["TenantAdmin"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "Let vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "Set vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "Set vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "Set vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
+            }
+        ]
     },
     {
         "id": 30,
@@ -24,7 +76,35 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-entitlement-analyzer/releases/download/v2.4.0/Entitlement-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user"],
-        "requiredRoles": ["TenantAdmin"]
+        "requiredRoles": ["TenantAdmin"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "Set vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
+            }
+        ]
     },
     {
         "id": 40,
@@ -33,7 +113,35 @@
         "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.0.4/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin"]
+        "requiredRoles": ["TenantAdmin"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "both",
+        "attributes": [
+            {
+                "attribute": "tenant",
+                "lookup": "LET vu_tenant_fqdn"
+            },
+            {
+                "attribute": "connectionRest",
+                "lookup": "SET vu_rest_connection"
+            },
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "multitenancyEnabled",
+                "lookup": "SET vu_multi_tenant_enabled"
+            },
+            {
+                "attribute": "multitenancy",
+                "lookup": "SET vu_is_parent_app"
+            },
+            {
+                "attribute": "QB-30587",
+                "lookup": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')"
+            }
+        ]
     },
     {
         "id": 50,
@@ -74,10 +182,22 @@
     {
         "id": 90,
         "name": "OEM Dashboard",
-        "version": "v2.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.1.0/OEM-Dashboard.qvf",
+        "version": "v2.2.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.0/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
-        "subscriptionTypes": ["user"],
-        "requiredRoles": ["TenantAdmin"]
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"],
+        "multipleTenantInstaller": true,
+        "multipleTenantAppType": "parent",
+        "attributes": [
+            {
+                "attribute": "connectionRemote",
+                "lookup": "SET vu_qlik_meta_collection_parent_dir"
+            },
+            {
+                "attribute": "consoleSettings",
+                "lookup": "SET vConsoleSettingsCollector"
+            }
+        ]
     }
 ]
