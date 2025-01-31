@@ -1,0 +1,12 @@
+{
+  "installers": [
+    {
+      "template": "qcma",
+      "version": "1"
+    },
+    {
+      "template": "qcmamt",
+      "version": "1"
+    }
+  ]
+}
