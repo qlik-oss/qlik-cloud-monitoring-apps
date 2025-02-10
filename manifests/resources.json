@@ -164,8 +164,8 @@
     {
         "id": 70,
         "name": "Answers Analyzer",
-        "version": "v1.0.2",
-        "source": "https://github.com/qlik-oss/qlik-cloud-answers-analyzer/releases/download/v1.0.2/Answers-Analyzer.qvf",
+        "version": "v1.1.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-answers-analyzer/releases/download/v1.1.0/Answers-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin","AuditAdmin"]
