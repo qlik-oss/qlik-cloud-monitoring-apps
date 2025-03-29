@@ -1451,8 +1451,7 @@
               "connectionRemote",
               "multitenancy",
               "consoleSettings",
-              "multitenancyEnabled",
-              "QB-30587"
+              "multitenancyEnabled"
             ],
             "type": "list",
             "mode": "keyValue",
@@ -1469,8 +1468,7 @@
           "839EABF9-16B0-430A-9E6D-09746411D44E",
           "FFD0F1E4-EF87-4577-92B1-4DCC0BF1E65F",
           "3080EEBD-2F98-4F66-94C9-AFD94E3C485C",
-          "214D26B1-9712-4B6E-B6D4-E7F5B02D36A2",
-          "569187F5-616B-40CA-979C-982E5CA43053"
+          "214D26B1-9712-4B6E-B6D4-E7F5B02D36A2"
         ],
         "defaultChildId": null
       },
@@ -4327,29 +4325,6 @@
         "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
         "endpoint_guid": "314f2e80-7bbe-11ed-8fc4-ed797f9ebbae",
         "endpoint_role": "create"
-      },
-      {
-        "id": "569187F5-616B-40CA-979C-982E5CA43053",
-        "type": "VariableBlock",
-        "disabled": false,
-        "name": "targetString",
-        "displayName": "Variable - targetString",
-        "comment": "Workaround for QB-30587",
-        "childId": null,
-        "inputs": [],
-        "settings": [],
-        "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 1090,
-        "y": 13360,
-        "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
-        "operations": [
-          {
-            "id": "set_value",
-            "key": "AF1A1AA1-D4D2-4FA6-AE3A-8636BB541D12",
-            "name": "Set value of { variable }",
-            "value": "For Each Dir in DirList('$(vDirLocation)/QlikMetaCollection/Tenants/')\n    Let Dir = If(Right('$(Dir)',1)<>'/', '$(Dir)/', '$(Dir)');"
-          }
-        ]
       },
       {
         "id": "989B5186-B49C-48C4-8E23-2E264E8FB2E5",
