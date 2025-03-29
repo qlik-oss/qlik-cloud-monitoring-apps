@@ -3057,8 +3057,13 @@
               "conditions": [
                 {
                   "input1": "name",
-                  "input2": "{$.glossaryName}",
-                  "operator": "="
+                  "operator": "=",
+                  "input2": "{$.glossaryName}"
+                },
+                {
+                  "input1": "spaceId",
+                  "operator": "=",
+                  "input2": "{ $.createSpaceIfNotExisting2.id }"
                 }
               ]
             },
@@ -3161,7 +3166,7 @@
           },
           {
             "id": "b790c2b0-5609-11ee-82da-95f092925895",
-            "value": null,
+            "value": "{ $.createSpaceIfNotExisting2.id }",
             "type": "string",
             "structure": []
           }
@@ -3490,7 +3495,7 @@
         "name": "parentTenant",
         "displayName": "Variable - parentTenant",
         "comment": "Set parent tenant to this tenant",
-        "childId": "7A6E4308-9662-4E20-9C99-C794C49F3FBF",
+        "childId": "83B96FFF-B3D1-4774-B445-F6C100D6F66F",
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5297,6 +5302,74 @@
             "value": "0"
           }
         ]
+      },
+      {
+        "id": "83B96FFF-B3D1-4774-B445-F6C100D6F66F",
+        "type": "SnippetBlock",
+        "disabled": false,
+        "name": "createSpaceIfNotExisting2",
+        "displayName": "Qlik Platform Operations - Create Space If Not Existing 2",
+        "comment": "Create the parent space/ return parent space",
+        "childId": "7A6E4308-9662-4E20-9C99-C794C49F3FBF",
+        "inputs": [
+          {
+            "id": "81071cf0-0b7f-11ee-805d-df260e5bbd58",
+            "value": "{$.parentTenant}",
+            "type": "string",
+            "structure": []
+          },
+          {
+            "id": "8107d590-0b7f-11ee-99e9-1f2e6b5cddb8",
+            "value": "{ $.sharedSpaceName }",
+            "type": "string",
+            "structure": []
+          },
+          {
+            "id": "81084d60-0b7f-11ee-a82b-7dda2b403efe",
+            "value": "shared",
+            "type": "select",
+            "displayValue": "shared",
+            "structure": []
+          },
+          {
+            "id": "f5a723a0-2d77-11ef-b735-db73a23b6ee2",
+            "value": "true",
+            "type": "select",
+            "displayValue": "true",
+            "structure": []
+          },
+          {
+            "id": "f5a7ce30-2d77-11ef-9b27-fb010d8ec470",
+            "value": "Deployed by the multiple tenant monitoring app installer (ID: [{automationid}], name: [{automationname}], run: [{runid}], version: [{ $.qcmamtVersion }]).",
+            "type": "string",
+            "structure": []
+          }
+        ],
+        "settings": [
+          {
+            "id": "datasource",
+            "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+            "type": "select",
+            "structure": []
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": []
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": []
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 506.50080834355646,
+        "y": 2380.441988881748,
+        "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
+        "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
       }
     ],
     "variables": [
