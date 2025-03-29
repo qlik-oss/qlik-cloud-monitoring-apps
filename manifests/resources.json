@@ -109,8 +109,8 @@
     {
         "id": 40,
         "name": "Reload Analyzer",
-        "version": "v4.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.1.0/Reload-Analyzer.qvf",
+        "version": "v4.1.2",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.1.2/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
