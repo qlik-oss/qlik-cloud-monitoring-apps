@@ -3028,8 +3028,8 @@
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": true }],
-        "x": -411,
-        "y": 911,
+        "x": 0,
+        "y": 3080,
         "loopBlockId": null,
         "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
         "endpoint_guid": "df689160-53bc-11ee-b8e0-4d2494612b78",
@@ -3956,7 +3956,7 @@
         "collapsed": [
           { "name": "both", "isCollapsed": false },
           { "name": "yes", "isCollapsed": false },
-          { "name": "no", "isCollapsed": false }
+          { "name": "no", "isCollapsed": true }
         ],
         "x": -422,
         "y": 9540,
@@ -4383,10 +4383,10 @@
         "collapsed": [
           { "name": "both", "isCollapsed": false },
           { "name": "yes", "isCollapsed": false },
-          { "name": "no", "isCollapsed": false }
+          { "name": "no", "isCollapsed": true }
         ],
-        "x": -603,
-        "y": 5534,
+        "x": 240,
+        "y": 7360,
         "childTrueId": "2785D49B-8E6C-47AC-8BEB-E4DDAED478B3",
         "childFalseId": null
       },
@@ -5310,7 +5310,7 @@
         "name": "createSpaceIfNotExisting2",
         "displayName": "Qlik Platform Operations - Create Space If Not Existing 2",
         "comment": "Create the parent space/ return parent space",
-        "childId": "7A6E4308-9662-4E20-9C99-C794C49F3FBF",
+        "childId": "23EA7545-385B-4964-B105-A424082835A3",
         "inputs": [
           {
             "id": "81071cf0-0b7f-11ee-805d-df260e5bbd58",
@@ -5370,6 +5370,67 @@
         "y": 2380.441988881748,
         "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
         "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
+      },
+      {
+        "id": "23EA7545-385B-4964-B105-A424082835A3",
+        "type": "SnippetBlock",
+        "disabled": false,
+        "name": "AddMemberToSpaceWithAllRoles2",
+        "displayName": "Qlik Platform Operations - Add Member To Space With All Roles 2",
+        "comment": "Always check the current user has permission to add a glossary/ access space",
+        "childId": "7A6E4308-9662-4E20-9C99-C794C49F3FBF",
+        "inputs": [
+          {
+            "id": "01f7fb00-e5c7-11ed-92b8-8730312b5bc2",
+            "value": "{$.parentTenant}",
+            "type": "string",
+            "structure": []
+          },
+          {
+            "id": "01f92f60-e5c7-11ed-9a48-ebadb38fcbc0",
+            "value": "{ $.createSpaceIfNotExisting2.id }",
+            "type": "string",
+            "structure": []
+          },
+          {
+            "id": "01f9a860-e5c7-11ed-90e5-435c61b16db9",
+            "value": "{ $.getCurrentUserId }",
+            "type": "string",
+            "structure": []
+          },
+          {
+            "id": "2cb75640-0511-11ee-b9aa-0379e9278f39",
+            "value": "user",
+            "type": "select",
+            "displayValue": "user",
+            "structure": []
+          }
+        ],
+        "settings": [
+          {
+            "id": "datasource",
+            "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+            "type": "select",
+            "structure": []
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": []
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": []
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 120,
+        "y": 2840,
+        "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
+        "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
       }
     ],
     "variables": [

@@ -5,7 +5,7 @@ in this repo.
 
 |                   |                              |
 |-------------------|------------------------------|
-| Installer version | 1                            |
+| Installer version | 2                            |
 | Installer file    | multipleTenantInstaller.json |
 
 ## The multiple tenant monitoring pattern
