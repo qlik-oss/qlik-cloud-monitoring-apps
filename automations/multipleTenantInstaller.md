@@ -35,6 +35,10 @@ To install the automation:
 2. Create a new, blank automation in your Qlik Cloud tenant
 3. Right click into the workspace, select `Upload workspace`, and import the JSON
    file you downloaded in step 1.
+4. Configure the automation variables listed in the configuration section.
+5. Run the automation. If a Glossary named the same as the variable `glossaryName`
+   in the shared space named `sharedSpaceName` doesn't yet exist, it will be created
+   and the current tenant's hostname will be added.
 
 ## Updates
 

@@ -268,7 +268,7 @@
         "name": "GetUserId",
         "displayName": "Qlik Platform Operations - Get User Id",
         "comment": "",
-        "childId": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
+        "childId": "6620E327-319D-4493-AFE6-91FFB72447A5",
         "inputs": [
           {
             "id": "7a60eb60-9ca9-11ed-babd-3fa6b11b1f7e",
@@ -591,8 +591,8 @@
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 120,
-        "y": 5240
+        "x": 655.9344386397418,
+        "y": 7348.678470691098
       },
       {
         "id": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
@@ -601,12 +601,12 @@
         "name": "iter",
         "displayName": "Variable - iter",
         "comment": "",
-        "childId": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
+        "childId": "72BCBE21-9B12-4D01-9CC1-48002D5D94E1",
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 240,
-        "y": 2260,
+        "x": 655.9344386397418,
+        "y": 7228.678470691098,
         "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
         "operations": [
           {
@@ -3199,7 +3199,7 @@
         "name": "glossaryId",
         "displayName": "Variable - glossaryId",
         "comment": "",
-        "childId": "61C195DB-0BEF-4EA8-B75A-91F34D649225",
+        "childId": null,
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -3214,34 +3214,6 @@
             "value": "{$.createGlossary.id}"
           }
         ]
-      },
-      {
-        "id": "61C195DB-0BEF-4EA8-B75A-91F34D649225",
-        "type": "ShowBlock",
-        "disabled": false,
-        "name": "output4",
-        "displayName": "Output 4",
-        "comment": "",
-        "childId": null,
-        "inputs": [
-          {
-            "id": "input",
-            "value": "## Initializing\n\nGlossary containing tenant list not found. Created new glossary: [{$.createGlossary.name}](https://{if: {$.getCurrentTenantInfo.hostnames[1]} notEmpty , $.getCurrentTenantInfo.hostnames[1], $.getCurrentTenantInfo.hostnames[0]}/glossary/{$.createGlossary.id}) in current user's personal space, and added current tenant hostname.",
-            "type": "string",
-            "structure": []
-          }
-        ],
-        "settings": [
-          {
-            "id": "display_mode",
-            "value": "add",
-            "type": "select",
-            "structure": []
-          }
-        ],
-        "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": -354,
-        "y": 1397
       },
       {
         "id": "1830CE19-5F0E-4CE5-8FD2-567B925E25CA",
@@ -3272,7 +3244,7 @@
           },
           {
             "id": "f0683590-5630-11ee-bc41-87f09bdb7cb1",
-            "value": null,
+            "value": "Parent tenant",
             "type": "string",
             "structure": []
           },
@@ -3581,7 +3553,7 @@
         "inputs": [
           {
             "id": "input",
-            "value": "## Multiple tenant monitoring app manager\n\n### Configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Recreate connections | { if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys' } |\n| Replace all apps | { if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only' } |\n| API key expiration override | { if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used' } |\n| Automatic tenant cleanup | { if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No' } |\n| REST connector name | {$.restConnectorName} |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
+            "value": "## Multiple tenant monitoring app manager\n\nThis automation maintains the Qlik Cloud Monitoring apps on multiple tenants. For more information please refer to the [documentation](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.md).\n\n### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | { $.skipToTenantNumber } |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | { $.runOnTenant } |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Add current user to spaces | { $.addCurrentUserToSpaces } |\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | { $.createSchedule } |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | { $.doReload } |\n| REST connector name | {$.restConnectorName} |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
             "type": "string",
             "structure": []
           }
@@ -5287,11 +5259,11 @@
         "name": "skipToTenantNumber",
         "displayName": "Variable - skipToTenantNumber",
         "comment": "Set to 0 for no action, or an integer to start updating from that tenant. If you update the glossary, tenant order might change.",
-        "childId": "A2DE5D81-1C2C-473D-888D-6F4BFC8AB617",
+        "childId": "C68B1F54-9AEB-4601-97C6-1F7FA19271C7",
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 250,
+        "x": 0,
         "y": 1200,
         "variableGuid": "8F994758-D377-47C2-B764-C2F7D62FCEE5",
         "operations": [
@@ -5431,6 +5403,105 @@
         "y": 2840,
         "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
         "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
+      },
+      {
+        "id": "72BCBE21-9B12-4D01-9CC1-48002D5D94E1",
+        "type": "IfElseBlock",
+        "disabled": false,
+        "name": "condition23",
+        "displayName": "Condition 23",
+        "comment": "Skip x number of tenants silently",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "conditions",
+            "value": {
+              "mode": "all",
+              "conditions": [
+                {
+                  "input1": "{ $.iter }",
+                  "operator": ">=",
+                  "input2": "{ $.skipToTenantNumber }"
+                }
+              ]
+            },
+            "type": "custom",
+            "structure": {}
+          }
+        ],
+        "settings": [],
+        "collapsed": [
+          { "name": "both", "isCollapsed": false },
+          { "name": "yes", "isCollapsed": false },
+          { "name": "no", "isCollapsed": true }
+        ],
+        "x": 120,
+        "y": 7360,
+        "childTrueId": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
+        "childFalseId": null
+      },
+      {
+        "id": "6620E327-319D-4493-AFE6-91FFB72447A5",
+        "type": "IfElseBlock",
+        "disabled": false,
+        "name": "condition24",
+        "displayName": "Condition 24",
+        "comment": "Check for specific tenant override (silently skip any we don't want to run against)",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "conditions",
+            "value": {
+              "mode": "all",
+              "conditions": [
+                {
+                  "input1": "{ $.runOnTenant }",
+                  "operator": "empty",
+                  "input2": null
+                },
+                {
+                  "input1": "{ $.runOnTenant }",
+                  "operator": "=",
+                  "input2": "{ $.loopTenant }"
+                }
+              ]
+            },
+            "type": "custom",
+            "structure": {}
+          }
+        ],
+        "settings": [],
+        "collapsed": [
+          { "name": "both", "isCollapsed": false },
+          { "name": "yes", "isCollapsed": false },
+          { "name": "no", "isCollapsed": true }
+        ],
+        "x": 370,
+        "y": 7040,
+        "childTrueId": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
+        "childFalseId": null
+      },
+      {
+        "id": "C68B1F54-9AEB-4601-97C6-1F7FA19271C7",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "runOnTenant",
+        "displayName": "Variable - runOnTenant",
+        "comment": "Leave empty to run against all tenants, or enter a tenant hostname to run against a single hostname",
+        "childId": "A2DE5D81-1C2C-473D-888D-6F4BFC8AB617",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 250,
+        "y": 1200,
+        "variableGuid": "FB42F549-35C6-4FF0-8EC5-4577BC09E92D",
+        "operations": [
+          {
+            "key": "F86D0A85-573C-4709-A025-1F0A25616876",
+            "id": "set_value",
+            "name": "Set value of { variable }"
+          }
+        ]
       }
     ],
     "variables": [
@@ -5608,6 +5679,11 @@
         "guid": "8F994758-D377-47C2-B764-C2F7D62FCEE5",
         "name": "skipToTenantNumber",
         "type": "number"
+      },
+      {
+        "guid": "FB42F549-35C6-4FF0-8EC5-4577BC09E92D",
+        "name": "runOnTenant",
+        "type": "string"
       }
     ]
   }
