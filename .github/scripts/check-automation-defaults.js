@@ -8,7 +8,7 @@ try {
   const fileContent = fs.readFileSync(filePath, 'utf8');
   jsonData = JSON.parse(fileContent);
 } catch (err) {
-  console.error(`Failed to read or parse JSON file: ${err}`);
+  console.error(`Failed to read or parse JSON file at ${filePath}: ${err}`);
   process.exit(1);
 }
 
