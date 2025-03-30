@@ -102,6 +102,16 @@ When `runMode` is set to 1, the automation will prompt a user to interactively c
 
 When set to 0, no user intervention is required. This mode is designed for scheduled runs of the automation, which will automate the refresh of data connections, update of apps, and clean up of removed tenants. This is the intended function of the automation.
 
+## Tenant list
+
+By default, the automation loads the list of tenants from a glossary named `TenantList` in the `sharedSpaceName` shared space.
+
+A glossary is used rather than a direct external source as:
+
+- It makes the automation more portable, since you can create your own automation to update the glossary, and simply use our vanilla installer.
+- It allows you to curate your monitoring groups, rather than including all tenants on a license in one bucket, since you may have sub groups for
+  production, test, development, etc.
+
 ---
 
 ## Contributing
