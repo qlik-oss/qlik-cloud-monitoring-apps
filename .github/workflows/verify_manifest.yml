@@ -1,4 +1,6 @@
 name: Verify manifest
+permissions:
+  contents: read
 
 on:
     pull_request:
