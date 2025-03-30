@@ -1,6 +1,6 @@
 # Multiple Tenant Installer Automation
 
-This repository contains an automation solution to install and maintain Qlik Cloud Monitoring apps across multiple tenants in Qlik Cloud. In this architecture, the **parent tenant** handles all monitoring and aggregated log management, while the **child tenants** are minimally involved – they only host an API key.
+This repository contains an [automation solution to install and maintain Qlik Cloud Monitoring apps](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.json) across multiple tenants in Qlik Cloud. In this architecture, the **parent tenant** handles all monitoring and aggregated log management, while the **child tenants** are minimally involved – they only host an API key.
 
 > **Note:** The parent tenant does not manage the child tenants. Its role is to monitor them. All configuration, updates, and aggregated reporting occur on the parent side.
 
