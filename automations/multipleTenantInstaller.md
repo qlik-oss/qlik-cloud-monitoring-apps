@@ -102,6 +102,13 @@ When `runMode` is set to 1, the automation will prompt a user to interactively c
 
 When set to 0, no user intervention is required. This mode is designed for scheduled runs of the automation, which will automate the refresh of data connections, update of apps, and clean up of removed tenants. This is the intended function of the automation.
 
+In normal operation:
+
+- Set `runMode` to 0 to skip the prompt.
+- Schedule the automation to run every `5` days.
+- Set `setMaxApiKey` to `P7D` to provide an expiry just slightly longer than the schedule.
+- Ensure that `recreateConnections` remains set to `1` so that it recreates the API key each time the automation runs.
+
 ## Tenant list
 
 By default, the automation loads the list of tenants from a glossary named `TenantList` in the `sharedSpaceName` shared space.
