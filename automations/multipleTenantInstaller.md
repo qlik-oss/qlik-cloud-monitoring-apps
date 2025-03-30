@@ -84,6 +84,18 @@ These core settings define the core behavior of the monitoring automation.
 | **Tenant count**                                                               | Specify the total number of child tenants to be monitored.                                                                                                               | (Provide the tenant count)          |
 | **Version**                                                                    | Specify the version of the automation installer.                                                                                                                         | (Provide the version)               |
 
+#### Automatic tenant cleanup
+
+When `autoTenantCleanup` is set to 1, the automation will:
+
+- Delete any spaces which contain `<sharedSpaceName> (`, to remove the REST connection to the child tenant, the apps which load from that connection, and all data files maintained by the apps. This is a match lookup based on the name of the space.
+- Delete any tenant specific data files stored in the `<sharedSpaceName>` space.
+
+It will not delete:
+
+- The API key or regional OAuth user from the child tenant (it is assumed this has already been cleaned up via a tenant deactivation) or other process.
+- The data for that tenant stored in the aggregated QVDs. This data will be removed the next time the aggregation (parent) apps are reloaded.
+
 ---
 
 ## Contributing

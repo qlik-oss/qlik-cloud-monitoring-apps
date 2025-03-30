@@ -139,8 +139,8 @@
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 0,
-        "y": 6140,
+        "x": 120,
+        "y": 7860,
         "loopBlockId": "794E01BA-DF4F-437F-B709-6C252169791B"
       },
       {
@@ -628,8 +628,8 @@
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 17,
-        "y": 4252,
+        "x": 0,
+        "y": 10504,
         "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
         "operations": [
           {
@@ -2346,7 +2346,7 @@
         "name": "filterList6",
         "displayName": "Filter List 6",
         "comment": "Load the multiple tenant apps for the current subscription type",
-        "childId": "D1028969-2CEC-4E00-9942-861D91055273",
+        "childId": "6EB2169B-45A2-4F4B-8F5A-19033542E767",
         "inputs": [
           {
             "id": "list",
@@ -2604,7 +2604,7 @@
         "name": "iterApps",
         "displayName": "Variable - iterApps",
         "comment": "App iterator",
-        "childId": "6EB2169B-45A2-4F4B-8F5A-19033542E767",
+        "childId": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -3704,7 +3704,7 @@
         "name": "output9",
         "displayName": "Output 9",
         "comment": "Output deployment table header",
-        "childId": "D60AA6BA-E349-479B-87A1-5CADE55DF810",
+        "childId": "CB0B8A73-1611-4459-8D99-5ECCFF2B7391",
         "inputs": [
           {
             "id": "input",
@@ -3723,7 +3723,7 @@
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
         "x": 120,
-        "y": 6500
+        "y": 7980
       },
       {
         "id": "12C5F24F-DB03-46F5-9972-87C1ADA82A9F",
@@ -5033,7 +5033,7 @@
             "id": "set_value",
             "key": "3F0C0854-853E-479E-A7DF-0D8C598FBF3D",
             "name": "Set value of { variable }",
-            "value": "0"
+            "value": "1"
           }
         ]
       },
@@ -5044,7 +5044,7 @@
         "name": "searchSpaces",
         "displayName": "Qlik Cloud Services - Search Spaces",
         "comment": "Retrieve existing spaces that this automation will attempt to manage to help with space tidy-up",
-        "childId": "CB0B8A73-1611-4459-8D99-5ECCFF2B7391",
+        "childId": "47D00BB7-D9C1-4573-8774-777C7BC1A2F5",
         "inputs": [
           {
             "id": "592e21a0-6d2e-11eb-9985-3ff14fb3335f",
@@ -5066,7 +5066,7 @@
           },
           {
             "id": "59429c60-6d2e-11eb-b7b1-e7ca1f22830c",
-            "value": "{ $.sharedSpaceName } -",
+            "value": "{$.sharedSpaceName} (",
             "type": "string",
             "structure": []
           },
@@ -5097,9 +5097,10 @@
             "structure": []
           }
         ],
-        "collapsed": [{ "name": "loop", "isCollapsed": true }],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
         "x": 578.311141311229,
         "y": 5992.167463605931,
+        "loopBlockId": "9ED7D007-E198-4907-91BE-A14744109D0D",
         "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
         "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
         "endpoint_role": "search"
@@ -5522,7 +5523,7 @@
             "key": "3B7CE8C7-628D-4220-8F8B-CFB6EFD312F5",
             "id": "set_value",
             "name": "Set value of { variable }",
-            "value": "1"
+            "value": "0"
           }
         ]
       },
@@ -5533,7 +5534,7 @@
         "name": "condition25",
         "displayName": "Condition 25",
         "comment": "If runMode = 1 give user a prompt to continue",
-        "childId": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
+        "childId": "4A522DB9-B3CD-485F-AB97-1251F2785163",
         "inputs": [
           {
             "id": "conditions",
@@ -5553,8 +5554,8 @@
           { "name": "yes", "isCollapsed": false },
           { "name": "no", "isCollapsed": true }
         ],
-        "x": -583,
-        "y": 6321,
+        "x": 301,
+        "y": 6097,
         "childTrueId": "08833C88-D837-413C-B5FC-4DE90D55B144",
         "childFalseId": null
       },
@@ -5607,7 +5608,7 @@
         "comment": "",
         "childId": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
         "inputs": [
-          { "id": "time", "value": "3", "type": "string", "structure": {} }
+          { "id": "time", "value": "1", "type": "string", "structure": {} }
         ],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5641,6 +5642,1072 @@
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
         "x": -430,
         "y": 6265
+      },
+      {
+        "id": "3983393F-3C5A-4B27-912E-F6DCEFC504AA",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "existingTenants",
+        "displayName": "Variable - existingTenants",
+        "comment": "",
+        "childId": "D60AA6BA-E349-479B-87A1-5CADE55DF810",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 165,
+        "y": 7005,
+        "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
+        "operations": [
+          {
+            "key": "F37BAC45-B691-422D-B071-E9F63C917EAE",
+            "id": "empty",
+            "name": "Empty { variable }"
+          }
+        ]
+      },
+      {
+        "id": "602C71BF-790E-4A5A-9F16-8DB29CC794BC",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "loopSearchTenant",
+        "displayName": "Variable - loopSearchTenant",
+        "comment": "Create tenant record",
+        "childId": "118362AA-205B-4459-B5D5-8C2D39BF5BC5",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 240,
+        "y": 7360,
+        "variableGuid": "2C3EC71F-A135-4DBA-902A-2B073AD26B71",
+        "operations": [
+          {
+            "key": "7D8F7F14-E951-463C-A1F4-B332D8F2C620",
+            "id": "set_key_value",
+            "name": "Set key/values of { variable }",
+            "value": [
+              { "key": "id", "value": "{ $.searchSpaces.item.id }" },
+              { "key": "name", "value": "{ $.searchSpaces.item.name }" },
+              {
+                "key": "tenant",
+                "value": "{regexparse: { $.searchSpaces.item.name }, '\\(([^()]*)\\)(?!.*\\()'}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "118362AA-205B-4459-B5D5-8C2D39BF5BC5",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "existingTenants",
+        "displayName": "Variable - existingTenants",
+        "comment": "Add tenant record to existingTenants variable",
+        "childId": null,
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 360,
+        "y": 7440,
+        "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
+        "operations": [
+          {
+            "key": "4369A5CE-4F3A-4FA6-9544-6D47718337C4",
+            "id": "add_item",
+            "name": "Add item to { variable }",
+            "value": "{ $.loopSearchTenant }"
+          }
+        ]
+      },
+      {
+        "id": "9ED7D007-E198-4907-91BE-A14744109D0D",
+        "type": "IfElseBlock",
+        "disabled": false,
+        "name": "condition26",
+        "displayName": "Condition 26",
+        "comment": "Check for exact match on sharedSpaceName + domain format",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "conditions",
+            "value": {
+              "mode": "all",
+              "conditions": [
+                {
+                  "input1": "{ regexreplace: {$.searchSpaces.item.name}, '\\s*\\([^()]*\\)\\s*$', '@' }",
+                  "operator": "=",
+                  "input2": "{$.sharedSpaceName}@"
+                },
+                {
+                  "input1": "{ regexparse: { $.searchSpaces.item.name }, '\\(\\s*((?:[A-Za-z0-9-]+\\.){2,}[A-Za-z0-9-]+)\\s*\\)\\s*$' }",
+                  "operator": "notEmpty",
+                  "input2": null
+                }
+              ]
+            },
+            "type": "custom",
+            "structure": {}
+          }
+        ],
+        "settings": [],
+        "collapsed": [
+          { "name": "both", "isCollapsed": false },
+          { "name": "yes", "isCollapsed": false },
+          { "name": "no", "isCollapsed": true }
+        ],
+        "x": -472,
+        "y": 6889,
+        "childTrueId": "602C71BF-790E-4A5A-9F16-8DB29CC794BC",
+        "childFalseId": null
+      },
+      {
+        "id": "F4298341-1668-4DE0-A881-30362CD1ED54",
+        "type": "ShowBlock",
+        "disabled": false,
+        "name": "output3",
+        "displayName": "Output 3",
+        "comment": "",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "input",
+            "value": "| { $.iter } | { $.loop2.item.tenant } |",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "display_mode",
+            "value": "add",
+            "type": "select",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 240,
+        "y": 9340
+      },
+      {
+        "id": "47D00BB7-D9C1-4573-8774-777C7BC1A2F5",
+        "type": "CompareListsBlock",
+        "disabled": false,
+        "name": "compareLists",
+        "displayName": "Compare Lists",
+        "comment": "Find unregistered tenants and delete their apps",
+        "childId": "2F4E1F7B-745C-4194-9FC8-D276AEE6EFC0",
+        "inputs": [
+          {
+            "id": "list1",
+            "value": "{ $.existingTenants }",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "list2",
+            "value": "{ $.tenantList }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "list1_unique_key",
+            "value": "tenant",
+            "type": "field",
+            "structure": {}
+          },
+          {
+            "id": "list2_unique_key",
+            "value": "hostname",
+            "type": "field",
+            "structure": {}
+          },
+          {
+            "id": "compare_mode",
+            "value": "diff",
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "case_insensitive",
+            "value": true,
+            "type": "checkbox",
+            "structure": {}
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": true }],
+        "x": -422,
+        "y": 7342,
+        "loopBlockId": null
+      },
+      {
+        "id": "BB56F817-9E31-47B8-8478-1E0502F49099",
+        "type": "ShowBlock",
+        "disabled": false,
+        "name": "output4",
+        "displayName": "Output 4",
+        "comment": "Output deletion table header",
+        "childId": "3B76A004-97D2-4ED0-BB60-8EFC27AE4E50",
+        "inputs": [
+          {
+            "id": "input",
+            "value": "### Deletions\n\nAny tenants present here were removed from monitoring as spaces existed which weren't found in the glossary.\n\n| # | Tenant Hostname |\n|-----|-----|",
+            "type": "string",
+            "structure": []
+          }
+        ],
+        "settings": [
+          {
+            "id": "display_mode",
+            "value": "add",
+            "type": "select",
+            "structure": []
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 0,
+        "y": 7060
+      },
+      {
+        "id": "4A522DB9-B3CD-485F-AB97-1251F2785163",
+        "type": "IfElseBlock",
+        "disabled": false,
+        "name": "condition27",
+        "displayName": "Condition 27",
+        "comment": "If clean up enabled",
+        "childId": "D1028969-2CEC-4E00-9942-861D91055273",
+        "inputs": [
+          {
+            "id": "conditions",
+            "value": {
+              "mode": "all",
+              "conditions": [
+                {
+                  "input1": "{ $.autoTenantCleanup }",
+                  "operator": "=",
+                  "input2": "1"
+                }
+              ]
+            },
+            "type": "custom",
+            "structure": {}
+          }
+        ],
+        "settings": [],
+        "collapsed": [
+          { "name": "both", "isCollapsed": false },
+          { "name": "yes", "isCollapsed": false },
+          { "name": "no", "isCollapsed": true }
+        ],
+        "x": -199,
+        "y": 6917,
+        "childTrueId": "6C4A2E9A-DE9C-4604-9DA2-2FB276982346",
+        "childFalseId": null
+      },
+      {
+        "id": "36260749-D5F3-4A6E-AB07-CC45FEFC58DA",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "listApps",
+        "displayName": "Qlik Cloud Services - List Apps",
+        "comment": "List app in that tenant's space",
+        "childId": "3B567A81-AE85-44C9-91FB-BC8AC3883434",
+        "inputs": [
+          {
+            "id": "8cd8db50-107b-11ec-8082-edc45dd151ef",
+            "value": null,
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "8ce4fad0-107b-11ec-a6ac-2bd407ad134b",
+            "value": "{ $.loop2.item.id }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "maxitemcount",
+            "value": "",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 622,
+        "y": 7996,
+        "loopBlockId": "74396EE8-E9EE-4ED7-A5F7-C7438205443F",
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "8cc63340-107b-11ec-ab5d-f9b221ed2dc5",
+        "endpoint_role": "list"
+      },
+      {
+        "id": "74396EE8-E9EE-4ED7-A5F7-C7438205443F",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "deleteApp2",
+        "displayName": "Qlik Cloud Services - Delete App 2",
+        "comment": "Delete app & schedules",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "fcd14a20-67b2-11eb-9f5e-9113990ec3b6",
+            "value": "{ $.listApps.item.id }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": -478,
+        "y": 7703,
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
+        "endpoint_role": "delete"
+      },
+      {
+        "id": "7A40EAC5-7A39-419C-8C37-D7E116D784FA",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "deleteDataFile",
+        "displayName": "Qlik Cloud Services - Delete Data File",
+        "comment": "",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "265b23f0-f3b2-11ed-900e-3b62f7efc518",
+            "value": "{ $.listDataFiles.item.id }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 671,
+        "y": 8281,
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "2648d600-f3b2-11ed-a2ea-711f6f8808f6",
+        "endpoint_role": "delete"
+      },
+      {
+        "id": "FD7DCC57-8CB1-46D4-8329-C10AD5EC4A28",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "listDataFiles",
+        "displayName": "Qlik Cloud Services - List Data Files",
+        "comment": "",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "44da6400-f548-11ed-b69c-cd1f00885bf2",
+            "value": null,
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "5872f750-f548-11ed-8f4f-e153b2253f62",
+            "value": null,
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "bc104e50-f548-11ed-86e3-85b622a1703f",
+            "value": "{ $.rawAPIListRequest2.item.id }",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "eb7555a0-f548-11ed-b6a4-733648ff08a4",
+            "value": null,
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "00770740-f549-11ed-b0fa-afe239113bad",
+            "value": null,
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "maxitemcount",
+            "value": "",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 360,
+        "y": 8800,
+        "loopBlockId": "7A40EAC5-7A39-419C-8C37-D7E116D784FA",
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "1250db90-f548-11ed-bb5c-31311462577f",
+        "endpoint_role": "list"
+      },
+      {
+        "id": "3B567A81-AE85-44C9-91FB-BC8AC3883434",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "rawAPIListRequest",
+        "displayName": "Qlik Cloud Services - Raw API List Request",
+        "comment": "List data connections to delete",
+        "childId": "BC968B71-1D79-4068-A3B3-9CDDDD0C3A91",
+        "inputs": [
+          {
+            "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
+            "value": "data-connections",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
+            "value": [
+              { "key": "spaceId", "value": "{ $.loop2.item.id }" },
+              { "key": "noDatafiles", "value": "true" }
+            ],
+            "type": "object",
+            "mode": "keyValue",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "maxitemcount",
+            "value": "",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 706,
+        "y": 8336,
+        "loopBlockId": "ECB0991D-2C14-4EE2-A825-EB4E1E46C631",
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
+        "endpoint_role": "list"
+      },
+      {
+        "id": "ECB0991D-2C14-4EE2-A825-EB4E1E46C631",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "rawAPIRequest",
+        "displayName": "Qlik Cloud Services - Raw API Request",
+        "comment": "Delete the connection",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
+            "value": "data-connections/{ $.rawAPIListRequest.item.id }",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
+            "value": "3ba2a970-2072-11ec-be02-2dd5c73abb12",
+            "type": "select",
+            "displayValue": "DELETE",
+            "structure": {}
+          },
+          {
+            "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
+            "value": null,
+            "type": "object",
+            "mode": "keyValue",
+            "structure": {}
+          },
+          {
+            "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
+            "value": null,
+            "type": "object",
+            "mode": "keyValue",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 360,
+        "y": 8540,
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
+        "endpoint_role": "get"
+      },
+      {
+        "id": "BC968B71-1D79-4068-A3B3-9CDDDD0C3A91",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "rawAPIListRequest2",
+        "displayName": "Qlik Cloud Services - Raw API List Request 2",
+        "comment": "List datafiles for the space",
+        "childId": "F440CA19-A603-41D2-8C18-E8A18C2DAE21",
+        "inputs": [
+          {
+            "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
+            "value": "data-files/connections",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
+            "value": [{ "key": "spaceId", "value": "{ $.loop2.item.id }" }],
+            "type": "object",
+            "mode": "keyValue",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "maxitemcount",
+            "value": "",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 582,
+        "y": 8729,
+        "loopBlockId": "FD7DCC57-8CB1-46D4-8329-C10AD5EC4A28",
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
+        "endpoint_role": "list"
+      },
+      {
+        "id": "3B76A004-97D2-4ED0-BB60-8EFC27AE4E50",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "iter",
+        "displayName": "Variable - iter",
+        "comment": "",
+        "childId": "3983393F-3C5A-4B27-912E-F6DCEFC504AA",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 120,
+        "y": 7020,
+        "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
+        "operations": [
+          {
+            "key": "1F195D50-B246-40BC-9500-5148843690CF",
+            "id": "set_value",
+            "name": "Set value of { variable }",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "id": "FA60E154-1089-41E5-A138-232F31136540",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "iter",
+        "displayName": "Variable - iter",
+        "comment": "",
+        "childId": "F084C9BB-89A8-4255-A8A1-938756CF93C3",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 495,
+        "y": 7906,
+        "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
+        "operations": [
+          {
+            "key": "80767750-B7AE-4FC1-B083-9DB9EE0BECDD",
+            "id": "add",
+            "name": "Add to { variable }",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "id": "F440CA19-A603-41D2-8C18-E8A18C2DAE21",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "deleteSpace",
+        "displayName": "Qlik Cloud Services - Delete Space",
+        "comment": "",
+        "childId": "F4298341-1668-4DE0-A881-30362CD1ED54",
+        "inputs": [
+          {
+            "id": "5144bf70-6d30-11eb-a7ca-53c0d1c85906",
+            "value": "{ $.loop2.item.id }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 628,
+        "y": 9859,
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "5121d8a0-6d30-11eb-8b80-03f36feb4a85",
+        "endpoint_role": "delete"
+      },
+      {
+        "id": "BB033D09-286E-4CA8-99CB-B8EB97BA3FAC",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "deleteDataFile2",
+        "displayName": "Qlik Cloud Services - Delete Data File 2",
+        "comment": "",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "265b23f0-f3b2-11ed-900e-3b62f7efc518",
+            "value": "{ $.rawAPIListRequest4.item.id }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 480,
+        "y": 9940,
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "2648d600-f3b2-11ed-a2ea-711f6f8808f6",
+        "endpoint_role": "delete"
+      },
+      {
+        "id": "B5434E6C-C5E6-4F92-8634-F3AEB5F246AD",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "rawAPIListRequest3",
+        "displayName": "Qlik Cloud Services - Raw API List Request 3",
+        "comment": "List datafiles in the aggregated space",
+        "childId": "B7BCB800-DB1A-4C94-8220-1BACDB488D3A",
+        "inputs": [
+          {
+            "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
+            "value": "data-files/connections",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
+            "value": [
+              { "key": "spaceId", "value": "{ $.createSpaceIfNotExisting2.id }" }
+            ],
+            "type": "object",
+            "mode": "keyValue",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "maxitemcount",
+            "value": "",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 628,
+        "y": 9179,
+        "loopBlockId": "33EB84B8-07DE-4261-9212-D0225CCE5D6E",
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
+        "endpoint_role": "list"
+      },
+      {
+        "id": "6C4A2E9A-DE9C-4604-9DA2-2FB276982346",
+        "type": "UpdateJobBlock",
+        "disabled": false,
+        "name": "updateRunTitle5",
+        "displayName": "Update Run Title 5",
+        "comment": "",
+        "childId": "BB56F817-9E31-47B8-8478-1E0502F49099",
+        "inputs": [
+          {
+            "id": "title",
+            "value": "Beginning auto tenant cleanup",
+            "type": "string",
+            "structure": []
+          }
+        ],
+        "settings": [
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": []
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 618,
+        "y": 7010
+      },
+      {
+        "id": "F084C9BB-89A8-4255-A8A1-938756CF93C3",
+        "type": "UpdateJobBlock",
+        "disabled": false,
+        "name": "updateRunTitle6",
+        "displayName": "Update Run Title 6",
+        "comment": "",
+        "childId": "36260749-D5F3-4A6E-AB07-CC45FEFC58DA",
+        "inputs": [
+          {
+            "id": "title",
+            "value": "Deleting tenant data {$.iter}/{count: { $.loop2 }} [{$.loop2.item.tenant}]",
+            "type": "string",
+            "structure": []
+          }
+        ],
+        "settings": [
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": []
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 513,
+        "y": 7793
+      },
+      {
+        "id": "33EB84B8-07DE-4261-9212-D0225CCE5D6E",
+        "type": "EndpointBlock",
+        "disabled": false,
+        "name": "rawAPIListRequest4",
+        "displayName": "Qlik Cloud Services - Raw API List Request 4",
+        "comment": "Find the ID of the Tenants directory",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
+            "value": "data-files",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
+            "value": [
+              { "key": "includeFolders", "value": "true" },
+              {
+                "key": "connectionId",
+                "value": "{ $.rawAPIListRequest3.item.id }"
+              },
+              { "key": "excludeFiles", "value": "true" },
+              { "key": "baseNameWildcard", "value": "Tenants" }
+            ],
+            "type": "object",
+            "mode": "keyValue",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "maxitemcount",
+            "value": "",
+            "type": "string",
+            "structure": {}
+          },
+          {
+            "id": "blendr_on_error",
+            "value": "stop",
+            "type": "select",
+            "structure": {}
+          },
+          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": -150,
+        "y": 9263,
+        "loopBlockId": "BB033D09-286E-4CA8-99CB-B8EB97BA3FAC",
+        "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+        "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
+        "endpoint_role": "list"
+      },
+      {
+        "id": "B9873663-C2FC-417C-933F-652A5D711F46",
+        "type": "IfElseBlock",
+        "disabled": false,
+        "name": "condition28",
+        "displayName": "Condition 28",
+        "comment": "Since we don't have (and can't retrieve) a hostname<>tenantId lookup, purge the whole dir if there's a tenant to delete",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "conditions",
+            "value": {
+              "mode": "all",
+              "conditions": [
+                {
+                  "input1": "{count: { $.compareLists }}{count: { $.existingTenants }}",
+                  "operator": ">",
+                  "input2": "0"
+                }
+              ]
+            },
+            "type": "custom",
+            "structure": {}
+          }
+        ],
+        "settings": [],
+        "collapsed": [
+          { "name": "both", "isCollapsed": false },
+          { "name": "yes", "isCollapsed": false },
+          { "name": "no", "isCollapsed": false }
+        ],
+        "x": 550,
+        "y": 9436,
+        "childTrueId": "B5434E6C-C5E6-4F92-8634-F3AEB5F246AD",
+        "childFalseId": "A9B40B31-C0E3-4D2E-A1B6-3C0904A63FB8"
+      },
+      {
+        "id": "B7BCB800-DB1A-4C94-8220-1BACDB488D3A",
+        "type": "ShowBlock",
+        "disabled": false,
+        "name": "output10",
+        "displayName": "Output 10",
+        "comment": "",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "input",
+            "value": "Deleted spaces, then deleted aggregated Tenants/ directory in parent space. This will be regenerated tenant-by-tenant on the next run of the monitoring apps.",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "display_mode",
+            "value": "add",
+            "type": "select",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 240,
+        "y": 10100
+      },
+      {
+        "id": "A9B40B31-C0E3-4D2E-A1B6-3C0904A63FB8",
+        "type": "ShowBlock",
+        "disabled": false,
+        "name": "output11",
+        "displayName": "Output 11",
+        "comment": "",
+        "childId": null,
+        "inputs": [
+          {
+            "id": "input",
+            "value": "No data deleted as existing tenant data found in glossary.",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "display_mode",
+            "value": "add",
+            "type": "select",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 490,
+        "y": 10100
+      },
+      {
+        "id": "58037166-78A1-4C36-8962-69A9D648EA80",
+        "type": "ForEachBlock",
+        "disabled": false,
+        "name": "loop2",
+        "displayName": "Loop 2",
+        "comment": "",
+        "childId": "B9873663-C2FC-417C-933F-652A5D711F46",
+        "inputs": [
+          {
+            "id": "input",
+            "value": "{ $.existingTenants }",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 457,
+        "y": 7747,
+        "loopBlockId": "FA60E154-1089-41E5-A138-232F31136540"
+      },
+      {
+        "id": "2F4E1F7B-745C-4194-9FC8-D276AEE6EFC0",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "existingTenants",
+        "displayName": "Variable - existingTenants",
+        "comment": "Add tenant record to existingTenants variable",
+        "childId": "58037166-78A1-4C36-8962-69A9D648EA80",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 610,
+        "y": 7440,
+        "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
+        "operations": [
+          {
+            "key": "D89BAFFF-4379-4E27-8893-BBDA6EAED95F",
+            "id": "empty",
+            "name": "Empty { variable }"
+          },
+          {
+            "key": "78AA3637-18C0-4F5E-8E78-4F602D1851FE",
+            "id": "merge",
+            "name": "Merge other list into { variable }",
+            "value": "{ $.compareLists }"
+          }
+        ]
       }
     ],
     "variables": [
@@ -5828,6 +6895,16 @@
         "guid": "A11EBA34-8F7D-4178-9720-AEA2AB57F98B",
         "name": "runMode",
         "type": "number"
+      },
+      {
+        "guid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
+        "name": "existingTenants",
+        "type": "list"
+      },
+      {
+        "guid": "2C3EC71F-A135-4DBA-902A-2B073AD26B71",
+        "name": "loopSearchTenant",
+        "type": "object"
       }
     ]
   }
