@@ -1,73 +1,91 @@
 # Multiple Tenant Installer Automation
 
-This serves as documentation for the multiple tenant installer automation included
-in this repo.
+This repository contains an automation solution to install and maintain Qlik Cloud Monitoring apps across multiple tenants in Qlik Cloud. In this architecture, the **parent tenant** handles all monitoring and aggregated log management, while the **child tenants** are minimally involved – they only host an API key.
 
-|                   |                              |
-|-------------------|------------------------------|
-| Installer version | 2                            |
-| Installer file    | multipleTenantInstaller.json |
+> **Note:** The parent tenant does not manage the child tenants. Its role is to monitor them. All configuration, updates, and aggregated reporting occur on the parent side.
 
-## The multiple tenant monitoring pattern
+---
 
-The pattern for multiple tenant monitoring has all monitoring configured on a single,
-core tenant. This is referred to as a `parent` tenant by the monitoring apps.
+## Overview
 
-This `parent` tenant will have:
+This automation implements a multiple tenant monitoring pattern by:
+- **Centralizing Monitoring:**  
+  The parent tenant hosts a shared space for aggregated logs and monitoring apps.
+- **Minimizing Child Footprint:**  
+  Child tenants only have an API key installed, which is used to feed monitoring data back to the parent tenant.
+- **Automated API Key Management:**  
+  API keys on each child tenant are automatically created and maintained (if `recreateConnections=1`), eliminating the need for interactive logins or manual configuration on each child tenant.
 
-- One space which maintains the aggregated logs for all tenants, and the associated
-  `parent` monitoring apps. This will be used for normal reporting and usage tracking
-  of the aggregated estate.
-- N spaces for `child` tenants, one per `child` tenant. These will contain a copy of
-  each monitoring app in `child` mode, plus a data connection to the `child` tenant,
-  and a copy of QVDs for that tenant. This will be used for enabling incremental loads,
-  and for any detailed investigations into usage or issues you might need to take.
+For more details on the monitoring apps, please refer to the [Qlik Cloud Monitoring Apps repository](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/README.md).
 
-The automation will create and maintain one API key for the provided regional OAuth
-client user on each `child` tenant. All other assets will remain on the `parent`
-tenant. You should never need to interactively login to the `child` tenants.
+---
 
 ## Installation
 
 To install the automation:
 
-1. Download the associated JSON file
-2. Create a new, blank automation in your Qlik Cloud tenant
-3. Right click into the workspace, select `Upload workspace`, and import the JSON
-   file you downloaded in step 1.
-4. Configure the automation variables listed in the configuration section.
-5. Run the automation. If a Glossary named the same as the variable `glossaryName`
-   in the shared space named `sharedSpaceName` doesn't yet exist, it will be created
-   and the current tenant's hostname will be added.
+1. **Download the Installer:**  
+   Download the `multipleTenantInstaller.json` file from this repository.
+2. **Create a New Automation:**  
+   In your Qlik Cloud tenant, create a new, blank automation.
+3. **Upload the Workspace:**  
+   Right-click in the workspace, select **Upload workspace**, and import the JSON file you downloaded.
+4. **Configure Variables:**  
+   Review and set the configuration variables as described in the [Configuration](#configuration) section below.
+5. **Run the Automation:**  
+   Execute the automation. If a glossary matching `glossaryName` does not exist in the shared space, it will be created and the current tenant’s hostname will be added.
+
+---
 
 ## Updates
 
-The automation will cease to run and exit with an error if the version stored in the
-automation is lesser than the version stored in the installer manifest in this
-repository. This is to protect against breaking changes being introduced in our
-manifests which break your monitoring app deployment.
+The automation checks its version against the installer manifest. If the automation’s version is lower than that specified in the manifest, it will exit with an error to prevent breaking changes. To update:
 
-To update your automation, simply follow the installation path to create a new
-automation to use as your monitoring app installer and ensure the configuration
-matches before you hit run.
+- Create a new automation using the updated JSON file.
+- Ensure that all configuration variables are correctly set before running the new instance.
+
+---
 
 ## Configuration
 
-The automation is designed to be run without user intervention, meaning you can
-automate maintenance of your monitoring stack - keeping pace with app updates as
-well as recreating data connections and API keys to simplify secret handling.
+Before running the automation, review the following configuration variables. They are split into two groups: **Overrides** and **Base Configuration**.
 
-Before you first run your automation, know you can configure the following:
+### Overrides
 
-| Variable               | Default value | Purpose                                                                                                                                                                                               |
-|------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sharedSpaceName        | Monitoring    | Parent apps will be deployed to a shared space with this name. Child apps will be deployed to a space of the format "{sharedSpaceName} - {tenantHostname}"                                            |
-| addCurrentUserToSpaces | 1             | If 1, adds the user running the installer to any spaces with required roles to deploy the apps.                                                                                                       |
-| recreateConnections    | 1             | If 1, will recreate the REST connection and API key for all child tenants, even if the apps do not need to be updated and the connection hasn't been deleted.                                         |
-| createSchedule         | 1             | If 1, will create a reload task for all monitoring apps.                                                                                                                                              |
-| doReload               | 1             | If 1, will trigger a reload of each app after updating it.                                                                                                                                            |
-| glossaryName           | TenantList    | If you wish to use a different glossary name, change it here.                                                                                                                                         |
-| setMaxApiKey           | {blank}       | If set to a value (e.g. P365D), it will force overwrite the tenant API key expiry max on every child tenant. If blank, will not make a change.                                                        |
-| replaceAllApps         | 0             | If 1, will replace all apps irrespective of whether they are out of date or not.                                                                                                                      |
-| autoTenantCleanup      | 0             | If 1, will delete any spaces matching the space naming convention for tenants not in the glossary, as well as data files in the aggregated folder for missing tenants.                                |
-| skipToTenantNumber     | 0             | If set to a value greater than 0, will skip that number of tenants when run. Useful for recovering quickly from automation run failures. If glossary terms change, the order of tenants might change. |
+These parameters can significantly impact how the automation runs. Please verify that they are configured correctly.
+
+| **Parameter (Variable Name)**                   | **Description**                                                                                                                                          | **Default Value** |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| **API key expiration override** *(setMaxApiKey)* | Set to a value to reconfigure the child tenant's max API key expiry when the automation runs. Any generated API key will match this value (e.g., "P30D"). | <empty>           |
+| **Skip to tenant number** *(skipToTenantNumber)* | Set to 0 for no action, or an integer to start updating from that tenant. Note that if you update the glossary, the tenant order might change.         | 0                 |
+| **Recreate connections** *(recreateConnections)* | Set to 0 for no action, or 1 to recreate data connections on run.                                                                                        | 1                 |
+| **Replace all apps** *(replaceAllApps)*          | Set to 0 for no action, or 1 to replace all apps irrespective of whether they need an upgrade.                                                           | 0                 |
+| **Run only on tenant** *(runOnTenant)*           | Leave empty to run against all tenants, or enter a tenant hostname to run against a single tenant.                                                      | 0                 |
+
+### Base Configuration
+
+These core settings define the core behavior of the monitoring automation.
+
+| **Parameter (Variable Name)**                                                  | **Description**                                                                                                                                                           | **Default Value**                   |
+|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| **Add current user to spaces** *(addCurrentUserToSpaces)*                     | Set to 0 for no action, or 1 to add the user running the automation to spaces with full access.                                                                           | 1                                   |
+| **Automatic tenant cleanup** *(autoTenantCleanup)*                            | Set to 0 for no action, or 1 to automatically remove any tenants not found in the glossary list. This will delete any spaces matching the template pattern as well as tenant-specific log files. | 1                                   |
+| **Create a reload schedule for apps when creating or updating** *(createSchedule)* | Set to 0 for no action, or 1 to recreate the app reload schedule.                                                                                                         | 1                                   |
+| **Glossary name** *(glossaryName)*                                             | Specify the glossary from which to retrieve the tenant list.                                                                                                             | TenantList                          |
+| **Manifest URL** *(manifestURL)*                                               | URL of the installer manifest containing version and configuration details.                                                                                              | (Provide your manifest URL)         |
+| **Parent tenant**                                                              | Specify the hostname of the parent tenant that hosts the monitoring apps.                                                                                                  | (Provide your parent tenant)        |
+| **Reload apps after creating or updating** *(doReload)*                        | Set to 0 for no action, or 1 to trigger an immediate reload of apps after they are created or updated.                                                                     | 1                                   |
+| **REST connector name** *(restConnectorName)*                                  | Set the name of the REST connector to deploy in child app spaces.                                                                                                          | monitoring_apps_REST                |
+| **Run mode** *(runMode)*                                                       | Set to 1 for interactive (prompts before touching any child tenant to allow you to review configuration) and 0 for automated (no prompts once started). All modes will create the parent space and glossary on the parent tenant.  | 1                |
+| **Shared space base name** *(sharedSpaceName)*                                 | Name of the shared space into which parent apps are deployed; child apps will be deployed to a space suffixed with the tenant hostname.                                     | Monitoring                          |
+| **Subscription type**                                                          | Define the subscription type used for the monitoring setup.                                                                                                              | (Specify your subscription type)    |
+| **Tenant count**                                                               | Specify the total number of child tenants to be monitored.                                                                                                               | (Provide the tenant count)          |
+| **Version**                                                                    | Specify the version of the automation installer.                                                                                                                         | (Provide the version)               |
+
+---
+
+## Contributing
+
+Contributions are welcome. If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request.
+
+When contributing an update to the automation, format (pretty print) it using VS code (or similar) to improve the quality of the diff for review.

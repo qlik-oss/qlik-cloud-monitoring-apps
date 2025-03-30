@@ -7,7 +7,7 @@
         "name": "Start",
         "displayName": "Start",
         "comment": "",
-        "childId": "6D9EB158-C7A0-445B-9FC6-9A36EAFCDE60",
+        "childId": "B4F1F91D-FEB9-4A2E-B804-9D3C9F53550E",
         "inputs": [
           {
             "id": "run_mode",
@@ -652,7 +652,7 @@
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
         "x": 0,
-        "y": 240,
+        "y": 120,
         "variableGuid": "201224E7-61F1-4C18-8918-D9C8AF71886C",
         "operations": [
           {
@@ -2604,7 +2604,7 @@
         "name": "iterApps",
         "displayName": "Variable - iterApps",
         "comment": "App iterator",
-        "childId": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
+        "childId": "6EB2169B-45A2-4F4B-8F5A-19033542E767",
         "inputs": [],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -3057,13 +3057,13 @@
               "conditions": [
                 {
                   "input1": "name",
-                  "operator": "=",
-                  "input2": "{$.glossaryName}"
+                  "input2": "{$.glossaryName}",
+                  "operator": "="
                 },
                 {
                   "input1": "spaceId",
-                  "operator": "=",
-                  "input2": "{ $.createSpaceIfNotExisting2.id }"
+                  "input2": "{ $.createSpaceIfNotExisting2.id }",
+                  "operator": "="
                 }
               ]
             },
@@ -3553,7 +3553,7 @@
         "inputs": [
           {
             "id": "input",
-            "value": "## Multiple tenant monitoring app manager\n\nThis automation maintains the Qlik Cloud Monitoring apps on multiple tenants. For more information please refer to the [documentation](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.md).\n\n### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | { $.skipToTenantNumber } |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | { $.runOnTenant } |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Add current user to spaces | { $.addCurrentUserToSpaces } |\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | { $.createSchedule } |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | { $.doReload } |\n| REST connector name | {$.restConnectorName} |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
+            "value": "## Multiple tenant monitoring app manager\n\nThis automation maintains the Qlik Cloud Monitoring apps on multiple tenants. For more information please refer to the [documentation](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.md).\n\n### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | { if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant } |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Add current user to spaces | {$.addCurrentUserToSpaces} |\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | { $.runMode } |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
             "type": "string",
             "structure": []
           }
@@ -3722,8 +3722,8 @@
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
-        "x": 0,
-        "y": 4300
+        "x": 120,
+        "y": 6500
       },
       {
         "id": "12C5F24F-DB03-46F5-9972-87C1ADA82A9F",
@@ -4873,7 +4873,7 @@
         "disabled": false,
         "name": "qcmamtVersion",
         "displayName": "Variable - qcmamtVersion",
-        "comment": "Version of this installer",
+        "comment": "Version of this installer. It is recommended you do not change this value.",
         "childId": "8F905835-3240-4683-9936-ECF53AEB190B",
         "inputs": [],
         "settings": [],
@@ -5420,13 +5420,13 @@
               "conditions": [
                 {
                   "input1": "{ $.iter }",
-                  "operator": ">=",
-                  "input2": "{ $.skipToTenantNumber }"
+                  "input2": "{ $.skipToTenantNumber }",
+                  "operator": ">="
                 }
               ]
             },
             "type": "custom",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [],
@@ -5452,22 +5452,22 @@
           {
             "id": "conditions",
             "value": {
-              "mode": "all",
+              "mode": "some",
               "conditions": [
                 {
                   "input1": "{ $.runOnTenant }",
-                  "operator": "empty",
-                  "input2": null
+                  "input2": null,
+                  "operator": "empty"
                 },
                 {
                   "input1": "{ $.runOnTenant }",
-                  "operator": "=",
-                  "input2": "{ $.loopTenant }"
+                  "input2": "{ $.loopTenant }",
+                  "operator": "="
                 }
               ]
             },
             "type": "custom",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [],
@@ -5497,11 +5497,150 @@
         "variableGuid": "FB42F549-35C6-4FF0-8EC5-4577BC09E92D",
         "operations": [
           {
-            "key": "F86D0A85-573C-4709-A025-1F0A25616876",
             "id": "set_value",
+            "key": "F86D0A85-573C-4709-A025-1F0A25616876",
             "name": "Set value of { variable }"
           }
         ]
+      },
+      {
+        "id": "B4F1F91D-FEB9-4A2E-B804-9D3C9F53550E",
+        "type": "VariableBlock",
+        "disabled": false,
+        "name": "runMode",
+        "displayName": "Variable - runMode",
+        "comment": "Set to 1 for interactive (prompts before touching any tenant to allow you to review configuration) and 0 for automated (no prompts once started). All modes will create the parent space and glossary.",
+        "childId": "6D9EB158-C7A0-445B-9FC6-9A36EAFCDE60",
+        "inputs": [],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": 250,
+        "y": 120,
+        "variableGuid": "A11EBA34-8F7D-4178-9720-AEA2AB57F98B",
+        "operations": [
+          {
+            "key": "3B7CE8C7-628D-4220-8F8B-CFB6EFD312F5",
+            "id": "set_value",
+            "name": "Set value of { variable }",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "id": "6EB2169B-45A2-4F4B-8F5A-19033542E767",
+        "type": "IfElseBlock",
+        "disabled": false,
+        "name": "condition25",
+        "displayName": "Condition 25",
+        "comment": "If runMode = 1 give user a prompt to continue",
+        "childId": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
+        "inputs": [
+          {
+            "id": "conditions",
+            "value": {
+              "mode": "all",
+              "conditions": [
+                { "input1": "{ $.runMode }", "operator": "=", "input2": "1" }
+              ]
+            },
+            "type": "custom",
+            "structure": {}
+          }
+        ],
+        "settings": [],
+        "collapsed": [
+          { "name": "both", "isCollapsed": false },
+          { "name": "yes", "isCollapsed": false },
+          { "name": "no", "isCollapsed": true }
+        ],
+        "x": -583,
+        "y": 6321,
+        "childTrueId": "08833C88-D837-413C-B5FC-4DE90D55B144",
+        "childFalseId": null
+      },
+      {
+        "id": "123E2081-7C92-4142-802E-1FFBBE22C68A",
+        "type": "FormBlock",
+        "disabled": false,
+        "name": "inputs",
+        "displayName": "Inputs",
+        "comment": "",
+        "childId": null,
+        "inputs": [],
+        "settings": [
+          {
+            "id": "persist_data",
+            "value": "no",
+            "type": "select",
+            "structure": {}
+          },
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": -532,
+        "y": 6551,
+        "form": [
+          {
+            "id": "inputs-input-0",
+            "label": "Begin deployment",
+            "helpText": null,
+            "type": "button",
+            "values": null,
+            "isRequired": true,
+            "options": {},
+            "order": 0
+          }
+        ],
+        "persistData": "no"
+      },
+      {
+        "id": "08833C88-D837-413C-B5FC-4DE90D55B144",
+        "type": "SleepBlock",
+        "disabled": false,
+        "name": "sleep",
+        "displayName": "Sleep",
+        "comment": "",
+        "childId": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
+        "inputs": [
+          { "id": "time", "value": "3", "type": "string", "structure": {} }
+        ],
+        "settings": [],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": -535,
+        "y": 6309
+      },
+      {
+        "id": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
+        "type": "UpdateJobBlock",
+        "disabled": false,
+        "name": "updateRunTitle4",
+        "displayName": "Update Run Title 4",
+        "comment": "",
+        "childId": "123E2081-7C92-4142-802E-1FFBBE22C68A",
+        "inputs": [
+          {
+            "id": "title",
+            "value": "Paused: Waiting on user input (runmode=1).",
+            "type": "string",
+            "structure": {}
+          }
+        ],
+        "settings": [
+          {
+            "id": "automations_censor_data",
+            "value": false,
+            "type": "checkbox",
+            "structure": {}
+          }
+        ],
+        "collapsed": [{ "name": "loop", "isCollapsed": false }],
+        "x": -430,
+        "y": 6265
       }
     ],
     "variables": [
@@ -5684,6 +5823,11 @@
         "guid": "FB42F549-35C6-4FF0-8EC5-4577BC09E92D",
         "name": "runOnTenant",
         "type": "string"
+      },
+      {
+        "guid": "A11EBA34-8F7D-4178-9720-AEA2AB57F98B",
+        "name": "runMode",
+        "type": "number"
       }
     ]
   }
