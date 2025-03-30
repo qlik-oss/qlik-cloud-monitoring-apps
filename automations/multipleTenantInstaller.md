@@ -16,6 +16,8 @@ This automation implements a multiple tenant monitoring pattern by:
 - **Automated API Key Management:**  
   API keys on each child tenant are automatically created and maintained (if `recreateConnections=1`), eliminating the need for interactive logins or manual configuration on each child tenant.
 
+This automation does not install any monitoring for the parent tenant. To do this activity, please use the standard Qlik Cloud monitoring app installer.
+
 For more details on the monitoring apps, please refer to the [Qlik Cloud Monitoring Apps repository](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/README.md).
 
 ---
