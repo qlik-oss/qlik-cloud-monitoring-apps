@@ -4987,7 +4987,7 @@
             "id": "set_value",
             "key": "FD6DC736-182B-413C-A045-F97D399CB461",
             "name": "Set value of { variable }",
-            "value": "P999D"
+            "value": "P30D"
           }
         ]
       },
@@ -5520,8 +5520,8 @@
         "variableGuid": "A11EBA34-8F7D-4178-9720-AEA2AB57F98B",
         "operations": [
           {
-            "key": "3B7CE8C7-628D-4220-8F8B-CFB6EFD312F5",
             "id": "set_value",
+            "key": "3B7CE8C7-628D-4220-8F8B-CFB6EFD312F5",
             "name": "Set value of { variable }",
             "value": "0"
           }
@@ -5541,11 +5541,11 @@
             "value": {
               "mode": "all",
               "conditions": [
-                { "input1": "{ $.runMode }", "operator": "=", "input2": "1" }
+                { "input1": "{ $.runMode }", "input2": "1", "operator": "=" }
               ]
             },
             "type": "custom",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [],
@@ -5573,13 +5573,13 @@
             "id": "persist_data",
             "value": "no",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5588,13 +5588,13 @@
         "form": [
           {
             "id": "inputs-input-0",
-            "label": "Begin deployment",
-            "helpText": null,
             "type": "button",
+            "label": "Begin deployment",
+            "order": 0,
             "values": null,
-            "isRequired": true,
-            "options": {},
-            "order": 0
+            "options": [],
+            "helpText": null,
+            "isRequired": true
           }
         ],
         "persistData": "no"
@@ -5608,7 +5608,7 @@
         "comment": "",
         "childId": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
         "inputs": [
-          { "id": "time", "value": "1", "type": "string", "structure": {} }
+          { "id": "time", "value": "1", "type": "string", "structure": [] }
         ],
         "settings": [],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5628,7 +5628,7 @@
             "id": "title",
             "value": "Paused: Waiting on user input (runmode=1).",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -5636,7 +5636,7 @@
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5659,8 +5659,8 @@
         "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
         "operations": [
           {
-            "key": "F37BAC45-B691-422D-B071-E9F63C917EAE",
             "id": "empty",
+            "key": "F37BAC45-B691-422D-B071-E9F63C917EAE",
             "name": "Empty { variable }"
           }
         ]
@@ -5681,8 +5681,8 @@
         "variableGuid": "2C3EC71F-A135-4DBA-902A-2B073AD26B71",
         "operations": [
           {
-            "key": "7D8F7F14-E951-463C-A1F4-B332D8F2C620",
             "id": "set_key_value",
+            "key": "7D8F7F14-E951-463C-A1F4-B332D8F2C620",
             "name": "Set key/values of { variable }",
             "value": [
               { "key": "id", "value": "{ $.searchSpaces.item.id }" },
@@ -5711,8 +5711,8 @@
         "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
         "operations": [
           {
-            "key": "4369A5CE-4F3A-4FA6-9544-6D47718337C4",
             "id": "add_item",
+            "key": "4369A5CE-4F3A-4FA6-9544-6D47718337C4",
             "name": "Add item to { variable }",
             "value": "{ $.loopSearchTenant }"
           }
@@ -5734,18 +5734,18 @@
               "conditions": [
                 {
                   "input1": "{ regexreplace: {$.searchSpaces.item.name}, '\\s*\\([^()]*\\)\\s*$', '@' }",
-                  "operator": "=",
-                  "input2": "{$.sharedSpaceName}@"
+                  "input2": "{$.sharedSpaceName}@",
+                  "operator": "="
                 },
                 {
                   "input1": "{ regexparse: { $.searchSpaces.item.name }, '\\(\\s*((?:[A-Za-z0-9-]+\\.){2,}[A-Za-z0-9-]+)\\s*\\)\\s*$' }",
-                  "operator": "notEmpty",
-                  "input2": null
+                  "input2": null,
+                  "operator": "notEmpty"
                 }
               ]
             },
             "type": "custom",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [],
@@ -5772,7 +5772,7 @@
             "id": "input",
             "value": "| { $.iter } | { $.loop2.item.tenant } |",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -5780,7 +5780,7 @@
             "id": "display_mode",
             "value": "add",
             "type": "select",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5800,13 +5800,13 @@
             "id": "list1",
             "value": "{ $.existingTenants }",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "list2",
             "value": "{ $.tenantList }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -5814,31 +5814,31 @@
             "id": "list1_unique_key",
             "value": "tenant",
             "type": "field",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "list2_unique_key",
             "value": "hostname",
             "type": "field",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "compare_mode",
             "value": "diff",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "case_insensitive",
             "value": true,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": true }],
@@ -5890,13 +5890,13 @@
               "conditions": [
                 {
                   "input1": "{ $.autoTenantCleanup }",
-                  "operator": "=",
-                  "input2": "1"
+                  "input2": "1",
+                  "operator": "="
                 }
               ]
             },
             "type": "custom",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [],
@@ -5923,13 +5923,13 @@
             "id": "8cd8db50-107b-11ec-8082-edc45dd151ef",
             "value": null,
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "8ce4fad0-107b-11ec-a6ac-2bd407ad134b",
             "value": "{ $.loop2.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -5937,20 +5937,20 @@
             "id": "maxitemcount",
             "value": "",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5974,7 +5974,7 @@
             "id": "fcd14a20-67b2-11eb-9f5e-9113990ec3b6",
             "value": "{ $.listApps.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -5982,13 +5982,13 @@
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6011,7 +6011,7 @@
             "id": "265b23f0-f3b2-11ed-900e-3b62f7efc518",
             "value": "{ $.listDataFiles.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6019,13 +6019,13 @@
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6048,31 +6048,31 @@
             "id": "44da6400-f548-11ed-b69c-cd1f00885bf2",
             "value": null,
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "5872f750-f548-11ed-8f4f-e153b2253f62",
             "value": null,
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "bc104e50-f548-11ed-86e3-85b622a1703f",
             "value": "{ $.rawAPIListRequest2.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "eb7555a0-f548-11ed-b6a4-733648ff08a4",
             "value": null,
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "00770740-f549-11ed-b0fa-afe239113bad",
             "value": null,
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6080,20 +6080,20 @@
             "id": "maxitemcount",
             "value": "",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6117,7 +6117,7 @@
             "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
             "value": "data-connections",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
@@ -6127,7 +6127,7 @@
             ],
             "type": "object",
             "mode": "keyValue",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6135,20 +6135,20 @@
             "id": "maxitemcount",
             "value": "",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6172,28 +6172,28 @@
             "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
             "value": "data-connections/{ $.rawAPIListRequest.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
             "value": "3ba2a970-2072-11ec-be02-2dd5c73abb12",
             "type": "select",
             "displayValue": "DELETE",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
             "value": null,
             "type": "object",
             "mode": "keyValue",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
             "value": null,
             "type": "object",
             "mode": "keyValue",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6201,14 +6201,14 @@
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6231,14 +6231,14 @@
             "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
             "value": "data-files/connections",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
             "value": [{ "key": "spaceId", "value": "{ $.loop2.item.id }" }],
             "type": "object",
             "mode": "keyValue",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6246,20 +6246,20 @@
             "id": "maxitemcount",
             "value": "",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6286,8 +6286,8 @@
         "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
         "operations": [
           {
-            "key": "1F195D50-B246-40BC-9500-5148843690CF",
             "id": "set_value",
+            "key": "1F195D50-B246-40BC-9500-5148843690CF",
             "name": "Set value of { variable }",
             "value": "0"
           }
@@ -6309,8 +6309,8 @@
         "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
         "operations": [
           {
-            "key": "80767750-B7AE-4FC1-B083-9DB9EE0BECDD",
             "id": "add",
+            "key": "80767750-B7AE-4FC1-B083-9DB9EE0BECDD",
             "name": "Add to { variable }",
             "value": "1"
           }
@@ -6329,7 +6329,7 @@
             "id": "5144bf70-6d30-11eb-a7ca-53c0d1c85906",
             "value": "{ $.loop2.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6337,13 +6337,13 @@
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6366,7 +6366,7 @@
             "id": "265b23f0-f3b2-11ed-900e-3b62f7efc518",
             "value": "{ $.rawAPIListRequest4.item.id }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6374,13 +6374,13 @@
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6403,7 +6403,7 @@
             "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
             "value": "data-files/connections",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
@@ -6412,7 +6412,7 @@
             ],
             "type": "object",
             "mode": "keyValue",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6420,20 +6420,20 @@
             "id": "maxitemcount",
             "value": "",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6513,7 +6513,7 @@
             "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
             "value": "data-files",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
@@ -6528,7 +6528,7 @@
             ],
             "type": "object",
             "mode": "keyValue",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6536,20 +6536,20 @@
             "id": "maxitemcount",
             "value": "",
             "type": "string",
-            "structure": {}
+            "structure": []
           },
           {
             "id": "blendr_on_error",
             "value": "stop",
             "type": "select",
-            "structure": {}
+            "structure": []
           },
-          { "id": "cache", "value": "0", "type": "select", "structure": {} },
+          { "id": "cache", "value": "0", "type": "select", "structure": [] },
           {
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6576,13 +6576,13 @@
               "conditions": [
                 {
                   "input1": "{count: { $.compareLists }}{count: { $.existingTenants }}",
-                  "operator": ">",
-                  "input2": "0"
+                  "input2": "0",
+                  "operator": ">"
                 }
               ]
             },
             "type": "custom",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [],
@@ -6609,7 +6609,7 @@
             "id": "input",
             "value": "Deleted spaces, then deleted aggregated Tenants/ directory in parent space. This will be regenerated tenant-by-tenant on the next run of the monitoring apps.",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6617,7 +6617,7 @@
             "id": "display_mode",
             "value": "add",
             "type": "select",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6637,7 +6637,7 @@
             "id": "input",
             "value": "No data deleted as existing tenant data found in glossary.",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6645,7 +6645,7 @@
             "id": "display_mode",
             "value": "add",
             "type": "select",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6665,7 +6665,7 @@
             "id": "input",
             "value": "{ $.existingTenants }",
             "type": "string",
-            "structure": {}
+            "structure": []
           }
         ],
         "settings": [
@@ -6673,7 +6673,7 @@
             "id": "automations_censor_data",
             "value": false,
             "type": "checkbox",
-            "structure": {}
+            "structure": []
           }
         ],
         "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -6697,13 +6697,13 @@
         "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
         "operations": [
           {
-            "key": "D89BAFFF-4379-4E27-8893-BBDA6EAED95F",
             "id": "empty",
+            "key": "D89BAFFF-4379-4E27-8893-BBDA6EAED95F",
             "name": "Empty { variable }"
           },
           {
-            "key": "78AA3637-18C0-4F5E-8E78-4F602D1851FE",
             "id": "merge",
+            "key": "78AA3637-18C0-4F5E-8E78-4F602D1851FE",
             "name": "Merge other list into { variable }",
             "value": "{ $.compareLists }"
           }

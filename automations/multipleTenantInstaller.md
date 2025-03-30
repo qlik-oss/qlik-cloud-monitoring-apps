@@ -58,7 +58,7 @@ These parameters can significantly impact how the automation runs. Please verify
 
 | **Parameter (Variable Name)**                   | **Description**                                                                                                                                          | **Default Value** |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **API key expiration override** *(setMaxApiKey)* | Set to a value to reconfigure the child tenant's max API key expiry when the automation runs. Any generated API key will match this value (e.g., "P30D"). | <empty>           |
+| **API key expiration override** *(setMaxApiKey)* | Set to a value to reconfigure the child tenant's max API key expiry when the automation runs. Any generated API key will match this value (e.g., "P30D" for 30 days). Leave empty to make no changes. | P30D           |
 | **Skip to tenant number** *(skipToTenantNumber)* | Set to 0 for no action, or an integer to start updating from that tenant. Note that if you update the glossary, the tenant order might change.         | 0                 |
 | **Recreate connections** *(recreateConnections)* | Set to 0 for no action, or 1 to recreate data connections on run.                                                                                        | 1                 |
 | **Replace all apps** *(replaceAllApps)*          | Set to 0 for no action, or 1 to replace all apps irrespective of whether they need an upgrade.                                                           | 0                 |
@@ -106,7 +106,7 @@ In normal operation:
 
 - Set `runMode` to 0 to skip the prompt.
 - Schedule the automation to run every `5` days.
-- Set `setMaxApiKey` to `P7D` to provide an expiry just slightly longer than the schedule.
+- Set `setMaxApiKey` to `P30D` to provide an expiry longer than the schedule.
 - Ensure that `recreateConnections` remains set to `1` so that it recreates the API key each time the automation runs.
 
 ## Tenant list
