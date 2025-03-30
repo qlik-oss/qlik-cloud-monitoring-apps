@@ -1,4 +1,6 @@
 name: Check multipleTenantInstaller.json defaults
+permissions:
+  contents: read
 
 on:
   pull_request:
