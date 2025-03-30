@@ -1,0 +1,39 @@
+name: Check multipleTenantInstaller.json defaults
+
+on:
+  pull_request:
+    paths:
+      - "automations/multipleTenantInstaller.json"
+
+  workflow_dispatch:
+
+jobs:
+  check-defaults:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+
+      - name: Run defaults check
+        id: check_defaults
+        run: |
+          node .github/scripts/check-automation-defaults.js | tee report.txt
+          EXIT_CODE=${PIPESTATUS[0]}
+          exit $EXIT_CODE
+        continue-on-error: true
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: defaults-check-report
+          path: report.txt
+
+      - name: Fail if defaults check failed
+        if: steps.check_defaults.outcome == 'failure'
+        run: exit 1
