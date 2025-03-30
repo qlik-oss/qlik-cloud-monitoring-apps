@@ -96,6 +96,12 @@ It will not delete:
 - The API key or regional OAuth user from the child tenant (it is assumed this has already been cleaned up via a tenant deactivation) or other process.
 - The data for that tenant stored in the aggregated QVDs. This data will be removed the next time the aggregation (parent) apps are reloaded.
 
+#### Run mode
+
+When `runMode` is set to 1, the automation will prompt a user to interactively click a button to proceed with the deployment.
+
+When set to 0, no user intervention is required. This mode is designed for scheduled runs of the automation, which will automate the refresh of data connections, update of apps, and clean up of removed tenants. This is the intended function of the automation.
+
 ---
 
 ## Contributing
