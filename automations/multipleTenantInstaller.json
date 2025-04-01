@@ -591,8 +591,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 655.9344386397418,
-      "y": 7348.678470691098
+      "x": 655,
+      "y": 7348
     },
     {
       "id": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
@@ -605,8 +605,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 655.9344386397418,
-      "y": 7228.678470691098,
+      "x": 655,
+      "y": 7228,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -968,8 +968,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 223.62066593534504,
-      "y": 761.3698231980388,
+      "x": 223,
+      "y": 761,
       "variableGuid": "8020627D-CEE4-4E7E-A665-387EC0A7ED59",
       "operations": [
         {
@@ -1588,29 +1588,6 @@
       "endpoint_role": "get"
     },
     {
-      "id": "886B55AE-619C-4643-911C-529EC40D8A9B",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "loadScript",
-      "displayName": "Variable - loadScript",
-      "comment": "",
-      "childId": "73C6AA57-C763-4088-825E-46FF6337B76A",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 13660,
-      "variableGuid": "5E7CBF8D-37A3-46B1-94B2-610F596A58FF",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "A70B9F8A-F9F1-4031-87B6-EFE0867F2FF3",
-          "name": "Set value of { variable }",
-          "value": "{replace: {$.GetAnalyticsAppLoadScript3.script}, $.sourceString, $.targetString}"
-        }
-      ]
-    },
-    {
       "id": "73C6AA57-C763-4088-825E-46FF6337B76A",
       "type": "EndpointBlock",
       "disabled": false,
@@ -1633,7 +1610,7 @@
         },
         {
           "id": "fc378110-9804-11ed-a489-fbcf3a0b3371",
-          "value": "{$.loadScript}",
+          "value": "{ $.customCode }",
           "type": "string",
           "structure": []
         },
@@ -1665,8 +1642,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 821,
-      "y": 1880,
+      "x": 1200,
+      "y": 21400,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ce3b7a60-9804-11ed-bbe1-49da94237f4e",
       "endpoint_role": "create"
@@ -2699,9 +2676,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{ $.GetAnalyticsAppLoadScript3.script }",
+                "input1": "{ stripos: { $.GetAnalyticsAppLoadScript3 }, $.sourceString }",
                 "input2": "{$.sourceString}",
-                "operator": "doesntContain"
+                "operator": "isNotNumber"
               }
             ]
           },
@@ -2715,10 +2692,10 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -358,
-      "y": 13309,
+      "x": 1080,
+      "y": 20920,
       "childTrueId": "29BFC479-C72A-4954-901E-D84545FA8BB5",
-      "childFalseId": "886B55AE-619C-4643-911C-529EC40D8A9B"
+      "childFalseId": "B9BB634B-B664-487B-96D5-E19011C4E88E"
     },
     {
       "id": "53563ACC-9153-4E19-97A4-FA2C670C8BA4",
@@ -3348,8 +3325,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 223.62066593534504,
-      "y": 881.3698231980388,
+      "x": 223,
+      "y": 881,
       "variableGuid": "C65E4AE0-B0C9-40BD-AAE6-438324B545A4",
       "operations": [
         {
@@ -3455,8 +3432,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1021.1620115635347,
-      "y": 8712.047416758081,
+      "x": 1021,
+      "y": 8712,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "f96bc780-d552-11ee-944d-a3153a5c7ca0"
     },
@@ -4886,7 +4863,7 @@
           "id": "set_value",
           "key": "B11B770E-A35F-450A-A3CE-3F9C71AAA06C",
           "name": "Set value of { variable }",
-          "value": "2"
+          "value": "3"
         }
       ]
     },
@@ -5098,8 +5075,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 578.311141311229,
-      "y": 5992.167463605931,
+      "x": 578,
+      "y": 5992,
       "loopBlockId": "9ED7D007-E198-4907-91BE-A14744109D0D",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
@@ -5141,8 +5118,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 996.5637383106468,
-      "y": 8584.109469594116,
+      "x": 996,
+      "y": 8584,
       "childTrueId": "C7AD8B3C-71F0-4134-9FC8-0D75A3D5CB2D",
       "childFalseId": null
     },
@@ -5339,8 +5316,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 506.50080834355646,
-      "y": 2380.441988881748,
+      "x": 506,
+      "y": 2380,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -5500,7 +5477,8 @@
         {
           "id": "set_value",
           "key": "F86D0A85-573C-4709-A025-1F0A25616876",
-          "name": "Set value of { variable }"
+          "name": "Set value of { variable }",
+          "value": null
         }
       ]
     },
@@ -5661,7 +5639,8 @@
         {
           "id": "empty",
           "key": "F37BAC45-B691-422D-B071-E9F63C917EAE",
-          "name": "Empty { variable }"
+          "name": "Empty { variable }",
+          "value": null
         }
       ]
     },
@@ -6699,7 +6678,8 @@
         {
           "id": "empty",
           "key": "D89BAFFF-4379-4E27-8893-BBDA6EAED95F",
-          "name": "Empty { variable }"
+          "name": "Empty { variable }",
+          "value": null
         },
         {
           "id": "merge",
@@ -6748,11 +6728,67 @@
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
-          "key": "07777318-72CB-4B99-ABA4-655EBF08FC2D",
           "id": "empty",
-          "name": "Empty { variable }"
+          "key": "07777318-72CB-4B99-ABA4-655EBF08FC2D",
+          "name": "Empty { variable }",
+          "value": null
         }
       ]
+    },
+    {
+      "id": "B9BB634B-B664-487B-96D5-E19011C4E88E",
+      "type": "CustomCodeBlock3",
+      "disabled": false,
+      "name": "customCode",
+      "displayName": "Custom Code",
+      "comment": "",
+      "childId": "73C6AA57-C763-4088-825E-46FF6337B76A",
+      "inputs": [
+        {
+          "id": "language",
+          "value": "nodejs",
+          "type": "select",
+          "displayValue": "Node.js 20.0",
+          "structure": []
+        },
+        {
+          "id": "inputs",
+          "value": [
+            { "key": "sourceString", "value": "{ $.sourceString }" },
+            { "key": "targetString", "value": "{ $.targetString }" },
+            {
+              "key": "script",
+              "value": "{ $.GetAnalyticsAppLoadScript3.script }"
+            }
+          ],
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        },
+        {
+          "id": "code",
+          "value": "// Inputs\nconst sourceString = inputs['sourceString'];\nconst targetString = inputs['targetString'];\nconst script = inputs['script'];\n\n// Escapes special characters in the provided string so it can be used safely in a regex.\nfunction escapeRegExp(str) {\n  return str.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');\n}\n\n// Replaces all occurrences (global, case-insensitive) of searchString in text with replacement.\nfunction replaceCaseInsensitive(text, searchString, replacement) {\n  // Escape the search string to avoid special regex characters\n  const escapedSearch = escapeRegExp(searchString);\n  // Create a regex with the 'g' (global) and 'i' (case insensitive) flags\n  const regex = new RegExp(escapedSearch, 'gi');\n  return text.replace(regex, replacement);\n}\n\nconst result = replaceCaseInsensitive(script, sourceString, targetString);\n\nconsole.log(result)",
+          "type": "code",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1607,
+      "y": 21189
     }
   ],
   "variables": [
@@ -6779,11 +6815,6 @@
     {
       "guid": "78C37A26-6056-40F7-A857-E84298458883",
       "name": "targetString",
-      "type": "string"
-    },
-    {
-      "guid": "5E7CBF8D-37A3-46B1-94B2-610F596A58FF",
-      "name": "loadScript",
       "type": "string"
     },
     {
