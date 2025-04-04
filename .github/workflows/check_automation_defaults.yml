@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-defaults:
+  check_defaults:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
