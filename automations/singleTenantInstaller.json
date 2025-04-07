@@ -715,51 +715,13 @@
       "childFalseId": null
     },
     {
-      "id": "3F7C4DDC-7C75-43F3-B604-B9B7A2807145",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "getUser",
-      "displayName": "Qlik Cloud Services - Get User",
-      "comment": "Look up whether they have the TenantAdmin role",
-      "childId": "0E2A21F9-B5BF-4D13-9DB0-84B36C6FDCEC",
-      "inputs": [
-        {
-          "id": "8eedf1d0-c7a5-11ea-9022-0fb2ce625902",
-          "value": "{$.getCurrentUserId}",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -430,
-      "y": 262,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "7e670290-c7a5-11ea-9a9c-6dd2b282df86",
-      "endpoint_role": "get"
-    },
-    {
       "id": "A25F118A-B920-41CD-9C0E-01C5ADCF5185",
       "type": "EndpointBlock",
       "disabled": false,
       "name": "getCurrentUserId",
       "displayName": "Qlik Cloud Services - Get Current User Id",
       "comment": "Get the current user ID to look up whether they have the TenantAdmin role",
-      "childId": "3F7C4DDC-7C75-43F3-B604-B9B7A2807145",
+      "childId": "643E820F-DAD6-4875-A355-775F163B7A03",
       "inputs": [],
       "settings": [
         {
@@ -784,167 +746,6 @@
       "endpoint_role": "get"
     },
     {
-      "id": "CD14A8A9-93B5-4199-94E7-6692B66E8E63",
-      "type": "ForEachBlock",
-      "disabled": false,
-      "name": "loop",
-      "displayName": "Loop",
-      "comment": "Is TenantAdmin inherited from a group?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "input",
-          "value": "{$.getUser.assignedGroups}",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 1000,
-      "loopBlockId": "DCFC3D1C-7AF3-4350-A7E2-18E9C6412A25"
-    },
-    {
-      "id": "0E2A21F9-B5BF-4D13-9DB0-84B36C6FDCEC",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition5",
-      "displayName": "Condition 5",
-      "comment": "Is TenantAdmin assigned directly?",
-      "childId": "5AB62AA1-442D-402A-8F46-2737BFC59805",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.getUser.assignedRoles[*].name}",
-                "input2": "TenantAdmin",
-                "operator": "inList"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
-      ],
-      "x": 0,
-      "y": 600,
-      "childTrueId": "48D7F923-F12A-4BF3-9119-C2F4E10B7EC2",
-      "childFalseId": "CD14A8A9-93B5-4199-94E7-6692B66E8E63"
-    },
-    {
-      "id": "48D7F923-F12A-4BF3-9119-C2F4E10B7EC2",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "userIsTenantAdmin",
-      "displayName": "Variable - userIsTenantAdmin",
-      "comment": "Yes",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 120,
-      "y": 800,
-      "variableGuid": "9F10ADCB-1E81-46EF-B41E-9EDF3C27CDCD",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "CDCB85C8-FB0C-4605-BA99-8FB0FE00044E",
-          "name": "Set value of { variable }",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "id": "DCFC3D1C-7AF3-4350-A7E2-18E9C6412A25",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition6",
-      "displayName": "Condition 6",
-      "comment": "Does the assigned group contain TenantAdmin?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.loop.item.assignedRoles[*].name}",
-                "input2": "TenantAdmin",
-                "operator": "inList"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": -419,
-      "y": 919,
-      "childTrueId": "35262F02-E9D9-46C4-8121-F9A5B3D2E57E",
-      "childFalseId": null
-    },
-    {
-      "id": "35262F02-E9D9-46C4-8121-F9A5B3D2E57E",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "userIsTenantAdmin",
-      "displayName": "Variable - userIsTenantAdmin",
-      "comment": "Yes",
-      "childId": "5741A2BE-E106-4F21-8554-EA655C222C8C",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 370,
-      "y": 800,
-      "variableGuid": "9F10ADCB-1E81-46EF-B41E-9EDF3C27CDCD",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "CDCB85C8-FB0C-4605-BA99-8FB0FE00044E",
-          "name": "Set value of { variable }",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "id": "5741A2BE-E106-4F21-8554-EA655C222C8C",
-      "type": "ForEachBreakBlock",
-      "disabled": false,
-      "name": "exitLoop",
-      "displayName": "Exit Loop",
-      "comment": "",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -420,
-      "y": 1349
-    },
-    {
       "id": "5AB62AA1-442D-402A-8F46-2737BFC59805",
       "type": "IfElseBlock",
       "disabled": false,
@@ -959,9 +760,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{$.userIsTenantAdmin}",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ count: { $.searchUsers } }",
+                "operator": "=",
+                "input2": "1"
               }
             ]
           },
@@ -975,8 +776,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 656,
-      "y": 1086,
+      "x": 539,
+      "y": 1359,
       "childTrueId": null,
       "childFalseId": "9AB65A84-19BC-4667-97C2-3E4DF4A85A97"
     },
@@ -1105,7 +906,7 @@
       "name": "condition8",
       "displayName": "Condition 8",
       "comment": "Is Developer assigned directly?",
-      "childId": "5A8A773C-3619-4647-B09C-D26C4BE82257",
+      "childId": "75B362E0-171C-48A5-914C-70AEA5868735",
       "inputs": [
         {
           "id": "conditions",
@@ -1113,7 +914,7 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{$.getUser.assignedRoles[*].name}",
+                "input1": "{$.searchUsers[0].assignedRoles[*].name}",
                 "input2": "Developer",
                 "operator": "inList"
               }
@@ -1165,8 +966,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 0,
-      "y": 1660,
+      "x": 52,
+      "y": 5605,
       "childTrueId": null,
       "childFalseId": "233A02F1-7169-4B54-B6EB-46B83A516F5C"
     },
@@ -1218,7 +1019,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{$.getUser.assignedGroups}",
+          "value": "{$.searchUsers[0].assignedGroups}",
           "type": "string",
           "structure": []
         }
@@ -1242,7 +1043,7 @@
       "disabled": false,
       "name": "condition10",
       "displayName": "Condition 10",
-      "comment": "Does the assigned group contain TenantAdmin?",
+      "comment": "Does the assigned group contain Developer?",
       "childId": null,
       "inputs": [
         {
@@ -1338,13 +1139,13 @@
       "form": [
         {
           "id": "inputs2-input-0",
-          "type": "select",
           "label": "Should this installer add the Developer role to the executing user now?",
-          "order": 0,
+          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the Developer role assigned, which is one of the prerequisites for the Qlik Cloud monitoring applications. This role is required to proceed as API keys are required for the data connection, and in order to create an API key, the Developer role is required. If 'No' is selected, this step will need to be done manually and the installer will exit. Note that the installer will still stop after this step regardless as it is required that the user log out and log back in for the role change to propagate in Qlik Application Automation.",
+          "type": "select",
           "values": "Yes,No",
-          "options": [],
-          "helpText": "The executing user ({$.getUser.name}) does not have the Developer role assigned, which is one of the prerequisites for the Qlik Cloud monitoring applications. This role is required to proceed as API keys are required for the data connection, and in order to create an API key, the Developer role is required. If 'No' is selected, this step will need to be done manually and the installer will exit. Note that the installer will still stop after this step regardless as it is required that the user log out and log back in for the role change to propagate in Qlik Application Automation.",
-          "isRequired": true
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -1382,7 +1183,7 @@
       ],
       "x": -430,
       "y": 3071,
-      "childTrueId": "9C95FE14-B64A-4768-9940-FD55126D6C8B",
+      "childTrueId": "84806E2B-4901-4760-B1D3-84018CC64984",
       "childFalseId": "108DB522-0DC9-4739-89BE-CCFB60B2081D"
     },
     {
@@ -1391,18 +1192,23 @@
       "disabled": false,
       "name": "condition11",
       "displayName": "Condition 11",
-      "comment": "Are API keys enabled on the tenant?",
+      "comment": "Are API keys enabled on the tenant, or has tenant been migrated through TLV-750?",
       "childId": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
       "inputs": [
         {
           "id": "conditions",
           "value": {
-            "mode": "all",
+            "mode": "some",
             "conditions": [
               {
                 "input1": "{$.rawAPIRequest.api_keys_enabled}",
-                "input2": "true",
-                "operator": "isTrue"
+                "operator": "isTrue",
+                "input2": "true"
+              },
+              {
+                "input1": "{$.rawAPIRequest.api_keys_enabled}",
+                "operator": "empty",
+                "input2": null
               }
             ]
           },
@@ -1450,13 +1256,13 @@
       "form": [
         {
           "id": "inputs10-input-0",
-          "type": "select",
           "label": "Should this installer enable API keys on this tenant now?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "API keys are not currently enabled on this tenant, which is a prerequisite of the installer. An API key is required to create the data connection to Qlik Cloud that the monitoring applications leverage. If 'No' is selected, this will need to be done manually, and the installer will exit.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2461,13 +2267,13 @@
       "form": [
         {
           "id": "inputs11-input-0",
-          "type": "select",
           "label": "Proceed",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": null,
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2553,13 +2359,13 @@
       "form": [
         {
           "id": "inputs12-input-0",
-          "type": "select",
           "label": "Should this installer allocate a Professional entitlement to the executing user now?",
-          "order": 0,
+          "helpText": "The executing user ({ $.searchUsers[0].name }) does not have a \"Professional\" license entitlement assigned to them, which is one of the prerequisites of the Qlik Cloud monitoring applications. Note that the installer will still stop after this step as it is required that the user log out and log back in for the entitlement change to propagate.",
+          "type": "select",
           "values": "Yes,No",
-          "options": [],
-          "helpText": "The executing user ({$.getUser.name}) does not have a \"Professional\" license entitlement assigned to them, which is one of the prerequisites of the Qlik Cloud monitoring applications. Note that the installer will still stop after this step as it is required that the user log out and log back in for the entitlement change to propagate.",
-          "isRequired": true
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2865,7 +2671,7 @@
           "order": 0,
           "values": "Yes,No",
           "options": [],
-          "helpText": "The executing user ({$.getUser.name}) does not have the \"Can edit\" permission on the Shared space \"{$.lookupItemInList6.name}\". This permission is required so that applications can be created (and reloaded if not published) within this space. If 'No' is selected, this installer will exit.",
+          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the \"Can edit\" permission on the Shared space \"{$.lookupItemInList6.name}\". This permission is required so that applications can be created (and reloaded if not published) within this space. If 'No' is selected, this installer will exit.",
           "isRequired": true
         }
       ],
@@ -3016,7 +2822,7 @@
           "order": 0,
           "values": "Yes,No",
           "options": [],
-          "helpText": "The executing user ({ $.getUser.name }) does not have the \"Can publish\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required so that applications can be published to this space. If 'No' is selected, this installer will exit.",
+          "helpText": "The executing user ({ $.searchUsers[0].name }) does not have the \"Can publish\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required so that applications can be published to this space. If 'No' is selected, this installer will exit.",
           "isRequired": true
         }
       ],
@@ -3170,7 +2976,7 @@
           "order": 0,
           "values": "Yes,No",
           "options": [],
-          "helpText": "The executing user ({$.getUser.name}) does not have the \"Can manage\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required to both reload applications and create reload schedules within the space. If 'No' is selected, the installer will continue, however there will not be the ability to create the reload schedules or reload the applications through this process.",
+          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the \"Can manage\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required to both reload applications and create reload schedules within the space. If 'No' is selected, the installer will continue, however there will not be the ability to create the reload schedules or reload the applications through this process.",
           "isRequired": true
         }
       ],
@@ -3540,7 +3346,7 @@
         },
         {
           "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\n  \"update\": [\n    {\n      \"sourceType\": \"analyzer\",\n      \"type\": \"professional\",\n      \"subject\": \"{$.getUser.subject}\"\n    }\n  ]\n}",
+          "value": "{\n  \"update\": [\n    {\n      \"sourceType\": \"analyzer\",\n      \"type\": \"professional\",\n      \"subject\": \"{$.searchUsers[0].subject}\"\n    }\n  ]\n}",
           "type": "object",
           "mode": "raw",
           "structure": []
@@ -3635,7 +3441,7 @@
         },
         {
           "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"add\":[{\"type\":\"professional\",\"subject\":\"{$.getUser.subject}\"}]}",
+          "value": "{\"add\":[{\"type\":\"professional\",\"subject\":\"{$.searchUsers[0].subject}\"}]}",
           "type": "object",
           "mode": "raw",
           "structure": []
@@ -3671,90 +3477,6 @@
       "endpoint_role": "get"
     },
     {
-      "id": "5A8A773C-3619-4647-B09C-D26C4BE82257",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "listRoles",
-      "displayName": "Qlik Cloud Services - List Roles",
-      "comment": "Get list of roles for their IDs.",
-      "childId": "699781F7-FFA7-4EBE-BCBB-C514014943EA",
-      "inputs": [
-        {
-          "id": "61cc2ce0-eb31-11ed-8846-f774c9249948",
-          "value": null,
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "maxitemcount",
-          "value": "",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 240,
-      "y": 6040,
-      "loopBlockId": null,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "61a20140-eb31-11ed-8f08-a515d1528437",
-      "endpoint_role": "list"
-    },
-    {
-      "id": "9C95FE14-B64A-4768-9940-FD55126D6C8B",
-      "type": "LookupItemBlock",
-      "disabled": false,
-      "name": "lookupItemInList9",
-      "displayName": "Lookup in Qlik Cloud Services - List Roles - Lookup Item In List 9",
-      "comment": "Get the Developer role object.",
-      "childId": "84806E2B-4901-4760-B1D3-84018CC64984",
-      "inputs": [
-        {
-          "id": "list",
-          "value": "{ $.listRoles }",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              { "input1": "name", "input2": "Developer", "operator": "=" }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 759,
-      "y": 6245
-    },
-    {
       "id": "84806E2B-4901-4760-B1D3-84018CC64984",
       "type": "ForEachBlock",
       "disabled": false,
@@ -3765,7 +3487,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{$.getUser.assignedRoles}",
+          "value": "{$.searchUsers[0].assignedRoles}",
           "type": "string",
           "structure": []
         }
@@ -3779,8 +3501,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -372,
-      "y": 5869,
+      "x": 292,
+      "y": 5885,
       "loopBlockId": "C8C41C11-634E-42DF-8339-EEB8E3182BDB"
     },
     {
@@ -3789,7 +3511,7 @@
       "disabled": false,
       "name": "userRoleList",
       "displayName": "Variable - userRoleList",
-      "comment": "Add each existing user role ID.",
+      "comment": "Add each existing user role name.",
       "childId": null,
       "inputs": [],
       "settings": [],
@@ -3802,7 +3524,7 @@
           "id": "add_item",
           "key": "92BDB30F-B698-4E17-9535-D0E6AA43A090",
           "name": "Add item to { variable }",
-          "value": "{object: '{\"id\":\"{ $.loop5.item.id }\"}'}"
+          "value": "{object: '{\"name\":\"{ $.loop5.item.name }\"}'}"
         }
       ]
     },
@@ -3812,7 +3534,7 @@
       "disabled": false,
       "name": "userRoleList",
       "displayName": "Variable - userRoleList",
-      "comment": "Merge in Developer role ID.",
+      "comment": "Merge in Developer role name.",
       "childId": "64FAE83C-FA28-4729-B94C-C4C624FC8F41",
       "inputs": [],
       "settings": [],
@@ -3825,7 +3547,7 @@
           "id": "add_item",
           "key": "D515749E-8452-45F6-A126-A8DAECBFF9E5",
           "name": "Add item to { variable }",
-          "value": "{object: '{\"id\":\"{ $.lookupItemInList9.id }\"}'}"
+          "value": "{object: '{\"name\":\"Developer\"}'}"
         }
       ]
     },
@@ -4691,7 +4413,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Space role to be updated | The 'Can edit' role will be added the space for the executing user ({$.getUser.name}). |",
+          "value": "| Space role to be updated | The 'Can edit' role will be added the space for the executing user ({$.searchUsers[0].name}). |",
           "type": "string",
           "structure": []
         }
@@ -4791,7 +4513,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Space role to be updated | The 'Can publish' role will be added the space for the executing user ({$.getUser.name}). |",
+          "value": "| Space role to be updated | The 'Can publish' role will be added the space for the executing user ({$.searchUsers[0].name}). |",
           "type": "string",
           "structure": []
         }
@@ -4855,7 +4577,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Space role to be updated | The 'Can manage' role will be added the space for the executing user ({$.getUser.name}). |",
+          "value": "| Space role to be updated | The 'Can manage' role will be added the space for the executing user ({$.searchUsers[0].name}). |",
           "type": "string",
           "structure": []
         }
@@ -6486,7 +6208,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Professional** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nPlease ensure that the executing user ({$.getUser.name}) is assigned a \"Professional\" entitlement before running this installer again. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
+          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Professional** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nPlease ensure that the executing user ({$.searchUsers[0].name}) is assigned a \"Professional\" entitlement before running this installer again. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
           "type": "string",
           "structure": []
         }
@@ -6514,7 +6236,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Professional** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nThere are no available \"Professional\" entitlements on this tenant. Please ensure that the executing user ({ $.getUser.name }) is assigned a  \"Professional\" entitlement before running this installer again. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
+          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Professional** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nThere are no available \"Professional\" entitlements on this tenant. Please ensure that the executing user ({ $.searchUsers[0].name }) is assigned a  \"Professional\" entitlement before running this installer again. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
           "type": "string",
           "structure": []
         }
@@ -6542,7 +6264,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has the **Developer** role assigned | ❌ |\n{linebreak}\n{linebreak}\nThe executing user ({ $.getUser.name }) is required to have the Developer role, which is a prerequisite of the Qlik Cloud monitoring applications. Ensure that the executing user has the Developer role and then this installer can be run again. Exiting the installer...",
+          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has the **Developer** role assigned | ❌ |\n{linebreak}\n{linebreak}\nThe executing user ({ $.searchUsers[0].name }) is required to have the Developer role, which is a prerequisite of the Qlik Cloud monitoring applications. Ensure that the executing user has the Developer role and then this installer can be run again. Exiting the installer...",
           "type": "string",
           "structure": []
         }
@@ -6642,7 +6364,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n{linebreak}\n| {if: {$.sourceSpaceName} = '<Personal>', 'Personal Space of \"{$.getUser.name}\" Changes', 'Shared Space Changes'} |  |\n| --- | --- |",
+          "value": "{linebreak}\n{linebreak}\n| {if: {$.sourceSpaceName} = '<Personal>', 'Personal Space of \"{$.searchUsers[0].name}\" Changes', 'Shared Space Changes'} |  |\n| --- | --- |",
           "type": "string",
           "structure": []
         }
@@ -7016,7 +6738,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| {if: {$.sourceSpaceName} = '<Personal>', 'Personal Space of \"{$.getUser.name}\" Changes', 'Shared Space Changes'} |  |\n| --- | --- |",
+          "value": "| {if: {$.sourceSpaceName} = '<Personal>', 'Personal Space of \"{$.searchUsers[0].name}\" Changes', 'Shared Space Changes'} |  |\n| --- | --- |",
           "type": "string",
           "structure": []
         }
@@ -8673,7 +8395,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Spaces | Adding the \"Can edit\" role to the executing user ({$.getUser.name}) on the Shared space '{$.sourceSpaceName}'... |",
+          "value": "| Spaces | Adding the \"Can edit\" role to the executing user ({$.searchUsers[0].name}) on the Shared space '{$.sourceSpaceName}'... |",
           "type": "string",
           "structure": []
         }
@@ -8813,7 +8535,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Spaces | Adding the {implode: {$.managedSpaceRolePayload}} role(s) to the executing user ({$.getUser.name}) on the Managed space '{$.targetSpaceName}'... |",
+          "value": "| Spaces | Adding the {implode: {$.managedSpaceRolePayload}} role(s) to the executing user ({$.searchUsers[0].name}) on the Managed space '{$.targetSpaceName}'... |",
           "type": "string",
           "structure": []
         }
@@ -12030,7 +11752,9 @@
         },
         {
           "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": [{ "key": "createdByUser", "value": "{$.getUser.id}" }],
+          "value": [
+            { "key": "createdByUser", "value": "{$.getCurrentUserId}" }
+          ],
           "type": "object",
           "mode": "keyValue",
           "structure": []
@@ -21249,7 +20973,7 @@
           "value": [
             {
               "key": "filter",
-              "value": "subject eq \"{regexreplace: {$.getUser.subject}, '(\\\\)', '\\\\\\\\'}\""
+              "value": "subject eq \"{regexreplace: { $.searchUsers[0].subject }, '(\\\\)', '\\\\\\\\'}\""
             }
           ],
           "type": "object",
@@ -21699,22 +21423,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
       "y": 2114
-    },
-    {
-      "id": "699781F7-FFA7-4EBE-BCBB-C514014943EA",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep10",
-      "displayName": "Sleep 10",
-      "comment": "",
-      "childId": "75B362E0-171C-48A5-914C-70AEA5868735",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 525,
-      "y": 6158
     },
     {
       "id": "93909CCF-D63B-4EEB-93AA-B22F985A277C",
@@ -22819,7 +22527,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### A prerequisite has not been met\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Full User** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nTo complete this installer, please ensure the user ({ $.getUser.name }) is assigned a \"Full User\" entitlement. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
+          "value": "{linebreak}\n##### A prerequisite has not been met\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Full User** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nTo complete this installer, please ensure the user ({ $.searchUsers[0].name }) is assigned a \"Full User\" entitlement. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
           "type": "string",
           "structure": []
         }
@@ -24015,7 +23723,7 @@
           "order": 0,
           "values": "Yes,No",
           "options": [],
-          "helpText": "The {implode: {$.autoApplyRolesAppNames}} application(s) requires the following additional role(s) that the executing user ({ $.getUser.name }) does not currently have: {implode: {$.autoApplyRolesNames}}. Should the installer add this role(s) for the executing user?",
+          "helpText": "The {implode: {$.autoApplyRolesAppNames}} application(s) requires the following additional role(s) that the executing user ({ $.searchUsers[0].name }) does not currently have: {implode: {$.autoApplyRolesNames}}. Should the installer add this role(s) for the executing user?",
           "isRequired": true
         }
       ],
@@ -24068,7 +23776,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has the **{implode: {$.autoApplyRolesNames}}** role(s) assigned | ❌ |\n{linebreak}\n{linebreak}\nThe executing user ({$.getUser.name}) is required to have the {implode: {$.autoApplyRolesNames}} role(s) to install the {implode: {$.autoApplyRolesAppNames}} application(s). Ensure that the executing user has the {implode: {$.autoApplyRolesNames}} role(s) and then this installer can be run again. Exiting the installer...",
+          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has the **{implode: {$.autoApplyRolesNames}}** role(s) assigned | ❌ |\n{linebreak}\n{linebreak}\nThe executing user ({$.searchUsers[0].name}) is required to have the {implode: {$.autoApplyRolesNames}} role(s) to install the {implode: {$.autoApplyRolesAppNames}} application(s). Ensure that the executing user has the {implode: {$.autoApplyRolesNames}} role(s) and then this installer can be run again. Exiting the installer...",
           "type": "string",
           "structure": []
         }
@@ -24100,64 +23808,25 @@
       "y": 12497
     },
     {
-      "id": "D2231F08-4603-4B9D-A56B-0EC8352910C5",
-      "type": "LookupItemBlock",
-      "disabled": false,
-      "name": "lookupItemInList18",
-      "displayName": "Lookup in Qlik Cloud Services - List Roles - Lookup Item In List 18",
-      "comment": "Get the role object.",
-      "childId": "FF0B0BFA-2C64-4B15-9065-BF958E9438A2",
-      "inputs": [
-        {
-          "id": "list",
-          "value": "{ $.listRoles }",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              { "input1": "name", "input2": "{$.loop22.item}", "operator": "=" }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 12380
-    },
-    {
       "id": "FF0B0BFA-2C64-4B15-9065-BF958E9438A2",
       "type": "VariableBlock",
       "disabled": false,
       "name": "userRoleList",
       "displayName": "Variable - userRoleList",
-      "comment": "Merge in the role ID.",
+      "comment": "Merge in the role name.",
       "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 12920,
+      "x": 652,
+      "y": 13065,
       "variableGuid": "0F8F0810-5019-460A-88A3-3CE5C3F763FD",
       "operations": [
         {
           "id": "add_item",
           "key": "D515749E-8452-45F6-A126-A8DAECBFF9E5",
           "name": "Add item to { variable }",
-          "value": "{object: '{\"id\":\"{ $.lookupItemInList18.id }\"}'}"
+          "value": "{object: '{\"name\":\"{$.loop22.item}\"}'}"
         }
       ]
     },
@@ -24195,7 +23864,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Roles | Assigning the executing user ({$.getUser.name}) the following role(s): {implode: {$.autoApplyRolesNames}}...|",
+          "value": "| Roles | Assigning the executing user ({$.searchUsers[0].name}) the following role(s): {implode: {$.autoApplyRolesNames}}...|",
           "type": "string",
           "structure": []
         }
@@ -24366,7 +24035,7 @@
       "disabled": false,
       "name": "userRoleList",
       "displayName": "Variable - userRoleList",
-      "comment": "Add each existing user role ID.",
+      "comment": "Add each existing user role name.",
       "childId": null,
       "inputs": [],
       "settings": [],
@@ -24379,7 +24048,7 @@
           "id": "add_item",
           "key": "92BDB30F-B698-4E17-9535-D0E6AA43A090",
           "name": "Add item to { variable }",
-          "value": "{object: '{\"id\":\"{ $.loop24.item.id }\"}'}"
+          "value": "{object: '{\"name\":\"{ $.loop24.item.name }\"}'}"
         }
       ]
     },
@@ -24441,7 +24110,7 @@
       "name": "autoApplyRolesNames",
       "displayName": "Variable - autoApplyRolesNames",
       "comment": "Add the role name to a list for logging later.",
-      "childId": "D2231F08-4603-4B9D-A56B-0EC8352910C5",
+      "childId": "FF0B0BFA-2C64-4B15-9065-BF958E9438A2",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -24528,7 +24197,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Role(s) to be applied to executing user ({$.getUser.name})| {implode: {$.autoApplyRolesNames}}|",
+          "value": "| Role(s) to be applied to executing user ({$.searchUsers[0].name})| {implode: {$.autoApplyRolesNames}}|",
           "type": "string",
           "structure": []
         }
@@ -25037,7 +24706,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### Template out of date\n\n| Issue | Description |\n| --- | --- |\n| Installer template is not up to date | Version \"{$.currentTemplateVersionNum}\" is not greater than or equal to the latest version \"{$.callURL3.installers[?(@.template=='qcma')].version}\" |\n{linebreak}\n{linebreak}\nThis template is out of date and cannot be used. Please navigate to the Qlik Application Automation Templates library and select the \"Qlik Cloud Monitoring Apps Installer\" template to receive the latest. This existing template can be removed. Exiting the installer...",
+          "value": "{linebreak}\n##### Template out of date\n\n| Issue | Description |\n| --- | --- |\n| Installer template is not up to date | Version \"{$.currentTemplateVersionNum}\" is not greater than or equal to the latest version \"{$.callURL3.installers[?(@.template=='qcma')].version}\" |\n{linebreak}\n{linebreak}\nThis template is out of date and cannot be used. Please navigate to the Qlik Application Automation Templates library and select the \"Qlik Cloud Monitoring Apps Installer\" template to receive the latest. This automation can be removed. Exiting the installer...",
           "type": "string",
           "structure": []
         }
@@ -25067,6 +24736,61 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -311,
       "y": 446
+    },
+    {
+      "id": "643E820F-DAD6-4875-A355-775F163B7A03",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "searchUsers",
+      "displayName": "Qlik Cloud Services - Search Users",
+      "comment": "Uses a filter on users to return the current user only if TenantAdmin is assigned",
+      "childId": "5AB62AA1-442D-402A-8F46-2737BFC59805",
+      "inputs": [
+        {
+          "id": "b134f4e0-f832-11ec-858b-9feea72c382e",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "b14f3e50-f832-11ec-9221-d7f5e04021c1",
+          "value": null,
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "43b94790-f834-11ec-95c2-1b59e214d993",
+          "value": "id eq \"{ $.getCurrentUserId }\" AND ((assignedRoles.name eq \"TenantAdmin\") or (assignedGroupsAssignedRoles.name eq \"TenantAdmin\"))",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
+      "x": 551,
+      "y": 861,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "b0d2e830-f832-11ec-b448-6ba082700f84",
+      "endpoint_role": "search"
     }
   ],
   "variables": [
@@ -25074,11 +24798,6 @@
       "guid": "EC7E19DE-A99E-4776-A2C8-6916E59EFCA7",
       "name": "allAvailableMonitoringAppNames",
       "type": "list"
-    },
-    {
-      "guid": "9F10ADCB-1E81-46EF-B41E-9EDF3C27CDCD",
-      "name": "userIsTenantAdmin",
-      "type": "number"
     },
     {
       "guid": "F0C60ED3-77A4-4B1D-817E-353D23937573",
