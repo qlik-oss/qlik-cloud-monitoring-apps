@@ -24062,7 +24062,7 @@
       "name": "output160",
       "displayName": "Output 160",
       "comment": "Notify: cannot update task as it's been migrated.",
-      "childId": null,
+      "childId": "2C9C45BE-D2C7-4F7A-8E8D-BE2D8FB97860",
       "inputs": [
         {
           "id": "input",
@@ -24126,7 +24126,7 @@
       "name": "output161",
       "displayName": "Output 161",
       "comment": "Notify: cannot update task as it's been migrated.",
-      "childId": null,
+      "childId": "5B97CA4C-E219-4360-A75F-8CF62DA971F8",
       "inputs": [
         {
           "id": "input",
@@ -24362,7 +24362,7 @@
       "name": "output164",
       "displayName": "Output 164",
       "comment": "Notify: cannot update task as it's been migrated.",
-      "childId": null,
+      "childId": "8F09A655-A537-4F44-8563-D191D5D8FECE",
       "inputs": [
         {
           "id": "input",
@@ -24426,7 +24426,7 @@
       "name": "output162",
       "displayName": "Output 162",
       "comment": "Notify: cannot update task as it's been migrated.",
-      "childId": null,
+      "childId": "BDA110FD-7C83-44F8-999F-2FC633C3F642",
       "inputs": [
         {
           "id": "input",
@@ -24446,6 +24446,118 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1215,
       "y": 93483
+    },
+    {
+      "id": "2C9C45BE-D2C7-4F7A-8E8D-BE2D8FB97860",
+      "type": "ErrorBlock",
+      "disabled": false,
+      "name": "error",
+      "displayName": "Error",
+      "comment": "",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "message",
+          "value": "A reload task on '{ $.lookupItemInList10.originAppName }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "action",
+          "value": "continue",
+          "type": "select",
+          "displayValue": "Continue the Automation",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 903,
+      "y": 80026
+    },
+    {
+      "id": "5B97CA4C-E219-4360-A75F-8CF62DA971F8",
+      "type": "ErrorBlock",
+      "disabled": false,
+      "name": "error2",
+      "displayName": "Error 2",
+      "comment": "",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "message",
+          "value": "A reload task on '{ $.lookupItemInList10.name }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "action",
+          "value": "continue",
+          "type": "select",
+          "displayValue": "Continue the Automation",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1450,
+      "y": 85216
+    },
+    {
+      "id": "8F09A655-A537-4F44-8563-D191D5D8FECE",
+      "type": "ErrorBlock",
+      "disabled": false,
+      "name": "error3",
+      "displayName": "Error 3",
+      "comment": "",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "message",
+          "value": "A reload task on '{$.loop14.item.name}' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "action",
+          "value": "continue",
+          "type": "select",
+          "displayValue": "Continue the Automation",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1227,
+      "y": 91515
+    },
+    {
+      "id": "BDA110FD-7C83-44F8-999F-2FC633C3F642",
+      "type": "ErrorBlock",
+      "disabled": false,
+      "name": "error4",
+      "displayName": "Error 4",
+      "comment": "",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "message",
+          "value": "A reload task on '{ $.GetAppInformation2.info.attributes.name }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "action",
+          "value": "continue",
+          "type": "select",
+          "displayValue": "Continue the Automation",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1206,
+      "y": 93974
     }
   ],
   "variables": [
