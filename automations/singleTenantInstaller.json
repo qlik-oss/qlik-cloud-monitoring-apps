@@ -1206,9 +1206,9 @@
                 "input2": "true"
               },
               {
-                "input1": "{$.rawAPIRequest.api_keys_enabled}",
-                "operator": "empty",
-                "input2": null
+                "input1": "{ textlength: {$.rawAPIRequest.api_keys_enabled} }",
+                "operator": "=",
+                "input2": "0"
               }
             ]
           },
@@ -7675,8 +7675,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 240,
-      "y": 63820,
+      "x": 686,
+      "y": 76794,
       "childTrueId": "B076AA75-26C3-441A-927D-C52562066880",
       "childFalseId": "66FB4349-B1D5-460E-95D2-2E5E802C3FA4"
     },
@@ -8277,7 +8277,7 @@
         },
         {
           "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"type\":\"public\",\"name\":\"QCMA - {$.loop3.index}\"}",
+          "value": "{\"type\":\"public\",\"name\":\"{ $.loop.item }\"}",
           "type": "object",
           "mode": "raw",
           "structure": []
@@ -8319,7 +8319,7 @@
       "name": "condition82",
       "displayName": "Condition 82",
       "comment": "Check if tag exists",
-      "childId": "82990BFF-636E-4332-8526-F0E8D0B10567",
+      "childId": "E4C36EE2-59FC-47D8-A730-47ADB43AD62B",
       "inputs": [
         {
           "id": "conditions",
@@ -8343,8 +8343,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -427,
-      "y": 34115,
+      "x": 292,
+      "y": 74545,
       "childTrueId": "7338DBFB-B10C-45D4-8916-5661D098F378",
       "childFalseId": "3B6B5A67-07B5-4D11-99C4-CB1AA579BB0E"
     },
@@ -8744,12 +8744,12 @@
       "disabled": false,
       "name": "output59",
       "displayName": "Output 59",
-      "comment": "Application imported.",
-      "childId": "9F1BB663-8506-4F19-A5FB-7074CE8780DB",
+      "comment": "Check for tag.",
+      "childId": "B6B95CDC-E4E4-4982-9D57-CCB76B67FBC3",
       "inputs": [
         {
           "id": "input",
-          "value": "| Applications import | Application imported. |",
+          "value": "| Application tags | Checking to see if tag '{ $.loop.item }' exists... |",
           "type": "string",
           "structure": []
         }
@@ -8763,8 +8763,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -424,
-      "y": 35340
+      "x": 292,
+      "y": 74465
     },
     {
       "id": "B6B95CDC-E4E4-4982-9D57-CCB76B67FBC3",
@@ -8773,7 +8773,7 @@
       "name": "rawAPIRequest18",
       "displayName": "Qlik Cloud Services - Raw API Request 18",
       "comment": "Check if tag exists.",
-      "childId": "8F8FCF64-9638-4248-AB97-AA21EAB77222",
+      "childId": "3F15F8C0-5007-4BE5-A8F4-3C474B12CF79",
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
@@ -8797,7 +8797,7 @@
         },
         {
           "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": [{ "key": "name", "value": "QCMA - {$.loop3.index}" }],
+          "value": [{ "key": "name", "value": "{ $.loop.item }" }],
           "type": "object",
           "mode": "keyValue",
           "structure": []
@@ -8819,62 +8819,11 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -431,
-      "y": 35533,
+      "x": 292,
+      "y": 74425,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
-    },
-    {
-      "id": "9F1BB663-8506-4F19-A5FB-7074CE8780DB",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output60",
-      "displayName": "Output 60",
-      "comment": "Check to see if the QCMA tag exists.",
-      "childId": "B6B95CDC-E4E4-4982-9D57-CCB76B67FBC3",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Checking to see if tag 'QCMA - {$.loop3.index }' exists... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 463,
-      "y": 44044
-    },
-    {
-      "id": "E742E9D8-E8D5-4B18-9FB8-EFFC8368B9B5",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "tagID",
-      "displayName": "Variable - tagID",
-      "comment": "Store the tag ID.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425,
-      "y": 36264,
-      "variableGuid": "95E0C8B1-3211-4D25-8999-C6EA20F1674F",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "722634D4-409C-4F4A-9585-4AE0A30C5CCC",
-          "name": "Set value of { variable }",
-          "value": "{$.rawAPIRequest18.data[0].id}"
-        }
-      ]
     },
     {
       "id": "5732C52E-8690-43CF-8B1D-64FA2D5CF80F",
@@ -8935,8 +8884,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 36660,
+      "x": 292,
+      "y": 74425,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -8952,7 +8901,7 @@
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "collections/{ $.tagID }/items",
+          "value": "collections/{ $.taggerIds.{ $.loop.index } }/items",
           "type": "string",
           "structure": []
         },
@@ -8965,7 +8914,7 @@
         },
         {
           "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"id\":\"{$.rawAPIRequest17.data[0].id}\"}",
+          "value": "{\n  \"id\": \"{ $.rawAPIRequest17.data[0].id }\"\n}",
           "type": "object",
           "mode": "raw",
           "structure": []
@@ -8994,34 +8943,11 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 36660,
+      "x": 292,
+      "y": 74905,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
-    },
-    {
-      "id": "2E631693-259F-4EF0-8D00-F197725A6DC5",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "tagID",
-      "displayName": "Variable - tagID",
-      "comment": "Store the tag ID.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426,
-      "y": 36517,
-      "variableGuid": "95E0C8B1-3211-4D25-8999-C6EA20F1674F",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "7601A2B8-5DC9-45EC-AA1C-02B44FBEB559",
-          "name": "Set value of { variable }",
-          "value": "{ $.rawAPIRequest16.id }"
-        }
-      ]
     },
     {
       "id": "7338DBFB-B10C-45D4-8916-5661D098F378",
@@ -9030,7 +8956,7 @@
       "name": "output61",
       "displayName": "Output 61",
       "comment": "Tag exists.",
-      "childId": "E742E9D8-E8D5-4B18-9FB8-EFFC8368B9B5",
+      "childId": "79FF4050-68E1-42B4-BEFB-88D6E39A5644",
       "inputs": [
         {
           "id": "input",
@@ -9062,7 +8988,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Application tags | Tag does not exist. Creating tag 'QCMA - {$.loop3.index}'... |",
+          "value": "| Application tags | Tag does not exist. Creating tag '{ $.loop.item }'... |",
           "type": "string",
           "structure": []
         }
@@ -9086,7 +9012,7 @@
       "name": "output63",
       "displayName": "Output 63",
       "comment": "Tag created.",
-      "childId": "2E631693-259F-4EF0-8D00-F197725A6DC5",
+      "childId": "A75C6A70-0A1D-4C38-9D6E-E0393117CD28",
       "inputs": [
         {
           "id": "input",
@@ -9108,41 +9034,13 @@
       "y": 36207
     },
     {
-      "id": "82990BFF-636E-4332-8526-F0E8D0B10567",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output64",
-      "displayName": "Output 64",
-      "comment": "Getting the Item ID of the application.",
-      "childId": "5732C52E-8690-43CF-8B1D-64FA2D5CF80F",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Getting the Item ID of the application... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429,
-      "y": 36626
-    },
-    {
       "id": "0A3C842D-7B58-482A-995F-7005476E037F",
       "type": "ShowBlock",
       "disabled": false,
       "name": "output65",
       "displayName": "Output 65",
       "comment": "Item ID fetched.",
-      "childId": "D9958504-7B29-48A2-8BF2-9358201F9394",
+      "childId": "AA784AF1-16ED-4BBC-AD9F-D506F6545F69",
       "inputs": [
         {
           "id": "input",
@@ -9170,7 +9068,7 @@
       "name": "output66",
       "displayName": "Output 66",
       "comment": "Tag added.",
-      "childId": "70E6517F-69B3-4449-BEBF-9918207D1F45",
+      "childId": null,
       "inputs": [
         {
           "id": "input",
@@ -9189,34 +9087,6 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 240,
-      "y": 37380
-    },
-    {
-      "id": "D9958504-7B29-48A2-8BF2-9358201F9394",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output67",
-      "displayName": "Output 67",
-      "comment": "Adding tag.",
-      "childId": "F4F5DB11-B08C-44FD-9063-314EDC60C152",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Adding tag 'QCMA - {$.loop3.index}' to the application... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 490,
       "y": 37380
     },
     {
@@ -9758,7 +9628,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Application tags | Adding tag 'QCMA - {$.loop3.index}' to the published application... |",
+          "value": "| Application tags | Adding tag '{ $.applicationTags.appTag }' to the published application... |",
           "type": "string",
           "structure": []
         }
@@ -9786,7 +9656,7 @@
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "collections/{ $.tagID }/items",
+          "value": "collections/{ $.taggerIds.appTag }/items",
           "type": "string",
           "structure": []
         },
@@ -10842,435 +10712,6 @@
       "childFalseId": null
     },
     {
-      "id": "70E6517F-69B3-4449-BEBF-9918207D1F45",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output80",
-      "displayName": "Output 80",
-      "comment": "Check to see if the Version tag exists.",
-      "childId": "D6CD91E5-4D46-4D90-8E09-957D840443E6",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Checking to see if tag 'QCMA - {$.filterList6[0].version}' exists... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 678,
-      "y": 41974
-    },
-    {
-      "id": "D6CD91E5-4D46-4D90-8E09-957D840443E6",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest24",
-      "displayName": "Qlik Cloud Services - Raw API Request 24",
-      "comment": "Check if tag exists.",
-      "childId": "A670A892-A555-4667-8848-F9B174CBD3CB",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "collections",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba1eed0-2072-11ec-aa67-f118ee53373a",
-          "type": "select",
-          "displayValue": "GET",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": [
-            { "key": "name", "value": "QCMA - { $.filterList6[0].version }" }
-          ],
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -431,
-      "y": 35533,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
-    },
-    {
-      "id": "CAF33EA1-6752-4B4D-861D-0FF6BF5FC410",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition98",
-      "displayName": "Condition 98",
-      "comment": "Check if tag exists",
-      "childId": "3FBAC30E-DED9-4E4E-8AAE-BB601B357E0F",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{count: {$.rawAPIRequest24.data}}",
-                "input2": "0",
-                "operator": ">"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
-      ],
-      "x": -427,
-      "y": 34115,
-      "childTrueId": "5D8711E9-C87F-494F-A25C-19241110615D",
-      "childFalseId": "66C93FFC-B288-47E4-B959-87C9D561125C"
-    },
-    {
-      "id": "3FBAC30E-DED9-4E4E-8AAE-BB601B357E0F",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output83",
-      "displayName": "Output 83",
-      "comment": "Adding tag.",
-      "childId": "6D52BD0D-0724-4FC1-838D-B93B01D1A057",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Adding tag 'QCMA - {$.filterList6[0].version}' to the application... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 43480
-    },
-    {
-      "id": "6D52BD0D-0724-4FC1-838D-B93B01D1A057",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest26",
-      "displayName": "Qlik Cloud Services - Raw API Request 26",
-      "comment": "Add the tag to the item.",
-      "childId": "238E94F0-1F51-4642-B505-5A0B879AE70B",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "collections/{ $.versionTagID }/items",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "d8056ca0-2072-11ec-b110-cbae7b0a483b",
-          "type": "select",
-          "displayValue": "POST",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"id\":\"{$.rawAPIRequest17.data[0].id}\"}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 36660,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
-    },
-    {
-      "id": "7C443365-800B-44DA-A525-51E4F693B9B7",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output84",
-      "displayName": "Output 84",
-      "comment": "Tag added.",
-      "childId": "DE6662B6-2F89-4F90-BE00-E4A1D4277ABD",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Tag added. |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 37380
-    },
-    {
-      "id": "5D8711E9-C87F-494F-A25C-19241110615D",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output85",
-      "displayName": "Output 85",
-      "comment": "Tag exists.",
-      "childId": "DE34AB7F-F0CF-4402-862C-25A864D37C55",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Tag exists. |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 36220
-    },
-    {
-      "id": "DE34AB7F-F0CF-4402-862C-25A864D37C55",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "versionTagID",
-      "displayName": "Variable - versionTagID",
-      "comment": "Store the version tag ID.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425,
-      "y": 36264,
-      "variableGuid": "F1053F87-1F12-4B1A-A857-E0ABED52836D",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "722634D4-409C-4F4A-9585-4AE0A30C5CCC",
-          "name": "Set value of { variable }",
-          "value": "{$.rawAPIRequest24.data[0].id}"
-        }
-      ]
-    },
-    {
-      "id": "66C93FFC-B288-47E4-B959-87C9D561125C",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output86",
-      "displayName": "Output 86",
-      "comment": "Create tag.",
-      "childId": "7ACD76EF-3A84-4153-BF43-B518C57A411E",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Tag does not exist. Creating tag 'QCMA - {$.filterList6[0].version}'... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425,
-      "y": 36151
-    },
-    {
-      "id": "7ACD76EF-3A84-4153-BF43-B518C57A411E",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest27",
-      "displayName": "Qlik Cloud Services - Raw API Request 27",
-      "comment": "Create new collection",
-      "childId": "D86A37A3-8681-4012-881F-23133579474E",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "collections",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "d8056ca0-2072-11ec-b110-cbae7b0a483b",
-          "type": "select",
-          "displayValue": "POST",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"type\":\"public\",\"name\":\"QCMA - { $.filterList6[0].version }\"}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 34380,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
-    },
-    {
-      "id": "5618ED3C-7A4B-4171-8907-5FAAB726F8E3",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output87",
-      "displayName": "Output 87",
-      "comment": "Tag created.",
-      "childId": "418B4BA0-21BE-473F-B451-C5E4F36CCE98",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application tags | Tag created. |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426,
-      "y": 36207
-    },
-    {
-      "id": "418B4BA0-21BE-473F-B451-C5E4F36CCE98",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "versionTagID",
-      "displayName": "Variable - versionTagID",
-      "comment": "Store the version tag ID.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426,
-      "y": 36517,
-      "variableGuid": "F1053F87-1F12-4B1A-A857-E0ABED52836D",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "7601A2B8-5DC9-45EC-AA1C-02B44FBEB559",
-          "name": "Set value of { variable }",
-          "value": "{ $.rawAPIRequest27.id }"
-        }
-      ]
-    },
-    {
       "id": "7CF6ECD4-3D5F-4722-98E1-E6E7C252EFE9",
       "type": "ShowBlock",
       "disabled": false,
@@ -11281,7 +10722,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Application tags | Adding tag 'QCMA - {$.filterList6[0].version}' to the application... |",
+          "value": "| Application tags | Adding tag '{ $.applicationTags.versionTag }' to the application... |",
           "type": "string",
           "structure": []
         }
@@ -11309,7 +10750,7 @@
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "collections/{ $.versionTagID }/items",
+          "value": "collections/{ $.taggerIds.versionTag }/items",
           "type": "string",
           "structure": []
         },
@@ -11860,7 +11301,7 @@
       "name": "sleep3",
       "displayName": "Sleep 3",
       "comment": "",
-      "childId": "E46C13C8-FAEF-49B4-BACF-7FC3AEDEEA0F",
+      "childId": "84611CBE-7C36-4E60-8AE5-8093A9072B46",
       "inputs": [
         { "id": "time", "value": "5", "type": "string", "structure": [] }
       ],
@@ -18783,7 +18224,7 @@
       ],
       "x": -367,
       "y": 51862,
-      "childTrueId": "6CADD833-BC29-4042-B623-C6DDB1971980",
+      "childTrueId": "84CA7DA8-6D9C-4633-9DBC-8B84A7A43C27",
       "childFalseId": null
     },
     {
@@ -19505,7 +18946,7 @@
       "disabled": false,
       "name": "output139",
       "displayName": "Output 139",
-      "comment": "QCMA ag has been found on the published application. Deleting this tag.",
+      "comment": "QCMA tag has been found on the published application. Deleting this tag.",
       "childId": "BD532542-A32A-4CFC-9D63-091B59491137",
       "inputs": [
         {
@@ -20005,7 +19446,7 @@
       ],
       "x": -367,
       "y": 51862,
-      "childTrueId": "6DA88D06-AAAE-43DE-B3E9-CD3D744442DC",
+      "childTrueId": "82092645-7798-4B37-A06F-EE98AC9A38D2",
       "childFalseId": null
     },
     {
@@ -20138,8 +19579,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -366,
-      "y": 52049
+      "x": 892,
+      "y": 82065
     },
     {
       "id": "DD726BEB-F8D6-4693-B614-C293AB8E908B",
@@ -21649,22 +21090,6 @@
       "y": 62280
     },
     {
-      "id": "8F8FCF64-9638-4248-AB97-AA21EAB77222",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep26",
-      "displayName": "Sleep 26",
-      "comment": "",
-      "childId": "3F15F8C0-5007-4BE5-A8F4-3C474B12CF79",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -73,
-      "y": 66008
-    },
-    {
       "id": "1AED6401-E4B7-43BF-A567-3BE1F97E5276",
       "type": "SleepBlock",
       "disabled": false,
@@ -21711,54 +21136,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -364,
       "y": 68046
-    },
-    {
-      "id": "A670A892-A555-4667-8848-F9B174CBD3CB",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep30",
-      "displayName": "Sleep 30",
-      "comment": "",
-      "childId": "CAF33EA1-6752-4B4D-861D-0FF6BF5FC410",
-      "inputs": [
-        { "id": "time", "value": "2", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -386,
-      "y": 68362
-    },
-    {
-      "id": "D86A37A3-8681-4012-881F-23133579474E",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep31",
-      "displayName": "Sleep 31",
-      "comment": "",
-      "childId": "5618ED3C-7A4B-4171-8907-5FAAB726F8E3",
-      "inputs": [
-        { "id": "time", "value": "3", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -371,
-      "y": 69149
-    },
-    {
-      "id": "238E94F0-1F51-4642-B505-5A0B879AE70B",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep32",
-      "displayName": "Sleep 32",
-      "comment": "",
-      "childId": "7C443365-800B-44DA-A525-51E4F693B9B7",
-      "inputs": [
-        { "id": "time", "value": "2", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -374,
-      "y": 69729
     },
     {
       "id": "3EF98204-6CF4-43E8-AD92-09FE3315AE4E",
@@ -24791,6 +24168,437 @@
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "b0d2e830-f832-11ec-b448-6ba082700f84",
       "endpoint_role": "search"
+    },
+    {
+      "id": "82092645-7798-4B37-A06F-EE98AC9A38D2",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition5",
+      "displayName": "Condition 5",
+      "comment": "If reload has been migrated to /tasks (QCB-31564)",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.rawAPIRequest.data[0].disabledCode }",
+                "input2": "MIGRATED",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 1510,
+      "y": 81718,
+      "childTrueId": "D494BBC2-B365-40F8-AA9A-0AB515ADE4AF",
+      "childFalseId": "6DA88D06-AAAE-43DE-B3E9-CD3D744442DC"
+    },
+    {
+      "id": "D494BBC2-B365-40F8-AA9A-0AB515ADE4AF",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output160",
+      "displayName": "Output 160",
+      "comment": "Notify: cannot update task as it's been migrated.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application decommission| A migrated reload schedule exists for the source application '{$.lookupItemInList10.originAppName}'. Unable to remove this reload schedule, please remove manually. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1508,
+      "y": 81859
+    },
+    {
+      "id": "84CA7DA8-6D9C-4633-9DBC-8B84A7A43C27",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition6",
+      "displayName": "Condition 6",
+      "comment": "If reload has been migrated to /tasks (QCB-31564)",
+      "childId": "6CADD833-BC29-4042-B623-C6DDB1971980",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.rawAPIRequest37.data[0].disabledCode }",
+                "operator": "=",
+                "input2": "MIGRATED"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 1388,
+      "y": 87044,
+      "childTrueId": "3B1DA06A-A3AA-4EBF-8D8B-7871DB335B79",
+      "childFalseId": "8048AF57-7261-49F0-8E31-D1FA15C1B82A"
+    },
+    {
+      "id": "3B1DA06A-A3AA-4EBF-8D8B-7871DB335B79",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output161",
+      "displayName": "Output 161",
+      "comment": "Notify: cannot update task as it's been migrated.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application decommission| A migrated reload schedule exists for the older application '{$.lookupItemInList10.originAppName}'. Unable to remove this reload schedule, please remove manually. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1508,
+      "y": 81859
+    },
+    {
+      "id": "8048AF57-7261-49F0-8E31-D1FA15C1B82A",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output162",
+      "displayName": "Output 162",
+      "comment": "Updating reload schedule.",
+      "childId": "D83E1A5C-0550-4846-BA1B-FD26EBFA8D9C",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application decommission| An existing reload schedule exists for the source application '{ $.lookupItemInList10.originAppName }'. Removing this reload schedule... |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 892,
+      "y": 82065
+    },
+    {
+      "id": "D83E1A5C-0550-4846-BA1B-FD26EBFA8D9C",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIRequest58",
+      "displayName": "Qlik Cloud Services - Raw API Request 58",
+      "comment": "Set reload schedule.",
+      "childId": "58FFE976-D32C-4830-80DB-D2F4DC4E1789",
+      "inputs": [
+        {
+          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
+          "value": "reload-tasks/{$.rawAPIRequest47.data[0].id}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
+          "value": "3ba2a970-2072-11ec-be02-2dd5c73abb12",
+          "type": "select",
+          "displayValue": "DELETE",
+          "structure": []
+        },
+        {
+          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
+          "value": [],
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        },
+        {
+          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 730,
+      "y": 52460,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "58FFE976-D32C-4830-80DB-D2F4DC4E1789",
+      "type": "SleepBlock",
+      "disabled": false,
+      "name": "sleep40",
+      "displayName": "Sleep 40",
+      "comment": "",
+      "childId": "4016EBD4-6DCC-45C8-8C11-2406DCD3BAAB",
+      "inputs": [
+        { "id": "time", "value": "1", "type": "string", "structure": [] }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -367,
+      "y": 73416
+    },
+    {
+      "id": "4016EBD4-6DCC-45C8-8C11-2406DCD3BAAB",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output163",
+      "displayName": "Output 163",
+      "comment": "Reload schedule updated.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application decommission| Reload schedule removed. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 754,
+      "y": 52320
+    },
+    {
+      "id": "A76D0688-93A8-4942-AFBC-C0A1828EE398",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop",
+      "displayName": "Loop",
+      "comment": "",
+      "childId": "DE6662B6-2F89-4F90-BE00-E4A1D4277ABD",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{ $.applicationTags }",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 797,
+      "y": 75163,
+      "loopBlockId": "E46C13C8-FAEF-49B4-BACF-7FC3AEDEEA0F"
+    },
+    {
+      "id": "84611CBE-7C36-4E60-8AE5-8093A9072B46",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output60",
+      "displayName": "Output 60",
+      "comment": "Application imported. Getting item ID.",
+      "childId": "5732C52E-8690-43CF-8B1D-64FA2D5CF80F",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Applications import | Application imported. |\n| Application tags | Getting the Item ID of the application... |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 688,
+      "y": 74309
+    },
+    {
+      "id": "E4C36EE2-59FC-47D8-A730-47ADB43AD62B",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output67",
+      "displayName": "Output 67",
+      "comment": "Adding tag.",
+      "childId": "F4F5DB11-B08C-44FD-9063-314EDC60C152",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application tags | Adding tag 'QCMA - {$.loop.item}' to the application... |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 802,
+      "y": 76342
+    },
+    {
+      "id": "79FF4050-68E1-42B4-BEFB-88D6E39A5644",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "taggerIds",
+      "displayName": "Variable - taggerIds",
+      "comment": "Store the tag ID.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 782,
+      "y": 76085,
+      "variableGuid": "7259DF0F-3E27-4C33-9805-B740A4684410",
+      "operations": [
+        {
+          "key": "4C765E64-0A7C-4AFC-8301-E428E0E60E9B",
+          "id": "set_key_value",
+          "name": "Set key/values of { variable }",
+          "value": [
+            {
+              "key": "{ $.loop.index }",
+              "value": "{$.rawAPIRequest18.data[0].id}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AA784AF1-16ED-4BBC-AD9F-D506F6545F69",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "applicationTags",
+      "displayName": "Variable - applicationTags",
+      "comment": "",
+      "childId": "A76D0688-93A8-4942-AFBC-C0A1828EE398",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 688,
+      "y": 74189,
+      "variableGuid": "A64544E7-6885-4850-A23F-6FEAB6372631",
+      "operations": [
+        {
+          "key": "F8F6D8BE-F920-4CA0-A3C1-2E092A0264F1",
+          "id": "empty",
+          "name": "Empty { variable }"
+        },
+        {
+          "key": "F31A35B4-A866-4C7A-A57E-18FAEFDBFD64",
+          "id": "set_key_value",
+          "name": "Set key/values of { variable }",
+          "value": [
+            { "key": "appTag", "value": "QCMA - {$.loop3.index}" },
+            {
+              "key": "versionTag",
+              "value": "QCMA - { $.filterList6[0].version }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A75C6A70-0A1D-4C38-9D6E-E0393117CD28",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "taggerIds",
+      "displayName": "Variable - taggerIds",
+      "comment": "Store the tag ID.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 902,
+      "y": 75818,
+      "variableGuid": "7259DF0F-3E27-4C33-9805-B740A4684410",
+      "operations": [
+        {
+          "key": "4C765E64-0A7C-4AFC-8301-E428E0E60E9B",
+          "id": "set_key_value",
+          "name": "Set key/values of { variable }",
+          "value": [
+            { "key": "{ $.loop.index }", "value": "{ $.rawAPIRequest16.id }" }
+          ]
+        }
+      ]
     }
   ],
   "variables": [
@@ -24960,11 +24768,6 @@
       "type": "string"
     },
     {
-      "guid": "95E0C8B1-3211-4D25-8999-C6EA20F1674F",
-      "name": "tagID",
-      "type": "string"
-    },
-    {
       "guid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "name": "reloadScheduleDaysForAPI",
       "type": "list"
@@ -24993,11 +24796,6 @@
       "guid": "337AFCA3-6985-4B33-92E2-4B883171F726",
       "name": "deleteExistingDataConnection",
       "type": "number"
-    },
-    {
-      "guid": "F1053F87-1F12-4B1A-A857-E0ABED52836D",
-      "name": "versionTagID",
-      "type": "string"
     },
     {
       "guid": "77156FDA-19AF-4D38-B0A9-85B60A1AF7B1",
@@ -25188,6 +24986,16 @@
       "guid": "B91AC569-8A25-45CF-9831-21293B4007C9",
       "name": "currentTemplateVersionNum",
       "type": "number"
+    },
+    {
+      "guid": "7259DF0F-3E27-4C33-9805-B740A4684410",
+      "name": "taggerIds",
+      "type": "object"
+    },
+    {
+      "guid": "A64544E7-6885-4850-A23F-6FEAB6372631",
+      "name": "applicationTags",
+      "type": "object"
     }
   ]
 }
