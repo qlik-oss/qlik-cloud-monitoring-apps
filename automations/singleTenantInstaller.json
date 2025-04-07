@@ -12960,7 +12960,7 @@
       ],
       "x": -367,
       "y": 51862,
-      "childTrueId": "C8103898-8DD0-4887-8AE0-4A24B0A306BA",
+      "childTrueId": "88BA72DE-1D90-4826-ADCA-3538FB6657B4",
       "childFalseId": "108E1A51-DA21-4035-A7E6-8993C6A4FA0E"
     },
     {
@@ -12988,8 +12988,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -366,
-      "y": 52049
+      "x": 652,
+      "y": 93745
     },
     {
       "id": "46886BB0-5937-40C3-89FE-00563FA32462",
@@ -17499,7 +17499,7 @@
       "disabled": false,
       "name": "output130",
       "displayName": "Output 130",
-      "comment": "QCMA ag has been found on the published application. Deleting this tag.",
+      "comment": "QCMA tag has been found on the published application. Deleting this tag.",
       "childId": "26E2E24B-04D9-4A10-B2DF-64B85DE2DB66",
       "inputs": [
         {
@@ -18252,8 +18252,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -366,
-      "y": 52049
+      "x": 1012,
+      "y": 85745
     },
     {
       "id": "C01EFDC5-7C3F-432F-92F2-C7821917CFD5",
@@ -18622,7 +18622,7 @@
       ],
       "x": -367,
       "y": 51862,
-      "childTrueId": "65E29300-2538-469F-AB0F-BB228862EE41",
+      "childTrueId": "D5230337-E1DD-474E-9104-B166B6A90563",
       "childFalseId": null
     },
     {
@@ -18755,8 +18755,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -366,
-      "y": 52049
+      "x": 772,
+      "y": 91605
     },
     {
       "id": "F3326AC0-A29C-4F3C-9083-90A4863E67C1",
@@ -24034,9 +24034,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{ $.rawAPIRequest.data[0].disabledCode }",
-                "input2": "MIGRATED",
-                "operator": "="
+                "input1": "{ $.rawAPIRequest47.data[0].disabledCode }",
+                "operator": "=",
+                "input2": "MIGRATED"
               }
             ]
           },
@@ -24066,7 +24066,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Application decommission| A migrated reload schedule exists for the source application '{$.lookupItemInList10.originAppName}'. Unable to remove this reload schedule, please remove manually. |",
+          "value": "| Application decommission| An existing reload schedule exists for the source application '{ $.lookupItemInList10.originAppName }'. Error: Unable to remove this reload schedule, please remove manually. |",
           "type": "string",
           "structure": []
         }
@@ -24090,7 +24090,7 @@
       "name": "condition6",
       "displayName": "Condition 6",
       "comment": "If reload has been migrated to /tasks (QCB-31564)",
-      "childId": "6CADD833-BC29-4042-B623-C6DDB1971980",
+      "childId": null,
       "inputs": [
         {
           "id": "conditions",
@@ -24117,7 +24117,7 @@
       "x": 1388,
       "y": 87044,
       "childTrueId": "3B1DA06A-A3AA-4EBF-8D8B-7871DB335B79",
-      "childFalseId": "8048AF57-7261-49F0-8E31-D1FA15C1B82A"
+      "childFalseId": "6CADD833-BC29-4042-B623-C6DDB1971980"
     },
     {
       "id": "3B1DA06A-A3AA-4EBF-8D8B-7871DB335B79",
@@ -24130,7 +24130,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Application decommission| A migrated reload schedule exists for the older application '{$.lookupItemInList10.originAppName}'. Unable to remove this reload schedule, please remove manually. |",
+          "value": "| Application decommission| An existing reload schedule exists for the older application '{ $.lookupItemInList10.name }'. Error: Unable to remove this reload schedule, please remove manually. |",
           "type": "string",
           "structure": []
         }
@@ -24146,137 +24146,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1508,
       "y": 81859
-    },
-    {
-      "id": "8048AF57-7261-49F0-8E31-D1FA15C1B82A",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output162",
-      "displayName": "Output 162",
-      "comment": "Updating reload schedule.",
-      "childId": "D83E1A5C-0550-4846-BA1B-FD26EBFA8D9C",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application decommission| An existing reload schedule exists for the source application '{ $.lookupItemInList10.originAppName }'. Removing this reload schedule... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 892,
-      "y": 82065
-    },
-    {
-      "id": "D83E1A5C-0550-4846-BA1B-FD26EBFA8D9C",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest58",
-      "displayName": "Qlik Cloud Services - Raw API Request 58",
-      "comment": "Set reload schedule.",
-      "childId": "58FFE976-D32C-4830-80DB-D2F4DC4E1789",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "reload-tasks/{$.rawAPIRequest47.data[0].id}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba2a970-2072-11ec-be02-2dd5c73abb12",
-          "type": "select",
-          "displayValue": "DELETE",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": [],
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 730,
-      "y": 52460,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
-    },
-    {
-      "id": "58FFE976-D32C-4830-80DB-D2F4DC4E1789",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep40",
-      "displayName": "Sleep 40",
-      "comment": "",
-      "childId": "4016EBD4-6DCC-45C8-8C11-2406DCD3BAAB",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -367,
-      "y": 73416
-    },
-    {
-      "id": "4016EBD4-6DCC-45C8-8C11-2406DCD3BAAB",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output163",
-      "displayName": "Output 163",
-      "comment": "Reload schedule updated.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application decommission| Reload schedule removed. |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 754,
-      "y": 52320
     },
     {
       "id": "A76D0688-93A8-4942-AFBC-C0A1828EE398",
@@ -24449,6 +24318,134 @@
           ]
         }
       ]
+    },
+    {
+      "id": "D5230337-E1DD-474E-9104-B166B6A90563",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition98",
+      "displayName": "Condition 98",
+      "comment": "If reload has been migrated to /tasks (QCB-31564)",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.rawAPIRequest42.data[0].disabledCode }",
+                "operator": "=",
+                "input2": "MIGRATED"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 1184,
+      "y": 91482,
+      "childTrueId": "8D607EE7-83AE-41CE-8C99-FD516A87C9C4",
+      "childFalseId": "65E29300-2538-469F-AB0F-BB228862EE41"
+    },
+    {
+      "id": "8D607EE7-83AE-41CE-8C99-FD516A87C9C4",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output164",
+      "displayName": "Output 164",
+      "comment": "Notify: cannot update task as it's been migrated.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application decommission| An existing reload schedule exists for the older application '{$.loop14.item.name}'. Error: Unable to remove this reload schedule, please remove manually. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1508,
+      "y": 81859
+    },
+    {
+      "id": "88BA72DE-1D90-4826-ADCA-3538FB6657B4",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition193",
+      "displayName": "Condition 193",
+      "comment": "If reload has been migrated to /tasks (QCB-31564)",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.rawAPIRequest31.data[0].disabledCode }",
+                "operator": "=",
+                "input2": "MIGRATED"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 983,
+      "y": 93329,
+      "childTrueId": "EDCD3FAA-C776-49E2-9895-CA65EB1BB818",
+      "childFalseId": "C8103898-8DD0-4887-8AE0-4A24B0A306BA"
+    },
+    {
+      "id": "EDCD3FAA-C776-49E2-9895-CA65EB1BB818",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output162",
+      "displayName": "Output 162",
+      "comment": "Notify: cannot update task as it's been migrated.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application reloads | An existing reload schedule exists for the {if: {$.publish} = 1, 'published ',} application '{ $.GetAppInformation2.info.attributes.name }'. Error: Unable to update this reload schedule, please remove manually. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1215,
+      "y": 93483
     }
   ],
   "variables": [
