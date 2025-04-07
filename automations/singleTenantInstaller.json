@@ -18478,7 +18478,7 @@
       "name": "output134",
       "displayName": "Output 134",
       "comment": "Item ID fetched.",
-      "childId": "D8B39F64-F301-41DD-9152-C63C53BB91BF",
+      "childId": "36C161A3-FF45-49A3-A5FB-C3419E4DF35A",
       "inputs": [
         {
           "id": "input",
@@ -18500,65 +18500,6 @@
       "y": 36862
     },
     {
-      "id": "D8B39F64-F301-41DD-9152-C63C53BB91BF",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest41",
-      "displayName": "Qlik Cloud Services - Raw API Request 41",
-      "comment": "Check for existing tags on the app.",
-      "childId": "9D0B14FF-BED6-4E95-980C-9DA8C70E21C6",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "items/{$.rawAPIRequest40.data[0].id}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba1eed0-2072-11ec-aa67-f118ee53373a",
-          "type": "select",
-          "displayValue": "GET",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 66980,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
-    },
-    {
       "id": "36C161A3-FF45-49A3-A5FB-C3419E4DF35A",
       "type": "ForEachBlock",
       "disabled": false,
@@ -18569,7 +18510,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{ $.rawAPIRequest41.meta.tags }",
+          "value": "{ $.rawAPIRequest40.data[0].meta.tags }",
           "type": "string",
           "structure": []
         }
@@ -18583,8 +18524,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -363,
-      "y": 49949,
+      "x": 652,
+      "y": 90505,
       "loopBlockId": "783186CA-B525-4F00-81FA-2787C037A75F"
     },
     {
@@ -19243,7 +19184,7 @@
       "name": "output142",
       "displayName": "Output 142",
       "comment": "Item ID fetched.",
-      "childId": "696FA633-066A-4324-B67E-85E2FD411F5A",
+      "childId": "0BB838F9-0C4F-47DA-AA9A-B37C64F6FAE6",
       "inputs": [
         {
           "id": "input",
@@ -19265,65 +19206,6 @@
       "y": 67420
     },
     {
-      "id": "696FA633-066A-4324-B67E-85E2FD411F5A",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest46",
-      "displayName": "Qlik Cloud Services - Raw API Request 46",
-      "comment": "Check for existing tags on the app.",
-      "childId": "B82300D8-A0A9-40EB-BE85-D56364B6DCC5",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "items/{$.rawAPIRequest45.data[0].id}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba1eed0-2072-11ec-aa67-f118ee53373a",
-          "type": "select",
-          "displayValue": "GET",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 66980,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
-    },
-    {
       "id": "0BB838F9-0C4F-47DA-AA9A-B37C64F6FAE6",
       "type": "ForEachBlock",
       "disabled": false,
@@ -19334,7 +19216,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{ $.rawAPIRequest46.meta.tags }",
+          "value": "{ $.rawAPIRequest45.data[0].meta.tags }",
           "type": "string",
           "structure": []
         }
@@ -19348,8 +19230,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -363,
-      "y": 49949,
+      "x": 772,
+      "y": 78545,
       "loopBlockId": "0959BC3E-F3CB-4668-8F81-54987303FDA6"
     },
     {
@@ -21186,22 +21068,6 @@
       "y": 71583
     },
     {
-      "id": "B82300D8-A0A9-40EB-BE85-D56364B6DCC5",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep36",
-      "displayName": "Sleep 36",
-      "comment": "",
-      "childId": "0BB838F9-0C4F-47DA-AA9A-B37C64F6FAE6",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -364,
-      "y": 71999
-    },
-    {
       "id": "624C963D-A707-4337-BEC5-065B01CA5502",
       "type": "SleepBlock",
       "disabled": false,
@@ -21456,22 +21322,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
       "y": 82931
-    },
-    {
-      "id": "9D0B14FF-BED6-4E95-980C-9DA8C70E21C6",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep56",
-      "displayName": "Sleep 56",
-      "comment": "",
-      "childId": "36C161A3-FF45-49A3-A5FB-C3419E4DF35A",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -357,
-      "y": 83433
     },
     {
       "id": "FD2E07AC-05A5-468F-A8CC-B82570049029",
@@ -24496,7 +24346,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Application tags | Adding tag 'QCMA - {$.loop.item}' to the application... |",
+          "value": "| Application tags | Adding tag '{$.loop.item}' to the application... |",
           "type": "string",
           "structure": []
         }
