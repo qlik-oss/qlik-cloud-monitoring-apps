@@ -18,8 +18,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 0
+      "x": 52,
+      "y": -55
     },
     {
       "id": "3830273B-13F6-48DA-A2E5-D2BF15F3D5BB",
@@ -161,8 +161,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -16.233440087256838,
-      "y": 7656.246860839848,
+      "x": -16,
+      "y": 7656,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "42815920-5f18-11eb-8321-91b1587b6c06",
@@ -747,7 +747,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -430,
-      "y": 262.99999618530273,
+      "y": 262,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "7e670290-c7a5-11ea-9a9c-6dd2b282df86",
       "endpoint_role": "get"
@@ -903,7 +903,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -419,
-      "y": 919.9999732971193,
+      "y": 919,
       "childTrueId": "35262F02-E9D9-46C4-8121-F9A5B3D2E57E",
       "childFalseId": null
     },
@@ -942,7 +942,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -420,
-      "y": 1349.9999732971191
+      "y": 1349
     },
     {
       "id": "5AB62AA1-442D-402A-8F46-2737BFC59805",
@@ -975,8 +975,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 656.8505921868722,
-      "y": 1086.1680645482588,
+      "x": 656,
+      "y": 1086,
       "childTrueId": null,
       "childFalseId": "9AB65A84-19BC-4667-97C2-3E4DF4A85A97"
     },
@@ -1048,7 +1048,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -429,
-      "y": 1776.9999656677246,
+      "y": 1776,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -1078,8 +1078,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 634.0040637713591,
-      "y": 3147.008692920223,
+      "x": 634,
+      "y": 3147,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "55051480-cb86-11ec-b746-892c1d04114e",
       "endpoint_role": "get"
@@ -1105,7 +1105,7 @@
       "name": "condition8",
       "displayName": "Condition 8",
       "comment": "Is Developer assigned directly?",
-      "childId": "75B362E0-171C-48A5-914C-70AEA5868735",
+      "childId": "5A8A773C-3619-4647-B09C-D26C4BE82257",
       "inputs": [
         {
           "id": "conditions",
@@ -1268,7 +1268,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -419,
-      "y": 919.9999732971193,
+      "y": 919,
       "childTrueId": "EDA49D46-84BB-4F57-A7A3-DC61535E37BB",
       "childFalseId": null
     },
@@ -1307,7 +1307,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -420,
-      "y": 1349.9999732971191
+      "y": 1349
     },
     {
       "id": "233A02F1-7169-4B54-B6EB-46B83A516F5C",
@@ -1381,8 +1381,8 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -430,
-      "y": 3071.9998664855957,
-      "childTrueId": "5A8A773C-3619-4647-B09C-D26C4BE82257",
+      "y": 3071,
+      "childTrueId": "9C95FE14-B64A-4768-9940-FD55126D6C8B",
       "childFalseId": "108DB522-0DC9-4739-89BE-CCFB60B2081D"
     },
     {
@@ -1392,7 +1392,7 @@
       "name": "condition11",
       "displayName": "Condition 11",
       "comment": "Are API keys enabled on the tenant?",
-      "childId": "FB8C1E62-6ECB-46D4-ADEA-36770AB6CD66",
+      "childId": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
       "inputs": [
         {
           "id": "conditions",
@@ -1417,7 +1417,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -430,
-      "y": 3697.999900817871,
+      "y": 3697,
       "childTrueId": null,
       "childFalseId": "13DE7454-D398-4324-8E7E-DBDFD075DD0F"
     },
@@ -1493,7 +1493,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -422,
-      "y": 3961.999885559082,
+      "y": 3961,
       "childTrueId": "648F354D-D760-4854-9F38-EC4F65183CA5",
       "childFalseId": "0373F2E4-029D-4DEF-B228-6C5E37B537BF"
     },
@@ -1759,7 +1759,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -427,
-      "y": 6188.999797821045,
+      "y": 6188,
       "variableGuid": "280DF557-DD2F-456A-AB06-F7EB5959F17E",
       "operations": [
         {
@@ -1847,8 +1847,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 625.0032369156726,
-      "y": 7953.997888458868,
+      "x": 625,
+      "y": 7953,
       "childTrueId": "449DF8B9-A279-4B01-83DB-C6BAB78703F7",
       "childFalseId": "AA1866EE-B8AF-4186-A97D-24B768644FAE"
     },
@@ -1864,7 +1864,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -421,
-      "y": 7243.999786376953,
+      "y": 7243,
       "variableGuid": "280DF557-DD2F-456A-AB06-F7EB5959F17E",
       "operations": [
         {
@@ -1923,7 +1923,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -424,
-      "y": 8248.99974822998,
+      "y": 8248,
       "variableGuid": "F83F9847-4BB6-475C-8D0F-771F41CB82AA",
       "operations": [
         {
@@ -1968,8 +1968,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 200.00128194680104,
-      "y": 6006.999811986063,
+      "x": 200,
+      "y": 6006,
       "variableGuid": "F83F9847-4BB6-475C-8D0F-771F41CB82AA",
       "operations": [
         {
@@ -2044,7 +2044,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -427,
-      "y": 8182.999744415283
+      "y": 8182
     },
     {
       "id": "D55EE72D-930C-49D5-99CC-797DFB15F2A6",
@@ -2078,7 +2078,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 719,
-      "y": 8436.999744415283,
+      "y": 8436,
       "childTrueId": "01F2D2BA-8349-4ACB-B423-717145E262EC",
       "childFalseId": "11E9E504-95F2-4967-87F5-01F85A9D17BF"
     },
@@ -2094,7 +2094,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -424,
-      "y": 8248.99974822998,
+      "y": 8248,
       "variableGuid": "280DF557-DD2F-456A-AB06-F7EB5959F17E",
       "operations": [
         {
@@ -2146,7 +2146,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -427,
-      "y": 8182.999744415283
+      "y": 8182
     },
     {
       "id": "3112B410-7B8D-4C89-9CEA-6C552649F911",
@@ -2231,7 +2231,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 0,
-      "y": 9120,
+      "y": 13600,
       "childTrueId": "978C49F0-97E0-4F26-A9ED-23F802875976",
       "childFalseId": "A897D6FC-BACE-425D-9560-F5BC61104A2E"
     },
@@ -2242,7 +2242,7 @@
       "name": "condition19",
       "displayName": "Condition 19",
       "comment": "If no applications were selected",
-      "childId": "2D7B53E6-6DB2-4D22-97DD-CB4DDF36F91C",
+      "childId": "049A1B89-B063-4CF5-A3A5-494A15E197C1",
       "inputs": [
         {
           "id": "conditions",
@@ -2282,7 +2282,7 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -460.00000000000006,
+      "x": -460,
       "y": 5522
     },
     {
@@ -2310,7 +2310,7 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -433.00000000000006,
+      "x": -433,
       "y": 5259
     },
     {
@@ -2340,8 +2340,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 4.058360021814167,
-      "y": 27420.16603118342,
+      "x": 4,
+      "y": 27420,
       "childTrueId": "73E8DDEA-EED2-4B67-9879-9FB853B0478C",
       "childFalseId": "1EA7F99C-3979-4BB4-A70A-BADA31CF3999"
     },
@@ -2370,8 +2370,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 350.005012411992,
-      "y": 11033.00384705439
+      "x": 350,
+      "y": 11033
     },
     {
       "id": "A897D6FC-BACE-425D-9560-F5BC61104A2E",
@@ -2427,8 +2427,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 539.0065635676212,
-      "y": 7203.999754135622,
+      "x": 539,
+      "y": 7203,
       "childTrueId": "FB05E511-A10A-4357-BC25-A9AC45FB8130",
       "childFalseId": "88E4179B-3873-4981-A7D9-1BAE19B6575D"
     },
@@ -2715,7 +2715,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -435,
-      "y": 11657.999408721924
+      "y": 11657
     },
     {
       "id": "21F74017-6B6A-4FAE-B372-6D5F3A77641B",
@@ -2785,7 +2785,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -422,
-      "y": 11929.999534606934,
+      "y": 11929,
       "childTrueId": "FA08D0CF-5189-4C42-B692-986E69F09BCD",
       "childFalseId": "E1A357E9-BD11-460B-8A76-CC2DBF1461A3"
     },
@@ -2815,7 +2815,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -431,
-      "y": 11804.999534606934
+      "y": 11804
     },
     {
       "id": "064F783B-7C57-4469-B1CF-D2B31CAFDA3E",
@@ -2829,7 +2829,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -418,
-      "y": 12298.999534606934
+      "y": 12298
     },
     {
       "id": "24951BD3-AFD3-427A-B9FC-97EAD9B58256",
@@ -2944,7 +2944,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -419,
-      "y": 12898.999374389648
+      "y": 12898
     },
     {
       "id": "E7247B55-27AA-40EA-BFC4-CC6D250D85FD",
@@ -3054,7 +3054,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 529,
-      "y": 13461.999370574951,
+      "y": 13461,
       "childTrueId": "07BB0AC8-EBC0-4EB0-BCDF-6D90357B1B92",
       "childFalseId": "6D2B15B5-44EB-4489-94E6-B0D45FE36370"
     },
@@ -3084,7 +3084,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -431,
-      "y": 11804.999534606934
+      "y": 11804
     },
     {
       "id": "22597F81-6ED2-4474-B07D-95E8A97E428B",
@@ -3098,7 +3098,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -418,
-      "y": 12298.999534606934
+      "y": 12298
     },
     {
       "id": "DFE1A608-ED55-4336-9627-2292B90B56E0",
@@ -3132,7 +3132,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 346,
-      "y": 13987.9994430542,
+      "y": 13987,
       "childTrueId": null,
       "childFalseId": "7B0FCEEF-4025-448C-B928-A0930A4B0D23"
     },
@@ -3208,7 +3208,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 529,
-      "y": 13461.999370574951,
+      "y": 13461,
       "childTrueId": "054E5949-988A-46BA-B951-AB6106836617",
       "childFalseId": "C64DA5A0-6253-4050-B161-15835DB0266C"
     },
@@ -3343,7 +3343,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -437,
-      "y": 15552.999305725098,
+      "y": 15552,
       "childTrueId": "3462BB77-6878-411E-8885-6E067C36756F",
       "childFalseId": "E3DF65E3-58D1-4A55-B600-7D761DC9972F"
     },
@@ -3372,7 +3372,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -425,
-      "y": 5388.999965667725,
+      "y": 5388,
       "form": [
         {
           "id": "inputs17-input-0",
@@ -3455,7 +3455,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -429,
-      "y": 2399.0001640319824
+      "y": 2399
     },
     {
       "id": "A81398E1-55DD-4F60-B5A5-7604F6F31DE0",
@@ -3469,7 +3469,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -415,
-      "y": 2737.0001640319824,
+      "y": 2737,
       "variableGuid": "F04D2554-B811-4421-82C0-B523F48EFC05",
       "operations": [
         {
@@ -3709,7 +3709,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 240,
-      "y": 5560,
+      "y": 6040,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "61a20140-eb31-11ed-8f08-a515d1528437",
@@ -3751,8 +3751,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -383,
-      "y": 5753.200000000003
+      "x": 759,
+      "y": 6245
     },
     {
       "id": "84806E2B-4901-4760-B1D3-84018CC64984",
@@ -3780,7 +3780,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -372,
-      "y": 5869.2999999999965,
+      "y": 5869,
       "loopBlockId": "C8C41C11-634E-42DF-8339-EEB8E3182BDB"
     },
     {
@@ -3795,7 +3795,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -349,
-      "y": 6139.2999999999965,
+      "y": 6139,
       "variableGuid": "0F8F0810-5019-460A-88A3-3CE5C3F763FD",
       "operations": [
         {
@@ -3818,7 +3818,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -359,
-      "y": 6339.650000000002,
+      "y": 6339,
       "variableGuid": "0F8F0810-5019-460A-88A3-3CE5C3F763FD",
       "operations": [
         {
@@ -4421,7 +4421,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -394,
-      "y": 19610.999225616455,
+      "y": 19610,
       "childTrueId": "CAD213FA-5D1F-4CF3-BACC-E52EBE943311",
       "childFalseId": "3954EAC8-F91F-4744-AFAB-95B62A4EE8ED"
     },
@@ -4437,7 +4437,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -364,
-      "y": 19972.999225616455
+      "y": 19972
     },
     {
       "id": "3954EAC8-F91F-4744-AFAB-95B62A4EE8ED",
@@ -4465,7 +4465,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -379,
-      "y": 19667.999225616455
+      "y": 19667
     },
     {
       "id": "9D118DF9-11C8-4AE5-AFDD-AFE48DC7A1B2",
@@ -4571,7 +4571,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -370,
-      "y": 13684.999591827393,
+      "y": 13684,
       "childTrueId": null,
       "childFalseId": "21F74017-6B6A-4FAE-B372-6D5F3A77641B"
     },
@@ -4607,7 +4607,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -369,
-      "y": 15126.999546051024,
+      "y": 15126,
       "childTrueId": null,
       "childFalseId": "E7247B55-27AA-40EA-BFC4-CC6D250D85FD"
     },
@@ -4623,7 +4623,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -420,
-      "y": 14332.99959564209,
+      "y": 14332,
       "variableGuid": "AEF0DDC1-2416-493C-A76B-5198A074B356",
       "operations": [
         {
@@ -4739,8 +4739,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 408.2352941176472,
-      "y": 31759.999999999996,
+      "x": 408,
+      "y": 31759,
       "childTrueId": "CB814DE2-24E7-4E75-B5DA-AA865B143EE5",
       "childFalseId": null
     },
@@ -4775,8 +4775,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 406.11438153790016,
-      "y": 28614.0784911507,
+      "x": 406,
+      "y": 28614,
       "childTrueId": "7A02AD91-560D-45E0-8E5C-953CE5C5C196",
       "childFalseId": null
     },
@@ -4806,7 +4806,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 325,
-      "y": 21236.499254226685
+      "y": 21236
     },
     {
       "id": "2641F2FA-F3C4-4FF4-8A4E-8483531F4657",
@@ -4840,7 +4840,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -426,
-      "y": 22198.4992313385,
+      "y": 22198,
       "childTrueId": "5366D9E4-F063-4509-879C-CD3F7F335253",
       "childFalseId": null
     },
@@ -4870,7 +4870,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -427,
-      "y": 22083.4992313385
+      "y": 22083
     },
     {
       "id": "2D00E952-282E-4079-83E1-486963A77AA3",
@@ -4907,7 +4907,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -422,
-      "y": 19864.999340057373,
+      "y": 19864,
       "variableGuid": "DC5FF2EB-099E-4A96-988D-BCA2BB616A3E",
       "operations": [
         {
@@ -4949,8 +4949,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 740.9290833375705,
-      "y": 35734.89024416288,
+      "x": 740,
+      "y": 35734,
       "childTrueId": "D4632E1C-F69E-4AB0-801D-B71C339F0400",
       "childFalseId": null
     },
@@ -4966,7 +4966,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -418,
-      "y": 19851.99941921234,
+      "y": 19851,
       "variableGuid": "931DD1CA-0F04-4B3B-A02D-57A900318A43",
       "operations": [
         {
@@ -5032,7 +5032,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -421,
-      "y": 23722.99925136566,
+      "y": 23722,
       "childTrueId": "D3AC0770-805D-4D05-BA04-CC3ADB698CFD",
       "childFalseId": null
     },
@@ -5062,7 +5062,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -426,
-      "y": 23794.99926662445
+      "y": 23794
     },
     {
       "id": "1C2B5457-B812-4980-9AD2-56CF497E2705",
@@ -5090,7 +5090,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -423,
-      "y": 23800.99926662445
+      "y": 23800
     },
     {
       "id": "A0B858FF-1332-4AB5-A069-4A4B8B5A0B98",
@@ -5118,7 +5118,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -423,
-      "y": 24295.99925518036
+      "y": 24295
     },
     {
       "id": "58D97769-0094-4971-95AF-D4B26BF14730",
@@ -5146,7 +5146,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -423,
-      "y": 24300.99925518036
+      "y": 24300
     },
     {
       "id": "8954919B-D891-48A6-BF95-11D0B9C0A6B1",
@@ -5180,7 +5180,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -429,
-      "y": 23344.332527160645,
+      "y": 23344,
       "childTrueId": "7DFB80E5-8602-4C5B-BAD5-AD93CD491191",
       "childFalseId": "B1E29F4A-7235-41BB-97AE-009CC836F65C"
     },
@@ -5210,7 +5210,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -424,
-      "y": 25653.332412719727
+      "y": 25653
     },
     {
       "id": "B6AFDE78-0FB2-4474-B35F-4457AB0407A0",
@@ -5224,7 +5224,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -426,
-      "y": 25940.332412719727
+      "y": 25940
     },
     {
       "id": "FEB7AB88-1C04-4F9D-9F7A-C1452E60ECFC",
@@ -5329,7 +5329,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -427,
-      "y": 21184.332599639893
+      "y": 21184
     },
     {
       "id": "D10D7019-D821-4258-A2BC-BEF07DFAB046",
@@ -5363,7 +5363,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -420,
-      "y": 21301.332599639893,
+      "y": 21301,
       "childTrueId": "D12AE2C3-872E-4FBD-9B75-AAC47B698889",
       "childFalseId": null
     },
@@ -5402,7 +5402,7 @@
       "name": "output43",
       "displayName": "Output 43",
       "comment": "Review the manifest carefully",
-      "childId": "FEB7AB88-1C04-4F9D-9F7A-C1452E60ECFC",
+      "childId": "9233EE0F-A456-435A-88A7-995DB4328277",
       "inputs": [
         {
           "id": "input",
@@ -5421,8 +5421,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 2.3529411764704946,
-      "y": 28692.941176470587
+      "x": 2,
+      "y": 28692
     },
     {
       "id": "1D12AA3B-DFD6-4145-96CC-C37D9A23D6CC",
@@ -5431,7 +5431,7 @@
       "name": "output45",
       "displayName": "Output 45",
       "comment": "Log headers",
-      "childId": "9AC5F2CA-E39A-46B5-9D13-94C1CC9F3839",
+      "childId": "0DB22725-98A6-4C62-9AD1-4019931E9A84",
       "inputs": [
         {
           "id": "input",
@@ -5484,8 +5484,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 343.2098011997803,
-      "y": 33524.57485647701,
+      "x": 343,
+      "y": 33524,
       "childTrueId": "30AE32A1-19A8-4D3C-A124-F098AFE640B1",
       "childFalseId": "F1B65D8F-75C7-4022-B97A-7984FF1B485F"
     },
@@ -5550,7 +5550,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -412,
-      "y": 9838.16637802124,
+      "y": 9838,
       "variableGuid": "F83F9847-4BB6-475C-8D0F-771F41CB82AA",
       "operations": [
         {
@@ -5573,7 +5573,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -419,
-      "y": 17794.999324798584,
+      "y": 17794,
       "variableGuid": "C72DB8AB-2F54-4B14-9891-F39DDA3D6E09",
       "operations": [
         {
@@ -5595,8 +5595,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 3.043770016360611,
-      "y": 20656.53866094892,
+      "x": 3,
+      "y": 20656,
       "variableGuid": "C72DB8AB-2F54-4B14-9891-F39DDA3D6E09",
       "operations": [
         {
@@ -5619,7 +5619,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -420,
-      "y": 17960.16598892212,
+      "y": 17960,
       "variableGuid": "CD12D6B9-204E-4F13-80F6-D13C434AF57D",
       "operations": [
         {
@@ -5717,7 +5717,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -415,
-      "y": 18184.166023254395,
+      "y": 18184,
       "variableGuid": "2A40F61C-0233-493F-8973-39E434142487",
       "operations": [
         {
@@ -5766,7 +5766,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -424,
-      "y": 17052.165939331055,
+      "y": 17052,
       "childTrueId": "BCB98CFA-499B-4021-A1D8-D31701C1CA8D",
       "childFalseId": null
     },
@@ -5782,7 +5782,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -418,
-      "y": 17387.165939331055,
+      "y": 17387,
       "variableGuid": "EB9A2497-EB92-4AA9-997F-CE49D9D05CCC",
       "operations": [
         {
@@ -5805,7 +5805,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -416,
-      "y": 8827.499691009521,
+      "y": 8827,
       "variableGuid": "B90E4872-00CC-48B6-9C3D-E54863BD14BA",
       "operations": [
         {
@@ -6143,7 +6143,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -438,
-      "y": 17237.999485492706,
+      "y": 17237,
       "childTrueId": "9383CC29-14D9-4115-B1FF-27241E66ECE9",
       "childFalseId": null
     },
@@ -6210,7 +6210,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -416,
-      "y": 17848.999313354492
+      "y": 17848
     },
     {
       "id": "8E3C5FB1-E5F7-4B03-B50D-3C2AE97AE16F",
@@ -6354,8 +6354,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 723.4026738883789,
-      "y": 6774.69570643708,
+      "x": 723,
+      "y": 6774,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -6414,7 +6414,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -372,
-      "y": 7642.999675750732,
+      "y": 7642,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -6454,11 +6454,11 @@
       "name": "output",
       "displayName": "Output",
       "comment": "* This automation requires no configuration. Press \"Run\". *",
-      "childId": "A25F118A-B920-41CD-9C0E-01C5ADCF5185",
+      "childId": "A7C02A53-E2B0-4AF0-B870-00F6BD16632A",
       "inputs": [
         {
           "id": "input",
-          "value": "#### Welcome to the Qlik Cloud Monitoring Applications installation process! \n\nThis installer handles both new installations and upgrades of the Qlik Cloud Monitoring applications.\n\n##### Checking for prerequisites...",
+          "value": "#### Welcome to the Qlik Cloud Monitoring Applications installation process!\n\nThis installer handles both new installations and upgrades of the Qlik Cloud Monitoring applications.",
           "type": "string",
           "structure": []
         }
@@ -6556,8 +6556,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 636.1009607853107,
-      "y": 5761.215901294296
+      "x": 636,
+      "y": 5761
     },
     {
       "id": "0373F2E4-029D-4DEF-B228-6C5E37B537BF",
@@ -6584,36 +6584,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 647.2614508452994,
-      "y": 6775.249148034882
-    },
-    {
-      "id": "6F021366-EFA6-4310-8661-A2AED2C5654A",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output4",
-      "displayName": "Output 4",
-      "comment": "Prerequisites met",
-      "childId": "6C5CC9F3-8F52-46D6-8F8F-A33380A33175",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "##### Let's get started on the configuration settings!\n```\nNote:  All of the following configuration settings and actions \nwill not be applied until after the full configuration manifest \nhas been reviewed towards the end of this installer. Exiting \nbefore that time will not result in anything having been done \nto the tenant.\n\nIf this list of applications to install below does not appear, please refresh this page.\n```",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 10700
+      "x": 647,
+      "y": 6775
     },
     {
       "id": "6C5CC9F3-8F52-46D6-8F8F-A33380A33175",
@@ -6628,8 +6600,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -427.5733820832549,
-      "y": 8227.89367964584
+      "x": -16,
+      "y": 10875
     },
     {
       "id": "F9C0AB78-59FC-4ED6-B07C-7C399026EEB5",
@@ -6637,7 +6609,7 @@
       "disabled": false,
       "name": "output2",
       "displayName": "Output 2",
-      "comment": "Begin adjustment table",
+      "comment": "Begin API key adjustment table",
       "childId": "7273EEDB-33B0-49BC-9F2B-7DAB07D61141",
       "inputs": [
         {
@@ -6718,8 +6690,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -4.058360021814224,
-      "y": 25494.356870507178,
+      "x": -4,
+      "y": 25494,
       "childTrueId": null,
       "childFalseId": "27D1E4DA-75CC-4023-AE11-A1118CF2829F"
     },
@@ -6782,8 +6754,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -435.6901021268833,
-      "y": 25514.815915758587,
+      "x": -435,
+      "y": 25514,
       "childTrueId": "19AF9D3B-C698-41BE-ADC5-56DBABCFBAB5",
       "childFalseId": "FC4CEC40-D4AC-4CEC-9078-FBF5CE004841"
     },
@@ -6875,8 +6847,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 12.1750800654425,
-      "y": 26291.896700708963,
+      "x": 12,
+      "y": 26291,
       "childTrueId": "2AB37A77-C844-4F6F-82E2-18E8ABEF7264",
       "childFalseId": null
     },
@@ -6933,8 +6905,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 508.89319295036864,
-      "y": 26033.27135049004
+      "x": 508,
+      "y": 26033
     },
     {
       "id": "4DC6A47F-BB9D-4E50-9E8B-2C3135B3B783",
@@ -7000,8 +6972,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -426.55879207780134,
-      "y": 26483.74928194859,
+      "x": -426,
+      "y": 26483,
       "childTrueId": "94EE97AE-5FD3-4BB8-9FE1-D66C4F836D31",
       "childFalseId": null
     },
@@ -7180,8 +7152,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -446.8505921868723,
-      "y": 27562.76555923075,
+      "x": -446,
+      "y": 27562,
       "childTrueId": "F7CA103A-DF9E-4BF1-ADAE-322FCBEC77A1",
       "childFalseId": "68B20D0C-0770-4AE9-AADE-38A351FDCD78"
     },
@@ -7210,8 +7182,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -441.77764215960457,
-      "y": 27456.233407399737
+      "x": -441,
+      "y": 27456
     },
     {
       "id": "F7CA103A-DF9E-4BF1-ADAE-322FCBEC77A1",
@@ -7238,8 +7210,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -450.9089522086865,
-      "y": 27457.247997405186
+      "x": -450,
+      "y": 27457
     },
     {
       "id": "398CFA2B-F615-455C-A929-5EF1415E5392",
@@ -7266,8 +7238,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -450.9089522086865,
-      "y": 27704.80790842125
+      "x": -450,
+      "y": 27704
     },
     {
       "id": "FED2E080-1613-43C4-AAF1-8596395C7A36",
@@ -7330,8 +7302,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -440.763052154151,
-      "y": 27941.207302284856
+      "x": -440,
+      "y": 27941
     },
     {
       "id": "0E731F6C-6797-4CA9-9EA2-890DBA9262D7",
@@ -7364,8 +7336,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 406.11438153790016,
-      "y": 28854.0784911507,
+      "x": 406,
+      "y": 28854,
       "childTrueId": "C82CE0A5-99A1-4B8A-AE97-E811D592B624",
       "childFalseId": null
     },
@@ -7394,8 +7366,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -450.9089522086865,
-      "y": 28289.211647062944
+      "x": -450,
+      "y": 28289
     },
     {
       "id": "64625B85-D38A-41EB-A934-91A6F5BD48BD",
@@ -7433,8 +7405,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 586.4330231521501,
-      "y": 28257.175768286805,
+      "x": 586,
+      "y": 28257,
       "childTrueId": "3341925D-F1AA-40ED-ABF4-0B112A349855",
       "childFalseId": null
     },
@@ -7596,8 +7568,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -428.58797208870845,
-      "y": 9968.93040379924
+      "x": -428,
+      "y": 9968
     },
     {
       "id": "17767B46-BAD5-4FF4-9189-B4FD39E004A7",
@@ -7610,8 +7582,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -431.6317421050691,
-      "y": 9966.901223788334
+      "x": -431,
+      "y": 9966
     },
     {
       "id": "5B0A8814-ED4B-425C-BE04-D12FD2F94B5E",
@@ -7684,8 +7656,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 587.4476131576037,
-      "y": 19229.524373361073,
+      "x": 587,
+      "y": 19229,
       "childTrueId": null,
       "childFalseId": "A41E77F8-C15F-41BB-AED2-6C12FBF2916B"
     },
@@ -7715,7 +7687,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -421,
-      "y": 18352.999477386475
+      "y": 18352
     },
     {
       "id": "8BBE08A1-E44D-42B7-A416-380E8D6F754E",
@@ -7729,7 +7701,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -431,
-      "y": 18628.832580566406
+      "y": 18628
     },
     {
       "id": "0E404425-2623-48D4-BC0A-495C82EC30CB",
@@ -8556,8 +8528,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -435.6901021268833,
-      "y": 31908.7616482678
+      "x": -435,
+      "y": 31908
     },
     {
       "id": "ADD862BC-0327-43CC-B76A-A1944199D098",
@@ -8649,8 +8621,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -427.5733820832549,
-      "y": 34115.49491399962,
+      "x": -427,
+      "y": 34115,
       "childTrueId": "7338DBFB-B10C-45D4-8916-5661D098F378",
       "childFalseId": "3B6B5A67-07B5-4D11-99C4-CB1AA579BB0E"
     },
@@ -8715,8 +8687,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -437.7192821377904,
-      "y": 32469.15371436868
+      "x": -437,
+      "y": 32469
     },
     {
       "id": "DA0A63F4-BB97-4570-BD2D-973AC065F1CE",
@@ -8743,8 +8715,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -421.4858420505336,
-      "y": 32554.379270956422
+      "x": -421,
+      "y": 32554
     },
     {
       "id": "C02DDD9D-4B59-43F4-ADAB-25DE6C3C8E00",
@@ -8771,8 +8743,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -419.45666203962656,
-      "y": 32267.25029941307
+      "x": -419,
+      "y": 32267
     },
     {
       "id": "A86A32DE-72E1-4112-A949-E0E5141525A5",
@@ -8799,8 +8771,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425.54420207234784,
-      "y": 33216.906567739716
+      "x": -425,
+      "y": 33216
     },
     {
       "id": "DB9CEF6E-C607-4C7B-8EE3-B6D7B288A770",
@@ -8827,8 +8799,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -428.58797208870845,
-      "y": 33182.41046111005
+      "x": -428,
+      "y": 33182
     },
     {
       "id": "C4C80FEC-B46A-4D61-AFF7-0E6F2097322B",
@@ -8883,8 +8855,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -428.58797208870845,
-      "y": 34419.195608091555
+      "x": -428,
+      "y": 34419
     },
     {
       "id": "0F29D432-13F7-45CF-B1C0-0D910CB7EA6F",
@@ -8926,8 +8898,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -429.602562094162,
-      "y": 34941.37116876292,
+      "x": -429,
+      "y": 34941,
       "loopBlockId": null
     },
     {
@@ -9004,8 +8976,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -422.5004320559872,
-      "y": 35464.89961157695,
+      "x": -422,
+      "y": 35464,
       "variableGuid": "0E8BB935-5077-427E-AC68-9F554ACD1FEE",
       "operations": [
         {
@@ -9069,8 +9041,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -424.5296120668943,
-      "y": 35340.105067998644
+      "x": -424,
+      "y": 35340
     },
     {
       "id": "B6B95CDC-E4E4-4982-9D57-CCB76B67FBC3",
@@ -9125,8 +9097,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -431.6317421050691,
-      "y": 35533.384316964104,
+      "x": -431,
+      "y": 35533,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -9170,8 +9142,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425.54420207234784,
-      "y": 36264.903710896106,
+      "x": -425,
+      "y": 36264,
       "variableGuid": "95E0C8B1-3211-4D25-8999-C6EA20F1674F",
       "operations": [
         {
@@ -9317,8 +9289,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426.55879207780134,
-      "y": 36517.53668030935,
+      "x": -426,
+      "y": 36517,
       "variableGuid": "95E0C8B1-3211-4D25-8999-C6EA20F1674F",
       "operations": [
         {
@@ -9382,8 +9354,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425.54420207234784,
-      "y": 36151.100600327314
+      "x": -425,
+      "y": 36151
     },
     {
       "id": "F0902512-A693-4BCE-894C-1784BA200E93",
@@ -9410,8 +9382,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426.55879207780134,
-      "y": 36207.91764063272
+      "x": -426,
+      "y": 36207
     },
     {
       "id": "82990BFF-636E-4332-8526-F0E8D0B10567",
@@ -9438,8 +9410,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 36626.94331288503
+      "x": -429,
+      "y": 36626
     },
     {
       "id": "0A3C842D-7B58-482A-995F-7005476E037F",
@@ -9466,8 +9438,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -424.5296120668943,
-      "y": 36862.32819415026
+      "x": -424,
+      "y": 36862
     },
     {
       "id": "4B865480-96E8-4A3B-A06E-E3A877D1F8A5",
@@ -9550,8 +9522,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -432.6463321105226,
-      "y": 21171.525395553996,
+      "x": -432,
+      "y": 21171,
       "loopBlockId": "DA387BA8-B21D-435B-B28F-7E10D84A32BA"
     },
     {
@@ -9565,8 +9537,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -420.47125204508006,
-      "y": 21443.435517015547,
+      "x": -420,
+      "y": 21443,
       "variableGuid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "operations": [
         {
@@ -9628,8 +9600,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -430.6171520996156,
-      "y": 21319.655536350216,
+      "x": -430,
+      "y": 21319,
       "childTrueId": "63FB55BE-0363-48A0-B0DD-4CCD7D329266",
       "childFalseId": null
     },
@@ -9644,8 +9616,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 21860.43200925695,
+      "x": -429,
+      "y": 21860,
       "variableGuid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "operations": [
         {
@@ -9683,8 +9655,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 663.5418635666197,
-      "y": 21812.162674912142,
+      "x": 663,
+      "y": 21812,
       "childTrueId": "7E3E1DBC-1623-4C7F-A791-A461F3B95C3B",
       "childFalseId": null
     },
@@ -9699,8 +9671,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 21860.43200925695,
+      "x": -429,
+      "y": 21860,
       "variableGuid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "operations": [
         {
@@ -9738,8 +9710,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 663.5418635666197,
-      "y": 22055.664276220996,
+      "x": 663,
+      "y": 22055,
       "childTrueId": "B3C16BEA-27E0-421B-9CA9-81B03EC7160C",
       "childFalseId": null
     },
@@ -9754,8 +9726,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 21860.43200925695,
+      "x": -429,
+      "y": 21860,
       "variableGuid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "operations": [
         {
@@ -9793,8 +9765,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 676.7315336375158,
-      "y": 22274.81571739896,
+      "x": 676,
+      "y": 22274,
       "childTrueId": "BA4EC12C-3664-4834-BF52-850C57E2962D",
       "childFalseId": null
     },
@@ -9809,8 +9781,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 21860.43200925695,
+      "x": -429,
+      "y": 21860,
       "variableGuid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "operations": [
         {
@@ -9848,8 +9820,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 694.9941537356797,
-      "y": 22526.434019399672,
+      "x": 694,
+      "y": 22526,
       "childTrueId": "31941299-1BCA-4C16-8563-690296E616DA",
       "childFalseId": null
     },
@@ -9864,8 +9836,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 21860.43200925695,
+      "x": -429,
+      "y": 21860,
       "variableGuid": "7B4BF018-28A1-4D83-91F8-1978ABE1B51E",
       "operations": [
         {
@@ -9907,8 +9879,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -427.5733820832549,
-      "y": 36125.06074439168,
+      "x": -427,
+      "y": 36125,
       "childTrueId": "10D88780-B357-4F5F-A985-B712CCFF5C44",
       "childFalseId": null
     },
@@ -9923,8 +9895,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 346.98978186511306,
-      "y": 36479.58364608228,
+      "x": 346,
+      "y": 36479,
       "variableGuid": "AA28A3F9-A83F-4BE8-98F9-4B3EF2DBFDE5",
       "operations": [
         {
@@ -10050,8 +10022,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -424.5296120668943,
-      "y": 36862.32819415026
+      "x": -424,
+      "y": 36862
     },
     {
       "id": "A1A79B5D-3D79-414B-8132-CFB9E24EA2E7",
@@ -10277,8 +10249,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -439.74846214869746,
-      "y": 40823.62705964706
+      "x": -439,
+      "y": 40823
     },
     {
       "id": "BFCDCE41-446E-4A67-9659-E95966575244",
@@ -10311,8 +10283,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 611.5882352941176,
-      "y": 26498.82352941176,
+      "x": 611,
+      "y": 26498,
       "childTrueId": "CCAFF53D-5058-4D8C-8D7C-1F6A0C8AF88D",
       "childFalseId": "8C8F6677-B732-431D-8A40-9B1583B442FA"
     },
@@ -10341,8 +10313,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -428.58797208870845,
-      "y": 26047.47536479893
+      "x": -428,
+      "y": 26047
     },
     {
       "id": "18C6599A-5361-4694-BCFA-7B90CBDFF9F8",
@@ -10355,8 +10327,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -433.6609221159762,
-      "y": 26324.45843628775
+      "x": -433,
+      "y": 26324
     },
     {
       "id": "9995CAE1-07E0-4CD9-B895-57F793628DB4",
@@ -10866,8 +10838,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 179.1176470588236,
-      "y": 27621.764705882357
+      "x": 179,
+      "y": 27621
     },
     {
       "id": "D740B0B0-8E9F-491E-8FD2-BA47C4DFA79A",
@@ -10880,8 +10852,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 28.529411764705856,
-      "y": 27931.17647058823
+      "x": 28,
+      "y": 27931
     },
     {
       "id": "BF439162-3D79-4AB6-A9CF-A441F385EA3B",
@@ -10972,8 +10944,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 607.3529411764706,
-      "y": 33399.41176470588
+      "x": 607,
+      "y": 33399
     },
     {
       "id": "8C0B38ED-A348-41B5-84CE-376C0F4C3041",
@@ -11006,8 +10978,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -403.2352941176471,
-      "y": 33478.23529411765,
+      "x": -403,
+      "y": 33478,
       "childTrueId": "03B7CD76-989A-463F-B914-1379198F10A5",
       "childFalseId": null
     },
@@ -11042,8 +11014,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -437.3529411764706,
-      "y": 38878.23529411765,
+      "x": -437,
+      "y": 38878,
       "childTrueId": "471CB54C-BE3F-4B75-ACED-9148CA8490E5",
       "childFalseId": null
     },
@@ -11100,8 +11072,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -124.41176470588238,
-      "y": 38855.882352941175,
+      "x": -124,
+      "y": 38855,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -11143,7 +11115,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -415,
-      "y": 38987.64705882353,
+      "y": 38987,
       "childTrueId": "F55FC8D8-031C-477F-BEA7-013C7F66C3E5",
       "childFalseId": null
     },
@@ -11172,8 +11144,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 678.8235294117646,
-      "y": 41974.11764705883
+      "x": 678,
+      "y": 41974
     },
     {
       "id": "D6CD91E5-4D46-4D90-8E09-957D840443E6",
@@ -11230,8 +11202,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -431.6317421050691,
-      "y": 35533.384316964104,
+      "x": -431,
+      "y": 35533,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -11267,8 +11239,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -427.5733820832549,
-      "y": 34115.49491399962,
+      "x": -427,
+      "y": 34115,
       "childTrueId": "5D8711E9-C87F-494F-A25C-19241110615D",
       "childFalseId": "66C93FFC-B288-47E4-B959-87C9D561125C"
     },
@@ -11426,8 +11398,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425.54420207234784,
-      "y": 36264.903710896106,
+      "x": -425,
+      "y": 36264,
       "variableGuid": "F1053F87-1F12-4B1A-A857-E0ABED52836D",
       "operations": [
         {
@@ -11463,8 +11435,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425.54420207234784,
-      "y": 36151.100600327314
+      "x": -425,
+      "y": 36151
     },
     {
       "id": "7ACD76EF-3A84-4153-BF43-B518C57A411E",
@@ -11550,8 +11522,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426.55879207780134,
-      "y": 36207.91764063272
+      "x": -426,
+      "y": 36207
     },
     {
       "id": "418B4BA0-21BE-473F-B451-C5E4F36CCE98",
@@ -11564,8 +11536,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -426.55879207780134,
-      "y": 36517.53668030935,
+      "x": -426,
+      "y": 36517,
       "variableGuid": "F1053F87-1F12-4B1A-A857-E0ABED52836D",
       "operations": [
         {
@@ -11722,8 +11694,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -381.1764705882353,
-      "y": 43821.17647058824,
+      "x": -381,
+      "y": 43821,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "snippet_guid": "8d2f7da0-5028-11eb-8889-317a6c8ea7fc"
     },
@@ -11829,86 +11801,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 34.117647058823366,
-      "y": 44056.470588235294
-    },
-    {
-      "id": "B4F8619A-323A-474D-84F1-E5DA35A10F9C",
-      "type": "CallUrlBlock",
-      "disabled": false,
-      "name": "callURL3",
-      "displayName": "Call URL 3",
-      "comment": "**TEMPORARY** Create the data connection.",
-      "childId": "747A44F9-0BB8-459B-BB98-411F0932A705",
-      "inputs": [
-        {
-          "id": "url",
-          "value": "https://{$.getCurrentTenantInfo.hostnames[0]}/api/v1/dcaas/actions/data-connections",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "method",
-          "value": "POST",
-          "type": "select",
-          "displayValue": "POST",
-          "structure": []
-        },
-        { "id": "timeout", "value": "", "type": "string", "structure": [] },
-        {
-          "id": "params",
-          "value": "{\n    \"dataSourceId\": \"rest\",\n    \"connectionName\": \"monitoring_apps_REST\",\n\"spaceId\":\"{if: {$.publish} = 1, $.targetSpaceID, {if: {$.sourceSpaceType} != 'Personal', $.sourceSpaceID, }}\",\n    \"connectionProperties\": {\n        \"url\": \"https://{$.getCurrentTenantInfo.hostnames[0]}/api/v1/users\",\n        \"queryHeaders\": [\n            {\n                \"name\": \"Authorization\",\n                \"value\": \"Bearer {if: {$.autogenerateAPIKey} = 1, {$.rawAPIRequest7.token}, {$.inputs8.'API key for data connection creation'}}\",\n                \"encrypt\": true\n            }\n        ],\n        \"allowWithConnection\": \"true\"\n    }\n}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "headers",
-          "value": [
-            {
-              "key": "Authorization",
-              "value": "Bearer {if: {$.autogenerateAPIKey} = 1, {$.rawAPIRequest7.token}, {$.inputs8.'API key for data connection creation'}}"
-            },
-            {
-              "key": "User-Agent",
-              "value": "automationsQCMA/v1 This is for tracking dcaas requests via callUrl"
-            }
-          ],
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        { "id": "encoding", "value": "", "type": "string", "structure": [] }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "full_response",
-          "value": true,
-          "type": "checkbox",
-          "structure": []
-        },
-        {
-          "id": "capitalize_headers",
-          "value": true,
-          "type": "checkbox",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": true,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 40340
+      "x": 34,
+      "y": 44056
     },
     {
       "id": "F55FC8D8-031C-477F-BEA7-013C7F66C3E5",
@@ -11936,7 +11830,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -373,
-      "y": 38672.83226966858
+      "y": 38672
     },
     {
       "id": "747A44F9-0BB8-459B-BB98-411F0932A705",
@@ -11964,7 +11858,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 240,
-      "y": 64080
+      "y": 68180
     },
     {
       "id": "471CB54C-BE3F-4B75-ACED-9148CA8490E5",
@@ -11992,7 +11886,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
-      "y": 38607.16522216797
+      "y": 38607
     },
     {
       "id": "A8422363-C1DE-4EBF-AA2C-3A9E1CC3221D",
@@ -12020,7 +11914,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 38617.16522216797
+      "y": 38617
     },
     {
       "id": "916B4783-6744-4D6C-A357-8301B7120CCB",
@@ -12101,7 +11995,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -372,
-      "y": 18276.16597557068,
+      "y": 18276,
       "childTrueId": null,
       "childFalseId": "8C544BE2-5025-4B28-A05E-25E41290193A"
     },
@@ -12224,7 +12118,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -371,
-      "y": 21709.99952697754,
+      "y": 21709,
       "variableGuid": "F8393D05-41C4-407C-81E4-9619B493BF74",
       "operations": [
         {
@@ -12249,7 +12143,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -373,
-      "y": 41794.832248687744
+      "y": 41794
     },
     {
       "id": "F2B85544-2A12-4B4C-BBB2-8291A968943F",
@@ -12288,7 +12182,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -366,
-      "y": 22391.165899038315,
+      "y": 22391,
       "childTrueId": "4E29891C-C22C-466B-8226-19D895CB0113",
       "childFalseId": null
     },
@@ -12325,7 +12219,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -376,
-      "y": 22540.165899038315,
+      "y": 22540,
       "childTrueId": "38DFDE7C-0B06-45D7-A364-E2B84A2E8927",
       "childFalseId": null
     },
@@ -12341,7 +12235,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -369,
-      "y": 22914.165899038315,
+      "y": 22914,
       "variableGuid": "51F73988-4122-4239-839F-75EA8CC55572",
       "operations": [
         {
@@ -12385,7 +12279,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -371,
-      "y": 22616.165899038315,
+      "y": 22616,
       "childTrueId": "538773EB-C844-452B-B960-57E5CF2EEAA9",
       "childFalseId": null
     },
@@ -12401,7 +12295,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 330,
-      "y": 22917.165899038315,
+      "y": 22917,
       "variableGuid": "51F73988-4122-4239-839F-75EA8CC55572",
       "operations": [
         {
@@ -12445,7 +12339,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -368,
-      "y": 39861.16540694237,
+      "y": 39861,
       "childTrueId": "87E91184-5ADB-4F23-89C7-9715BD89F9CF",
       "childFalseId": null
     },
@@ -12528,7 +12422,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -372,
-      "y": 39757.33140182495,
+      "y": 39757,
       "childTrueId": "6DE99CCB-24C3-4037-BC69-ABED0B2C3F63",
       "childFalseId": null
     },
@@ -12569,7 +12463,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -371,
-      "y": 33038.33223617077,
+      "y": 33038,
       "childTrueId": "2E5C48D6-2492-4BAF-AC83-51171EB1BF66",
       "childFalseId": null
     },
@@ -12606,7 +12500,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -367,
-      "y": 14398.999835968018,
+      "y": 14398,
       "childTrueId": "D8E5BB94-CBC4-405A-A1BD-2EC441C21CEC",
       "childFalseId": null
     },
@@ -12643,7 +12537,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 794,
-      "y": 14499.999835968018,
+      "y": 14499,
       "childTrueId": "D5058E3E-E31B-4F5D-B959-EBB0B34EAD6A",
       "childFalseId": null
     },
@@ -12731,7 +12625,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -358,
-      "y": 14362.999835968018,
+      "y": 14362,
       "variableGuid": "A57C68A7-7729-4350-9D3F-A3438CF3AC2B",
       "operations": [
         {
@@ -12836,7 +12730,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -379,
-      "y": 43817.99883747101,
+      "y": 43817,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -12989,7 +12883,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -371,
-      "y": 44372.99883747101,
+      "y": 44372,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "snippet_guid": "b5dbb7a0-e715-11ea-b2bf-43bb35adee19"
     },
@@ -13019,7 +12913,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 44604.99883747101
+      "y": 44604
     },
     {
       "id": "826F7C9B-E56A-46DE-9798-1127FA814B78",
@@ -13072,7 +12966,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 50504.99886035919,
+      "y": 50504,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "snippet_guid": "b5dbb7a0-e715-11ea-b2bf-43bb35adee19"
     },
@@ -13102,7 +12996,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 308,
-      "y": 50659.99886035919
+      "y": 50659
     },
     {
       "id": "4E1E714C-A9EE-43BD-82C5-DC71A8074709",
@@ -13130,7 +13024,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 171,
-      "y": 50585.99886035919
+      "y": 50585
     },
     {
       "id": "A94D41B1-7FD0-4655-BF99-AC8385DB0436",
@@ -13186,7 +13080,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -381,
-      "y": 51239.99883747101
+      "y": 51239
     },
     {
       "id": "01C5D836-307F-473F-878C-B85688F4FB50",
@@ -13214,7 +13108,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 573,
-      "y": 5431.999816894531
+      "y": 5431
     },
     {
       "id": "0458CA37-8C03-4C75-967F-6D2E5AAED26B",
@@ -13228,7 +13122,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -364,
-      "y": 5584.999816894531
+      "y": 5584
     },
     {
       "id": "677ADD95-CC8B-433C-9EB3-10F56B069698",
@@ -13244,7 +13138,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -367,
-      "y": 37982.332381248474
+      "y": 37982
     },
     {
       "id": "330C2DDB-A8B5-4F40-B08A-82483BEF5210",
@@ -13260,7 +13154,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -370,
-      "y": 39205.33237361908
+      "y": 39205
     },
     {
       "id": "B4635FA9-5076-4F42-8502-146780A737B7",
@@ -13276,7 +13170,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
-      "y": 51373.66502761841
+      "y": 51373
     },
     {
       "id": "7DFB80E5-8602-4C5B-BAD5-AD93CD491191",
@@ -13304,7 +13198,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 37345.99888515472
+      "y": 37345
     },
     {
       "id": "0ADF050B-5BF7-4CD0-992C-54F0D121E8DA",
@@ -13332,7 +13226,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -381,
-      "y": 52470.8320646286
+      "y": 52470
     },
     {
       "id": "24C1356E-323F-42E4-B81C-42F2F2AADC84",
@@ -13366,7 +13260,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -372,
-      "y": 24872.166790008545,
+      "y": 24872,
       "childTrueId": "8F985927-7749-4A0D-8C43-640B150E2E1E",
       "childFalseId": null
     },
@@ -13395,7 +13289,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -384,
-      "y": 24819.166790008545,
+      "y": 24819,
       "form": [
         {
           "id": "inputs20-input-0",
@@ -13442,7 +13336,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -370,
-      "y": 24979.166790008545,
+      "y": 24979,
       "childTrueId": null,
       "childFalseId": "67B54389-0AB3-4BFA-AF71-7B230F919D01"
     },
@@ -13458,7 +13352,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -371,
-      "y": 25500.166801452637,
+      "y": 25500,
       "variableGuid": "337AFCA3-6985-4B33-92E2-4B883171F726",
       "operations": [
         {
@@ -13481,7 +13375,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -375,
-      "y": 25665.00002002716,
+      "y": 25665,
       "variableGuid": "4FEB671B-A3D4-4BFB-AEDD-7A90E28C6FFB",
       "operations": [
         {
@@ -13504,7 +13398,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -372,
-      "y": 51645.16685438156,
+      "y": 51645,
       "variableGuid": "7C45C612-3119-452D-B33B-C4C78D493E15",
       "operations": [
         {
@@ -13527,7 +13421,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 781,
-      "y": 52674.16684103012,
+      "y": 52674,
       "variableGuid": "7C45C612-3119-452D-B33B-C4C78D493E15",
       "operations": [
         {
@@ -13566,7 +13460,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -362,
-      "y": 52908.166848659515,
+      "y": 52908,
       "childTrueId": "A94D41B1-7FD0-4655-BF99-AC8385DB0436",
       "childFalseId": null
     },
@@ -13655,7 +13549,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -363,
-      "y": 49949.33343219757,
+      "y": 49949,
       "loopBlockId": "FF9CBD02-5D5E-4654-BCB9-45597609B27D"
     },
     {
@@ -13690,7 +13584,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -379,
-      "y": 49883.33343219757,
+      "y": 49883,
       "childTrueId": "530FDFE9-82F1-4F6B-B338-87FC53666E90",
       "childFalseId": null
     },
@@ -13863,7 +13757,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -373,
-      "y": 51773.66665363312,
+      "y": 51773,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -13900,7 +13794,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -367,
-      "y": 51862.66666221619,
+      "y": 51862,
       "childTrueId": "C8103898-8DD0-4887-8AE0-4A24B0A306BA",
       "childFalseId": "108E1A51-DA21-4035-A7E6-8993C6A4FA0E"
     },
@@ -13930,7 +13824,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 52049.66663360596
+      "y": 52049
     },
     {
       "id": "46886BB0-5937-40C3-89FE-00563FA32462",
@@ -14017,20 +13911,20 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 754,
-      "y": 52320.666644096375
+      "y": 52320
     },
     {
       "id": "1EAE726B-20CF-4C69-9D26-02606032FC57",
       "type": "EndpointBlock",
-      "disabled": true,
+      "disabled": false,
       "name": "rawAPIRequest33",
       "displayName": "Qlik Cloud Services - Raw API Request 33",
       "comment": "Create the data connection.",
-      "childId": "B4F8619A-323A-474D-84F1-E5DA35A10F9C",
+      "childId": "747A44F9-0BB8-459B-BB98-411F0932A705",
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "dcaas/actions/data-connections",
+          "value": "data-connections",
           "type": "string",
           "structure": []
         },
@@ -14043,7 +13937,7 @@
         },
         {
           "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\n    \"dataSourceId\": \"rest\",\n    \"connectionName\": \"monitoring_apps_REST\",\n\"spaceId\":\"{if: {$.publish} = 1, $.targetSpaceID, {if: {$.sourceSpaceType} != 'Personal', $.sourceSpaceID, }}\",\n    \"connectionProperties\": {\n        \"url\": \"https://{$.getCurrentTenantInfo.hostnames[0]}/api/v1/users\",\n        \"queryHeaders\": [\n            {\n                \"name\": \"Authorization\",\n                \"value\": \"Bearer {if: {$.autogenerateAPIKey} = 1, {$.rawAPIRequest7.token}, {$.inputs8.'API key for data connection creation'}}\",\n                \"encrypt\": true\n            }\n        ],\n        \"allowWithConnection\": \"true\"\n    }\n}",
+          "value": "{\n\"dataSourceId\": \"rest\",\n\"qName\": \"monitoring_apps_REST\",\n\"space\":\"{if: {$.publish} = 1, $.targetSpaceID, {if: {$.sourceSpaceType} != 'Personal', $.sourceSpaceID, }}\",\n\"connectionProperties\": {\n\"url\": \"https://{$.getCurrentTenantInfo.hostnames[0]}/api/v1/users\",\n\"queryHeaders\": [\n{\n\"name\": \"Authorization\",\n\"value\": \"Bearer {if: {$.autogenerateAPIKey} = 1, {$.rawAPIRequest7.token}, {$.inputs8.'API key for data connection creation'}}\",\n\"encrypt\": true\n}\n],\n\"allowWithConnection\": \"true\"\n}\n}",
           "type": "object",
           "mode": "raw",
           "structure": []
@@ -14073,7 +13967,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -375,
-      "y": 43544.66487503052,
+      "y": 43544,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -15035,7 +14929,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -368,
-      "y": 19933.999313354492,
+      "y": 19933,
       "childTrueId": "203CA019-5EE8-4338-ABA5-DBEEB0E8D28E",
       "childFalseId": "E686709A-FDFE-4A53-A0A1-F75A6E3B698D"
     },
@@ -15071,7 +14965,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -369,
-      "y": 20115.99921798706,
+      "y": 20115,
       "childTrueId": "16BE7009-0866-4BBD-808F-6979E6E20CD1",
       "childFalseId": null
     },
@@ -15101,7 +14995,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 689,
-      "y": 20322.999225616455
+      "y": 20322
     },
     {
       "id": "0F55CD25-2826-4457-94E8-1273D8A0B9D4",
@@ -15149,7 +15043,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -374,
-      "y": 20260.999225616455,
+      "y": 20260,
       "childTrueId": "608C52F5-F64F-4FB0-8E8B-6C4D4DDAB826",
       "childFalseId": "8BF93B38-3ED4-4D50-B620-837894260250"
     },
@@ -15208,7 +15102,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -370,
-      "y": 20703.999183654785,
+      "y": 20703,
       "childTrueId": "A2A1E5D3-4275-41BE-9AE6-B32FF184BF3F",
       "childFalseId": null
     },
@@ -15224,7 +15118,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 711,
-      "y": 21043.99908065796,
+      "y": 21043,
       "variableGuid": "C88BA1F3-0CF9-4321-A1F4-ED5B53867A90",
       "operations": [
         {
@@ -15267,7 +15161,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -368,
-      "y": 21103.99908065796,
+      "y": 21103,
       "childTrueId": "F5C477EA-8F8A-4BB1-9ED1-3A8FEF082095",
       "childFalseId": null
     },
@@ -15283,7 +15177,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 676,
-      "y": 21213.999145507812,
+      "y": 21213,
       "variableGuid": "7D2F5B7B-94A4-45A3-9BCB-11E4933B78C6",
       "operations": [
         {
@@ -15326,7 +15220,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 700,
-      "y": 21316.999145507812,
+      "y": 21316,
       "childTrueId": "ACCE0917-1959-46D3-8454-2EE7A5D447D4",
       "childFalseId": null
     },
@@ -15365,7 +15259,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -358,
-      "y": 21525.9991645813,
+      "y": 21525,
       "variableGuid": "2C2A1556-A4A5-473C-BC6E-E8A3067CB24F",
       "operations": [
         {
@@ -15408,7 +15302,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 634,
-      "y": 21805.999141693115,
+      "y": 21805,
       "childTrueId": "C8F0051A-CA69-4F9B-B58B-FC8FEA87297B",
       "childFalseId": null
     },
@@ -15424,7 +15318,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -358,
-      "y": 21525.9991645813,
+      "y": 21525,
       "variableGuid": "2C2A1556-A4A5-473C-BC6E-E8A3067CB24F",
       "operations": [
         {
@@ -15483,7 +15377,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 491,
-      "y": 22219.99906539917,
+      "y": 22219,
       "form": [
         {
           "id": "inputs25-input-0",
@@ -15530,7 +15424,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -369,
-      "y": 22208.99905014038,
+      "y": 22208,
       "childTrueId": "57319FB5-AA0E-42A9-94A1-F0B524DC62FD",
       "childFalseId": null
     },
@@ -15560,7 +15454,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 621,
-      "y": 22396.999073028564
+      "y": 22396
     },
     {
       "id": "7B3F7575-1565-48B2-8D4E-37673BE2E2AB",
@@ -15667,7 +15561,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 565,
-      "y": 22943.999042510983,
+      "y": 22943,
       "childTrueId": "52B0E4F9-7DAF-4745-9A54-AD0282DD0543",
       "childFalseId": null
     },
@@ -15683,7 +15577,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 611,
-      "y": 22939.999042510983,
+      "y": 22939,
       "variableGuid": "2C2A1556-A4A5-473C-BC6E-E8A3067CB24F",
       "operations": [
         {
@@ -17413,7 +17307,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 844,
-      "y": 23787.331876277924,
+      "y": 23787,
       "variableGuid": "B90E4872-00CC-48B6-9C3D-E54863BD14BA",
       "operations": [
         {
@@ -17484,7 +17378,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 924,
-      "y": 47416.99839735031
+      "y": 47416
     },
     {
       "id": "4EA5BBE0-4593-42DF-9493-DAF76FA62F65",
@@ -18015,8 +17909,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429.602562094162,
-      "y": 39513.79136260653
+      "x": -429,
+      "y": 39513
     },
     {
       "id": "6839FEA1-AAD1-40DE-BCE9-5B6DAFC698F2",
@@ -18307,8 +18201,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -424.5296120668943,
-      "y": 36862.32819415026
+      "x": -424,
+      "y": 36862
     },
     {
       "id": "B3986861-90E2-48A8-8E95-67517CF35EDC",
@@ -18395,7 +18289,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -363,
-      "y": 49949.33343219757,
+      "y": 49949,
       "loopBlockId": "A08BB9F9-226B-4CFA-AA2E-4DC229C4A9A8"
     },
     {
@@ -18430,7 +18324,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -379,
-      "y": 49883.33343219757,
+      "y": 49883,
       "childTrueId": "92E51C0D-FD5B-4B4F-8F6A-6BB9F2826ED0",
       "childFalseId": null
     },
@@ -18863,7 +18757,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -374,
-      "y": 45179.165201187134,
+      "y": 45179,
       "childTrueId": "F33F090B-E47F-4FF8-9A06-D170E6177494",
       "childFalseId": null
     },
@@ -19010,7 +18904,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": -372,
-      "y": 46283.33179092407,
+      "y": 46283,
       "loopBlockId": null
     },
     {
@@ -19025,7 +18919,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -370,
-      "y": 46651.33179092407,
+      "y": 46651,
       "variableGuid": "0EC111FB-74AB-4EFE-AB99-C54BA70B699E",
       "operations": [
         {
@@ -19055,7 +18949,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 46840.33179092407,
+      "y": 46840,
       "variableGuid": "9573E850-EAF9-43A0-9317-9F5A28BC35AD",
       "operations": [
         {
@@ -19164,7 +19058,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -367,
-      "y": 51862.66666221619,
+      "y": 51862,
       "childTrueId": "6CADD833-BC29-4042-B623-C6DDB1971980",
       "childFalseId": null
     },
@@ -19194,7 +19088,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 52049.66663360596
+      "y": 52049
     },
     {
       "id": "C01EFDC5-7C3F-432F-92F2-C7821917CFD5",
@@ -19281,7 +19175,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 754,
-      "y": 52320.666644096375
+      "y": 52320
     },
     {
       "id": "BBEEDD19-F95E-43E9-B8D5-5CC143C2EF51",
@@ -19315,7 +19209,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -369,
-      "y": 71746.6644821167,
+      "y": 71746,
       "childTrueId": "439342D7-1A75-4B33-AB33-5AED34D35300",
       "childFalseId": null
     },
@@ -19345,7 +19239,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 931,
-      "y": 71941.33074569702
+      "y": 71941
     },
     {
       "id": "DB483050-5F79-4E95-BACF-606781FE17A2",
@@ -19437,8 +19331,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -424.5296120668943,
-      "y": 36862.32819415026
+      "x": -424,
+      "y": 36862
     },
     {
       "id": "D8B39F64-F301-41DD-9152-C63C53BB91BF",
@@ -19525,7 +19419,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -363,
-      "y": 49949.33343219757,
+      "y": 49949,
       "loopBlockId": "783186CA-B525-4F00-81FA-2787C037A75F"
     },
     {
@@ -19621,7 +19515,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -367,
-      "y": 51862.66666221619,
+      "y": 51862,
       "childTrueId": "65E29300-2538-469F-AB0F-BB228862EE41",
       "childFalseId": null
     },
@@ -19756,7 +19650,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 52049.66663360596
+      "y": 52049
     },
     {
       "id": "F3326AC0-A29C-4F3C-9083-90A4863E67C1",
@@ -19843,7 +19737,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 754,
-      "y": 52320.666644096375
+      "y": 52320
     },
     {
       "id": "783186CA-B525-4F00-81FA-2787C037A75F",
@@ -19877,7 +19771,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -379,
-      "y": 49883.33343219757,
+      "y": 49883,
       "childTrueId": "C1BBAD0C-BA11-4F08-9E4E-4359FCC5A749",
       "childFalseId": null
     },
@@ -20028,7 +19922,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 144,
-      "y": 72671.33074951172,
+      "y": 72671,
       "childTrueId": "23902F79-E38A-4FE3-BC1B-1308767F0AC4",
       "childFalseId": null
     },
@@ -20044,7 +19938,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 390,
-      "y": 72914.33074951172,
+      "y": 72914,
       "variableGuid": "0ED98EE1-9F2D-4B8D-9D3C-87F32BA69D32",
       "operations": [
         {
@@ -20109,7 +20003,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 931,
-      "y": 71941.33074569702
+      "y": 71941
     },
     {
       "id": "0DEF6B18-B233-4158-94CF-AD91394FA1B3",
@@ -20290,7 +20184,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -363,
-      "y": 49949.33343219757,
+      "y": 49949,
       "loopBlockId": "0959BC3E-F3CB-4668-8F81-54987303FDA6"
     },
     {
@@ -20386,7 +20280,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -367,
-      "y": 51862.66666221619,
+      "y": 51862,
       "childTrueId": "6DA88D06-AAAE-43DE-B3E9-CD3D744442DC",
       "childFalseId": null
     },
@@ -20521,7 +20415,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 52049.66663360596
+      "y": 52049
     },
     {
       "id": "DD726BEB-F8D6-4693-B614-C293AB8E908B",
@@ -20608,7 +20502,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 754,
-      "y": 52320.666644096375
+      "y": 52320
     },
     {
       "id": "0959BC3E-F3CB-4668-8F81-54987303FDA6",
@@ -20642,7 +20536,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -379,
-      "y": 49883.33343219757,
+      "y": 49883,
       "childTrueId": "6AA0EF4E-376E-411E-81D8-A514409669D6",
       "childFalseId": null
     },
@@ -20678,7 +20572,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 144,
-      "y": 72671.33074951172,
+      "y": 72671,
       "childTrueId": "9BA1CF6A-C8BB-4724-A6AA-2B4A7CC88825",
       "childFalseId": null
     },
@@ -20809,7 +20703,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 390,
-      "y": 72914.33074951172,
+      "y": 72914,
       "variableGuid": "0ED98EE1-9F2D-4B8D-9D3C-87F32BA69D32",
       "operations": [
         {
@@ -21071,7 +20965,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 793,
-      "y": 66472.66411590576,
+      "y": 66472,
       "childTrueId": "815668EA-A7CC-40CB-989A-E47429314917",
       "childFalseId": null
     },
@@ -21222,7 +21116,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -73,
-      "y": 16554.999725341797,
+      "y": 16554,
       "childTrueId": "0B7E799C-9685-4FCB-8798-D6D872130C31",
       "childFalseId": "A310D602-3186-45A8-944F-7EF000252AC3"
     },
@@ -21238,7 +21132,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -360,
-      "y": 16948.99977493286,
+      "y": 16948,
       "variableGuid": "0E2F357C-8183-44D0-8FF7-3FEA3C5A2618",
       "operations": [
         {
@@ -21281,7 +21175,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 91,
-      "y": 67002.49774551392,
+      "y": 67002,
       "childTrueId": "DBA56253-6FFA-49D4-A569-74B752CCD4C8",
       "childFalseId": null
     },
@@ -21317,7 +21211,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -370,
-      "y": 48577.49798583984,
+      "y": 48577,
       "childTrueId": "E177A289-A9A5-47B7-B84B-8E4CEE45131E",
       "childFalseId": null
     },
@@ -21475,7 +21369,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -375,
-      "y": 81033.66387033463,
+      "y": 81033,
       "variableGuid": "7C45C612-3119-452D-B33B-C4C78D493E15",
       "operations": [
         {
@@ -21788,7 +21682,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -378,
-      "y": 1715.9999618530271
+      "y": 1715
     },
     {
       "id": "A6198214-85E7-4F3B-9C56-6D88DDE8EA28",
@@ -21804,7 +21698,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
-      "y": 2114.9999618530273
+      "y": 2114
     },
     {
       "id": "699781F7-FFA7-4EBE-BCBB-C514014943EA",
@@ -21813,14 +21707,14 @@
       "name": "sleep10",
       "displayName": "Sleep 10",
       "comment": "",
-      "childId": "9C95FE14-B64A-4768-9940-FD55126D6C8B",
+      "childId": "75B362E0-171C-48A5-914C-70AEA5868735",
       "inputs": [
         { "id": "time", "value": "1", "type": "string", "structure": [] }
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -366,
-      "y": 4957.999897003174
+      "x": 525,
+      "y": 6158
     },
     {
       "id": "93909CCF-D63B-4EEB-93AA-B22F985A277C",
@@ -21836,7 +21730,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -343,
-      "y": 6722.999897003174
+      "y": 6722
     },
     {
       "id": "67C4B253-94F9-4B7F-8144-846F79763191",
@@ -21852,7 +21746,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -349,
-      "y": 6721.999897003174
+      "y": 6721
     },
     {
       "id": "6D12D04E-BBA7-4D38-A152-F13ADDE113F7",
@@ -21868,7 +21762,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
-      "y": 7612.999897003174
+      "y": 7612
     },
     {
       "id": "F370FAB5-4319-4B17-A7A4-C56FF7AA61B7",
@@ -21884,7 +21778,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -373,
-      "y": 16109.999744415283
+      "y": 16109
     },
     {
       "id": "7CCA535D-0055-4A13-AC00-5B1FDB353838",
@@ -21900,7 +21794,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -361,
-      "y": 18514.999729156498
+      "y": 18514
     },
     {
       "id": "C5C96C9B-05CA-43E8-93DC-46A4A9AA7BE8",
@@ -21916,7 +21810,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
-      "y": 34712.99946594238
+      "y": 34712
     },
     {
       "id": "136D9885-82E8-4546-916E-E801F70E0650",
@@ -21932,7 +21826,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 35485.99946594238
+      "y": 35485
     },
     {
       "id": "F699EDA1-8672-4B0A-9D7F-1DD1472238BD",
@@ -21948,7 +21842,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -374,
-      "y": 36479.99946594238
+      "y": 36479
     },
     {
       "id": "1DB6E3ED-7019-4943-B702-E3F17C869AEE",
@@ -21964,7 +21858,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -359,
-      "y": 36870.99946594238
+      "y": 36870
     },
     {
       "id": "8FCD9E9A-1082-4641-890A-A47A19B0817A",
@@ -22012,7 +21906,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -361,
-      "y": 60993.99884033203
+      "y": 60993
     },
     {
       "id": "3F14272D-BFBB-4FE6-9FB5-06746889BE38",
@@ -22028,7 +21922,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -365,
-      "y": 62077.99884033203
+      "y": 62077
     },
     {
       "id": "ADFEF48B-9891-4924-8AE1-6802EA653AF2",
@@ -22044,7 +21938,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 144,
-      "y": 62280.99884033203
+      "y": 62280
     },
     {
       "id": "8F8FCF64-9638-4248-AB97-AA21EAB77222",
@@ -22060,7 +21954,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -73,
-      "y": 66008.99883270264
+      "y": 66008
     },
     {
       "id": "1AED6401-E4B7-43BF-A567-3BE1F97E5276",
@@ -22076,7 +21970,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 12,
-      "y": 66853.99883270264
+      "y": 66853
     },
     {
       "id": "8FC5D0E4-18BA-4BB6-90C8-CAEF0A56315A",
@@ -22092,7 +21986,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -371,
-      "y": 67349.99883270264
+      "y": 67349
     },
     {
       "id": "14127FA4-27C4-48E1-99EE-73B18B2EA6E2",
@@ -22108,7 +22002,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -364,
-      "y": 68046.99883270264
+      "y": 68046
     },
     {
       "id": "A670A892-A555-4667-8848-F9B174CBD3CB",
@@ -22124,7 +22018,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -386,
-      "y": 68362.99883270264
+      "y": 68362
     },
     {
       "id": "D86A37A3-8681-4012-881F-23133579474E",
@@ -22140,7 +22034,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -371,
-      "y": 69149.99883270264
+      "y": 69149
     },
     {
       "id": "238E94F0-1F51-4642-B505-5A0B879AE70B",
@@ -22156,7 +22050,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -374,
-      "y": 69729.99883270264
+      "y": 69729
     },
     {
       "id": "3EF98204-6CF4-43E8-AD92-09FE3315AE4E",
@@ -22172,7 +22066,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -362,
-      "y": 70370.99883270264
+      "y": 70370
     },
     {
       "id": "DF738E2B-A07A-434C-BC8C-DC4A2FD18C75",
@@ -22188,7 +22082,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 95,
-      "y": 70546.99883270264
+      "y": 70546
     },
     {
       "id": "B533A9C4-8646-4FA3-9EDF-F261B36E54EA",
@@ -22204,7 +22098,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 9,
-      "y": 71583.99883270264
+      "y": 71583
     },
     {
       "id": "B82300D8-A0A9-40EB-BE85-D56364B6DCC5",
@@ -22220,7 +22114,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -364,
-      "y": 71999.99883270264
+      "y": 71999
     },
     {
       "id": "624C963D-A707-4337-BEC5-065B01CA5502",
@@ -22236,7 +22130,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 259,
-      "y": 72881.99883270264
+      "y": 72881
     },
     {
       "id": "56609847-36CE-4692-8116-9C1F17389B96",
@@ -22252,7 +22146,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 384,
-      "y": 73477.99883270264
+      "y": 73477
     },
     {
       "id": "873B13B2-CBF8-4368-BB0E-FC7181DE1F33",
@@ -22268,7 +22162,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -367,
-      "y": 73416.99883270264
+      "y": 73416
     },
     {
       "id": "E459714D-ECEF-4058-A77F-200CADD2AADB",
@@ -22284,7 +22178,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -356,
-      "y": 74762.99883270264
+      "y": 74762
     },
     {
       "id": "67CC5712-7C1B-447F-8AF2-63F512B4C91A",
@@ -22300,7 +22194,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -375,
-      "y": 76228.99883270264
+      "y": 76228
     },
     {
       "id": "58398894-7605-4FCD-822D-7DD821422732",
@@ -22316,7 +22210,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -378,
-      "y": 77032.99883270264
+      "y": 77032
     },
     {
       "id": "E766C94A-8FC1-4A02-A04B-E08F411F8A2C",
@@ -22332,7 +22226,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -370,
-      "y": 77463.99883270264
+      "y": 77463
     },
     {
       "id": "8F51E727-69B2-4152-AF68-4F29E5C04DB0",
@@ -22348,7 +22242,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -34,
-      "y": 78128.99883270264
+      "y": 78128
     },
     {
       "id": "2B41D5EF-91EC-48AD-91E4-299D07C09FB1",
@@ -22364,7 +22258,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 440,
-      "y": 78807.99883270264
+      "y": 78807
     },
     {
       "id": "2E6F6690-EE2B-4370-AC22-4195BAC7E428",
@@ -22380,7 +22274,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 406,
-      "y": 79151.99883270264
+      "y": 79151
     },
     {
       "id": "2631278D-DDD5-4F2E-8C52-6CBBF9257439",
@@ -22396,7 +22290,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 190,
-      "y": 80108.99883270264
+      "y": 80108
     },
     {
       "id": "4E215BDC-BED7-41D2-ADFC-2E20979837EF",
@@ -22412,7 +22306,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -370,
-      "y": 80382.99883270264
+      "y": 80382
     },
     {
       "id": "CB9CC705-9327-4D79-B8D6-D1620CD3B969",
@@ -22428,7 +22322,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -371,
-      "y": 81002.99883270264
+      "y": 81002
     },
     {
       "id": "080A1F4C-0F7E-4CA1-94B3-437EC85CB763",
@@ -22444,7 +22338,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 225,
-      "y": 81539.99883270264
+      "y": 81539
     },
     {
       "id": "6F59C07E-069E-41D2-B4F2-7308BA6CFCC3",
@@ -22460,7 +22354,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -378,
-      "y": 81934.99883270264
+      "y": 81934
     },
     {
       "id": "9121F880-B257-4068-8A76-85E04D40663D",
@@ -22476,7 +22370,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -366,
-      "y": 82931.99883270264
+      "y": 82931
     },
     {
       "id": "9D0B14FF-BED6-4E95-980C-9DA8C70E21C6",
@@ -22492,7 +22386,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -357,
-      "y": 83433.99883270264
+      "y": 83433
     },
     {
       "id": "FD2E07AC-05A5-468F-A8CC-B82570049029",
@@ -22508,7 +22402,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 394,
-      "y": 84339.99883270264
+      "y": 84339
     },
     {
       "id": "4D08E132-9F24-42AC-928D-A80511C5C740",
@@ -22524,7 +22418,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -383,
-      "y": 84599.99882888794
+      "y": 84599
     },
     {
       "id": "71C5F4C0-3186-44B8-B4C9-FC6BC732A7E1",
@@ -22540,7 +22434,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 25,
-      "y": 85034.99882888794
+      "y": 85034
     },
     {
       "id": "21B0BDEC-49D6-48E4-858F-AFA98E2BF84F",
@@ -22556,7 +22450,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -385,
-      "y": 86460.99882888794
+      "y": 86460
     },
     {
       "id": "73C306B2-BC57-457B-B61A-523944000575",
@@ -22572,7 +22466,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 339,
-      "y": 87154.99882888794
+      "y": 87154
     },
     {
       "id": "2273C019-61F8-4682-872C-58A87292739B",
@@ -22588,7 +22482,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -369,
-      "y": 87344.99882888794
+      "y": 87344
     },
     {
       "id": "D82D522B-EF58-454B-B64B-8065E8CB2977",
@@ -22604,7 +22498,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 89,
-      "y": 87660.99882888794
+      "y": 87660
     },
     {
       "id": "D39829B1-6FD3-4744-863A-5F91D246F7D4",
@@ -22620,7 +22514,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -363,
-      "y": 88516.99882507324
+      "y": 88516
     },
     {
       "id": "21C0CBC2-8948-4C30-9A92-B1AC68CDB743",
@@ -22634,7 +22528,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -379,
-      "y": 62905.830852508545,
+      "y": 62905,
       "variableGuid": "7B1BD5FA-D731-4F0B-A4C2-B500C6B51A67",
       "operations": [
         {
@@ -22657,7 +22551,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -381,
-      "y": 38467.33172178269,
+      "y": 38467,
       "variableGuid": "7B1BD5FA-D731-4F0B-A4C2-B500C6B51A67",
       "operations": [
         {
@@ -22694,7 +22588,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -377,
-      "y": 90749.3344116211
+      "y": 90749
     },
     {
       "id": "F7C73019-5F1E-48D5-B306-A398C6C6FD00",
@@ -22835,7 +22729,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 631,
-      "y": 2235.9999656677246,
+      "y": 2235,
       "childTrueId": "3CC8F1F3-450A-447C-8D5C-21946BD0CCDA",
       "childFalseId": "85ABEDD9-9843-48FC-81F5-A92FCF1D750A"
     },
@@ -22910,7 +22804,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -252,
-      "y": 4497.999931335449,
+      "y": 4497,
       "childTrueId": "3ED3AC42-05E3-4EC5-8910-85E4FE065BD7",
       "childFalseId": null
     },
@@ -23012,7 +22906,7 @@
       "name": "condition175",
       "displayName": "Condition 175",
       "comment": "Is this a user-based tenant?",
-      "childId": "6F021366-EFA6-4310-8661-A2AED2C5654A",
+      "childId": "6C5CC9F3-8F52-46D6-8F8F-A33380A33175",
       "inputs": [
         {
           "id": "conditions",
@@ -23037,7 +22931,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 868,
-      "y": 10151.49975347519,
+      "y": 10151,
       "childTrueId": "33C4686C-BFA4-4661-A4D1-B8FC2CBD39CA",
       "childFalseId": "5777D46F-9961-4169-9D45-152D210E36BD"
     },
@@ -23144,8 +23038,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 300.0000460299548,
-      "y": 32967.36148619951,
+      "x": 300,
+      "y": 32967,
       "childTrueId": "631292D4-504F-4C2D-B6F4-4EA2C06E6869",
       "childFalseId": null
     },
@@ -23204,8 +23098,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 0.000025253516355405736,
-      "y": 34883.18263272176,
+      "x": 0,
+      "y": 34883,
       "childTrueId": "106A159D-25DE-4982-9B51-5BE6C6353156",
       "childFalseId": null
     },
@@ -23241,7 +23135,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 737,
-      "y": 35737.362866350544,
+      "y": 35737,
       "childTrueId": "974AC457-E822-4112-B0D5-401E23149C6D",
       "childFalseId": null
     },
@@ -23257,7 +23151,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 719,
-      "y": 34694.18106937025,
+      "y": 34694,
       "variableGuid": "768382F5-1DF2-474C-AF67-DB9B977CDE9D",
       "operations": [
         {
@@ -23300,8 +23194,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -14.99997628547908,
-      "y": 60866.81751229771,
+      "x": -14,
+      "y": 60866,
       "childTrueId": "E11F2C53-61E0-4EC3-BCFE-AB1418799F59",
       "childFalseId": "FAF3255D-0D11-4625-B29F-C8FF15366F6B"
     },
@@ -23441,7 +23335,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -364,
-      "y": 33387.59999999996,
+      "y": 33387,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -23522,7 +23416,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -367,
-      "y": 33647.99999999998,
+      "y": 33647,
       "childTrueId": "B437CEAF-324D-412B-A2E4-F22540F02036",
       "childFalseId": null
     },
@@ -23580,7 +23474,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 854,
-      "y": 35477.64999999997,
+      "y": 35477,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
@@ -23661,7 +23555,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": -367,
-      "y": 33647.99999999998,
+      "y": 33647,
       "childTrueId": "C76DD675-2B93-48EF-825F-FFB7A82C6CE9",
       "childFalseId": null
     },
@@ -23724,7 +23618,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 931,
-      "y": 35663.00000000006,
+      "y": 35663,
       "variableGuid": "60FE705D-37F1-410E-9323-7479D8C47A01",
       "operations": [
         {
@@ -23813,7 +23707,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 728,
-      "y": 64425.29999999996,
+      "y": 64425,
       "childTrueId": "C71AD4E2-FCC7-4E6B-BA4F-7563A1D1650C",
       "childFalseId": "C10A0F65-0CFF-4E57-B406-797689017085"
     },
@@ -23875,6 +23769,1304 @@
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "get"
+    },
+    {
+      "id": "4C8D1A21-79D6-4EC5-A492-572BA2B48067",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition182",
+      "displayName": "Condition 182",
+      "comment": "Are there required roles other than TA?",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.loop22.item }",
+                "input2": "TenantAdmin",
+                "operator": "!="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": 120,
+      "y": 11840,
+      "childTrueId": "CA1976C9-4D3F-466B-AD78-BE512147EFDE",
+      "childFalseId": null
+    },
+    {
+      "id": "99FCE8B4-9276-4430-802E-B788389582FA",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop21",
+      "displayName": "Loop 21",
+      "comment": "For each monitoring app, check required roles.",
+      "childId": "C84FD739-CF3B-48D0-8C43-2F3EFF4023AC",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{$.monitoringAppsToInstall}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 465,
+      "y": 11136,
+      "loopBlockId": "5CF415CF-C2CB-4EF9-84D0-0C7FB7E7C88B"
+    },
+    {
+      "id": "5CF415CF-C2CB-4EF9-84D0-0C7FB7E7C88B",
+      "type": "LookupItemBlock",
+      "disabled": false,
+      "name": "lookupItemInList17",
+      "displayName": "Lookup Item In List 17",
+      "comment": "Find the app in the manifest.",
+      "childId": "879D260A-68EB-4AD2-AD4E-33F9E42B7F75",
+      "inputs": [
+        {
+          "id": "list",
+          "value": "{ $.manifest }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "name",
+                "input2": "{ $.loop21.item }",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -360,
+      "y": 11390
+    },
+    {
+      "id": "879D260A-68EB-4AD2-AD4E-33F9E42B7F75",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop22",
+      "displayName": "Loop 22",
+      "comment": "For each app's required roles",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{ $.lookupItemInList17.requiredRoles }",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 120,
+      "y": 11680,
+      "loopBlockId": "7B39FCC2-7AAD-4386-AAAB-559201612722"
+    },
+    {
+      "id": "049A1B89-B063-4CF5-A3A5-494A15E197C1",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "getUser2",
+      "displayName": "Qlik Cloud Services - Get User 2",
+      "comment": "Get the most recent roles for the user.",
+      "childId": "D2602B81-B0DF-494B-AB3B-0E9B090B5577",
+      "inputs": [
+        {
+          "id": "8eedf1d0-c7a5-11ea-9022-0fb2ce625902",
+          "value": "{$.getCurrentUserId}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 602,
+      "y": 11142,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "7e670290-c7a5-11ea-9a9c-6dd2b282df86",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "CA1976C9-4D3F-466B-AD78-BE512147EFDE",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition183",
+      "displayName": "Condition 183",
+      "comment": "Does the user not have the required role directly assigned?",
+      "childId": "C95F038A-E5F7-482A-A313-3B65C59EA621",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.getUser2.assignedRoles[*].name}",
+                "input2": "{ $.loop22.item }",
+                "operator": "notInList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 740,
+      "y": 11837,
+      "childTrueId": "1D9F2D99-D15B-4190-9C96-0151553CAF2D",
+      "childFalseId": "5AAACAE3-BB92-4E91-8605-4BE180C8C50E"
+    },
+    {
+      "id": "4CA6725E-2252-4407-989A-8DE8B5CCE0A5",
+      "type": "FormBlock",
+      "disabled": false,
+      "name": "inputs21",
+      "displayName": "Inputs 21",
+      "comment": "Auto apply role?",
+      "childId": "58E6FD93-F4FC-44C7-B380-7E7430CA58CF",
+      "inputs": [],
+      "settings": [
+        {
+          "id": "persist_data",
+          "value": "no",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 489,
+      "y": 12932,
+      "form": [
+        {
+          "id": "inputs21-input-0",
+          "type": "select",
+          "label": "Auto apply required role(s)?",
+          "order": 0,
+          "values": "Yes,No",
+          "options": [],
+          "helpText": "The {implode: {$.autoApplyRolesAppNames}} application(s) requires the following additional role(s) that the executing user ({ $.getUser.name }) does not currently have: {implode: {$.autoApplyRolesNames}}. Should the installer add this role(s) for the executing user?",
+          "isRequired": true
+        }
+      ],
+      "persistData": "no"
+    },
+    {
+      "id": "58E6FD93-F4FC-44C7-B380-7E7430CA58CF",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition184",
+      "displayName": "Condition 184",
+      "comment": "Auto apply role?",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.inputs21.'Auto apply required role(s)?' }",
+                "input2": "Yes",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 825,
+      "y": 13143,
+      "childTrueId": "FD846BF5-2B93-4AA6-AD70-CB2B20C844DA",
+      "childFalseId": "6E659E99-D90D-4F5E-822F-734DD03DBAE1"
+    },
+    {
+      "id": "6E659E99-D90D-4F5E-822F-734DD03DBAE1",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output154",
+      "displayName": "Output 154",
+      "comment": "Exiting...",
+      "childId": "0E8293E3-6DFA-483B-A88E-FC491C00442D",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{linebreak}\n##### A prerequisite has not been met\n\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has the **{implode: {$.autoApplyRolesNames}}** role(s) assigned | ❌ |\n{linebreak}\n{linebreak}\nThe executing user ({$.getUser.name}) is required to have the {implode: {$.autoApplyRolesNames}} role(s) to install the {implode: {$.autoApplyRolesAppNames}} application(s). Ensure that the executing user has the {implode: {$.autoApplyRolesNames}} role(s) and then this installer can be run again. Exiting the installer...",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 151,
+      "y": 12080
+    },
+    {
+      "id": "0E8293E3-6DFA-483B-A88E-FC491C00442D",
+      "type": "StopBlock",
+      "disabled": false,
+      "name": "stop24",
+      "displayName": "Stop 24",
+      "comment": "",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -379,
+      "y": 12497
+    },
+    {
+      "id": "D2231F08-4603-4B9D-A56B-0EC8352910C5",
+      "type": "LookupItemBlock",
+      "disabled": false,
+      "name": "lookupItemInList18",
+      "displayName": "Lookup in Qlik Cloud Services - List Roles - Lookup Item In List 18",
+      "comment": "Get the role object.",
+      "childId": "FF0B0BFA-2C64-4B15-9065-BF958E9438A2",
+      "inputs": [
+        {
+          "id": "list",
+          "value": "{ $.listRoles }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              { "input1": "name", "input2": "{$.loop22.item}", "operator": "=" }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 600,
+      "y": 12380
+    },
+    {
+      "id": "FF0B0BFA-2C64-4B15-9065-BF958E9438A2",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "userRoleList",
+      "displayName": "Variable - userRoleList",
+      "comment": "Merge in the role ID.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 600,
+      "y": 12920,
+      "variableGuid": "0F8F0810-5019-460A-88A3-3CE5C3F763FD",
+      "operations": [
+        {
+          "id": "add_item",
+          "key": "D515749E-8452-45F6-A126-A8DAECBFF9E5",
+          "name": "Add item to { variable }",
+          "value": "{object: '{\"id\":\"{ $.lookupItemInList18.id }\"}'}"
+        }
+      ]
+    },
+    {
+      "id": "FD846BF5-2B93-4AA6-AD70-CB2B20C844DA",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "autoApplyRoles",
+      "displayName": "Variable - autoApplyRoles",
+      "comment": "Set variable to auto apply roles.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -361,
+      "y": 12612,
+      "variableGuid": "CB88951A-5E61-4426-93ED-847FBBF9A6BE",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "67D840BB-0073-4318-8E26-53EB9D64E14B",
+          "name": "Set value of { variable }",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "B1EE0301-F0A1-4C54-8D76-EB2C08F4B8AE",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output153",
+      "displayName": "Output 153",
+      "comment": "Auto apply roles",
+      "childId": "95A565B0-1976-4B66-8B82-57E5A130E2C7",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Roles | Assigning the executing user ({$.getUser.name}) the following role(s): {implode: {$.autoApplyRolesNames}}...|",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 586,
+      "y": 63094
+    },
+    {
+      "id": "0DB22725-98A6-4C62-9AD1-4019931E9A84",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition185",
+      "displayName": "Condition 185",
+      "comment": "Auto assign roles?",
+      "childId": "9AC5F2CA-E39A-46B5-9D13-94C1CC9F3839",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              { "input1": "{$.autoApplyRoles}", "input2": "1", "operator": "=" }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -357,
+      "y": 63002,
+      "childTrueId": "B1EE0301-F0A1-4C54-8D76-EB2C08F4B8AE",
+      "childFalseId": null
+    },
+    {
+      "id": "95A565B0-1976-4B66-8B82-57E5A130E2C7",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIRequest57",
+      "displayName": "Qlik Cloud Services - Raw API Request 57",
+      "comment": "Apply the role.",
+      "childId": "70D8FD80-3C7B-4E86-A4A3-4FE2A5BD56ED",
+      "inputs": [
+        {
+          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
+          "value": "users/{$.getCurrentUserId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
+          "value": "3ba274f0-2072-11ec-a822-69fa394acb82",
+          "type": "select",
+          "displayValue": "PATCH",
+          "structure": []
+        },
+        {
+          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
+          "value": "[{\"op\":\"replace\",\"path\":\"/assignedRoles\",\"value\":{json: {$.userRoleList}}}]",
+          "type": "object",
+          "mode": "raw",
+          "structure": []
+        },
+        {
+          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 602,
+      "y": 63183,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "596AEE0B-601E-4171-B308-B2220E17DBEE",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output155",
+      "displayName": "Output 155",
+      "comment": "Auto apply roles",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Roles | Role(s) assigned. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 540,
+      "y": 63304
+    },
+    {
+      "id": "41DA99A4-1AD3-40BE-964F-DE367B3705D8",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop24",
+      "displayName": "Loop 24",
+      "comment": "Loop over each existing user role to build payload.",
+      "childId": "99FCE8B4-9276-4430-802E-B788389582FA",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{$.getUser2.assignedRoles}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 678,
+      "y": 11313,
+      "loopBlockId": "561A9971-8F4E-4199-95F4-0AA7801B1293"
+    },
+    {
+      "id": "561A9971-8F4E-4199-95F4-0AA7801B1293",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "userRoleList",
+      "displayName": "Variable - userRoleList",
+      "comment": "Add each existing user role ID.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -349,
+      "y": 6139,
+      "variableGuid": "0F8F0810-5019-460A-88A3-3CE5C3F763FD",
+      "operations": [
+        {
+          "id": "add_item",
+          "key": "92BDB30F-B698-4E17-9535-D0E6AA43A090",
+          "name": "Add item to { variable }",
+          "value": "{object: '{\"id\":\"{ $.loop24.item.id }\"}'}"
+        }
+      ]
+    },
+    {
+      "id": "D2602B81-B0DF-494B-AB3B-0E9B090B5577",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "userRoleList",
+      "displayName": "Variable - userRoleList",
+      "comment": "Clear user role list.",
+      "childId": "41DA99A4-1AD3-40BE-964F-DE367B3705D8",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 688,
+      "y": 11199,
+      "variableGuid": "0F8F0810-5019-460A-88A3-3CE5C3F763FD",
+      "operations": [
+        {
+          "id": "empty",
+          "key": "DF54BE3B-1A77-4210-953C-10B2A0B6E723",
+          "name": "Empty { variable }",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output4",
+      "displayName": "Output 4",
+      "comment": "Prerequisites met",
+      "childId": "FB8C1E62-6ECB-46D4-ADEA-36770AB6CD66",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "```\nNote: All of the following configuration settings and actions\nwill not be applied until after the full configuration manifest\nhas been reviewed towards the end of this installer. Exiting\nbefore that time will not result in anything having been done\nto the tenant.\n```",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 495,
+      "y": 9273
+    },
+    {
+      "id": "31BD048C-31C9-4785-A4E1-EB1B60DB18C8",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "autoApplyRolesNames",
+      "displayName": "Variable - autoApplyRolesNames",
+      "comment": "Add the role name to a list for logging later.",
+      "childId": "D2231F08-4603-4B9D-A56B-0EC8352910C5",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 480,
+      "y": 12680,
+      "variableGuid": "2867EEAA-D85F-4137-9184-2204A76FA4AA",
+      "operations": [
+        {
+          "id": "add_item",
+          "key": "85BFFB9D-1E1E-48CE-9E70-1A9E630F7095",
+          "name": "Add item to { variable }",
+          "value": "{$.loop22.item}"
+        }
+      ]
+    },
+    {
+      "id": "9233EE0F-A456-435A-88A7-995DB4328277",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition186",
+      "displayName": "Condition 186",
+      "comment": "Will roles be auto applied?",
+      "childId": "FEB7AB88-1C04-4F9D-9F7A-C1452E60ECFC",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              { "input1": "{$.autoApplyRoles}", "input2": "1", "operator": "=" }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -355,
+      "y": 51501,
+      "childTrueId": "CCB534A8-E81E-44E6-AC91-5016AA31A40B",
+      "childFalseId": null
+    },
+    {
+      "id": "CCB534A8-E81E-44E6-AC91-5016AA31A40B",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output156",
+      "displayName": "Output 156",
+      "comment": "Begin role adjustment table",
+      "childId": "E903FED1-A647-42E4-BCD7-526A402EEC17",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Role Changes| |\n| --- | --- |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 372,
+      "y": 51627
+    },
+    {
+      "id": "E903FED1-A647-42E4-BCD7-526A402EEC17",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output157",
+      "displayName": "Output 157",
+      "comment": "Auto apply roles",
+      "childId": "EFFBEEEA-A0BC-46D1-8B41-7E61C4164B3A",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Role(s) to be applied to executing user ({$.getUser.name})| {implode: {$.autoApplyRolesNames}}|",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 410,
+      "y": 51696
+    },
+    {
+      "id": "EFFBEEEA-A0BC-46D1-8B41-7E61C4164B3A",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output158",
+      "displayName": "Output 158",
+      "comment": "Line break",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{linebreak}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -378,
+      "y": 51473
+    },
+    {
+      "id": "C84FD739-CF3B-48D0-8C43-2F3EFF4023AC",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition187",
+      "displayName": "Condition 187",
+      "comment": "Are there roles that the user needs?",
+      "childId": "2D7B53E6-6DB2-4D22-97DD-CB4DDF36F91C",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{count: {$.autoApplyRolesNames}}",
+                "input2": "0",
+                "operator": ">"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -357,
+      "y": 12770,
+      "childTrueId": "4CA6725E-2252-4407-989A-8DE8B5CCE0A5",
+      "childFalseId": null
+    },
+    {
+      "id": "4F06715B-875B-4948-9AF1-D8D1F838D4A3",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "autoApplyRolesAppNames",
+      "displayName": "Variable - autoApplyRolesAppNames",
+      "comment": "Add the app name that requires the role to a list.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 116,
+      "y": 12755,
+      "variableGuid": "12D8A430-E255-40CA-B3D7-96249675196A",
+      "operations": [
+        {
+          "id": "add_item",
+          "key": "6FCF2BC7-D7E0-43CF-B409-1F73019D9DA3",
+          "name": "Add item to { variable }",
+          "value": "{$.loop21.item}"
+        }
+      ]
+    },
+    {
+      "id": "4EC9C5ED-2010-44C2-AC67-1F4D93CDEFF2",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition188",
+      "displayName": "Condition 188",
+      "comment": "Has the role not already been added to the list?",
+      "childId": "A8BD2CE4-1E6D-446D-B634-22ABB6A9630B",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.autoApplyRolesNames}",
+                "input2": "{$.loop22.item}",
+                "operator": "notInList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": 802,
+      "y": 13049,
+      "childTrueId": "31BD048C-31C9-4785-A4E1-EB1B60DB18C8",
+      "childFalseId": null
+    },
+    {
+      "id": "A8BD2CE4-1E6D-446D-B634-22ABB6A9630B",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition189",
+      "displayName": "Condition 189",
+      "comment": "Has the app not already been added to the list?",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.autoApplyRolesAppNames}",
+                "input2": "{$.loop21.item}",
+                "operator": "notInList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": 595,
+      "y": 12845,
+      "childTrueId": "4F06715B-875B-4948-9AF1-D8D1F838D4A3",
+      "childFalseId": null
+    },
+    {
+      "id": "70D8FD80-3C7B-4E86-A4A3-4FE2A5BD56ED",
+      "type": "SleepBlock",
+      "disabled": false,
+      "name": "sleep7",
+      "displayName": "Sleep 7",
+      "comment": "",
+      "childId": "596AEE0B-601E-4171-B308-B2220E17DBEE",
+      "inputs": [
+        { "id": "time", "value": "3", "type": "string", "structure": [] }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 546,
+      "y": 64562
+    },
+    {
+      "id": "1D9F2D99-D15B-4190-9C96-0151553CAF2D",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop23",
+      "displayName": "Loop 23",
+      "comment": "Is the role inherited from a group?",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{$.getUser2.assignedGroups}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 813,
+      "y": 12141,
+      "loopBlockId": "EFE2D2B3-CB64-47F8-B567-C77A258344E8"
+    },
+    {
+      "id": "EFE2D2B3-CB64-47F8-B567-C77A258344E8",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition190",
+      "displayName": "Condition 190",
+      "comment": "Does the assigned group contain the role?",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.loop23.item.assignedRoles[*].name}",
+                "input2": "{$.loop22.item}",
+                "operator": "inList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -419,
+      "y": 919,
+      "childTrueId": "7A77E0DA-1179-4978-A137-D99CD025AA46",
+      "childFalseId": null
+    },
+    {
+      "id": "7A77E0DA-1179-4978-A137-D99CD025AA46",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "userHasRequiredRole",
+      "displayName": "Variable - userHasRequiredRole",
+      "comment": "User has the required role.",
+      "childId": "FBFC581D-5732-43C1-976A-6667B83D72C6",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 370,
+      "y": 800,
+      "variableGuid": "FB263659-58AD-4257-A99B-06EEC481A82E",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "CDCB85C8-FB0C-4605-BA99-8FB0FE00044E",
+          "name": "Set value of { variable }",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "FBFC581D-5732-43C1-976A-6667B83D72C6",
+      "type": "ForEachBreakBlock",
+      "disabled": false,
+      "name": "exitLoop3",
+      "displayName": "Exit Loop 3",
+      "comment": "",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -420,
+      "y": 1349
+    },
+    {
+      "id": "C95F038A-E5F7-482A-A313-3B65C59EA621",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition191",
+      "displayName": "Condition 191",
+      "comment": "Does the user not have the role?",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.userHasRequiredRole}",
+                "input2": "0",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": 240,
+      "y": 13380,
+      "childTrueId": "4EC9C5ED-2010-44C2-AC67-1F4D93CDEFF2",
+      "childFalseId": null
+    },
+    {
+      "id": "5AAACAE3-BB92-4E91-8605-4BE180C8C50E",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "userHasRequiredRole",
+      "displayName": "Variable - userHasRequiredRole",
+      "comment": "User has the required role.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 623,
+      "y": 12961,
+      "variableGuid": "FB263659-58AD-4257-A99B-06EEC481A82E",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "CDCB85C8-FB0C-4605-BA99-8FB0FE00044E",
+          "name": "Set value of { variable }",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "7B39FCC2-7AAD-4386-AAAB-559201612722",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "userHasRequiredRole",
+      "displayName": "Variable - userHasRequiredRole",
+      "comment": "Instantiate as zero.",
+      "childId": "4C8D1A21-79D6-4EC5-A492-572BA2B48067",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 542,
+      "y": 12092,
+      "variableGuid": "FB263659-58AD-4257-A99B-06EEC481A82E",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "CDCB85C8-FB0C-4605-BA99-8FB0FE00044E",
+          "name": "Set value of { variable }",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "id": "DE966133-4726-4C17-BCB6-BF5994F61F67",
+      "type": "CallUrlBlock",
+      "disabled": false,
+      "name": "callURL3",
+      "displayName": "Call URL 3",
+      "comment": "Check monitor apps installer version",
+      "childId": "B8163675-A534-478D-8E2A-3C0B04CDA5AD",
+      "inputs": [
+        {
+          "id": "url",
+          "value": "https://raw.githubusercontent.com/qlik-oss/qlik-cloud-monitoring-apps/refs/heads/main/manifests/installers.json",
+          "type": "string",
+          "structure": []
+        },
+        { "id": "method", "value": "GET", "type": "select", "structure": [] },
+        { "id": "timeout", "value": "", "type": "string", "structure": [] },
+        {
+          "id": "params",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        },
+        {
+          "id": "headers",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        },
+        { "id": "encoding", "value": "", "type": "string", "structure": [] }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "full_response",
+          "value": null,
+          "type": "checkbox",
+          "structure": []
+        },
+        {
+          "id": "capitalize_headers",
+          "value": true,
+          "type": "checkbox",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -308,
+      "y": 328
+    },
+    {
+      "id": "B8163675-A534-478D-8E2A-3C0B04CDA5AD",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition192",
+      "displayName": "Condition 192",
+      "comment": "Is the template up to date?",
+      "childId": "A25F118A-B920-41CD-9C0E-01C5ADCF5185",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.currentTemplateVersionNum }",
+                "operator": ">=",
+                "input2": "{ $.callURL3.installers[?(@.template=='qcma')].version }"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": true },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 463,
+      "y": 313,
+      "childTrueId": null,
+      "childFalseId": "7FB94C35-9280-4C69-B3F2-640288605B10"
+    },
+    {
+      "id": "A7C02A53-E2B0-4AF0-B870-00F6BD16632A",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "currentTemplateVersionNum",
+      "displayName": "Variable - currentTemplateVersionNum",
+      "comment": "The current version number of this template",
+      "childId": "DE966133-4726-4C17-BCB6-BF5994F61F67",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -310,
+      "y": 393,
+      "variableGuid": "B91AC569-8A25-45CF-9831-21293B4007C9",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "F54109D0-B3B3-4AB8-AB22-1E1379CCFA98",
+          "name": "Set value of { variable }",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "7FB94C35-9280-4C69-B3F2-640288605B10",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output159",
+      "displayName": "Output 159",
+      "comment": "Log that the template is out of date.",
+      "childId": "7FDDC699-1FCF-4980-96C5-F7234E855979",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{linebreak}\n##### Template out of date\n\n| Issue | Description |\n| --- | --- |\n| Installer template is not up to date | Version \"{$.currentTemplateVersionNum}\" is not greater than or equal to the latest version \"{$.callURL3.installers[?(@.template=='qcma')].version}\" |\n{linebreak}\n{linebreak}\nThis template is out of date and cannot be used. Please navigate to the Qlik Application Automation Templates library and select the \"Qlik Cloud Monitoring Apps Installer\" template to receive the latest. This existing template can be removed. Exiting the installer...",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 172,
+      "y": 505
+    },
+    {
+      "id": "7FDDC699-1FCF-4980-96C5-F7234E855979",
+      "type": "StopBlock",
+      "disabled": false,
+      "name": "stop23",
+      "displayName": "Stop 23",
+      "comment": "Stopping...",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -311,
+      "y": 446
     }
   ],
   "variables": [
@@ -24252,6 +25444,31 @@
       "guid": "60FE705D-37F1-410E-9323-7479D8C47A01",
       "name": "managedSpaceUserAssignmentId",
       "type": "string"
+    },
+    {
+      "guid": "CB88951A-5E61-4426-93ED-847FBBF9A6BE",
+      "name": "autoApplyRoles",
+      "type": "number"
+    },
+    {
+      "guid": "2867EEAA-D85F-4137-9184-2204A76FA4AA",
+      "name": "autoApplyRolesNames",
+      "type": "list"
+    },
+    {
+      "guid": "12D8A430-E255-40CA-B3D7-96249675196A",
+      "name": "autoApplyRolesAppNames",
+      "type": "list"
+    },
+    {
+      "guid": "FB263659-58AD-4257-A99B-06EEC481A82E",
+      "name": "userHasRequiredRole",
+      "type": "number"
+    },
+    {
+      "guid": "B91AC569-8A25-45CF-9831-21293B4007C9",
+      "name": "currentTemplateVersionNum",
+      "type": "number"
     }
   ]
 }
