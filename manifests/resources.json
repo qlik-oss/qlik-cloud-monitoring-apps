@@ -128,42 +128,6 @@
         ]
     },
     {
-        "id": 50,
-        "name": "Access Evaluator",
-        "version": "v2.1.2",
-        "source": "https://github.com/qlik-oss/qlik-cloud-access-evaluator/releases/download/v2.1.2/Access-Evaluator.qvf",
-        "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin"]
-    },
-    {
-        "id": 60,
-        "name": "Automation Analyzer",
-        "version": "v1.2.4",
-        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.2.4/Automation-Analyzer.qvf",
-        "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin"]
-    },
-    {
-        "id": 70,
-        "name": "Answers Analyzer",
-        "version": "v1.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-answers-analyzer/releases/download/v1.1.0/Answers-Analyzer.qvf",
-        "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin","AuditAdmin"]
-    },
-    {
-        "id": 80,
-        "name": "Report Analyzer",
-        "version": "v1.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-report-analyzer/releases/download/v1.1.0/Report-Analyzer.qvf",
-        "qcmaInstaller": true,
-        "subscriptionTypes": ["user","capacity"],
-        "requiredRoles": ["TenantAdmin"]
-    },
-    {
         "id": 90,
         "name": "OEM Dashboard",
         "version": "v2.2.0",
