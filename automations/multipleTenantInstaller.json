@@ -280,7 +280,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -337,7 +337,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -398,7 +398,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -455,7 +455,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -737,7 +737,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -934,7 +934,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1011,7 +1011,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1053,7 +1053,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1120,7 +1120,7 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
+        { "name": "no", "isCollapsed": true }
       ],
       "x": -414,
       "y": 3422,
@@ -1307,7 +1307,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1501,7 +1501,7 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
+        { "name": "no", "isCollapsed": true }
       ],
       "x": -433,
       "y": 2436,
@@ -1548,7 +1548,7 @@
         },
         {
           "id": "ba69fbe0-b772-11ed-8af6-35087ac02480",
-          "value": "{$.importAppFromBase64EncodedFile2.attributes.id}",
+          "value": "{ $.loopReloadAppId }",
           "type": "string",
           "structure": []
         },
@@ -1562,7 +1562,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1604,7 +1604,7 @@
         },
         {
           "id": "ce837c60-9804-11ed-9eaa-5f6c7b914ae0",
-          "value": "{$.importAppFromBase64EncodedFile2.attributes.id}",
+          "value": "{ $.loopReloadAppId }",
           "type": "string",
           "structure": []
         },
@@ -1624,7 +1624,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1823,7 +1823,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -1927,7 +1927,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -2026,7 +2026,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -2201,7 +2201,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -2736,7 +2736,7 @@
         },
         {
           "id": "8ffab0c0-7af2-11ed-8815-3d11c1ad6c97",
-          "value": "{$.importAppFromBase64EncodedFile2.attributes.id}",
+          "value": "{ $.loopReloadAppId }",
           "type": "string",
           "structure": []
         }
@@ -2744,7 +2744,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -2824,7 +2824,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -2867,7 +2867,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -3414,7 +3414,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -3595,7 +3595,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -3966,7 +3966,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4093,7 +4093,7 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
+        { "name": "no", "isCollapsed": true }
       ],
       "x": 480,
       "y": 15680,
@@ -4177,7 +4177,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4255,7 +4255,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4377,7 +4377,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4488,7 +4488,7 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
+        { "name": "no", "isCollapsed": true }
       ],
       "x": 730,
       "y": 15680,
@@ -4526,7 +4526,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4583,7 +4583,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4676,7 +4676,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -4863,7 +4863,7 @@
           "id": "set_value",
           "key": "B11B770E-A35F-450A-A3CE-3F9C71AAA06C",
           "name": "Set value of { variable }",
-          "value": "3"
+          "value": "4"
         }
       ]
     },
@@ -5116,7 +5116,7 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
+        { "name": "no", "isCollapsed": true }
       ],
       "x": 996,
       "y": 8584,
@@ -5161,7 +5161,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -5298,7 +5298,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -5359,7 +5359,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": "e649bbb1-4b70-42fa-88ee-11d1aa9a7119",
+          "value": null,
           "type": "select",
           "structure": []
         },
@@ -6052,6 +6052,42 @@
           "value": null,
           "type": "string",
           "structure": []
+        },
+        {
+          "id": "5c0077d0-2c05-11f0-ac44-6d2ece037809",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "6b14af90-2c05-11f0-9784-7faf3c3218c8",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "7a530260-2c05-11f0-b3a7-4df7dd05ac72",
+          "value": null,
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "91ad2290-2c05-11f0-a02d-f35e01920b5a",
+          "value": null,
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "407a7860-2c05-11f0-832e-c1fbf72ff659",
+          "value": null,
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "a0756a20-3baf-11f0-bf42-47e0c9fe5190",
+          "value": null,
+          "type": "select",
+          "structure": {}
         }
       ],
       "settings": [
@@ -6182,7 +6218,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -6195,7 +6230,7 @@
       "y": 8540,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "BC968B71-1D79-4068-A3B3-9CDDDD0C3A91",
