@@ -343,7 +343,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -481,13 +481,13 @@
       "form": [
         {
           "id": "inputs6-input-0",
-          "type": "select",
           "label": "Reload application(s) post-install?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "Whether the {if: {$.publish} = 1, 'managed ',}applications should be reloaded post-installation process.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2266,13 +2266,13 @@
       "form": [
         {
           "id": "inputs11-input-0",
-          "type": "select",
           "label": "Proceed",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": null,
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2490,7 +2490,7 @@
       "name": "lookupItemInList6",
       "displayName": "Lookup Item In List 6",
       "comment": "Get the Shared space info.",
-      "childId": "3BC6D95A-BCB8-4B81-ACCB-CFA688376B8A",
+      "childId": "21F74017-6B6A-4FAE-B372-6D5F3A77641B",
       "inputs": [
         {
           "id": "list",
@@ -2528,18 +2528,23 @@
       "disabled": false,
       "name": "condition25",
       "displayName": "Condition 25",
-      "comment": "Does the user have \"producer\" (Can edit)?",
+      "comment": "Does the user have \"producer\" (Can edit), or do they own the space?",
       "childId": null,
       "inputs": [
         {
           "id": "conditions",
           "value": {
-            "mode": "all",
+            "mode": "some",
             "conditions": [
               {
                 "input1": "{$.lookupItemInList6.meta.roles}",
-                "input2": "producer",
-                "operator": "inList"
+                "operator": "inList",
+                "input2": "producer"
+              },
+              {
+                "input1": "{$.lookupItemInList6.ownerId}",
+                "operator": "=",
+                "input2": "{$.getCurrentUserId}"
               }
             ]
           },
@@ -2553,8 +2558,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 240,
-      "y": 14040,
+      "x": 172,
+      "y": 31045,
       "childTrueId": null,
       "childFalseId": "24951BD3-AFD3-427A-B9FC-97EAD9B58256"
     },
@@ -2591,7 +2596,7 @@
       ],
       "x": -422,
       "y": 11929,
-      "childTrueId": "FA08D0CF-5189-4C42-B692-986E69F09BCD",
+      "childTrueId": "32FCA3D0-4BBA-44E5-9949-21704D705CC0",
       "childFalseId": "E1A357E9-BD11-460B-8A76-CC2DBF1461A3"
     },
     {
@@ -2665,13 +2670,13 @@
       "form": [
         {
           "id": "inputs15-input-0",
-          "type": "select",
           "label": "Should this installer add the \"Can edit\" role to executing user?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "The executing user ({$.searchUsers[0].name}) does not have the \"Can edit\" permission on the Shared space \"{$.lookupItemInList6.name}\". This permission is required so that applications can be created (and reloaded if not published) within this space. If 'No' is selected, this installer will exit.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2757,7 +2762,7 @@
       "disabled": false,
       "name": "condition28",
       "displayName": "Condition 28",
-      "comment": "Does the user not have \"Can publish\"?",
+      "comment": "Does the user have \"Can publish\" on managed space?",
       "childId": "DFE1A608-ED55-4336-9627-2292B90B56E0",
       "inputs": [
         {
@@ -2767,8 +2772,8 @@
             "conditions": [
               {
                 "input1": "{ $.lookupItemInList7.meta.roles }",
-                "input2": "publisher",
-                "operator": "inList"
+                "operator": "inList",
+                "input2": "publisher"
               }
             ]
           },
@@ -2816,13 +2821,13 @@
       "form": [
         {
           "id": "inputs13-input-0",
-          "type": "select",
           "label": "Should this installer add the \"Can publish\" role to the executing user?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "The executing user ({ $.searchUsers[0].name }) does not have the \"Can publish\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required so that applications can be published to this space. If 'No' is selected, this installer will exit.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2860,7 +2865,7 @@
       ],
       "x": 529,
       "y": 13461,
-      "childTrueId": "07BB0AC8-EBC0-4EB0-BCDF-6D90357B1B92",
+      "childTrueId": "D5669E37-F2C3-42CD-B575-50AF1CF1B7D0",
       "childFalseId": "6D2B15B5-44EB-4489-94E6-B0D45FE36370"
     },
     {
@@ -2911,18 +2916,23 @@
       "disabled": false,
       "name": "condition30",
       "displayName": "Condition 30",
-      "comment": "Does the user not have \"Can manage\"?",
+      "comment": "Does the user have \"Can manage\" or \"Can operate\"?",
       "childId": null,
       "inputs": [
         {
           "id": "conditions",
           "value": {
-            "mode": "all",
+            "mode": "some",
             "conditions": [
               {
                 "input1": "{ $.lookupItemInList7.meta.roles }",
-                "input2": "facilitator",
-                "operator": "inList"
+                "operator": "inList",
+                "input2": "facilitator"
+              },
+              {
+                "input1": "{ $.lookupItemInList7.meta.roles }",
+                "operator": "inList",
+                "input2": "operator"
               }
             ]
           },
@@ -2947,7 +2957,7 @@
       "disabled": false,
       "name": "inputs14",
       "displayName": "Inputs 14",
-      "comment": "Should \"Can publish\" be applied?",
+      "comment": "Should \"Can operate\" be applied?",
       "childId": "FAC8788E-23AC-4C68-B97A-8112E260704C",
       "inputs": [],
       "settings": [
@@ -2970,13 +2980,13 @@
       "form": [
         {
           "id": "inputs14-input-0",
+          "label": "Should this installer add the Can operate role to the executing user?",
+          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the \"Can operate\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required to both reload applications and create reload schedules within the space. If 'No' is selected, the installer will continue, however there will not be the ability to create the reload schedules or reload the applications through this process.",
           "type": "select",
-          "label": "Should this installer add the Can manage role to the executing user?",
-          "order": 0,
           "values": "Yes,No",
-          "options": [],
-          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the \"Can manage\" permission on the Managed space \"{$.lookupItemInList7.name}\". This permission is required to both reload applications and create reload schedules within the space. If 'No' is selected, the installer will continue, however there will not be the ability to create the reload schedules or reload the applications through this process.",
-          "isRequired": true
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2987,7 +2997,7 @@
       "disabled": false,
       "name": "condition31",
       "displayName": "Condition 31",
-      "comment": "Apply \"Can manage\".",
+      "comment": "Apply \"Can operate\".",
       "childId": null,
       "inputs": [
         {
@@ -2996,9 +3006,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{$.inputs14.'Should this installer add the Can manage role to the executing user?'}",
-                "input2": "Yes",
-                "operator": "="
+                "input1": "{$.inputs14.'Should this installer add the Can operate role to the executing user?'}",
+                "operator": "=",
+                "input2": "Yes"
               }
             ]
           },
@@ -3014,7 +3024,7 @@
       ],
       "x": 529,
       "y": 13461,
-      "childTrueId": "054E5949-988A-46BA-B951-AB6106836617",
+      "childTrueId": "58A3BD99-EEB7-4F66-B307-46D91F542FDE",
       "childFalseId": "C64DA5A0-6253-4050-B161-15835DB0266C"
     },
     {
@@ -3107,7 +3117,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -3808,7 +3818,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -4015,7 +4025,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -4215,42 +4225,6 @@
       "childFalseId": null
     },
     {
-      "id": "3BC6D95A-BCB8-4B81-ACCB-CFA688376B8A",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition43",
-      "displayName": "Condition 43",
-      "comment": "Is the space owner the executing user?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.lookupItemInList6.ownerId}",
-                "input2": "{$.getCurrentUserId}",
-                "operator": "="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": true },
-        { "name": "no", "isCollapsed": false }
-      ],
-      "x": -370,
-      "y": 13684,
-      "childTrueId": null,
-      "childFalseId": "21F74017-6B6A-4FAE-B372-6D5F3A77641B"
-    },
-    {
       "id": "597A7742-424D-4BC2-A553-6E3BB1340A2C",
       "type": "IfElseBlock",
       "disabled": false,
@@ -4284,28 +4258,39 @@
       "x": -369,
       "y": 15126,
       "childTrueId": null,
-      "childFalseId": "E7247B55-27AA-40EA-BFC4-CC6D250D85FD"
+      "childFalseId": "22D340AA-6667-4EA4-AB90-FD00012AAD7A"
     },
     {
       "id": "32FCA3D0-4BBA-44E5-9949-21704D705CC0",
       "type": "VariableBlock",
       "disabled": false,
-      "name": "applyCanEditToShared",
-      "displayName": "Variable - applyCanEditToShared",
-      "comment": "Set to apply \"Can edit\" later on in the installer.",
+      "name": "sharedSpaceRoles",
+      "displayName": "Variable - sharedSpaceRoles",
+      "comment": "Add `producer` role to shared space role list.",
       "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -420,
-      "y": 14332,
-      "variableGuid": "AEF0DDC1-2416-493C-A76B-5198A074B356",
+      "x": 532,
+      "y": 31445,
+      "variableGuid": "B6038819-08F9-482B-B90B-7F3D4E3FF6F7",
       "operations": [
         {
-          "id": "set_value",
-          "key": "53501733-FC7F-4B54-A796-ED5DD2B9C01C",
-          "name": "Set value of { variable }",
-          "value": "1"
+          "key": "C0928A38-544E-45FA-98A6-BCE405F80778",
+          "id": "empty",
+          "name": "Empty { variable }"
+        },
+        {
+          "key": "9FCA3860-8DAB-4C61-9167-B1923F583487",
+          "id": "add_item",
+          "name": "Add item to { variable }",
+          "value": "producer"
+        },
+        {
+          "key": "DE5E51F2-2906-43D2-83FA-9C0F50F102F7",
+          "id": "merge",
+          "name": "Merge other list into { variable }",
+          "value": "{ $.lookupItemInList6[0].meta.roles }"
         }
       ]
     },
@@ -4313,45 +4298,28 @@
       "id": "D5669E37-F2C3-42CD-B575-50AF1CF1B7D0",
       "type": "VariableBlock",
       "disabled": false,
-      "name": "applyCanPublishToManaged",
-      "displayName": "Variable - applyCanPublishToManaged",
-      "comment": "Set to apply \"Can publish\" later on in the installer.",
+      "name": "managedSpaceRoles",
+      "displayName": "Variable - managedSpaceRoles",
+      "comment": "Add publisher role to managed space role list.",
       "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 15800,
-      "variableGuid": "8BD5EB91-8F80-4A95-95C6-0BB3BD7A91A0",
+      "x": 532,
+      "y": 32445,
+      "variableGuid": "103BB84F-7A99-4E7C-8520-C7A2C6DEFF3A",
       "operations": [
         {
-          "id": "set_value",
-          "key": "3B2332F2-B2C1-4035-8BF0-B9F00DAD8CC0",
-          "name": "Set value of { variable }",
-          "value": "1"
-        }
-      ]
-    },
-    {
-      "id": "D70C5DC5-B720-4252-A315-FEA13968771D",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "applyCanManagedToManaged",
-      "displayName": "Variable - applyCanManagedToManaged",
-      "comment": "Set to apply \"Can manage\" later on in the installer.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 36320,
-      "variableGuid": "16588BA1-0FA9-420E-9237-67A45786CB58",
-      "operations": [
+          "key": "EAF4B86A-71CC-4822-B997-7DF66571E038",
+          "id": "add_item",
+          "name": "Add item to { variable }",
+          "value": "publisher"
+        },
         {
-          "id": "set_value",
-          "key": "3B2332F2-B2C1-4035-8BF0-B9F00DAD8CC0",
-          "name": "Set value of { variable }",
-          "value": "1"
+          "key": "F7DFEE9A-9551-4E04-8D60-AA3B9237E167",
+          "id": "merge",
+          "name": "Merge other list into { variable }",
+          "value": "{ $.lookupItemInList7[0].meta.roles }"
         }
       ]
     },
@@ -4361,12 +4329,12 @@
       "disabled": false,
       "name": "output18",
       "displayName": "Output 18",
-      "comment": "\"Can edit\" will be added.",
+      "comment": "Roles will be updated.",
       "childId": null,
       "inputs": [
         {
           "id": "input",
-          "value": "| Space role to be updated | The 'Can edit' role will be added the space for the executing user ({$.searchUsers[0].name}). |",
+          "value": "| Space roles to be updated | The shared spaces roles will be updated to \n{implode: {$.sharedSpaceRoles}, ','} for the executing user ({$.searchUsers[0].name}). |",
           "type": "string",
           "structure": []
         }
@@ -4389,7 +4357,7 @@
       "disabled": false,
       "name": "condition45",
       "displayName": "Condition 45",
-      "comment": "Will \"Can edit\" be added?",
+      "comment": "Will shared space roles be updated?",
       "childId": "21536BD5-158C-49F4-8D41-76ED4FD521FB",
       "inputs": [
         {
@@ -4398,9 +4366,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{$.applyCanEditToShared}",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ $.sharedSpaceRoles }",
+                "operator": "notEmpty",
+                "input2": ""
               }
             ]
           },
@@ -4425,8 +4393,8 @@
       "disabled": false,
       "name": "condition46",
       "displayName": "Condition 46",
-      "comment": "Will \"Can publish\" be added?",
-      "childId": "2641F2FA-F3C4-4FF4-8A4E-8483531F4657",
+      "comment": "Will managed space roles be updated?",
+      "childId": null,
       "inputs": [
         {
           "id": "conditions",
@@ -4434,9 +4402,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{$.applyCanPublishToManaged}",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ $.managedSpaceRoles }",
+                "operator": "notEmpty",
+                "input2": ""
               }
             ]
           },
@@ -4461,12 +4429,12 @@
       "disabled": false,
       "name": "output22",
       "displayName": "Output 22",
-      "comment": "\"Can publish\" will be added.",
+      "comment": "Roles will be updated.",
       "childId": null,
       "inputs": [
         {
           "id": "input",
-          "value": "| Space role to be updated | The 'Can publish' role will be added the space for the executing user ({$.searchUsers[0].name}). |",
+          "value": "| Space roles to be updated | The managed spaces roles will be updated to \n{ implode: {$.managedSpaceRoles}, ',' } for the executing user ({$.searchUsers[0].name}). |",
           "type": "string",
           "structure": []
         }
@@ -4482,70 +4450,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 325,
       "y": 21236
-    },
-    {
-      "id": "2641F2FA-F3C4-4FF4-8A4E-8483531F4657",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition47",
-      "displayName": "Condition 47",
-      "comment": "Will \"Can manage\" be added?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.applyCanManagedToManaged}",
-                "input2": "1",
-                "operator": "="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": -426,
-      "y": 22198,
-      "childTrueId": "5366D9E4-F063-4509-879C-CD3F7F335253",
-      "childFalseId": null
-    },
-    {
-      "id": "5366D9E4-F063-4509-879C-CD3F7F335253",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output25",
-      "displayName": "Output 25",
-      "comment": "\"Can manage\" will be added.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Space role to be updated | The 'Can manage' role will be added the space for the executing user ({$.searchUsers[0].name}). |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -427,
-      "y": 22083
     },
     {
       "id": "2D00E952-282E-4079-83E1-486963A77AA3",
@@ -4933,7 +4837,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -5599,7 +5503,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -5781,7 +5685,7 @@
           "structure": []
         }
       ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
       "y": 15980,
       "loopBlockId": "ECE18203-3FCA-444A-AFCF-DE018EACD22F"
@@ -6301,7 +6205,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
@@ -6458,7 +6362,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -6551,7 +6455,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -6583,7 +6487,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -6699,7 +6603,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -7782,70 +7686,12 @@
       "snippet_guid": "b5dbb7a0-e715-11ea-b2bf-43bb35adee19"
     },
     {
-      "id": "FAF3255D-0D11-4625-B29F-C8FF15366F6B",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest14",
-      "displayName": "Qlik Cloud Services - Raw API Request 14",
-      "comment": "Update shared space roles.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "spaces/{$.sourceSpaceID}/assignments",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "d8056ca0-2072-11ec-b110-cbae7b0a483b",
-          "type": "select",
-          "displayValue": "POST",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"type\":\"user\",\"assigneeId\":\"{$.getCurrentUserId}\",\"roles\":[\"producer\"]}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 61060,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
       "id": "F1B65D8F-75C7-4022-B97A-7984FF1B485F",
       "type": "IfElseBlock",
       "disabled": false,
       "name": "condition51",
       "displayName": "Condition 51",
-      "comment": "Require \"Can edit\" role update?",
+      "comment": "Require shared space role update?",
       "childId": null,
       "inputs": [
         {
@@ -7854,9 +7700,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{$.applyCanEditToShared}",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ $.sharedSpaceRoles }",
+                "operator": "notEmpty",
+                "input2": ""
               }
             ]
           },
@@ -7872,126 +7718,8 @@
       ],
       "x": -474,
       "y": 32320,
-      "childTrueId": "C9447EED-DD14-449C-8502-7486D89AD158",
+      "childTrueId": "07343FC8-007B-43A7-9AB8-08BC2023386C",
       "childFalseId": null
-    },
-    {
-      "id": "5DA4DE67-CE6A-4B32-B4DC-9D2498453D35",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition80",
-      "displayName": "Condition 80",
-      "comment": "Apply \"Can publish\"?",
-      "childId": "9431D699-9DDD-4CAA-8D9B-18C2AC23C3BC",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.applyCanPublishToManaged}",
-                "input2": "1",
-                "operator": "="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": 360,
-      "y": 63740,
-      "childTrueId": "34D48C05-BA33-458D-BF8D-9F8F2F19DA7D",
-      "childFalseId": null
-    },
-    {
-      "id": "34D48C05-BA33-458D-BF8D-9F8F2F19DA7D",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingManagedSpaceRoles",
-      "displayName": "Variable - existingManagedSpaceRoles",
-      "comment": "Add publisher to list",
-      "childId": "C5EFCD29-E237-48A6-993A-357CB3E04D5D",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 63700,
-      "variableGuid": "768382F5-1DF2-474C-AF67-DB9B977CDE9D",
-      "operations": [
-        {
-          "id": "add_item",
-          "key": "9251B68D-38C6-4974-82FC-5C946DAD99F8",
-          "name": "Add item to { variable }",
-          "value": "publisher"
-        }
-      ]
-    },
-    {
-      "id": "9431D699-9DDD-4CAA-8D9B-18C2AC23C3BC",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition79",
-      "displayName": "Condition 79",
-      "comment": "Apply \"Can manage\"?",
-      "childId": "C4C80FEC-B46A-4D61-AFF7-0E6F2097322B",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.applyCanManagedToManaged}",
-                "input2": "1",
-                "operator": "="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": -68,
-      "y": 33182,
-      "childTrueId": "0D4A1598-C73E-40E2-86AE-9B0A2C9BF14B",
-      "childFalseId": null
-    },
-    {
-      "id": "0D4A1598-C73E-40E2-86AE-9B0A2C9BF14B",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingManagedSpaceRoles",
-      "displayName": "Variable - existingManagedSpaceRoles",
-      "comment": "add facilitator to list",
-      "childId": "655EAE69-6FEC-4D33-9E0C-10698F554FA8",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 64060,
-      "variableGuid": "768382F5-1DF2-474C-AF67-DB9B977CDE9D",
-      "operations": [
-        {
-          "id": "add_item",
-          "key": "1D8C74C4-7D19-4775-AD86-43CD6143E028",
-          "name": "Add item to { variable }",
-          "value": "facilitator"
-        }
-      ]
     },
     {
       "id": "0AFC4BD0-BC64-4761-8C98-D02E2B924A23",
@@ -7999,7 +7727,7 @@
       "disabled": false,
       "name": "condition81",
       "displayName": "Condition 81",
-      "comment": "Apply \"Can publish\" or \"Can manage\"?",
+      "comment": "Require managed space role update?",
       "childId": null,
       "inputs": [
         {
@@ -8008,14 +7736,9 @@
             "mode": "some",
             "conditions": [
               {
-                "input1": "{$.applyCanPublishToManaged}",
-                "input2": "1",
-                "operator": "="
-              },
-              {
-                "input1": "{$.applyCanManagedToManaged}",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ $.managedSpaceRoles }",
+                "operator": "notEmpty",
+                "input2": null
               }
             ]
           },
@@ -8031,66 +7754,8 @@
       ],
       "x": -75,
       "y": 33192,
-      "childTrueId": "5DA4DE67-CE6A-4B32-B4DC-9D2498453D35",
+      "childTrueId": "60F76D77-1A28-42C3-895B-83E3714D6EA7",
       "childFalseId": null
-    },
-    {
-      "id": "C10A0F65-0CFF-4E57-B406-797689017085",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest15",
-      "displayName": "Qlik Cloud Services - Raw API Request 15",
-      "comment": "Update managed space roles.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "spaces/{$.targetSpaceID}/assignments",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "d8056ca0-2072-11ec-b110-cbae7b0a483b",
-          "type": "select",
-          "displayValue": "POST",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"type\":\"user\",\"assigneeId\":\"{$.getCurrentUserId}\",\"roles\":[{implode: {$.managedSpaceRolePayload}}]}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 64940,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
     },
     {
       "id": "10E56087-9CD9-405F-A51B-D0217AFA92A3",
@@ -8264,7 +7929,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -8274,45 +7939,17 @@
       "childFalseId": null
     },
     {
-      "id": "C9447EED-DD14-449C-8502-7486D89AD158",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output26",
-      "displayName": "Output 26",
-      "comment": "Adding \"Can edit\".",
-      "childId": "8D9F6A96-3FBB-41F8-9623-90DBDC658710",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Spaces | Adding the \"Can edit\" role to the executing user ({$.searchUsers[0].name}) on the Shared space '{$.sourceSpaceName}'... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -437,
-      "y": 32469
-    },
-    {
       "id": "DA0A63F4-BB97-4570-BD2D-973AC065F1CE",
       "type": "ShowBlock",
       "disabled": false,
       "name": "output36",
       "displayName": "Output 36",
-      "comment": "\"Can edit\" added.",
+      "comment": "Roles updated.",
       "childId": null,
       "inputs": [
         {
           "id": "input",
-          "value": "| Spaces | \"Can edit\" role added. |",
+          "value": "| Spaces | Shared space roles applied. |",
           "type": "string",
           "structure": []
         }
@@ -8326,8 +7963,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -421,
-      "y": 32554
+      "x": 532,
+      "y": 22485
     },
     {
       "id": "C02DDD9D-4B59-43F4-ADAB-25DE6C3C8E00",
@@ -8414,34 +8051,6 @@
       "y": 33182
     },
     {
-      "id": "C4C80FEC-B46A-4D61-AFF7-0E6F2097322B",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output58",
-      "displayName": "Output 58",
-      "comment": "Applying \"Can publish\" / \"Can manage\" roles.",
-      "childId": "F7B02C19-3F19-45B6-B7EA-2FA919D0A3BD",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Spaces | Adding the {implode: {$.managedSpaceRolePayload}} role(s) to the executing user ({$.searchUsers[0].name}) on the Managed space '{$.targetSpaceName}'... |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 34560
-    },
-    {
       "id": "4FF53737-7E71-4616-A336-CF9EC40FB2BF",
       "type": "ShowBlock",
       "disabled": false,
@@ -8452,7 +8061,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Spaces | {implode: {$.managedSpaceRolePayload}} role(s) added. |",
+          "value": "| Spaces | Managed space roles applied. |",
           "type": "string",
           "structure": []
         }
@@ -8466,8 +8075,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -428,
-      "y": 34419
+      "x": 412,
+      "y": 24605
     },
     {
       "id": "0F29D432-13F7-45CF-B1C0-0D910CB7EA6F",
@@ -10081,7 +9690,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -10218,7 +9827,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -10355,7 +9964,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -11032,7 +10641,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
@@ -11220,7 +10829,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -12191,7 +11800,7 @@
       "comment": "",
       "childId": "D3514097-8E75-4287-8238-6506BACC9581",
       "inputs": [
-        { "id": "time", "value": "5", "type": "string", "structure": [] }
+        { "id": "time", "value": "1", "type": "string", "structure": [] }
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -12297,7 +11906,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -13081,7 +12690,7 @@
           "structure": []
         }
       ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": -368,
       "y": 15522,
       "loopBlockId": "2B6B69B0-0339-44AB-AA69-EE22D52DC2DB"
@@ -14649,7 +14258,7 @@
           "structure": []
         }
       ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
       "y": 24260,
       "loopBlockId": "392D12B7-CBD8-437A-ADCE-9FA3ED71FF63"
@@ -15128,7 +14737,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -15307,7 +14916,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -16045,7 +15654,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
@@ -16140,7 +15749,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -20700,38 +20309,6 @@
       "y": 36870
     },
     {
-      "id": "8FCD9E9A-1082-4641-890A-A47A19B0817A",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep20",
-      "displayName": "Sleep 20",
-      "comment": "",
-      "childId": "DA0A63F4-BB97-4570-BD2D-973AC065F1CE",
-      "inputs": [
-        { "id": "time", "value": "2", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 61180
-    },
-    {
-      "id": "4A899C11-58C4-4F14-AB5C-AF5E1DD2D128",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep21",
-      "displayName": "Sleep 21",
-      "comment": "",
-      "childId": "4FF53737-7E71-4616-A336-CF9EC40FB2BF",
-      "inputs": [
-        { "id": "time", "value": "2", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 65060
-    },
-    {
       "id": "ADD4C770-9C1C-4104-B92B-86858F519CC6",
       "type": "SleepBlock",
       "disabled": false,
@@ -21629,765 +21206,6 @@
       ]
     },
     {
-      "id": "FA08D0CF-5189-4C42-B692-986E69F09BCD",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition174",
-      "displayName": "Condition 174",
-      "comment": "Do they already have other roles?",
-      "childId": "32FCA3D0-4BBA-44E5-9949-21704D705CC0",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.lookupItemInList6.meta.roles}",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": 300,
-      "y": 32967,
-      "childTrueId": "631292D4-504F-4C2D-B6F4-4EA2C06E6869",
-      "childFalseId": null
-    },
-    {
-      "id": "CC520C3E-DA69-495D-A4A3-FAFCF98A47EB",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingSharedSpaceRoles",
-      "displayName": "Variable - existingSharedSpaceRoles",
-      "comment": "Store the existing roles so they can be augmented later.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 33960,
-      "variableGuid": "ED0B0B4B-8422-4F60-9DFF-20A44769A834",
-      "operations": [
-        {
-          "id": "merge",
-          "key": "1659DBF8-B8D7-4BC3-87E6-67D2AD618EFA",
-          "name": "Merge other list into { variable }",
-          "value": "{$.filterList14[*].roles[*]}",
-          "allow_duplicates": "no"
-        }
-      ]
-    },
-    {
-      "id": "07BB0AC8-EBC0-4EB0-BCDF-6D90357B1B92",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition176",
-      "displayName": "Condition 176",
-      "comment": "Do they already have other roles?",
-      "childId": "D5669E37-F2C3-42CD-B575-50AF1CF1B7D0",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{ $.lookupItemInList7.meta.roles }",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": 0,
-      "y": 34883,
-      "childTrueId": "106A159D-25DE-4982-9B51-5BE6C6353156",
-      "childFalseId": null
-    },
-    {
-      "id": "054E5949-988A-46BA-B951-AB6106836617",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition177",
-      "displayName": "Condition 177",
-      "comment": "Do they already have other roles?",
-      "childId": "D70C5DC5-B720-4252-A315-FEA13968771D",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{ $.lookupItemInList7.meta.roles }",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": 737,
-      "y": 35737,
-      "childTrueId": "974AC457-E822-4112-B0D5-401E23149C6D",
-      "childFalseId": null
-    },
-    {
-      "id": "974AC457-E822-4112-B0D5-401E23149C6D",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingManagedSpaceRoles",
-      "displayName": "Variable - existingManagedSpaceRoles",
-      "comment": "Store the existing roles so they can be augmented later.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 719,
-      "y": 34694,
-      "variableGuid": "768382F5-1DF2-474C-AF67-DB9B977CDE9D",
-      "operations": [
-        {
-          "id": "merge",
-          "key": "1659DBF8-B8D7-4BC3-87E6-67D2AD618EFA",
-          "name": "Merge other list into { variable }",
-          "value": "{ $.lookupItemInList7.meta.roles }",
-          "allow_duplicates": "no"
-        }
-      ]
-    },
-    {
-      "id": "8D9F6A96-3FBB-41F8-9623-90DBDC658710",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition178",
-      "displayName": "Condition 178",
-      "comment": "Does the user already have other roles individually assigned?",
-      "childId": "8FCD9E9A-1082-4641-890A-A47A19B0817A",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.existingSharedSpaceRoles}",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
-      ],
-      "x": -14,
-      "y": 60866,
-      "childTrueId": "E11F2C53-61E0-4EC3-BCFE-AB1418799F59",
-      "childFalseId": "FAF3255D-0D11-4625-B29F-C8FF15366F6B"
-    },
-    {
-      "id": "56B20DDA-F152-4234-909A-3CFA1990DA3B",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest53",
-      "displayName": "Qlik Cloud Services - Raw API Request 53",
-      "comment": "Update shared space roles.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "spaces/{$.sourceSpaceID}/assignments/{$.sharedSpaceUserAssignmentId}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba24260-2072-11ec-af76-279950b1986c",
-          "type": "select",
-          "displayValue": "PUT",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"roles\": {replace: {replace: {json: {$.existingSharedSpaceRoles}}, '[[', '['}, ']]', ']'}}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 62260,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
-      "id": "E11F2C53-61E0-4EC3-BCFE-AB1418799F59",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingSharedSpaceRoles",
-      "displayName": "Variable - existingSharedSpaceRoles",
-      "comment": "Add can edit role (producer) to list.",
-      "childId": "56B20DDA-F152-4234-909A-3CFA1990DA3B",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 61900,
-      "variableGuid": "ED0B0B4B-8422-4F60-9DFF-20A44769A834",
-      "operations": [
-        {
-          "id": "add_item",
-          "key": "957A92FD-58D3-4A2F-AF08-23879F9CDED1",
-          "name": "Add item to { variable }",
-          "value": "producer"
-        }
-      ]
-    },
-    {
-      "id": "631292D4-504F-4C2D-B6F4-4EA2C06E6869",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest55",
-      "displayName": "Qlik Cloud Services - Raw API Request 55",
-      "comment": "Get the list of all user assignments.",
-      "childId": "2C980399-34FA-4BD6-8783-34B89192FECB",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "spaces/{$.lookupItemInList6.id}/assignments",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba1eed0-2072-11ec-aa67-f118ee53373a",
-          "type": "select",
-          "displayValue": "GET",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -364,
-      "y": 33387,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
-      "id": "2C980399-34FA-4BD6-8783-34B89192FECB",
-      "type": "FilterListBlock",
-      "disabled": false,
-      "name": "filterList14",
-      "displayName": "Filter List 14",
-      "comment": "Filter to the user.",
-      "childId": "649490DF-08CB-41B1-885C-05E479B7CCE5",
-      "inputs": [
-        {
-          "id": "list",
-          "value": "{$.rawAPIRequest55.data}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "assigneeId",
-                "input2": "{$.getCurrentUserId}",
-                "operator": "="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 600,
-      "y": 33760,
-      "loopBlockId": null
-    },
-    {
-      "id": "649490DF-08CB-41B1-885C-05E479B7CCE5",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition179",
-      "displayName": "Condition 179",
-      "comment": "Are they assigned directly to the user?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.filterList14}",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": -367,
-      "y": 33647,
-      "childTrueId": "B437CEAF-324D-412B-A2E4-F22540F02036",
-      "childFalseId": null
-    },
-    {
-      "id": "106A159D-25DE-4982-9B51-5BE6C6353156",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest56",
-      "displayName": "Qlik Cloud Services - Raw API Request 56",
-      "comment": "Get the list of all user assignments.",
-      "childId": "D68370C6-6879-4FBB-948C-F66A1F8F71A4",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "spaces/{$.lookupItemInList7.id}/assignments",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba1eed0-2072-11ec-aa67-f118ee53373a",
-          "type": "select",
-          "displayValue": "GET",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 854,
-      "y": 35477,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
-      "id": "D68370C6-6879-4FBB-948C-F66A1F8F71A4",
-      "type": "FilterListBlock",
-      "disabled": false,
-      "name": "filterList15",
-      "displayName": "Filter List 15",
-      "comment": "Filter to the user.",
-      "childId": "8B236971-8382-4F91-812B-747E2FA0786D",
-      "inputs": [
-        {
-          "id": "list",
-          "value": "{$.rawAPIRequest56.data}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "assigneeId",
-                "input2": "{$.getCurrentUserId}",
-                "operator": "="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 600,
-      "y": 33760,
-      "loopBlockId": null
-    },
-    {
-      "id": "8B236971-8382-4F91-812B-747E2FA0786D",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition180",
-      "displayName": "Condition 180",
-      "comment": "Are they assigned directly to the user?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.filterList15}",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": -367,
-      "y": 33647,
-      "childTrueId": "C76DD675-2B93-48EF-825F-FFB7A82C6CE9",
-      "childFalseId": null
-    },
-    {
-      "id": "CB41CF86-6DF4-412A-B373-10E7816E06C5",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingManagedSpaceRoles",
-      "displayName": "Variable - existingManagedSpaceRoles",
-      "comment": "Store the existing roles so they can be augmented later.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 33960,
-      "variableGuid": "768382F5-1DF2-474C-AF67-DB9B977CDE9D",
-      "operations": [
-        {
-          "id": "merge",
-          "key": "1659DBF8-B8D7-4BC3-87E6-67D2AD618EFA",
-          "name": "Merge other list into { variable }",
-          "value": "{$.filterList15[*].roles[*]}",
-          "allow_duplicates": "no"
-        }
-      ]
-    },
-    {
-      "id": "B437CEAF-324D-412B-A2E4-F22540F02036",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "sharedSpaceUserAssignmentId",
-      "displayName": "Variable - sharedSpaceUserAssignmentId",
-      "comment": "Store the assignment Id for later use.",
-      "childId": "CC520C3E-DA69-495D-A4A3-FAFCF98A47EB",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 33840,
-      "variableGuid": "6912D288-F994-47AF-8496-EF2D8F117A5A",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "2BF8C6BF-1258-44C1-8AA4-751B547CA773",
-          "name": "Set value of { variable }",
-          "value": "{ $.filterList14[0].id }"
-        }
-      ]
-    },
-    {
-      "id": "C76DD675-2B93-48EF-825F-FFB7A82C6CE9",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "managedSpaceUserAssignmentId",
-      "displayName": "Variable - managedSpaceUserAssignmentId",
-      "comment": "Store the assignment Id for later use.",
-      "childId": "CB41CF86-6DF4-412A-B373-10E7816E06C5",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 931,
-      "y": 35663,
-      "variableGuid": "60FE705D-37F1-410E-9323-7479D8C47A01",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "2BF8C6BF-1258-44C1-8AA4-751B547CA773",
-          "name": "Set value of { variable }",
-          "value": "{ $.filterList15[0].id }"
-        }
-      ]
-    },
-    {
-      "id": "C5EFCD29-E237-48A6-993A-357CB3E04D5D",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "managedSpaceRolePayload",
-      "displayName": "Variable - managedSpaceRolePayload",
-      "comment": "Add publisher to list",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 730,
-      "y": 63700,
-      "variableGuid": "5FF998AB-FEDA-4D10-A4ED-B32B3757DDFA",
-      "operations": [
-        {
-          "id": "add_item",
-          "key": "9251B68D-38C6-4974-82FC-5C946DAD99F8",
-          "name": "Add item to { variable }",
-          "value": "\"publisher\""
-        }
-      ]
-    },
-    {
-      "id": "655EAE69-6FEC-4D33-9E0C-10698F554FA8",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "managedSpaceRolePayload",
-      "displayName": "Variable - managedSpaceRolePayload",
-      "comment": "add facilitator to list",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 730,
-      "y": 64060,
-      "variableGuid": "5FF998AB-FEDA-4D10-A4ED-B32B3757DDFA",
-      "operations": [
-        {
-          "id": "add_item",
-          "key": "1D8C74C4-7D19-4775-AD86-43CD6143E028",
-          "name": "Add item to { variable }",
-          "value": "\"facilitator\""
-        }
-      ]
-    },
-    {
-      "id": "F7B02C19-3F19-45B6-B7EA-2FA919D0A3BD",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition181",
-      "displayName": "Condition 181",
-      "comment": "Does the user already have other roles individually assigned?",
-      "childId": "4A899C11-58C4-4F14-AB5C-AF5E1DD2D128",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{$.filterList15}",
-                "input2": null,
-                "operator": "notEmpty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
-      ],
-      "x": 728,
-      "y": 64425,
-      "childTrueId": "C71AD4E2-FCC7-4E6B-BA4F-7563A1D1650C",
-      "childFalseId": "C10A0F65-0CFF-4E57-B406-797689017085"
-    },
-    {
-      "id": "C71AD4E2-FCC7-4E6B-BA4F-7563A1D1650C",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest54",
-      "displayName": "Qlik Cloud Services - Raw API Request 54",
-      "comment": "Update shared space roles.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "spaces/{$.targetSpaceID}/assignments/{$.managedSpaceUserAssignmentId}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba24260-2072-11ec-af76-279950b1986c",
-          "type": "select",
-          "displayValue": "PUT",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "{\"roles\": {replace: {replace: {json: {$.existingManagedSpaceRoles}}, '[[', '['}, ']]', ']'}}",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 64660,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
       "id": "4C8D1A21-79D6-4EC5-A492-572BA2B48067",
       "type": "IfElseBlock",
       "disabled": false,
@@ -22447,7 +21265,7 @@
           "structure": []
         }
       ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 465,
       "y": 11136,
       "loopBlockId": "5CF415CF-C2CB-4EF9-84D0-0C7FB7E7C88B"
@@ -22932,7 +21750,7 @@
           "structure": []
         }
       ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 678,
       "y": 11313,
       "loopBlockId": "561A9971-8F4E-4199-95F4-0AA7801B1293"
@@ -23057,7 +21875,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -23177,7 +21995,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
@@ -24239,6 +23057,269 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1206,
       "y": 93974
+    },
+    {
+      "id": "22D340AA-6667-4EA4-AB90-FD00012AAD7A",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "managedSpaceRoles",
+      "displayName": "Variable - managedSpaceRoles",
+      "comment": "Clear variable",
+      "childId": "E7247B55-27AA-40EA-BFC4-CC6D250D85FD",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 903,
+      "y": 32230,
+      "variableGuid": "103BB84F-7A99-4E7C-8520-C7A2C6DEFF3A",
+      "operations": [
+        {
+          "key": "58C2673B-BFA1-4E03-8566-26B84B96B201",
+          "id": "empty",
+          "name": "Empty { variable }"
+        }
+      ]
+    },
+    {
+      "id": "58A3BD99-EEB7-4F66-B307-46D91F542FDE",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "managedSpaceRoles",
+      "displayName": "Variable - managedSpaceRoles",
+      "comment": "Add operator role to managed space role list.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 532,
+      "y": 33365,
+      "variableGuid": "103BB84F-7A99-4E7C-8520-C7A2C6DEFF3A",
+      "operations": [
+        {
+          "key": "EAF4B86A-71CC-4822-B997-7DF66571E038",
+          "id": "add_item",
+          "name": "Add item to { variable }",
+          "value": "operator"
+        },
+        {
+          "key": "F7DFEE9A-9551-4E04-8D60-AA3B9237E167",
+          "id": "merge",
+          "name": "Merge other list into { variable }",
+          "value": "{ $.lookupItemInList7[0].meta.roles }"
+        }
+      ]
+    },
+    {
+      "id": "77F0B2C9-35BA-46E9-9318-56135135B380",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "updateRolesOfMemberFromSpace",
+      "displayName": "Qlik Cloud Services - Update Roles Of Member From Space",
+      "comment": "Add existing & new roles.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "8c6b43e0-6d42-11eb-85f6-917131a7d145",
+          "value": "{$.sourceSpaceID}",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "8c72c230-6d42-11eb-837d-b1e5663f20d2",
+          "value": "{ $.listMembersFromSpace.item.id }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "01ac8e60-6d43-11eb-9d02-4d69db8c0501",
+          "value": "{replace: {replace: {json: { $.sharedSpaceRoles}}, '[[', '['}, ']]', ']'}",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 412,
+      "y": 22425,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
+      "endpoint_role": "update"
+    },
+    {
+      "id": "07343FC8-007B-43A7-9AB8-08BC2023386C",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "listMembersFromSpace",
+      "displayName": "Qlik Cloud Services - List Members From Space",
+      "comment": "Find assignment ID for this user.",
+      "childId": "DA0A63F4-BB97-4570-BD2D-973AC065F1CE",
+      "inputs": [
+        {
+          "id": "358ee8a0-6d34-11eb-b1f3-91a0d7274b22",
+          "value": "{$.sourceSpaceID}",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "86f34440-dd7e-11ef-91d1-63f16d094078",
+          "value": "{ $.getCurrentUserId }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "972a9800-dd7e-11ef-95ae-93a368f4ba58",
+          "value": "user",
+          "type": "select",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": {} },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -587,
+      "y": 22378,
+      "loopBlockId": "77F0B2C9-35BA-46E9-9318-56135135B380",
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "ffe6d930-6d33-11eb-ad8a-334e25c5e295",
+      "endpoint_role": "list"
+    },
+    {
+      "id": "60F76D77-1A28-42C3-895B-83E3714D6EA7",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "listMembersFromSpace2",
+      "displayName": "Qlik Cloud Services - List Members From Space 2",
+      "comment": "Find assignment ID for this user.",
+      "childId": "4FF53737-7E71-4616-A336-CF9EC40FB2BF",
+      "inputs": [
+        {
+          "id": "358ee8a0-6d34-11eb-b1f3-91a0d7274b22",
+          "value": "{$.targetSpaceID}",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "86f34440-dd7e-11ef-91d1-63f16d094078",
+          "value": "{ $.getCurrentUserId }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "972a9800-dd7e-11ef-95ae-93a368f4ba58",
+          "value": "user",
+          "type": "select",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": {} },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 808,
+      "y": 23395,
+      "loopBlockId": "5CCE8070-A318-48FA-A57E-68247CB346CA",
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "ffe6d930-6d33-11eb-ad8a-334e25c5e295",
+      "endpoint_role": "list"
+    },
+    {
+      "id": "5CCE8070-A318-48FA-A57E-68247CB346CA",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "updateRolesOfMemberFromSpace2",
+      "displayName": "Qlik Cloud Services - Update Roles Of Member From Space 2",
+      "comment": "Add existing & new roles.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "8c6b43e0-6d42-11eb-85f6-917131a7d145",
+          "value": "{$.targetSpaceID}",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "8c72c230-6d42-11eb-837d-b1e5663f20d2",
+          "value": "{ $.listMembersFromSpace2.item.id }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "01ac8e60-6d43-11eb-9d02-4d69db8c0501",
+          "value": "{replace: {replace: {json: { $.managedSpaceRoles}}, '[[', '['}, ']]', ']'}",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 900,
+      "y": 23403,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
+      "endpoint_role": "update"
     }
   ],
   "variables": [
@@ -24313,21 +23394,6 @@
       "type": "number"
     },
     {
-      "guid": "AEF0DDC1-2416-493C-A76B-5198A074B356",
-      "name": "applyCanEditToShared",
-      "type": "number"
-    },
-    {
-      "guid": "8BD5EB91-8F80-4A95-95C6-0BB3BD7A91A0",
-      "name": "applyCanPublishToManaged",
-      "type": "number"
-    },
-    {
-      "guid": "16588BA1-0FA9-420E-9237-67A45786CB58",
-      "name": "applyCanManagedToManaged",
-      "type": "number"
-    },
-    {
       "guid": "FB423EBF-AE5E-4146-B707-7C525CB624FC",
       "name": "userCannotCreateReloadSchedule",
       "type": "number"
@@ -24396,11 +23462,6 @@
       "guid": "B637059D-FF17-46FA-9B3B-6BFDA50C2E23",
       "name": "manifest",
       "type": "object"
-    },
-    {
-      "guid": "5FF998AB-FEDA-4D10-A4ED-B32B3757DDFA",
-      "name": "managedSpaceRolePayload",
-      "type": "list"
     },
     {
       "guid": "0E8BB935-5077-427E-AC68-9F554ACD1FEE",
@@ -24583,26 +23644,6 @@
       "type": "string"
     },
     {
-      "guid": "ED0B0B4B-8422-4F60-9DFF-20A44769A834",
-      "name": "existingSharedSpaceRoles",
-      "type": "list"
-    },
-    {
-      "guid": "768382F5-1DF2-474C-AF67-DB9B977CDE9D",
-      "name": "existingManagedSpaceRoles",
-      "type": "list"
-    },
-    {
-      "guid": "6912D288-F994-47AF-8496-EF2D8F117A5A",
-      "name": "sharedSpaceUserAssignmentId",
-      "type": "string"
-    },
-    {
-      "guid": "60FE705D-37F1-410E-9323-7479D8C47A01",
-      "name": "managedSpaceUserAssignmentId",
-      "type": "string"
-    },
-    {
       "guid": "CB88951A-5E61-4426-93ED-847FBBF9A6BE",
       "name": "autoApplyRoles",
       "type": "number"
@@ -24636,6 +23677,16 @@
       "guid": "A64544E7-6885-4850-A23F-6FEAB6372631",
       "name": "applicationTags",
       "type": "object"
+    },
+    {
+      "guid": "B6038819-08F9-482B-B90B-7F3D4E3FF6F7",
+      "name": "sharedSpaceRoles",
+      "type": "list"
+    },
+    {
+      "guid": "103BB84F-7A99-4E7C-8520-C7A2C6DEFF3A",
+      "name": "managedSpaceRoles",
+      "type": "list"
     }
   ]
 }
