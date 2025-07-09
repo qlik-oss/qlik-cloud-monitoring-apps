@@ -1192,7 +1192,7 @@
       "name": "condition11",
       "displayName": "Condition 11",
       "comment": "Are API keys enabled on the tenant, or has tenant been migrated through TLV-750?",
-      "childId": "B64F6EA0-2C7E-4950-8858-75834E9338AA",
+      "childId": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
       "inputs": [
         {
           "id": "conditions",
@@ -23008,8 +23008,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 495,
-      "y": 9273
+      "x": 52,
+      "y": 3745
     },
     {
       "id": "31BD048C-31C9-4785-A4E1-EB1B60DB18C8",
@@ -24239,74 +24239,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1206,
       "y": 93974
-    },
-    {
-      "id": "CE94811C-0078-4711-BE1E-699CFAFAD89C",
-      "type": "FormBlock",
-      "disabled": false,
-      "name": "inputs26",
-      "displayName": "Inputs 26",
-      "comment": "API key expiry prompt.",
-      "childId": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
-      "inputs": [],
-      "settings": [
-        {
-          "id": "persist_data",
-          "value": "no",
-          "type": "select",
-          "structure": {}
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": {}
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -171,
-      "y": 3567,
-      "form": [
-        {
-          "id": "inputs26-input-0",
-          "label": "I understand any generated API keys will expire after { $.apiKeyExpiry } days",
-          "helpText": null,
-          "type": "button",
-          "values": null,
-          "isRequired": true,
-          "options": {},
-          "order": 0
-        }
-      ],
-      "persistData": "no"
-    },
-    {
-      "id": "B64F6EA0-2C7E-4950-8858-75834E9338AA",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output64",
-      "displayName": "Output 64",
-      "comment": "API key expiry notice.",
-      "childId": "CE94811C-0078-4711-BE1E-699CFAFAD89C",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "API keys are used by the monitoring apps to load data from the tenant. They need to be rotated every { $.apiKeyExpiry } days, either by rerunning this automation, or by running the Qlik Cloud Monitoring Apps API Key Rotator automation. You can increase this value by changing the maximum expiry for API keys in your tenant's Admin console.",
-          "type": "string",
-          "structure": {}
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": {}
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -702,
-      "y": 3465
     }
   ],
   "variables": [
