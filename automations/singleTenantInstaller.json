@@ -5038,7 +5038,7 @@
       "disabled": false,
       "name": "condition57",
       "displayName": "Condition 57",
-      "comment": "Create Shared space.",
+      "comment": "Create shared space?",
       "childId": "0E404425-2623-48D4-BC0A-495C82EC30CB",
       "inputs": [
         {
@@ -5059,7 +5059,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -7249,7 +7249,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -18682,7 +18682,7 @@
       "name": "loop19",
       "displayName": "Loop 19",
       "comment": "For each existing tag on the published application.",
-      "childId": "B6237E8D-8506-46DD-9CF9-6D8E80D64C27",
+      "childId": "989F9A9E-0B8F-4D5C-BDEE-92619EC6759C",
       "inputs": [
         {
           "id": "input",
@@ -18703,102 +18703,6 @@
       "x": 772,
       "y": 78545,
       "loopBlockId": "0959BC3E-F3CB-4668-8F81-54987303FDA6"
-    },
-    {
-      "id": "B6237E8D-8506-46DD-9CF9-6D8E80D64C27",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest47",
-      "displayName": "Qlik Cloud Services - Raw API Request 47",
-      "comment": "Is there an existing schedule?",
-      "childId": "56609847-36CE-4692-8116-9C1F17389B96",
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "reload-tasks",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba1eed0-2072-11ec-aa67-f118ee53373a",
-          "type": "select",
-          "displayValue": "GET",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": [
-            { "key": "appId", "value": "{ $.lookupItemInList10.originAppId }" }
-          ],
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 68920,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
-      "id": "D7D22F30-71E8-4C96-B0D5-396C5B8997A2",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition164",
-      "displayName": "Condition 164",
-      "comment": "Is there an existing reload schedule?",
-      "childId": "67537FC7-05CB-4CC7-9C8E-0275CEBFC2C3",
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{count: {$.rawAPIRequest47.data}}",
-                "input2": "0",
-                "operator": "!="
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
-      ],
-      "x": -367,
-      "y": 51862,
-      "childTrueId": "82092645-7798-4B37-A06F-EE98AC9A38D2",
-      "childFalseId": null
     },
     {
       "id": "67537FC7-05CB-4CC7-9C8E-0275CEBFC2C3",
@@ -18825,8 +18729,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -372,
-      "y": 66659
+      "x": 994,
+      "y": 32559
     },
     {
       "id": "4204CC3A-B6E5-494C-9C3E-F8EACF4B8F1A",
@@ -18911,12 +18815,12 @@
       "disabled": false,
       "name": "output145",
       "displayName": "Output 145",
-      "comment": "Updating reload schedule.",
-      "childId": "DD726BEB-F8D6-4693-B614-C293AB8E908B",
+      "comment": "Deleted reload task.",
+      "childId": null,
       "inputs": [
         {
           "id": "input",
-          "value": "| Application decommission| An existing reload schedule exists for the source application '{ $.lookupItemInList10.originAppName }'. Removing this reload schedule... |",
+          "value": "| Application decommission | Removed a legacy reload-task from the source application '{ $.lookupItemInList10.originAppName }'. |",
           "type": "string",
           "structure": []
         }
@@ -18939,12 +18843,12 @@
       "disabled": false,
       "name": "rawAPIRequest48",
       "displayName": "Qlik Cloud Services - Raw API Request 48",
-      "comment": "Set reload schedule.",
-      "childId": "873B13B2-CBF8-4368-BB0E-FC7181DE1F33",
+      "comment": "Delete reload task.",
+      "childId": "6DA88D06-AAAE-43DE-B3E9-CD3D744442DC",
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "reload-tasks/{$.rawAPIRequest47.data[0].id}",
+          "value": "reload-tasks/{ $.rawAPIListRequest2.item.id }",
           "type": "string",
           "structure": []
         },
@@ -18985,39 +18889,11 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 730,
-      "y": 52460,
+      "x": 1012,
+      "y": 32565,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
-    },
-    {
-      "id": "37ECBDF6-59EE-4E22-985A-7D464A1283E1",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output146",
-      "displayName": "Output 146",
-      "comment": "Reload schedule updated.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application decommission| Reload schedule removed. |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 754,
-      "y": 52320
     },
     {
       "id": "0959BC3E-F3CB-4668-8F81-54987303FDA6",
@@ -19097,7 +18973,7 @@
       "disabled": false,
       "name": "output147",
       "displayName": "Output 147",
-      "comment": "QCMA ag has been found on the published application. Deleting this tag.",
+      "comment": "QCMA tag has been found on the published application. Deleting this tag.",
       "childId": "7FCA60A9-CC31-4BA3-9F27-86F1E3E3E90A",
       "inputs": [
         {
@@ -20381,7 +20257,7 @@
       "comment": "",
       "childId": "0A3C842D-7B58-482A-995F-7005476E037F",
       "inputs": [
-        { "id": "time", "value": "2", "type": "string", "structure": [] }
+        { "id": "time", "value": "1", "type": "string", "structure": [] }
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -20467,38 +20343,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 259,
       "y": 72881
-    },
-    {
-      "id": "56609847-36CE-4692-8116-9C1F17389B96",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep38",
-      "displayName": "Sleep 38",
-      "comment": "",
-      "childId": "D7D22F30-71E8-4C96-B0D5-396C5B8997A2",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 384,
-      "y": 73477
-    },
-    {
-      "id": "873B13B2-CBF8-4368-BB0E-FC7181DE1F33",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep39",
-      "displayName": "Sleep 39",
-      "comment": "",
-      "childId": "37ECBDF6-59EE-4E22-985A-7D464A1283E1",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -367,
-      "y": 73416
     },
     {
       "id": "E459714D-ECEF-4058-A77F-200CADD2AADB",
@@ -22533,9 +22377,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{ $.rawAPIRequest47.data[0].disabledCode }",
-                "input2": "MIGRATED",
-                "operator": "="
+                "input1": "{ $.rawAPIListRequest2.item.disabledCode }",
+                "operator": "=",
+                "input2": "MIGRATED"
               }
             ]
           },
@@ -22546,41 +22390,13 @@
       "settings": [],
       "collapsed": [
         { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 1510,
-      "y": 81718,
-      "childTrueId": "D494BBC2-B365-40F8-AA9A-0AB515ADE4AF",
-      "childFalseId": "6DA88D06-AAAE-43DE-B3E9-CD3D744442DC"
-    },
-    {
-      "id": "D494BBC2-B365-40F8-AA9A-0AB515ADE4AF",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output160",
-      "displayName": "Output 160",
-      "comment": "Notify: cannot update task as it's been migrated.",
-      "childId": "2C9C45BE-D2C7-4F7A-8E8D-BE2D8FB97860",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "| Application decommission| An existing reload schedule exists for the source application '{ $.lookupItemInList10.originAppName }'. Error: Unable to remove this reload schedule, please remove manually. |",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1508,
-      "y": 81859
+      "x": 1287,
+      "y": 32019,
+      "childTrueId": null,
+      "childFalseId": "DD726BEB-F8D6-4693-B614-C293AB8E908B"
     },
     {
       "id": "84CA7DA8-6D9C-4633-9DBC-8B84A7A43C27",
@@ -22947,34 +22763,6 @@
       "y": 93483
     },
     {
-      "id": "2C9C45BE-D2C7-4F7A-8E8D-BE2D8FB97860",
-      "type": "ErrorBlock",
-      "disabled": false,
-      "name": "error",
-      "displayName": "Error",
-      "comment": "",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "message",
-          "value": "A reload task on '{ $.lookupItemInList10.originAppName }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "action",
-          "value": "continue",
-          "type": "select",
-          "displayValue": "Continue the Automation",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 903,
-      "y": 80026
-    },
-    {
       "id": "5B97CA4C-E219-4360-A75F-8CF62DA971F8",
       "type": "ErrorBlock",
       "disabled": false,
@@ -23320,6 +23108,204 @@
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
       "endpoint_role": "update"
+    },
+    {
+      "id": "989F9A9E-0B8F-4D5C-BDEE-92619EC6759C",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIListRequest",
+      "displayName": "Qlik Cloud Services - Raw API List Request",
+      "comment": "Clean up any tasks",
+      "childId": "C3DD7FD7-F72D-4888-9897-1C6B752D0451",
+      "inputs": [
+        {
+          "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
+          "value": "tasks",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
+          "value": [
+            {
+              "key": "resourceId",
+              "value": "{ $.lookupItemInList10.originAppId }"
+            }
+          ],
+          "type": "object",
+          "mode": "keyValue",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": {} },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1198,
+      "y": 31955,
+      "loopBlockId": "7DD931F0-3FD1-448E-B696-EC42633A0810",
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
+      "endpoint_role": "list"
+    },
+    {
+      "id": "C3DD7FD7-F72D-4888-9897-1C6B752D0451",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIListRequest2",
+      "displayName": "Qlik Cloud Services - Raw API List Request 2",
+      "comment": "Clean up legacy reload tasks. Warn if error since deprecated.",
+      "childId": "67537FC7-05CB-4CC7-9C8E-0275CEBFC2C3",
+      "inputs": [
+        {
+          "id": "c3a1c780-2076-11ec-98c4-dd329f9ef682",
+          "value": "reload-tasks",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "c6915fb0-2839-11ec-a450-03c7d8aebbe7",
+          "value": [
+            { "key": "appId", "value": "{ $.lookupItemInList10.originAppId }" }
+          ],
+          "type": "object",
+          "mode": "keyValue",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "warning",
+          "type": "select",
+          "displayValue": "Warning - Continue Automation and report errors",
+          "structure": {}
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": {} },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1022,
+      "y": 32005,
+      "loopBlockId": "82092645-7798-4B37-A06F-EE98AC9A38D2",
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
+      "endpoint_role": "list"
+    },
+    {
+      "id": "7DD931F0-3FD1-448E-B696-EC42633A0810",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIRequest6",
+      "displayName": "Qlik Cloud Services - Raw API Request 6",
+      "comment": "Delete task.",
+      "childId": "DC91B922-E3EA-42EC-B997-FA993AFBB38A",
+      "inputs": [
+        {
+          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
+          "value": "tasks/{ $.rawAPIListRequest.item.id }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
+          "value": "3ba2a970-2072-11ec-be02-2dd5c73abb12",
+          "type": "select",
+          "displayValue": "DELETE",
+          "structure": []
+        },
+        {
+          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
+          "value": [],
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        },
+        {
+          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1657,
+      "y": 32499,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "DC91B922-E3EA-42EC-B997-FA993AFBB38A",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output152",
+      "displayName": "Output 152",
+      "comment": "Deleted task.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Application decommission | Removed a task from the source application '{ $.lookupItemInList10.originAppName }'. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1304,
+      "y": 31802
     }
   ],
   "variables": [
