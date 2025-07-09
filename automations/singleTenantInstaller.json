@@ -113,13 +113,13 @@
       "form": [
         {
           "id": "inputs-input-0",
-          "type": "multi_select",
           "label": "What monitoring applications should be installed?",
-          "order": 0,
-          "values": "{implode: {$.allAvailableMonitoringAppNames}}",
-          "options": { "default_select_all": true },
           "helpText": "Select any number of the monitoring applications below to install them.",
-          "isRequired": true
+          "type": "multi_select",
+          "values": "{implode: {$.allAvailableMonitoringAppNames}}",
+          "isRequired": true,
+          "options": { "default_select_all": true },
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -801,8 +801,8 @@
       "disabled": false,
       "name": "rawAPIRequest",
       "displayName": "Qlik Cloud Services - Raw API Request",
-      "comment": "Check if API keys are enabled",
-      "childId": "93909CCF-D63B-4EEB-93AA-B22F985A277C",
+      "comment": "Get API key configuration",
+      "childId": "2D00E952-282E-4079-83E1-486963A77AA3",
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
@@ -925,7 +925,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
@@ -961,7 +961,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
@@ -1192,7 +1192,7 @@
       "name": "condition11",
       "displayName": "Condition 11",
       "comment": "Are API keys enabled on the tenant, or has tenant been migrated through TLV-750?",
-      "childId": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
+      "childId": "B64F6EA0-2C7E-4950-8858-75834E9338AA",
       "inputs": [
         {
           "id": "conditions",
@@ -1221,8 +1221,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -430,
-      "y": 3697,
+      "x": 52,
+      "y": 2705,
       "childTrueId": null,
       "childFalseId": "13DE7454-D398-4324-8E7E-DBDFD075DD0F"
     },
@@ -1255,13 +1255,13 @@
       "form": [
         {
           "id": "inputs10-input-0",
-          "type": "select",
           "label": "Should this installer enable API keys on this tenant now?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "API keys are not currently enabled on this tenant, which is a prerequisite of the installer. An API key is required to create the data connection to Qlik Cloud that the monitoring applications leverage. If 'No' is selected, this will need to be done manually, and the installer will exit.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -1299,7 +1299,7 @@
       ],
       "x": -422,
       "y": 3961,
-      "childTrueId": "648F354D-D760-4854-9F38-EC4F65183CA5",
+      "childTrueId": "A2589455-A242-434D-8163-F3E34CF3C289",
       "childFalseId": "0373F2E4-029D-4DEF-B228-6C5E37B537BF"
     },
     {
@@ -2320,7 +2320,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
@@ -3151,46 +3151,6 @@
       "y": 15552,
       "childTrueId": "3462BB77-6878-411E-8885-6E067C36756F",
       "childFalseId": "E3DF65E3-58D1-4A55-B600-7D761DC9972F"
-    },
-    {
-      "id": "648F354D-D760-4854-9F38-EC4F65183CA5",
-      "type": "FormBlock",
-      "disabled": false,
-      "name": "inputs17",
-      "displayName": "Inputs 17",
-      "comment": "API key expiration.",
-      "childId": "A2589455-A242-434D-8163-F3E34CF3C289",
-      "inputs": [],
-      "settings": [
-        {
-          "id": "persist_data",
-          "value": "no",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -425,
-      "y": 5388,
-      "form": [
-        {
-          "id": "inputs17-input-0",
-          "type": "select",
-          "label": "What should the maximum API key expiration be set to in days?",
-          "order": 0,
-          "values": "365,180,90,60,30,7",
-          "options": [],
-          "helpText": "Note that the API key will need to be rotated for the data connection that the monitoring applications use within the timeframe that is set. This can be an automated process, but will need to be run within the window set above.",
-          "isRequired": true
-        }
-      ],
-      "persistData": "no"
     },
     {
       "id": "3CC8F1F3-450A-447C-8D5C-21946BD0CCDA",
@@ -4593,20 +4553,20 @@
       "disabled": false,
       "name": "apiKeyExpiry",
       "displayName": "Variable - apiKeyExpiry",
-      "comment": "Set the expiration of the API keys.",
-      "childId": "199F84A6-1F4A-44F4-A1D4-90B238F80428",
+      "comment": "Tenant max API key expiry",
+      "childId": "F21957AF-A7F1-44B0-BC94-A8FAD6888BC4",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 7100,
+      "x": 292,
+      "y": 3225,
       "variableGuid": "8FB7E634-B6C8-42BC-A1C6-56E8E5D99084",
       "operations": [
         {
           "id": "set_value",
           "key": "A28226D6-B650-4050-887C-2E49B64CE4DF",
           "name": "Set value of { variable }",
-          "value": "P{$.inputs17.'What should the maximum API key expiration be set to in days?'}D"
+          "value": "{ $.rawAPIRequest.max_api_key_expiry }"
         }
       ]
     },
@@ -6023,7 +5983,7 @@
       "name": "rawAPIRequest4",
       "displayName": "Qlik Cloud Services - Raw API Request 4",
       "comment": "Enable API keys.",
-      "childId": "6D12D04E-BBA7-4D38-A152-F13ADDE113F7",
+      "childId": null,
       "inputs": [
         {
           "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
@@ -6068,66 +6028,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 723,
-      "y": 6774,
-      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
-      "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "create"
-    },
-    {
-      "id": "199F84A6-1F4A-44F4-A1D4-90B238F80428",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "rawAPIRequest6",
-      "displayName": "Qlik Cloud Services - Raw API Request 6",
-      "comment": "Set expiry.",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "4add8960-2078-11ec-be2c-7fc55d771fe6",
-          "value": "api-keys/configs/{$.getCurrentTenantInfo.id}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "3b992a40-2072-11ec-9f0e-ed01586a7e1b",
-          "value": "3ba274f0-2072-11ec-a822-69fa394acb82",
-          "type": "select",
-          "displayValue": "PATCH",
-          "structure": []
-        },
-        {
-          "id": "3b8b9090-2072-11ec-8c77-5195fbb0ca65",
-          "value": "[{\"op\":\"replace\",\"path\":\"/max_api_key_expiry\",\"value\":\"{$.apiKeyExpiry}\"}]",
-          "type": "object",
-          "mode": "raw",
-          "structure": []
-        },
-        {
-          "id": "993585d0-2839-11ec-b431-df4deed6c1ae",
-          "value": null,
-          "type": "object",
-          "mode": "keyValue",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -372,
-      "y": 7642,
+      "x": 292,
+      "y": 3105,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -20702,38 +20604,6 @@
       "y": 2114
     },
     {
-      "id": "93909CCF-D63B-4EEB-93AA-B22F985A277C",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep11",
-      "displayName": "Sleep 11",
-      "comment": "",
-      "childId": "F21957AF-A7F1-44B0-BC94-A8FAD6888BC4",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -343,
-      "y": 6722
-    },
-    {
-      "id": "6D12D04E-BBA7-4D38-A152-F13ADDE113F7",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep13",
-      "displayName": "Sleep 13",
-      "comment": "",
-      "childId": "2D00E952-282E-4079-83E1-486963A77AA3",
-      "inputs": [
-        { "id": "time", "value": "2", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -377,
-      "y": 7612
-    },
-    {
       "id": "F370FAB5-4319-4B17-A7A4-C56FF7AA61B7",
       "type": "SleepBlock",
       "disabled": false,
@@ -24369,6 +24239,74 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1206,
       "y": 93974
+    },
+    {
+      "id": "CE94811C-0078-4711-BE1E-699CFAFAD89C",
+      "type": "FormBlock",
+      "disabled": false,
+      "name": "inputs26",
+      "displayName": "Inputs 26",
+      "comment": "API key expiry prompt.",
+      "childId": "8A89C6DF-13A5-4488-A93D-387F7065B11C",
+      "inputs": [],
+      "settings": [
+        {
+          "id": "persist_data",
+          "value": "no",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -171,
+      "y": 3567,
+      "form": [
+        {
+          "id": "inputs26-input-0",
+          "label": "I understand any generated API keys will expire after { $.apiKeyExpiry } days",
+          "helpText": null,
+          "type": "button",
+          "values": null,
+          "isRequired": true,
+          "options": {},
+          "order": 0
+        }
+      ],
+      "persistData": "no"
+    },
+    {
+      "id": "B64F6EA0-2C7E-4950-8858-75834E9338AA",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output64",
+      "displayName": "Output 64",
+      "comment": "API key expiry notice.",
+      "childId": "CE94811C-0078-4711-BE1E-699CFAFAD89C",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "API keys are used by the monitoring apps to load data from the tenant. They need to be rotated every { $.apiKeyExpiry } days, either by rerunning this automation, or by running the Qlik Cloud Monitoring Apps API Key Rotator automation. You can increase this value by changing the maximum expiry for API keys in your tenant's Admin console.",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -702,
+      "y": 3465
     }
   ],
   "variables": [
