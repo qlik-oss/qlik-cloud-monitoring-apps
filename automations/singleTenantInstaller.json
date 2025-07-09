@@ -847,8 +847,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -429,
-      "y": 1776,
+      "x": 53,
+      "y": 7140,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -860,7 +860,7 @@
       "name": "getCurrentTenantInfo",
       "displayName": "Qlik Cloud Services - Get Current Tenant Info",
       "comment": "Get tenant info",
-      "childId": "67C4B253-94F9-4B7F-8144-846F79763191",
+      "childId": "D0FD1D1D-C4C5-4F36-AD9D-69EBE69F28FD",
       "inputs": [],
       "settings": [
         {
@@ -1138,13 +1138,13 @@
       "form": [
         {
           "id": "inputs2-input-0",
-          "type": "select",
           "label": "Should this installer add the Developer role to the executing user now?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "The executing user ({$.searchUsers[0].name}) does not have the Developer role assigned, which is one of the prerequisites for the Qlik Cloud monitoring applications. This role is required to proceed as API keys are required for the data connection, and in order to create an API key, the Developer role is required. If 'No' is selected, this step will need to be done manually and the installer will exit. Note that the installer will still stop after this step regardless as it is required that the user log out and log back in for the role change to propagate in Qlik Application Automation.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -2358,13 +2358,13 @@
       "form": [
         {
           "id": "inputs12-input-0",
-          "type": "select",
           "label": "Should this installer allocate a Professional entitlement to the executing user now?",
-          "order": 0,
-          "values": "Yes,No",
-          "options": [],
           "helpText": "The executing user ({ $.searchUsers[0].name }) does not have a \"Professional\" license entitlement assigned to them, which is one of the prerequisites of the Qlik Cloud monitoring applications. Note that the installer will still stop after this step as it is required that the user log out and log back in for the entitlement change to propagate.",
-          "isRequired": true
+          "type": "select",
+          "values": "Yes,No",
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -6166,12 +6166,12 @@
       "disabled": false,
       "name": "output",
       "displayName": "Output",
-      "comment": "* This automation requires no configuration. Press \"Run\". *",
+      "comment": "Press \"Run\" and follow prompts. Don't make changes to this automation.",
       "childId": "A7C02A53-E2B0-4AF0-B870-00F6BD16632A",
       "inputs": [
         {
           "id": "input",
-          "value": "#### Welcome to the Qlik Cloud Monitoring Applications installation process!\n\nThis installer handles both new installations and upgrades of the Qlik Cloud Monitoring applications.",
+          "value": "#### Welcome to the Qlik Cloud Monitoring Applications installation process!\n\nThis installer handles installations and upgrades of the Qlik Cloud Monitoring applications.",
           "type": "string",
           "structure": []
         }
@@ -20316,8 +20316,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 1780
+      "x": -4,
+      "y": 2068
     },
     {
       "id": "901338F1-8B34-45F4-BCEB-78EAF119C9DA",
@@ -20716,22 +20716,6 @@
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -343,
       "y": 6722
-    },
-    {
-      "id": "67C4B253-94F9-4B7F-8144-846F79763191",
-      "type": "SleepBlock",
-      "disabled": false,
-      "name": "sleep12",
-      "displayName": "Sleep 12",
-      "comment": "",
-      "childId": "D0FD1D1D-C4C5-4F36-AD9D-69EBE69F28FD",
-      "inputs": [
-        { "id": "time", "value": "1", "type": "string", "structure": [] }
-      ],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -349,
-      "y": 6721
     },
     {
       "id": "6D12D04E-BBA7-4D38-A152-F13ADDE113F7",
@@ -21547,8 +21531,8 @@
       "disabled": false,
       "name": "lookupItemInList15",
       "displayName": "Lookup Item In List 15",
-      "comment": "Is fullUser (capacity)?",
-      "childId": "56B34355-71BC-490E-B6D8-5A905F23F72D",
+      "comment": "Is fullUser or basicUser (capacity)?",
+      "childId": "0ED31B86-BE34-414B-ADDC-AEAFE7BE96DD",
       "inputs": [
         {
           "id": "list",
@@ -21559,9 +21543,10 @@
         {
           "id": "conditions",
           "value": {
-            "mode": "all",
+            "mode": "some",
             "conditions": [
-              { "input1": "type", "input2": "fullUser", "operator": "=" }
+              { "input1": "type", "operator": "=", "input2": "fullUser" },
+              { "input1": "type", "operator": "=", "input2": "basicUser" }
             ]
           },
           "type": "custom",
@@ -21596,88 +21581,8 @@
             "conditions": [
               {
                 "input1": "{ $.lookupItemInList15 }",
-                "input2": null,
-                "operator": "empty"
-              },
-              {
-                "input1": "{ $.lookupItemInList16 }",
-                "input2": null,
-                "operator": "empty"
-              }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [],
-      "collapsed": [
-        { "name": "both", "isCollapsed": false },
-        { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": false }
-      ],
-      "x": 631,
-      "y": 2235,
-      "childTrueId": "3CC8F1F3-450A-447C-8D5C-21946BD0CCDA",
-      "childFalseId": "85ABEDD9-9843-48FC-81F5-A92FCF1D750A"
-    },
-    {
-      "id": "56B34355-71BC-490E-B6D8-5A905F23F72D",
-      "type": "LookupItemBlock",
-      "disabled": false,
-      "name": "lookupItemInList16",
-      "displayName": "Lookup Item In List 16",
-      "comment": "Is basicUser (capacity)?",
-      "childId": "0ED31B86-BE34-414B-ADDC-AEAFE7BE96DD",
-      "inputs": [
-        {
-          "id": "list",
-          "value": "{$.rawAPIRequest51.data}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              { "input1": "type", "input2": "basicUser", "operator": "=" }
-            ]
-          },
-          "type": "custom",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 2020
-    },
-    {
-      "id": "85ABEDD9-9843-48FC-81F5-A92FCF1D750A",
-      "type": "IfElseBlock",
-      "disabled": false,
-      "name": "condition173",
-      "displayName": "Condition 173",
-      "comment": "Does the executing user have a basicUser entitlement?",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "conditions",
-          "value": {
-            "mode": "all",
-            "conditions": [
-              {
-                "input1": "{ $.lookupItemInList16 }",
-                "input2": null,
-                "operator": "notEmpty"
+                "operator": "empty",
+                "input2": null
               }
             ]
           },
@@ -21691,52 +21596,10 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -252,
-      "y": 4497,
-      "childTrueId": "3ED3AC42-05E3-4EC5-8910-85E4FE065BD7",
+      "x": 631,
+      "y": 2235,
+      "childTrueId": "3CC8F1F3-450A-447C-8D5C-21946BD0CCDA",
       "childFalseId": null
-    },
-    {
-      "id": "3ED3AC42-05E3-4EC5-8910-85E4FE065BD7",
-      "type": "ShowBlock",
-      "disabled": false,
-      "name": "output152",
-      "displayName": "Output 152",
-      "comment": "Prequisites not met",
-      "childId": "F0936C2D-EF44-41E3-B826-BEF610B25FAF",
-      "inputs": [
-        {
-          "id": "input",
-          "value": "{linebreak}\n##### A prerequisite has not been met\n| Prerequisite | Prerequisite Met |\n| --- | --- |\n| User has a **Full User** entitlement assigned | ❌ |\n{linebreak}\n{linebreak}\nTo complete this installer, please ensure the user ({ $.searchUsers[0].name }) is assigned a \"Full User\" entitlement. Ensure that the user has logged out of Qlik Cloud and logged back in for the entitlement change to propagate. Exiting the installer...",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "display_mode",
-          "value": "add",
-          "type": "select",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 610,
-      "y": 4100
-    },
-    {
-      "id": "F0936C2D-EF44-41E3-B826-BEF610B25FAF",
-      "type": "StopBlock",
-      "disabled": false,
-      "name": "stop22",
-      "displayName": "Stop 22",
-      "comment": "Stop the installer as the user will need to log out and log back in for the change to propagate.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 490,
-      "y": 4260
     },
     {
       "id": "5777D46F-9961-4169-9D45-152D210E36BD",
@@ -23842,8 +23705,8 @@
         { "name": "yes", "isCollapsed": true },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 463,
-      "y": 313,
+      "x": -25,
+      "y": 530,
       "childTrueId": null,
       "childFalseId": "7FB94C35-9280-4C69-B3F2-640288605B10"
     },
@@ -23866,7 +23729,7 @@
           "id": "set_value",
           "key": "F54109D0-B3B3-4AB8-AB22-1E1379CCFA98",
           "name": "Set value of { variable }",
-          "value": "1"
+          "value": "2"
         }
       ]
     },
@@ -23881,7 +23744,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "{linebreak}\n##### Template out of date\n\n| Issue | Description |\n| --- | --- |\n| Installer template is not up to date | Version \"{$.currentTemplateVersionNum}\" is not greater than or equal to the latest version \"{$.callURL3.installers[?(@.template=='qcma')].version}\" |\n{linebreak}\n{linebreak}\nThis template is out of date and cannot be used. Please navigate to the Qlik Application Automation Templates library and select the \"Qlik Cloud Monitoring Apps Installer\" template to receive the latest. This automation can be removed. Exiting the installer...",
+          "value": "{linebreak}\n##### Template out of date\n\n| Issue | Description |\n| --- | --- |\n| Installer template is not up to date | Version \"{$.currentTemplateVersionNum}\" is not greater than or equal to the latest version \"{$.callURL3.installers[?(@.template=='qcma')].version}\" |\n{linebreak}\n{linebreak}\nThis template is out of date and cannot be used. Please navigate to the Qlik Application Automation Templates library and select the \"Qlik Cloud Monitoring Apps Installer\" template to receive the latest. This automation can be safely deleted. Exiting the installer...",
           "type": "string",
           "structure": []
         }
