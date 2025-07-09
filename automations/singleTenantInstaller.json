@@ -761,8 +761,8 @@
             "conditions": [
               {
                 "input1": "{ count: { $.searchUsers } }",
-                "operator": "=",
-                "input2": "1"
+                "input2": "1",
+                "operator": "="
               }
             ]
           },
@@ -839,7 +839,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -852,7 +851,7 @@
       "y": 1776,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "FDED0EB1-6E02-4695-9538-0E4B8FFA05EC",
@@ -1139,13 +1138,13 @@
       "form": [
         {
           "id": "inputs2-input-0",
-          "label": "Should this installer add the Developer role to the executing user now?",
-          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the Developer role assigned, which is one of the prerequisites for the Qlik Cloud monitoring applications. This role is required to proceed as API keys are required for the data connection, and in order to create an API key, the Developer role is required. If 'No' is selected, this step will need to be done manually and the installer will exit. Note that the installer will still stop after this step regardless as it is required that the user log out and log back in for the role change to propagate in Qlik Application Automation.",
           "type": "select",
+          "label": "Should this installer add the Developer role to the executing user now?",
+          "order": 0,
           "values": "Yes,No",
-          "isRequired": true,
-          "options": {},
-          "order": 0
+          "options": [],
+          "helpText": "The executing user ({$.searchUsers[0].name}) does not have the Developer role assigned, which is one of the prerequisites for the Qlik Cloud monitoring applications. This role is required to proceed as API keys are required for the data connection, and in order to create an API key, the Developer role is required. If 'No' is selected, this step will need to be done manually and the installer will exit. Note that the installer will still stop after this step regardless as it is required that the user log out and log back in for the role change to propagate in Qlik Application Automation.",
+          "isRequired": true
         }
       ],
       "persistData": "no"
@@ -1202,13 +1201,13 @@
             "conditions": [
               {
                 "input1": "{$.rawAPIRequest.api_keys_enabled}",
-                "operator": "isTrue",
-                "input2": "true"
+                "input2": "true",
+                "operator": "isTrue"
               },
               {
                 "input1": "{ textlength: {$.rawAPIRequest.api_keys_enabled} }",
-                "operator": "=",
-                "input2": "0"
+                "input2": "0",
+                "operator": "="
               }
             ]
           },
@@ -1256,13 +1255,13 @@
       "form": [
         {
           "id": "inputs10-input-0",
-          "label": "Should this installer enable API keys on this tenant now?",
-          "helpText": "API keys are not currently enabled on this tenant, which is a prerequisite of the installer. An API key is required to create the data connection to Qlik Cloud that the monitoring applications leverage. If 'No' is selected, this will need to be done manually, and the installer will exit.",
           "type": "select",
+          "label": "Should this installer enable API keys on this tenant now?",
+          "order": 0,
           "values": "Yes,No",
-          "isRequired": true,
-          "options": {},
-          "order": 0
+          "options": [],
+          "helpText": "API keys are not currently enabled on this tenant, which is a prerequisite of the installer. An API key is required to create the data connection to Qlik Cloud that the monitoring applications leverage. If 'No' is selected, this will need to be done manually, and the installer will exit.",
+          "isRequired": true
         }
       ],
       "persistData": "no"
@@ -2267,13 +2266,13 @@
       "form": [
         {
           "id": "inputs11-input-0",
-          "label": "Proceed",
-          "helpText": null,
           "type": "select",
+          "label": "Proceed",
+          "order": 0,
           "values": "Yes,No",
-          "isRequired": true,
-          "options": {},
-          "order": 0
+          "options": [],
+          "helpText": null,
+          "isRequired": true
         }
       ],
       "persistData": "no"
@@ -2359,13 +2358,13 @@
       "form": [
         {
           "id": "inputs12-input-0",
-          "label": "Should this installer allocate a Professional entitlement to the executing user now?",
-          "helpText": "The executing user ({ $.searchUsers[0].name }) does not have a \"Professional\" license entitlement assigned to them, which is one of the prerequisites of the Qlik Cloud monitoring applications. Note that the installer will still stop after this step as it is required that the user log out and log back in for the entitlement change to propagate.",
           "type": "select",
+          "label": "Should this installer allocate a Professional entitlement to the executing user now?",
+          "order": 0,
           "values": "Yes,No",
-          "isRequired": true,
-          "options": {},
-          "order": 0
+          "options": [],
+          "helpText": "The executing user ({ $.searchUsers[0].name }) does not have a \"Professional\" license entitlement assigned to them, which is one of the prerequisites of the Qlik Cloud monitoring applications. Note that the installer will still stop after this step as it is required that the user log out and log back in for the entitlement change to propagate.",
+          "isRequired": true
         }
       ],
       "persistData": "no"
@@ -3366,7 +3365,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -3379,7 +3377,7 @@
       "y": 3180,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "ECF5BA4F-4650-475E-B67E-0A31D7748143",
@@ -3461,7 +3459,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -3474,7 +3471,7 @@
       "y": 3180,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "84806E2B-4901-4760-B1D3-84018CC64984",
@@ -3595,7 +3592,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -3608,7 +3604,7 @@
       "y": 6420,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "E7CB72C2-8781-455B-9C67-FB3BF8008278",
@@ -3654,7 +3650,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": true,
@@ -3667,7 +3662,7 @@
       "y": 8900,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "AD390F2E-598F-4803-BC39-D74287113299",
@@ -3713,7 +3708,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -3726,7 +3720,7 @@
       "y": 23736,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "E329E099-B62F-4C6D-B2E7-197C04E31EAE",
@@ -3808,7 +3802,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -3821,7 +3814,7 @@
       "y": 23362,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "034009DA-65F0-4161-8979-2D9397DD4052",
@@ -6067,7 +6060,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -6080,7 +6072,7 @@
       "y": 6774,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "199F84A6-1F4A-44F4-A1D4-90B238F80428",
@@ -6126,7 +6118,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -6139,7 +6130,7 @@
       "y": 7642,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "9AB65A84-19BC-4667-97C2-3E4DF4A85A97",
@@ -7724,7 +7715,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -7737,7 +7727,7 @@
       "y": 52460,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "CA84346B-F2D7-49E9-BCE3-3BEA854732E3",
@@ -7933,7 +7923,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -7946,7 +7935,7 @@
       "y": 61060,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "F1B65D8F-75C7-4022-B97A-7984FF1B485F",
@@ -8187,7 +8176,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -8200,7 +8188,7 @@
       "y": 64940,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "10E56087-9CD9-405F-A51B-D0217AFA92A3",
@@ -8297,7 +8285,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -8310,7 +8297,7 @@
       "y": 34380,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "3F15F8C0-5007-4BE5-A8F4-3C474B12CF79",
@@ -8810,7 +8797,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -8823,7 +8809,7 @@
       "y": 74425,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "5732C52E-8690-43CF-8B1D-64FA2D5CF80F",
@@ -8875,7 +8861,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -8888,7 +8873,7 @@
       "y": 74425,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "F4F5DB11-B08C-44FD-9063-314EDC60C152",
@@ -8934,7 +8919,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -8947,7 +8931,7 @@
       "y": 74905,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "7338DBFB-B10C-45D4-8916-5661D098F378",
@@ -9574,7 +9558,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -9587,7 +9570,7 @@
       "y": 36660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "39E9E3E7-F6D9-4C47-9AB6-8824D920DAAD",
@@ -9689,7 +9672,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -9702,7 +9684,7 @@
       "y": 36660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "6D45173C-A974-492D-BEE9-65FA2933C1E6",
@@ -9971,7 +9953,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": true,
@@ -9984,7 +9965,7 @@
       "y": 23620,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "BB491496-1B4F-47B1-824C-12D2834DCD8E",
@@ -10033,7 +10014,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": true,
@@ -10046,7 +10026,7 @@
       "y": 24420,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "25C19DCA-F601-4AC1-B91D-794D08B3530A",
@@ -10115,7 +10095,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": true,
@@ -10128,7 +10107,7 @@
       "y": 18600,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "0573DC10-BFCD-4EA4-A698-58AEB915DC74",
@@ -10655,7 +10634,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -10668,7 +10646,7 @@
       "y": 38855,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "8754991E-43AB-499B-B663-2D3BBDABECFC",
@@ -10783,7 +10761,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -10796,7 +10773,7 @@
       "y": 36660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "1DC076EA-2760-4BAA-82DF-E114B7A5B508",
@@ -11208,7 +11185,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": true,
@@ -11221,7 +11197,7 @@
       "y": 18400,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "B0CCD2CE-6E76-442C-BB42-C12A3F2EF0F6",
@@ -11885,7 +11861,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -11898,7 +11873,7 @@
       "y": 43817,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "9BDC8E80-81A1-48C7-BFD5-74DC54EEE366",
@@ -12673,7 +12648,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -12686,7 +12660,7 @@
       "y": 73567,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "B7AFC596-9007-4C2B-B79C-338EC6DF6C35",
@@ -12825,7 +12799,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -12838,7 +12811,7 @@
       "y": 50540,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "AAD7D453-BA1C-47DB-8CC7-AACAA9199416",
@@ -12912,7 +12885,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -12925,7 +12897,7 @@
       "y": 51773,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "1BA272DA-97AB-4FD3-B712-76AA76EEF942",
@@ -13035,7 +13007,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -13048,7 +13019,7 @@
       "y": 87660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "27BC579A-5559-477E-AA6B-E98ED5BC0909",
@@ -13122,7 +13093,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -13135,7 +13105,7 @@
       "y": 43544,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "485119E8-7571-4683-8CB7-B55537C781FB",
@@ -17121,7 +17091,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -17134,7 +17103,7 @@
       "y": 64879,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "6E6384CE-2417-4EA7-83CC-CF2750050BA7",
@@ -17326,7 +17295,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -17339,7 +17307,7 @@
       "y": 36660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "C0452292-2BDC-4B2D-AB7F-70E0243DF7E1",
@@ -17413,7 +17381,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -17426,7 +17393,7 @@
       "y": 66980,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "DD2E5DD3-738B-44AC-AFCF-F863E98E33F7",
@@ -17565,7 +17532,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -17578,7 +17544,7 @@
       "y": 50540,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "D3D14A98-4208-40C6-8939-ABFBFF718B82",
@@ -18176,7 +18142,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -18189,7 +18154,7 @@
       "y": 68920,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "6985B2A6-AF83-4F83-867D-2429F4EA0CF7",
@@ -18299,7 +18264,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -18312,7 +18276,7 @@
       "y": 52460,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "4FC2776C-27C2-4D96-8FA3-335905CB656B",
@@ -18456,7 +18420,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -18469,7 +18432,7 @@
       "y": 36660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "FD4D56D1-180F-4D14-AA36-E19F68023A51",
@@ -18574,7 +18537,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -18587,7 +18549,7 @@
       "y": 68920,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "1A86678F-2ADA-4B16-81C0-5A7835732153",
@@ -18802,7 +18764,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -18815,7 +18776,7 @@
       "y": 52460,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "415AC2B4-69A1-43BE-8781-B995743709D9",
@@ -18953,7 +18914,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -18966,7 +18926,7 @@
       "y": 50540,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "DE651BA0-AA4F-480A-90A3-D573761E4D07",
@@ -19162,7 +19122,6 @@
           "displayValue": "Ignore - Continue Automation and ignore errors",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -19175,7 +19134,7 @@
       "y": 36660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "E6339AE2-B218-4B4E-AC99-52CEC85D6B8B",
@@ -19280,7 +19239,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -19293,7 +19251,7 @@
       "y": 68920,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "D7D22F30-71E8-4C96-B0D5-396C5B8997A2",
@@ -19508,7 +19466,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -19521,7 +19478,7 @@
       "y": 52460,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "37ECBDF6-59EE-4E22-985A-7D464A1283E1",
@@ -19695,7 +19652,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -19708,7 +19664,7 @@
       "y": 50540,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "3A07F46E-702A-41EF-AC1F-097ADC253575",
@@ -20088,7 +20044,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -20101,7 +20056,7 @@
       "y": 75720,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "9B635622-2C71-4363-B36F-BEEE853D9BEF",
@@ -20311,7 +20266,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -20324,7 +20278,7 @@
       "y": 1780,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "0ED31B86-BE34-414B-ADDC-AEAFE7BE96DD",
@@ -21573,7 +21527,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -21586,7 +21539,7 @@
       "y": 88620,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "396CC3A5-EBF9-4A0C-B97C-E68169AF946C",
@@ -22178,7 +22131,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -22191,7 +22143,7 @@
       "y": 62260,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "E11F2C53-61E0-4EC3-BCFE-AB1418799F59",
@@ -22260,7 +22212,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -22273,7 +22224,7 @@
       "y": 33387,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "2C980399-34FA-4BD6-8783-34B89192FECB",
@@ -22399,7 +22350,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -22412,7 +22362,7 @@
       "y": 35477,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "D68370C6-6879-4FBB-948C-F66A1F8F71A4",
@@ -22690,7 +22640,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -22703,7 +22652,7 @@
       "y": 64660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "4C8D1A21-79D6-4EC5-A492-572BA2B48067",
@@ -23184,7 +23133,6 @@
           "type": "select",
           "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
@@ -23197,7 +23145,7 @@
       "y": 63183,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
-      "endpoint_role": "get"
+      "endpoint_role": "create"
     },
     {
       "id": "596AEE0B-601E-4171-B308-B2220E17DBEE",
@@ -23879,8 +23827,8 @@
             "conditions": [
               {
                 "input1": "{ $.currentTemplateVersionNum }",
-                "operator": ">=",
-                "input2": "{ $.callURL3.installers[?(@.template=='qcma')].version }"
+                "input2": "{ $.callURL3.installers[?(@.template=='qcma')].version }",
+                "operator": ">="
               }
             ]
           },
@@ -23977,19 +23925,19 @@
           "id": "b134f4e0-f832-11ec-858b-9feea72c382e",
           "value": null,
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "b14f3e50-f832-11ec-9221-d7f5e04021c1",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "43b94790-f834-11ec-95c2-1b59e214d993",
           "value": "id eq \"{ $.getCurrentUserId }\" AND ((assignedRoles.name eq \"TenantAdmin\") or (assignedGroupsAssignedRoles.name eq \"TenantAdmin\"))",
           "type": "string",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [
@@ -23997,19 +23945,19 @@
           "id": "maxitemcount",
           "value": "",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "blendr_on_error",
           "value": "stop",
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "automations_censor_data",
           "value": false,
           "type": "checkbox",
-          "structure": {}
+          "structure": []
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
@@ -24035,8 +23983,8 @@
             "conditions": [
               {
                 "input1": "{ $.rawAPIRequest47.data[0].disabledCode }",
-                "operator": "=",
-                "input2": "MIGRATED"
+                "input2": "MIGRATED",
+                "operator": "="
               }
             ]
           },
@@ -24099,8 +24047,8 @@
             "conditions": [
               {
                 "input1": "{ $.rawAPIRequest37.data[0].disabledCode }",
-                "operator": "=",
-                "input2": "MIGRATED"
+                "input2": "MIGRATED",
+                "operator": "="
               }
             ]
           },
@@ -24160,7 +24108,7 @@
           "id": "input",
           "value": "{ $.applicationTags }",
           "type": "string",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [
@@ -24168,7 +24116,7 @@
           "id": "automations_censor_data",
           "value": false,
           "type": "checkbox",
-          "structure": {}
+          "structure": []
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -24248,8 +24196,8 @@
       "variableGuid": "7259DF0F-3E27-4C33-9805-B740A4684410",
       "operations": [
         {
-          "key": "4C765E64-0A7C-4AFC-8301-E428E0E60E9B",
           "id": "set_key_value",
+          "key": "4C765E64-0A7C-4AFC-8301-E428E0E60E9B",
           "name": "Set key/values of { variable }",
           "value": [
             {
@@ -24276,13 +24224,13 @@
       "variableGuid": "A64544E7-6885-4850-A23F-6FEAB6372631",
       "operations": [
         {
-          "key": "F8F6D8BE-F920-4CA0-A3C1-2E092A0264F1",
           "id": "empty",
+          "key": "F8F6D8BE-F920-4CA0-A3C1-2E092A0264F1",
           "name": "Empty { variable }"
         },
         {
-          "key": "F31A35B4-A866-4C7A-A57E-18FAEFDBFD64",
           "id": "set_key_value",
+          "key": "F31A35B4-A866-4C7A-A57E-18FAEFDBFD64",
           "name": "Set key/values of { variable }",
           "value": [
             { "key": "appTag", "value": "QCMA - {$.loop3.index}" },
@@ -24310,8 +24258,8 @@
       "variableGuid": "7259DF0F-3E27-4C33-9805-B740A4684410",
       "operations": [
         {
-          "key": "4C765E64-0A7C-4AFC-8301-E428E0E60E9B",
           "id": "set_key_value",
+          "key": "4C765E64-0A7C-4AFC-8301-E428E0E60E9B",
           "name": "Set key/values of { variable }",
           "value": [
             { "key": "{ $.loop.index }", "value": "{ $.rawAPIRequest16.id }" }
@@ -24335,8 +24283,8 @@
             "conditions": [
               {
                 "input1": "{ $.rawAPIRequest42.data[0].disabledCode }",
-                "operator": "=",
-                "input2": "MIGRATED"
+                "input2": "MIGRATED",
+                "operator": "="
               }
             ]
           },
@@ -24399,8 +24347,8 @@
             "conditions": [
               {
                 "input1": "{ $.rawAPIRequest31.data[0].disabledCode }",
-                "operator": "=",
-                "input2": "MIGRATED"
+                "input2": "MIGRATED",
+                "operator": "="
               }
             ]
           },
@@ -24460,14 +24408,14 @@
           "id": "message",
           "value": "A reload task on '{ $.lookupItemInList10.originAppName }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "action",
           "value": "continue",
           "type": "select",
           "displayValue": "Continue the Automation",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [],
@@ -24488,14 +24436,14 @@
           "id": "message",
           "value": "A reload task on '{ $.lookupItemInList10.name }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "action",
           "value": "continue",
           "type": "select",
           "displayValue": "Continue the Automation",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [],
@@ -24516,14 +24464,14 @@
           "id": "message",
           "value": "A reload task on '{$.loop14.item.name}' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "action",
           "value": "continue",
           "type": "select",
           "displayValue": "Continue the Automation",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [],
@@ -24544,14 +24492,14 @@
           "id": "message",
           "value": "A reload task on '{ $.GetAppInformation2.info.attributes.name }' has been migrated to the new scheduler, and so was not updated by the installer. Please remove manually.",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "action",
           "value": "continue",
           "type": "select",
           "displayValue": "Continue the Automation",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [],
