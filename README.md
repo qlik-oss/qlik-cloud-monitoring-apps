@@ -10,7 +10,7 @@ applications, which provide visibility of both operational and usage data in Qli
 
 ## Applications
 
-These applications can be installed via an interactive Qlik Application Automation [installer](https://community.qlik.com/t5/Official-Support-Articles/Qlik-Cloud-Monitoring-Apps-Workflow-Guide/ta-p/2134140) or manually using the PDF guide in each repository.
+These applications can be installed via an interactive Qlik Automate [installer](https://community.qlik.com/t5/Official-Support-Articles/Qlik-Cloud-Monitoring-Apps-Workflow-Guide/ta-p/2134140) or manually using the PDF guide in each repository.
 
 Monitoring apps may be designed for single or multiple tenant deployments, and additionally may be compatible with only specific Qlik Cloud subscription types, summarized below.
 
