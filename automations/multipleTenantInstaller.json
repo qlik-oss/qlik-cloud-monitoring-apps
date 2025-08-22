@@ -4863,7 +4863,7 @@
           "id": "set_value",
           "key": "B11B770E-A35F-450A-A3CE-3F9C71AAA06C",
           "name": "Set value of { variable }",
-          "value": "4"
+          "value": "3"
         }
       ]
     },
@@ -4882,7 +4882,13 @@
           "type": "string",
           "structure": []
         },
-        { "id": "action", "value": "stop", "type": "select", "structure": [] }
+        {
+          "id": "action",
+          "value": "stop",
+          "type": "select",
+          "displayValue": "Stop the Automation",
+          "structure": []
+        }
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -4900,7 +4906,7 @@
       "inputs": [
         {
           "id": "title",
-          "value": "Cancelled. Update available.",
+          "value": "Error: installer out of date",
           "type": "string",
           "structure": []
         }
@@ -5136,13 +5142,6 @@
           "id": "d8cd5780-b5fd-11ee-8f38-c36332697da5",
           "value": "{$.loopTenant}",
           "type": "string",
-          "structure": []
-        },
-        {
-          "id": "1b52f510-b5fe-11ee-a69c-a7aa54966fac",
-          "value": "true",
-          "type": "select",
-          "displayValue": "true",
           "structure": []
         },
         {
@@ -6057,36 +6056,42 @@
           "id": "5c0077d0-2c05-11f0-ac44-6d2ece037809",
           "value": null,
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "6b14af90-2c05-11f0-9784-7faf3c3218c8",
           "value": null,
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "7a530260-2c05-11f0-b3a7-4df7dd05ac72",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "91ad2290-2c05-11f0-a02d-f35e01920b5a",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "407a7860-2c05-11f0-832e-c1fbf72ff659",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "a0756a20-3baf-11f0-bf42-47e0c9fe5190",
           "value": null,
           "type": "select",
+          "structure": []
+        },
+        {
+          "id": "de2da1b0-51b3-11f0-b329-af40b9ff0546",
+          "value": null,
+          "type": "string",
           "structure": {}
         }
       ],
