@@ -9,6 +9,11 @@
       "template": "qcmamt",
       "description": "Qlik Cloud multiple tenant monitoring app installer",
       "version": "3"
-    }
+    },
+    {
+      "template": "qcmad",
+      "description": "Qlik Cloud monitoring app deployer",
+      "version": "1"
+    },
   ]
 }
