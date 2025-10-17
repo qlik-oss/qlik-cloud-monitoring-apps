@@ -14,6 +14,6 @@
       "template": "qcmad",
       "description": "Qlik Cloud monitoring app deployer",
       "version": "1"
-    },
+    }
   ]
 }
