@@ -61,7 +61,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -2352,
+      "y": -2112,
       "variableGuid": "E3084D5D-4DE7-428E-BDE0-440DCD055EDD",
       "operations": [
         {
@@ -84,7 +84,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -2232,
+      "y": -1992,
       "variableGuid": "247B71DE-30E7-4526-AC3D-BE5E17AA9194",
       "operations": [
         {
@@ -107,7 +107,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -2112,
+      "y": -1872,
       "variableGuid": "9679AB7C-F7EB-4A7F-A217-B2F9F14CE7E5",
       "operations": [
         {
@@ -144,7 +144,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1992,
+      "y": -1752,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "6e9dbaa0-c7a4-11ea-9bd3-0da55b4cbed9",
       "endpoint_role": "get"
@@ -182,7 +182,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1872,
+      "y": -1632,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "7e670290-c7a5-11ea-9a9c-6dd2b282df86",
       "endpoint_role": "get"
@@ -213,7 +213,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1272
+      "y": -1032
     },
     {
       "id": "D0E7DF6C-C216-4DB6-8502-1F3C4ADF5AFE",
@@ -251,7 +251,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -802,
-      "y": -672,
+      "y": -352,
       "childTrueId": "BE7F53B8-B1FD-48DF-A8A5-D6638F74FA2C",
       "childFalseId": null
     },
@@ -280,8 +280,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 8,
+      "x": -802,
+      "y": 1428,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "0e6d4530-3291-11ed-a2e9-3bc221fc190c",
       "endpoint_role": "get"
@@ -311,8 +311,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 848
+      "x": -802,
+      "y": 3148
     },
     {
       "id": "F718EF32-99B6-49C3-A5A5-6996F86B0B87",
@@ -375,8 +375,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2168,
+      "x": -802,
+      "y": 6168,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
@@ -393,8 +393,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2288,
+      "x": -802,
+      "y": 6328,
       "variableGuid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
       "operations": [
         {
@@ -430,8 +430,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5508
+      "x": -682,
+      "y": 6668
     },
     {
       "id": "34B88617-9583-4EA4-948E-D580D65F3C49",
@@ -473,8 +473,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2408,
+      "x": -802,
+      "y": 6448,
       "loopBlockId": "7E7CFBF2-F088-4F93-9BA8-DE932E22956E"
     },
     {
@@ -488,8 +488,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5388,
+      "x": -682,
+      "y": 6548,
       "variableGuid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
       "operations": [
         {
@@ -530,8 +530,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -562,
-      "y": 5628,
+      "x": -682,
+      "y": 6788,
       "childTrueId": "A29FDF70-7705-4848-B467-90DD6CD8F293",
       "childFalseId": "EABD8111-E99F-4C5B-A67D-3D7F0ACE778E"
     },
@@ -546,8 +546,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 5708,
+      "x": -562,
+      "y": 6868,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -569,8 +569,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 5828,
+      "x": -562,
+      "y": 6988,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -600,8 +600,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 5948
+      "x": -562,
+      "y": 7108
     },
     {
       "id": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
@@ -649,8 +649,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -442,
-      "y": 6108,
+      "x": -562,
+      "y": 7268,
       "childTrueId": "478E6D39-A231-4808-A8C8-AEE1EDF3121E",
       "childFalseId": "94B0A4B3-5C6A-4958-BF8D-622F72452977"
     },
@@ -705,8 +705,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -322,
-      "y": 6188,
+      "x": -442,
+      "y": 7348,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "ffe6d930-6d33-11eb-ad8a-334e25c5e295",
@@ -742,8 +742,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -322,
-      "y": 6308,
+      "x": -442,
+      "y": 7468,
       "childTrueId": "35CB70BA-0EC6-4883-829C-D9EF6FB850F3",
       "childFalseId": "463B5474-1CF6-490D-884A-0A2E6252F64F"
     },
@@ -777,8 +777,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -202,
-      "y": 6388,
+      "x": -322,
+      "y": 7548,
       "childTrueId": "824F1EDD-71E4-4833-9634-D37637283AE0",
       "childFalseId": "A99BD3FB-EB73-41C1-B684-FBFDB4CB6D28"
     },
@@ -793,8 +793,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 6468,
+      "x": -202,
+      "y": 7628,
       "variableGuid": "E413E2FB-E4E7-4AFF-8894-6D27792FA8D8",
       "operations": [
         {
@@ -861,8 +861,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 6588,
+      "x": -202,
+      "y": 7748,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
       "endpoint_role": "update"
@@ -892,8 +892,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 6708
+      "x": -202,
+      "y": 7868
     },
     {
       "id": "A99BD3FB-EB73-41C1-B684-FBFDB4CB6D28",
@@ -920,8 +920,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 6868
+      "x": -202,
+      "y": 8028
     },
     {
       "id": "463B5474-1CF6-490D-884A-0A2E6252F64F",
@@ -973,8 +973,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 7108,
+      "x": -322,
+      "y": 8268,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "272d9c70-6d31-11eb-870f-67624392ed86",
       "endpoint_role": "create"
@@ -1004,8 +1004,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 7228
+      "x": -322,
+      "y": 8388
     },
     {
       "id": "94B0A4B3-5C6A-4958-BF8D-622F72452977",
@@ -1032,8 +1032,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 7468
+      "x": -442,
+      "y": 8628
     },
     {
       "id": "EF5E86CE-DE0B-4961-BD90-B7355163A6E9",
@@ -1046,8 +1046,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2648,
+      "x": -802,
+      "y": 9108,
       "variableGuid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
       "operations": [
         {
@@ -1141,8 +1141,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2528,
+      "x": -802,
+      "y": 8948,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
@@ -1188,8 +1188,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2768,
+      "x": -802,
+      "y": 9228,
       "loopBlockId": "FCBE0570-D739-43D6-B0AD-B16A2DA6F28A"
     },
     {
@@ -1203,8 +1203,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 8128,
+      "x": -682,
+      "y": 9328,
       "variableGuid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
       "operations": [
         {
@@ -1240,8 +1240,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 8248
+      "x": -682,
+      "y": 9448
     },
     {
       "id": "B35B33BE-B45B-4749-813C-64BA4AA4FA1D",
@@ -1273,8 +1273,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -562,
-      "y": 8368,
+      "x": -682,
+      "y": 9568,
       "childTrueId": "F0DEE5BC-C9A2-4F91-964A-EA7C64F90457",
       "childFalseId": "2FDCB00D-3E41-4B95-A904-51DBFF7345AA"
     },
@@ -1289,8 +1289,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 8448,
+      "x": -562,
+      "y": 9648,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -1312,8 +1312,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 8568,
+      "x": -562,
+      "y": 9768,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -1343,8 +1343,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 8688
+      "x": -562,
+      "y": 9888
     },
     {
       "id": "2FDCB00D-3E41-4B95-A904-51DBFF7345AA",
@@ -1376,8 +1376,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -442,
-      "y": 8848,
+      "x": -562,
+      "y": 10048,
       "childTrueId": "064FC5B0-AF19-4C57-B22A-E171D71F3643",
       "childFalseId": "F37D6ACE-DF7C-4EB9-A990-E7DBCD31ABDF"
     },
@@ -1432,8 +1432,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -322,
-      "y": 8928,
+      "x": -442,
+      "y": 10128,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "ffe6d930-6d33-11eb-ad8a-334e25c5e295",
@@ -1469,8 +1469,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -322,
-      "y": 9048,
+      "x": -442,
+      "y": 10248,
       "childTrueId": "D0EEE98C-7DA0-47F5-B8C6-31B0507505FD",
       "childFalseId": "9CC93349-E133-4BCC-860C-7AAE4991A788"
     },
@@ -1509,8 +1509,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -202,
-      "y": 9128,
+      "x": -322,
+      "y": 10328,
       "childTrueId": "BE0D6DE8-CA32-466A-917B-40EA75EB91C9",
       "childFalseId": "253E7602-5CB9-473C-A66A-ABB7711934A6"
     },
@@ -1525,8 +1525,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 9208,
+      "x": -202,
+      "y": 10408,
       "variableGuid": "E413E2FB-E4E7-4AFF-8894-6D27792FA8D8",
       "operations": [
         {
@@ -1599,8 +1599,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 9328,
+      "x": -202,
+      "y": 10528,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
       "endpoint_role": "update"
@@ -1630,8 +1630,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 9448
+      "x": -202,
+      "y": 10648
     },
     {
       "id": "253E7602-5CB9-473C-A66A-ABB7711934A6",
@@ -1658,8 +1658,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 9608
+      "x": -202,
+      "y": 10808
     },
     {
       "id": "9CC93349-E133-4BCC-860C-7AAE4991A788",
@@ -1711,8 +1711,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 9848,
+      "x": -322,
+      "y": 11048,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "272d9c70-6d31-11eb-870f-67624392ed86",
       "endpoint_role": "create"
@@ -1742,8 +1742,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 9968
+      "x": -322,
+      "y": 11168
     },
     {
       "id": "F37D6ACE-DF7C-4EB9-A990-E7DBCD31ABDF",
@@ -1770,8 +1770,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 10208
+      "x": -442,
+      "y": 11408
     },
     {
       "id": "7C0C15A5-F334-4AD6-A9D4-C0AC674CC34B",
@@ -1804,8 +1804,8 @@
         { "name": "no", "isCollapsed": true },
         { "name": "both", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 2888,
+      "x": -802,
+      "y": 11728,
       "childTrueId": "A835D799-19FC-450D-BF01-88DB67C89291",
       "childFalseId": null
     },
@@ -1852,8 +1852,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5848,
+      "x": -682,
+      "y": 11808,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "f0c14620-6d24-11eb-aa67-c519e2671d3d",
       "endpoint_role": "create"
@@ -1869,8 +1869,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5968,
+      "x": -682,
+      "y": 11928,
       "variableGuid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
       "operations": [
         {
@@ -1906,8 +1906,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6088
+      "x": -682,
+      "y": 12048
     },
     {
       "id": "230E3338-D040-459F-A88C-47CD38B6BD39",
@@ -1940,8 +1940,8 @@
         { "name": "no", "isCollapsed": true },
         { "name": "both", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 3008,
+      "x": -802,
+      "y": 12208,
       "childTrueId": "ED0FFFF7-7BA3-4BC5-B2CC-37F2AE4C0408",
       "childFalseId": null
     },
@@ -1988,8 +1988,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6328,
+      "x": -682,
+      "y": 12288,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "f0c14620-6d24-11eb-aa67-c519e2671d3d",
       "endpoint_role": "create"
@@ -2005,8 +2005,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6448,
+      "x": -682,
+      "y": 12408,
       "variableGuid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
       "operations": [
         {
@@ -2042,8 +2042,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6568
+      "x": -682,
+      "y": 12528
     },
     {
       "id": "4BE16981-95D8-4418-B598-B26CA6843820",
@@ -2056,8 +2056,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 13048,
+      "x": -562,
+      "y": 24208,
       "variableGuid": "F6ED0768-9852-46AF-B822-2172586824B7",
       "operations": [
         {
@@ -2183,8 +2183,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 13168,
+      "x": -562,
+      "y": 24328,
       "loopBlockId": "1B323E62-40BB-40D7-AD9A-D04DA4A5FFB6",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "84ad9050-6f72-11eb-aa08-a1dda4364ef5",
@@ -2220,8 +2220,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -322,
-      "y": 13268,
+      "x": -442,
+      "y": 24428,
       "childTrueId": "1C69733A-CADE-4901-9BC2-4CDA59A50DA2",
       "childFalseId": null
     },
@@ -2256,8 +2256,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 13348,
+      "x": -322,
+      "y": 24508,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
       "endpoint_role": "delete"
@@ -2287,8 +2287,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 13468
+      "x": -322,
+      "y": 24628
     },
     {
       "id": "D5570044-9796-4DC7-81B6-C6D2F937FB1F",
@@ -2301,8 +2301,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 13628,
+      "x": -442,
+      "y": 24788,
       "variableGuid": "F6ED0768-9852-46AF-B822-2172586824B7",
       "operations": [
         {
@@ -2324,8 +2324,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -731,
-      "y": -285,
+      "x": -682,
+      "y": -272,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -2348,7 +2348,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -682,
-      "y": 14188,
+      "y": -152,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -2379,7 +2379,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -682,
-      "y": 14308
+      "y": -32
     },
     {
       "id": "D46F6E49-3856-430B-A685-0A07984CDAEB",
@@ -2463,7 +2463,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1752,
+      "y": -1512,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "55051480-cb86-11ec-b746-892c1d04114e",
       "endpoint_role": "get"
@@ -2480,7 +2480,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1632,
+      "y": -1392,
       "variableGuid": "3723D829-3B14-4B68-AAFE-63966A7025E6",
       "operations": [
         {
@@ -2526,7 +2526,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1512,
+      "y": -1272,
       "variableGuid": "69E3DE89-62A4-4A45-A797-81D480D8BBC9",
       "operations": [
         {
@@ -2598,7 +2598,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -802,
-      "y": -1392
+      "y": -1152
     },
     {
       "id": "C199B1F5-97A8-493A-BA22-0632702923FD",
@@ -2632,7 +2632,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": -802,
-      "y": -1152,
+      "y": -912,
       "childTrueId": null,
       "childFalseId": "8A147572-A4B4-436E-AEEA-D3B0D9E2CE1B"
     },
@@ -2693,8 +2693,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": -112,
+      "x": -802,
+      "y": 1308,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -2735,8 +2735,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 248,
+      "x": -802,
+      "y": 1668,
       "childTrueId": "D115A0F9-A1B3-4483-8169-145D1F47A9B1",
       "childFalseId": null
     },
@@ -2751,8 +2751,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 948,
+      "x": -682,
+      "y": 1748,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -2774,8 +2774,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 1068,
+      "x": -682,
+      "y": 1868,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -2805,8 +2805,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 1188
+      "x": -682,
+      "y": 1988
     },
     {
       "id": "8A147572-A4B4-436E-AEEA-D3B0D9E2CE1B",
@@ -2820,7 +2820,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -682,
-      "y": -1072,
+      "y": -752,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -2843,7 +2843,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -682,
-      "y": -952,
+      "y": -632,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -2874,7 +2874,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": -682,
-      "y": -832
+      "y": -512
     },
     {
       "id": "948CF475-AF52-4C8B-AF9E-07DD7DE82F45",
@@ -2887,8 +2887,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -759,
-      "y": 171,
+      "x": -802,
+      "y": 168,
       "variableGuid": "CD9F0C76-28B4-482E-A218-EDE5763F6807",
       "operations": [
         {
@@ -2941,8 +2941,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": -352,
+      "x": -802,
+      "y": 408,
       "loopBlockId": "73CC9998-44BE-4947-9526-54DE0D4A39C4"
     },
     {
@@ -2977,8 +2977,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": -252,
+      "x": -682,
+      "y": 508,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "76c4e5d0-3702-11f0-bd5c-8b8be373d450",
       "endpoint_role": "get"
@@ -2994,8 +2994,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": -472,
+      "x": -802,
+      "y": 288,
       "variableGuid": "4283B5F6-E6C0-492F-AA5B-21195FFF74DF",
       "operations": [
         {
@@ -3017,8 +3017,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": -132,
+      "x": -682,
+      "y": 628,
       "variableGuid": "4283B5F6-E6C0-492F-AA5B-21195FFF74DF",
       "operations": [
         {
@@ -3060,8 +3060,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": -232,
+      "x": -802,
+      "y": 788,
       "childTrueId": "85BD0C04-9778-4A9E-A153-DE2A74C1CE3B",
       "childFalseId": null
     },
@@ -3076,8 +3076,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 108,
+      "x": -682,
+      "y": 868,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -3099,8 +3099,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 228,
+      "x": -682,
+      "y": 988,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -3130,8 +3130,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 348
+      "x": -682,
+      "y": 1108
     },
     {
       "id": "6DA24FBE-A1C7-4EF8-85CA-9C796A00B84D",
@@ -3185,8 +3185,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 368,
+      "x": -802,
+      "y": 2188,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -3227,8 +3227,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 608,
+      "x": -802,
+      "y": 2428,
       "childTrueId": null,
       "childFalseId": "D31546CE-90C1-43CA-9A5E-10B35DDE0BFE"
     },
@@ -3243,8 +3243,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 1668,
+      "x": -682,
+      "y": 2588,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -3266,8 +3266,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 1788,
+      "x": -682,
+      "y": 2708,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -3297,8 +3297,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 1908
+      "x": -682,
+      "y": 2828
     },
     {
       "id": "60DC4193-EAC7-4353-86C5-C9233AF169EA",
@@ -3311,8 +3311,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 488,
+      "x": -802,
+      "y": 2308,
       "variableGuid": "51DCB139-A5E7-427D-8E9C-9382DB8A530C",
       "operations": [
         {
@@ -3383,8 +3383,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 968
+      "x": -802,
+      "y": 3268
     },
     {
       "id": "D68D0C47-8D62-4ADC-AC47-553E8E9A05ED",
@@ -3397,8 +3397,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 1088,
+      "x": -802,
+      "y": 3388,
       "variableGuid": "4FCFD564-CA0B-4516-AD61-A1A2EE9CF38C",
       "operations": [
         {
@@ -3440,8 +3440,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 1328,
+      "x": -802,
+      "y": 3628,
       "childTrueId": "FBD838AA-F63C-4948-B755-00F8F6F2CDCF",
       "childFalseId": "8968628A-54FC-4578-98FD-32FAE0B1454F"
     },
@@ -3490,8 +3490,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 2628,
+      "x": -682,
+      "y": 3708,
       "loopBlockId": "D3F1FBD1-BEBC-4148-92AF-528D93FE1B8A"
     },
     {
@@ -3505,8 +3505,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 2808,
+      "x": -442,
+      "y": 3888,
       "variableGuid": "1ECFDB29-BC7A-4B7A-AE5F-2A2DBE77B1E0",
       "operations": [
         {
@@ -3562,8 +3562,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 3088,
+      "x": -682,
+      "y": 4168,
       "loopBlockId": "619BAD5D-8B64-4866-9E4B-A6E8108FF386"
     },
     {
@@ -3577,8 +3577,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 3268,
+      "x": -442,
+      "y": 4348,
       "variableGuid": "1ECFDB29-BC7A-4B7A-AE5F-2A2DBE77B1E0",
       "operations": [
         {
@@ -3600,8 +3600,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 128,
+      "x": -802,
+      "y": 1548,
       "variableGuid": "AD716F55-666C-4730-B830-F2D97A502F6B",
       "operations": [
         {
@@ -3623,8 +3623,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 1208,
+      "x": -802,
+      "y": 3508,
       "variableGuid": "1ECFDB29-BC7A-4B7A-AE5F-2A2DBE77B1E0",
       "operations": [
         {
@@ -3725,8 +3725,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -442,
-      "y": 2728,
+      "x": -562,
+      "y": 3808,
       "childTrueId": "8C37F961-8477-4705-A167-CACE4E579177",
       "childFalseId": null
     },
@@ -3761,8 +3761,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -442,
-      "y": 3188,
+      "x": -562,
+      "y": 4268,
       "childTrueId": "D5F81616-F18E-481D-8254-DC54513F20A3",
       "childFalseId": null
     },
@@ -3791,8 +3791,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 1448
+      "x": -802,
+      "y": 4628
     },
     {
       "id": "F211A56A-FBCB-4413-BA12-91144F38B722",
@@ -3819,8 +3819,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 4088
+      "x": -562,
+      "y": 5168
     },
     {
       "id": "B67C3598-6171-40D5-87CE-E7CBA1D58E16",
@@ -3833,8 +3833,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 1568,
+      "x": -802,
+      "y": 4748,
       "variableGuid": "09C608F2-CF67-4C9A-983E-F39019D443B9",
       "operations": [
         {
@@ -3870,8 +3870,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 1808,
+      "x": -802,
+      "y": 4988,
       "loopBlockId": "7CE340D0-20D9-4B6B-80C0-9295582D1CF9"
     },
     {
@@ -3905,8 +3905,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -562,
-      "y": 4008,
+      "x": -682,
+      "y": 5088,
       "childTrueId": "F211A56A-FBCB-4413-BA12-91144F38B722",
       "childFalseId": null
     },
@@ -3941,8 +3941,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 1928,
+      "x": -802,
+      "y": 5528,
       "childTrueId": "EBDE966E-F544-46BF-89EA-FB5A671494B7",
       "childFalseId": null
     },
@@ -3957,8 +3957,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 4528,
+      "x": -682,
+      "y": 5608,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -3980,8 +3980,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 4648,
+      "x": -682,
+      "y": 5728,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -4011,8 +4011,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 4768
+      "x": -682,
+      "y": 5848
     },
     {
       "id": "ECCD6D36-805D-44EF-A411-A73316586DD1",
@@ -4066,8 +4066,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 2048,
+      "x": -802,
+      "y": 6048,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -4083,8 +4083,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 4208,
+      "x": -562,
+      "y": 5288,
       "variableGuid": "CB55538C-0F1A-4871-98DD-C68EC5B00D84",
       "operations": [
         {
@@ -4106,8 +4106,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 1688,
+      "x": -802,
+      "y": 4868,
       "variableGuid": "CB55538C-0F1A-4871-98DD-C68EC5B00D84",
       "operations": [
         {
@@ -4162,8 +4162,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 6028,
+      "x": -802,
+      "y": 15668,
       "loopBlockId": "DAD45F04-D485-42E3-B7DD-D8C3106EA5FC",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "8cc63340-107b-11ec-ab5d-f9b221ed2dc5",
@@ -4221,8 +4221,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6948,
+      "x": -682,
+      "y": 15768,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -4238,8 +4238,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 5908,
+      "x": -802,
+      "y": 15548,
       "variableGuid": "2E37F6E5-BE30-44ED-B0B6-B544ECEAAB9E",
       "operations": [
         {
@@ -4251,36 +4251,13 @@
       ]
     },
     {
-      "id": "DAD0EA54-8890-480F-8430-E609D0BD9576",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "existingAppList",
-      "displayName": "Variable - existingAppList",
-      "comment": "Add app to list.",
-      "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 13908,
-      "variableGuid": "2E37F6E5-BE30-44ED-B0B6-B544ECEAAB9E",
-      "operations": [
-        {
-          "id": "add_item",
-          "key": "744AC32C-0399-4D8F-B612-A48A72494433",
-          "name": "Add item to { variable }",
-          "value": "{ $.rawAPIRequest4 }"
-        }
-      ]
-    },
-    {
       "id": "E68DA53C-EC7E-4FB7-9D95-FBD9050E0659",
       "type": "ForEachBlock",
       "disabled": false,
       "name": "loop2",
       "displayName": "Loop 2",
       "comment": "Loop over list of monitoring apps we want to install.",
-      "childId": "DAD0EA54-8890-480F-8430-E609D0BD9576",
+      "childId": "9745F8DD-9BEC-4E02-B0B9-B275B8BCFCB1",
       "inputs": [
         {
           "id": "input",
@@ -4298,8 +4275,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 6148,
+      "x": -802,
+      "y": 16048,
       "loopBlockId": "0DBF0B78-A809-4DDE-B02F-EF043A628D39"
     },
     {
@@ -4338,8 +4315,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -562,
-      "y": 8788,
+      "x": -682,
+      "y": 18768,
       "childTrueId": "40EC15FE-C25F-442B-8CD9-5C87150436B3",
       "childFalseId": null
     },
@@ -4354,8 +4331,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 7068,
+      "x": -682,
+      "y": 15888,
       "variableGuid": "2E37F6E5-BE30-44ED-B0B6-B544ECEAAB9E",
       "operations": [
         {
@@ -4391,8 +4368,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6728,
+      "x": -682,
+      "y": 16628,
       "loopBlockId": "98DB8518-4ADC-4A7D-A6F3-47ED68A00425"
     },
     {
@@ -4426,8 +4403,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -442,
-      "y": 6948,
+      "x": -562,
+      "y": 16848,
       "childTrueId": "0C03554A-88E9-4987-8DA7-2707C33613B5",
       "childFalseId": null
     },
@@ -4442,8 +4419,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6248,
+      "x": -682,
+      "y": 16148,
       "variableGuid": "B762B4A7-25F9-4764-BECA-D4461377CE04",
       "operations": [
         {
@@ -4465,8 +4442,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 38,
-      "y": 7508,
+      "x": -82,
+      "y": 17448,
       "variableGuid": "B762B4A7-25F9-4764-BECA-D4461377CE04",
       "operations": [
         {
@@ -4502,8 +4479,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 8468
+      "x": -322,
+      "y": 18408
     },
     {
       "id": "0C03554A-88E9-4987-8DA7-2707C33613B5",
@@ -4541,8 +4518,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 7028,
+      "x": -442,
+      "y": 16928,
       "loopBlockId": null
     },
     {
@@ -4576,8 +4553,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -322,
-      "y": 7148,
+      "x": -442,
+      "y": 17088,
       "childTrueId": "7FC2859A-CB6D-4A81-B1B7-8DA4C1DF9E27",
       "childFalseId": "1D37B0B5-533A-4C98-8C0C-5D27CA83E613"
     },
@@ -4612,8 +4589,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -202,
-      "y": 7228,
+      "x": -322,
+      "y": 17168,
       "childTrueId": "C1A9C7CC-6DAC-4E03-B987-F44C2C040BF9",
       "childFalseId": "A6B5E4EE-819B-4767-AE9A-2E127BD6DC6C"
     },
@@ -4628,8 +4605,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6608,
+      "x": -682,
+      "y": 16508,
       "variableGuid": "4CFD6FDB-6937-45CE-8677-203A280087D1",
       "operations": [
         {
@@ -4651,8 +4628,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6488,
+      "x": -682,
+      "y": 16388,
       "variableGuid": "12A37AC8-CD9C-41FC-9626-508B24997C86",
       "operations": [
         {
@@ -4688,8 +4665,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 8228
+      "x": -202,
+      "y": 18168
     },
     {
       "id": "EE2B05F0-E29D-4EF4-8016-AD92050B6D2D",
@@ -4716,8 +4693,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 38,
-      "y": 7388
+      "x": -82,
+      "y": 17328
     },
     {
       "id": "C1A9C7CC-6DAC-4E03-B987-F44C2C040BF9",
@@ -4750,8 +4727,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -82,
-      "y": 7308,
+      "x": -202,
+      "y": 17248,
       "childTrueId": "EE2B05F0-E29D-4EF4-8016-AD92050B6D2D",
       "childFalseId": "6E0F226F-5497-4493-9201-8FB2CFE66C25"
     },
@@ -4766,8 +4743,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 6368,
+      "x": -682,
+      "y": 16268,
       "variableGuid": "D8F8BD27-8FF5-42FF-82ED-0EE947E55327",
       "operations": [
         {
@@ -4789,8 +4766,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 38,
-      "y": 7908,
+      "x": -82,
+      "y": 17848,
       "variableGuid": "D8F8BD27-8FF5-42FF-82ED-0EE947E55327",
       "operations": [
         {
@@ -4826,8 +4803,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 38,
-      "y": 7788
+      "x": -82,
+      "y": 17728
     },
     {
       "id": "0C14812A-A344-4903-9697-1426DB5C5DFA",
@@ -4840,8 +4817,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 38,
-      "y": 7628,
+      "x": -82,
+      "y": 17568,
       "variableGuid": "D8F8BD27-8FF5-42FF-82ED-0EE947E55327",
       "operations": [
         {
@@ -4877,8 +4854,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9108
+      "x": -562,
+      "y": 19128
     },
     {
       "id": "4F36612D-0B32-4DA5-9803-85D5EEB3EDCB",
@@ -4940,8 +4917,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9228
+      "x": -562,
+      "y": 19248
     },
     {
       "id": "9E937365-2524-466B-95E9-309B3293FF8D",
@@ -4954,8 +4931,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9348,
+      "x": -562,
+      "y": 19368,
       "variableGuid": "996190EC-165A-4CF1-A3B6-363B8F0DDF31",
       "operations": [
         {
@@ -5021,8 +4998,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9468,
+      "x": -562,
+      "y": 19488,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "194b9430-67b1-11eb-9e04-6dbde84bea83",
       "endpoint_role": "create"
@@ -5052,8 +5029,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9828
+      "x": -562,
+      "y": 19848
     },
     {
       "id": "40EC15FE-C25F-442B-8CD9-5C87150436B3",
@@ -5086,8 +5063,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -442,
-      "y": 8868,
+      "x": -562,
+      "y": 18848,
       "childTrueId": "BC596D9A-38F8-4F9A-8DC9-1D0DC81A57C4",
       "childFalseId": null
     },
@@ -5116,8 +5093,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 8948
+      "x": -442,
+      "y": 18928
     },
     {
       "id": "15A91B88-3C31-400B-A2C8-D697AB8F175E",
@@ -5144,8 +5121,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 10988
+      "x": -442,
+      "y": 22148
     },
     {
       "id": "ECB7B639-F151-4B44-A89E-491B20BE66F3",
@@ -5178,8 +5155,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -442,
-      "y": 10668,
+      "x": -562,
+      "y": 21828,
       "childTrueId": "35EFB375-D90C-4F76-A966-47EDB1EAFAD2",
       "childFalseId": "9EE0A5EF-EE84-4F46-811E-312073C232C6"
     },
@@ -5246,8 +5223,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 10748,
+      "x": -442,
+      "y": 21908,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "snippet_guid": "76a45090-00e1-11ec-ad85-b3b86b5b9a24"
     },
@@ -5309,8 +5286,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9708,
+      "x": -562,
+      "y": 19728,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -5328,8 +5305,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9588
+      "x": -562,
+      "y": 19608
     },
     {
       "id": "9F37EC62-2694-40D2-8DB1-7F5265D9EB9F",
@@ -5342,8 +5319,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 10428,
+      "x": -562,
+      "y": 20448,
       "variableGuid": "AE6C347F-BAAD-4FD0-A820-80AFEE588B29",
       "operations": [
         {
@@ -5388,8 +5365,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 10548,
+      "x": -562,
+      "y": 20568,
       "loopBlockId": "AFD7305E-B419-4128-95D3-1A9EAF98F9C8"
     },
     {
@@ -5447,8 +5424,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 11728,
+      "x": -442,
+      "y": 20668,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -5484,8 +5461,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -322,
-      "y": 11848,
+      "x": -442,
+      "y": 20788,
       "childTrueId": "814E1A6D-6BCB-47DD-BD1D-39EC0CA9C101",
       "childFalseId": "4DA2DA61-2BB9-41DB-B354-3A2B8C5F2F2E"
     },
@@ -5541,8 +5518,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 12608,
+      "x": -442,
+      "y": 21548,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -5572,8 +5549,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 12728
+      "x": -442,
+      "y": 21668
     },
     {
       "id": "814E1A6D-6BCB-47DD-BD1D-39EC0CA9C101",
@@ -5600,8 +5577,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 11928
+      "x": -322,
+      "y": 20868
     },
     {
       "id": "E287D197-83E3-4C50-8598-34DDB03BD857",
@@ -5614,8 +5591,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12048,
+      "x": -322,
+      "y": 20988,
       "variableGuid": "FA7C823B-3AA8-41EA-990F-21837758447A",
       "operations": [
         {
@@ -5656,8 +5633,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12328
+      "x": -322,
+      "y": 21268
     },
     {
       "id": "4DA2DA61-2BB9-41DB-B354-3A2B8C5F2F2E",
@@ -5711,8 +5688,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12208,
+      "x": -322,
+      "y": 21148,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -5728,8 +5705,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12448,
+      "x": -322,
+      "y": 21388,
       "variableGuid": "FA7C823B-3AA8-41EA-990F-21837758447A",
       "operations": [
         {
@@ -5767,8 +5744,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 9948
+      "x": -562,
+      "y": 19968
     },
     {
       "id": "73B15F09-DCC3-43F4-8DCB-9ACE58E3FACF",
@@ -5801,8 +5778,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 10068,
+      "x": -562,
+      "y": 20088,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "snippet_guid": "8d2f7da0-5028-11eb-8889-317a6c8ea7fc"
     },
@@ -5849,8 +5826,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 10188,
+      "x": -562,
+      "y": 20208,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "916661a0-a12b-11ed-882f-fb01a4e99b0a",
       "endpoint_role": "create"
@@ -5880,8 +5857,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 10308
+      "x": -562,
+      "y": 20328
     },
     {
       "id": "9EE0A5EF-EE84-4F46-811E-312073C232C6",
@@ -5908,8 +5885,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 11768,
+      "x": -442,
+      "y": 22928,
       "loopBlockId": "0D70200F-BF52-4CCD-8FB5-C81C9692D24B"
     },
     {
@@ -5964,8 +5941,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 11448,
+      "x": -322,
+      "y": 22608,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -5995,8 +5972,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 11568
+      "x": -322,
+      "y": 22728
     },
     {
       "id": "292F6681-A0A3-4149-8900-B146F799C502",
@@ -6023,8 +6000,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 11348,
+      "x": -442,
+      "y": 22508,
       "loopBlockId": "75038005-FF42-4CA7-B4C9-0CA9EE70631D"
     },
     {
@@ -6040,8 +6017,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 11108
+      "x": -442,
+      "y": 22268
     },
     {
       "id": "D39D8A7B-718C-46EC-B3F1-24E2A2BF5185",
@@ -6101,8 +6078,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 11228,
+      "x": -442,
+      "y": 22388,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6118,8 +6095,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -322,
-      "y": 10868,
+      "x": -442,
+      "y": 22028,
       "variableGuid": "A812E467-95BC-419E-B6A6-4341D6347C3A",
       "operations": [
         {
@@ -6137,12 +6114,12 @@
       "name": "liveApps",
       "displayName": "Variable - liveApps",
       "comment": "Add app to live apps.",
-      "childId": "DC78C7D9-B0B3-496C-BA35-BFB79F49BEAF",
+      "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 8068,
+      "x": -202,
+      "y": 18008,
       "variableGuid": "A812E467-95BC-419E-B6A6-4341D6347C3A",
       "operations": [
         {
@@ -6164,8 +6141,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -442,
-      "y": 6828,
+      "x": -562,
+      "y": 16728,
       "variableGuid": "B762B4A7-25F9-4764-BECA-D4461377CE04",
       "operations": [
         {
@@ -6228,8 +6205,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 11988,
+      "x": -322,
+      "y": 23148,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6259,8 +6236,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12108
+      "x": -322,
+      "y": 23268
     },
     {
       "id": "0D70200F-BF52-4CCD-8FB5-C81C9692D24B",
@@ -6287,8 +6264,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 11868
+      "x": -322,
+      "y": 23028
     },
     {
       "id": "3ABDBFAA-8E94-4AA9-87C6-AC03B13D58F0",
@@ -6345,8 +6322,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12228,
+      "x": -322,
+      "y": 23388,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6403,8 +6380,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12728,
+      "x": -322,
+      "y": 23888,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6434,8 +6411,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12848
+      "x": -322,
+      "y": 24008
     },
     {
       "id": "AD01998A-BEE0-473B-99F7-E6CC8C4B60CF",
@@ -6477,8 +6454,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -202,
-      "y": 12348,
+      "x": -322,
+      "y": 23508,
       "loopBlockId": "151AA8FD-9389-44F0-8522-5AFF01889D68"
     },
     {
@@ -6533,8 +6510,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 12448,
+      "x": -202,
+      "y": 23608,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6564,8 +6541,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -82,
-      "y": 12568
+      "x": -202,
+      "y": 23728
     },
     {
       "id": "F959E5AA-4EC0-4284-AA66-F59C788B6B08",
@@ -6612,8 +6589,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 728,
+      "x": -802,
+      "y": 2988,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6672,8 +6649,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 4948,
+      "x": -802,
+      "y": 14548,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6709,8 +6686,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 5068,
+      "x": -802,
+      "y": 14668,
       "childTrueId": "D2202317-6AF5-42C3-A20F-5806BAEABEDA",
       "childFalseId": null
     },
@@ -6766,8 +6743,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 5668,
+      "x": -802,
+      "y": 15308,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6783,8 +6760,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 4828,
+      "x": -802,
+      "y": 14428,
       "variableGuid": "218D5568-BA73-49F2-9996-926C40E2AE08",
       "operations": [
         {
@@ -6820,8 +6797,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 5548
+      "x": -802,
+      "y": 15188
     },
     {
       "id": "5E1CFE7D-C393-4315-85EF-086507112AC6",
@@ -6848,8 +6825,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 5788
+      "x": -802,
+      "y": 15428
     },
     {
       "id": "C5498C80-2759-492A-A46F-58DEF52F8F9A",
@@ -6903,8 +6880,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5268,
+      "x": -682,
+      "y": 14868,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6934,8 +6911,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5148
+      "x": -682,
+      "y": 14748
     },
     {
       "id": "D5C5031D-9058-4671-A035-978DBB1DC8E4",
@@ -6962,8 +6939,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 5388
+      "x": -682,
+      "y": 14988
     },
     {
       "id": "56DF743F-3565-4BB7-B484-27DB0E8E13F5",
@@ -7005,8 +6982,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 3848,
+      "x": -802,
+      "y": 13448,
       "loopBlockId": "439A8A90-8CAD-4F2F-A673-90754BB6B0AD"
     },
     {
@@ -7061,8 +7038,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 4068,
+      "x": -682,
+      "y": 13668,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -7092,8 +7069,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 3948
+      "x": -682,
+      "y": 13548
     },
     {
       "id": "848D7B98-1FE1-4584-BF60-F518D86E41F0",
@@ -7120,8 +7097,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 4188
+      "x": -682,
+      "y": 13788
     },
     {
       "id": "C9CA459B-7C50-4EDF-BD71-300FF8437382",
@@ -7148,8 +7125,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 4348
+      "x": -802,
+      "y": 13948
     },
     {
       "id": "28997C80-CF89-4863-BAD6-DD9A15FC72EF",
@@ -7203,8 +7180,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 4468,
+      "x": -802,
+      "y": 14068,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -7220,8 +7197,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 4588,
+      "x": -802,
+      "y": 14188,
       "variableGuid": "AABC69B3-4AB6-4777-A443-FCFCFDA805C4",
       "operations": [
         {
@@ -7257,8 +7234,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 4708
+      "x": -802,
+      "y": 14308
     },
     {
       "id": "F4D0DE07-AD02-4C58-9CEA-A3409E738389",
@@ -7271,8 +7248,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -682,
-      "y": 3128,
+      "x": -802,
+      "y": 12688,
       "variableGuid": "DB5AD6FD-CA6D-4BDB-B12B-91C248324EE1",
       "operations": [
         {
@@ -7328,8 +7305,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -682,
-      "y": 3248,
+      "x": -802,
+      "y": 12808,
       "loopBlockId": null
     },
     {
@@ -7363,8 +7340,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -682,
-      "y": 3368,
+      "x": -802,
+      "y": 12928,
       "childTrueId": "1AEE9D36-5C63-4334-8758-ECD4056C36B3",
       "childFalseId": null
     },
@@ -7379,8 +7356,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 3448,
+      "x": -682,
+      "y": 13008,
       "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
       "operations": [
         {
@@ -7402,8 +7379,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 3568,
+      "x": -682,
+      "y": 13128,
       "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
       "operations": [
         {
@@ -7433,8 +7410,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -562,
-      "y": 3688
+      "x": -682,
+      "y": 13248
     },
     {
       "id": "2E61A575-F621-4713-B446-C1BAC52D8834",
@@ -7470,8 +7447,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -738,
-      "y": -2269,
+      "x": -802,
+      "y": -2232,
       "variableGuid": "12BED549-8F76-4D83-B484-F6121E71753E",
       "operations": [
         {
@@ -7483,27 +7460,64 @@
       ]
     },
     {
-      "id": "DC78C7D9-B0B3-496C-BA35-BFB79F49BEAF",
-      "type": "VariableBlock",
+      "id": "9745F8DD-9BEC-4E02-B0B9-B275B8BCFCB1",
+      "type": "IfElseBlock",
       "disabled": false,
-      "name": "reloadList",
-      "displayName": "Variable - reloadList",
-      "comment": "Add app to reload list.",
+      "name": "condition30",
+      "displayName": "Condition 30",
+      "comment": "If reloadNow=1, reload",
       "childId": null,
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -27,
-      "y": 8378,
-      "variableGuid": "61EE57B8-3D99-4BD3-BB3F-3A2D2988C88E",
-      "operations": [
+      "inputs": [
         {
-          "key": "3B7728DB-11AA-4FBF-A84A-9BB194598EE1",
-          "id": "add_item",
-          "name": "Add item to { variable }",
-          "value": "{ $.loop3.item.resourceId }"
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              { "input1": "{ $.reloadNow }", "operator": "=", "input2": "1" }
+            ]
+          },
+          "type": "custom",
+          "structure": {}
         }
-      ]
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -802,
+      "y": 25108,
+      "childTrueId": "5D9D41EA-BC05-4138-83E8-9486E94834B9",
+      "childFalseId": null
+    },
+    {
+      "id": "5D9D41EA-BC05-4138-83E8-9486E94834B9",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop7",
+      "displayName": "Loop 7",
+      "comment": "Loop over liveApps.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{ $.liveApps }",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -682,
+      "y": 25188
     }
   ],
   "variables": [
@@ -7686,11 +7700,6 @@
       "guid": "1DD1A773-F576-44BC-A988-3238BB3C336C",
       "name": "reloadSchedule",
       "type": "string"
-    },
-    {
-      "guid": "61EE57B8-3D99-4BD3-BB3F-3A2D2988C88E",
-      "name": "reloadList",
-      "type": "list"
     }
   ]
 }
