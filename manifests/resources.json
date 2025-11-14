@@ -139,8 +139,8 @@
     {
         "id": 60,
         "name": "Automation Analyzer",
-        "version": "v1.2.4",
-        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.2.4/Automation-Analyzer.qvf",
+        "version": "v1.2.5",
+        "source": "https://github.com/qlik-oss/qlik-cloud-automation-analyzer/releases/download/v1.2.5/Automation-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"]
