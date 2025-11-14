@@ -2548,7 +2548,7 @@
       "inputs": [
         {
           "id": "url",
-          "value": "https://raw.githubusercontent.com/qlik-oss/qlik-cloud-monitoring-apps/refs/heads/main/manifests/installers.json",
+          "value": "https://raw.githubusercontent.com/qlik-oss/qlik-cloud-monitoring-apps/main/manifests/installers.json",
           "type": "string",
           "structure": []
         },
