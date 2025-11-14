@@ -8423,11 +8423,6 @@
       "type": "string"
     },
     {
-      "guid": "30110534-1BFC-442B-9374-62A4A28EBBBC",
-      "name": "allAvailableMonitoringAppNames",
-      "type": "list"
-    },
-    {
       "guid": "4FCFD564-CA0B-4516-AD61-A1A2EE9CF38C",
       "name": "manifest",
       "type": "object"
