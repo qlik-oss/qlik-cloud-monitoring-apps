@@ -7662,7 +7662,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Reload schedule | > Created reload schedule for [{$.loop8.item.attributes.name}]({$.tenantHostname}sense/app/{$.loop8.item.attributes.id}). |",
+          "value": "| Reload schedule | > Created task for [{$.loop8.item.attributes.name}]({$.tenantHostname}sense/app/{$.loop8.item.attributes.id}). |",
           "type": "string",
           "structure": []
         }
