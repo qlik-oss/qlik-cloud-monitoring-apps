@@ -68,7 +68,7 @@
           "id": "set_value",
           "key": "14252438-DA6C-489E-BA9F-97F75C4BF373",
           "name": "Set value of { variable }",
-          "value": "Monitoring - staging11"
+          "value": "Monitoring - staging"
         }
       ]
     },
@@ -91,7 +91,7 @@
           "id": "set_value",
           "key": "14252438-DA6C-489E-BA9F-97F75C4BF373",
           "name": "Set value of { variable }",
-          "value": "Monitoring11"
+          "value": "Monitoring"
         }
       ]
     },
@@ -1832,7 +1832,7 @@
         },
         {
           "id": "f0ecac30-6d24-11eb-a7b6-d15be2d36858",
-          "value": "Managed by the detailed consumption app automation template.",
+          "value": "This space is managed by the Qlik Cloud monitoring app deployer automation. It contains staged monitoring applications which have been imported for publishing to a managed space. This space will contain n copies of each application, where n is the value set for versionsToKeep in the automation.",
           "type": "string",
           "structure": []
         }
@@ -1968,7 +1968,7 @@
         },
         {
           "id": "f0ecac30-6d24-11eb-a7b6-d15be2d36858",
-          "value": "Managed by the detailed consumption app automation template.",
+          "value": "This space is managed by the Qlik Cloud monitoring app deployer automation. It contains published monitoring applications for analysis. It is not recommended to manually modify the contents of this space.",
           "type": "string",
           "structure": []
         }
@@ -3045,8 +3045,8 @@
             "conditions": [
               {
                 "input1": "{ $.userPermissions }",
-                "operator": "doesntContain",
-                "input2": "api-keys"
+                "input2": "api-keys",
+                "operator": "doesntContain"
               }
             ]
           },
@@ -8484,7 +8484,7 @@
           "id": "dbeaab00-c7a5-11ea-9342-e9d6ce76e8f1",
           "value": "{ $.loop3.item.resourceId }",
           "type": "string",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [
@@ -8492,14 +8492,14 @@
           "id": "blendr_on_error",
           "value": "stop",
           "type": "select",
-          "structure": {}
+          "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": {} },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
           "type": "checkbox",
-          "structure": {}
+          "structure": []
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
