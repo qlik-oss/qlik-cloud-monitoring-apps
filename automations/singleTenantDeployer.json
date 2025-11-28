@@ -541,7 +541,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "A space of the wrong type was found with the configured shared space name.",
+      "comment": "Set error title for standard error output.",
       "childId": "6A1F7D55-1177-4CED-96ED-C5EAB1EF473C",
       "inputs": [],
       "settings": [],
@@ -1284,7 +1284,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "A space of the wrong type was found with the configured managed space name.",
+      "comment": "Set error title for standard error output.",
       "childId": "CDB7C2AB-E721-492F-9238-2A91F9B67CF2",
       "inputs": [],
       "settings": [],
@@ -2319,7 +2319,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "Missing the TenantAdmin role on the executing user.",
+      "comment": "Set error title for standard error output.",
       "childId": "A8F7B895-B7BB-4F7A-9189-B757D5A85B52",
       "inputs": [],
       "settings": [],
@@ -2332,7 +2332,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "Missing TenantAdmin role on executing user."
+          "value": "Missing TenantAdmin role on executing user. Assign this role to your user and try again."
         }
       ]
     },
@@ -2746,7 +2746,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "Missing a professional entitlement on the executing user.",
+      "comment": "Set error title for standard error output.",
       "childId": "6064DA9A-04D6-49DD-B223-C3752D3769F4",
       "inputs": [],
       "settings": [],
@@ -2759,7 +2759,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "Missing professional entitlement on executing user."
+          "value": "Missing professional entitlement on executing user. Ensure a professional entitlement is assigned to your user and try again."
         }
       ]
     },
@@ -2814,7 +2814,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "Installer template is not up to date.",
+      "comment": "Set error title for standard error output.",
       "childId": "76BA5BAA-674D-40E9-8AF5-7A8BC1163723",
       "inputs": [],
       "settings": [],
@@ -2827,7 +2827,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "Installer template is not up to date."
+          "value": "Installer template is not up to date. Update the installer via the Automation template picker and try again."
         }
       ]
     },
@@ -3071,7 +3071,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "Missing the api-keys permission on the executing user.",
+      "comment": "Set error title for standard error output.",
       "childId": "0C31D3FC-EAF9-4A51-B843-F7E4F7817619",
       "inputs": [],
       "settings": [],
@@ -3084,7 +3084,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "Missing api-keys permission on executing user."
+          "value": "Missing api-keys permission on executing user. Assign this permission and try again."
         }
       ]
     },
@@ -3238,7 +3238,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "API keys are disabled on the tenant, and must be enabled (until TLV-750 implemented).",
+      "comment": "Set error title for standard error output.",
       "childId": "D25BBAB7-8646-46AC-BC9B-D512B163DE2A",
       "inputs": [],
       "settings": [],
@@ -3251,7 +3251,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "API keys are not enabled on the tenant."
+          "value": "API keys are not enabled on the tenant. Please enable API keys and try again."
         }
       ]
     },
@@ -3952,7 +3952,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "API keys are disabled on the tenant, and must be enabled (until TLV-750 implemented).",
+      "comment": "Set error title for standard error output.",
       "childId": "D13F1BD0-95CE-4118-B875-7DC61E17AA1E",
       "inputs": [],
       "settings": [],
@@ -7243,7 +7243,7 @@
       "disabled": false,
       "name": "apiKeyName",
       "displayName": "Variable - apiKeyName",
-      "comment": "",
+      "comment": "Name for the installer's API key. Pattern is QCMA - <managedSpaceId>.",
       "childId": "1724234E-1EE6-475F-9451-68D9482CC2FE",
       "inputs": [],
       "settings": [],
@@ -7351,7 +7351,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "API keys are disabled on the tenant, and must be enabled (until TLV-750 implemented).",
+      "comment": "Set error title for standard error output.",
       "childId": "489D6F65-006C-4D20-81A8-578A09FE4E8E",
       "inputs": [],
       "settings": [],
@@ -7834,7 +7834,7 @@
       "disabled": false,
       "name": "rawAPIListRequest2",
       "displayName": "Qlik Cloud Services - Raw API List Request 2",
-      "comment": "List reload tasks (ignore error for future removal).",
+      "comment": "List reload tasks (ignore error is set on this block as we expect this endpoint to be removed in future).",
       "childId": "1F217AD2-7D2F-46C9-AA0B-CF650A95E1D4",
       "inputs": [
         {
@@ -8294,7 +8294,7 @@
       "disabled": false,
       "name": "errorTitle",
       "displayName": "Variable - errorTitle",
-      "comment": "API keys are disabled on the tenant, and must be enabled (until TLV-750 implemented).",
+      "comment": "Set error title for standard error output.",
       "childId": "D0CE93F3-2D1E-4F03-8384-E10EDA8D85F7",
       "inputs": [],
       "settings": [],
@@ -8307,7 +8307,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "REST connections are disabled on the tenant."
+          "value": "REST connections are disabled on the tenant. Enable REST connector support and try again."
         }
       ]
     },
