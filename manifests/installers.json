@@ -3,7 +3,7 @@
     {
       "template": "qcma",
       "description": "Qlik Cloud monitoring app installer",
-      "version": "1"
+      "version": "2"
     },
     {
       "template": "qcmamt",
@@ -13,7 +13,7 @@
     {
       "template": "qcmad",
       "description": "Qlik Cloud monitoring app deployer",
-      "version": "1"
+      "version": "2"
     }
   ]
 }
