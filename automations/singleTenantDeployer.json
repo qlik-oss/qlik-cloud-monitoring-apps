@@ -4378,8 +4378,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -2802,
-      "y": 15034,
+      "x": -2767,
+      "y": 14893,
       "loopBlockId": "5BD148B9-BDD1-4C37-8EB3-73641F532BB3"
     },
     {
@@ -4424,7 +4424,7 @@
       "disabled": false,
       "name": "workingAppList",
       "displayName": "Variable - workingAppList",
-      "comment": "Empty the working app list.",
+      "comment": "Empty working list. This will be used to build a list of apps which need upgrading for this specific monitoring app template.",
       "childId": "981978BE-431B-4AF5-BD0D-451A3885B024",
       "inputs": [],
       "settings": [],
@@ -4611,7 +4611,7 @@
       "name": "workingAppTagVersion",
       "displayName": "Variable - workingAppTagVersion",
       "comment": "Set the QMCA tag for version.",
-      "childId": "98DB8518-4ADC-4A7D-A6F3-47ED68A00425",
+      "childId": "6D0F022E-164E-4CE3-B955-5961AA02A540",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
@@ -6137,29 +6137,6 @@
           "key": "D4AA6196-E54F-4E05-9292-ABBD3AAADBC6",
           "name": "Add item to { variable }",
           "value": "{ $.getApp }"
-        }
-      ]
-    },
-    {
-      "id": "98DB8518-4ADC-4A7D-A6F3-47ED68A00425",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "workingAppList",
-      "displayName": "Variable - workingAppList",
-      "comment": "Empty working list. This will be used to build a list of apps which need upgrading.",
-      "childId": "6D0F022E-164E-4CE3-B955-5961AA02A540",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -2802,
-      "y": 14914,
-      "variableGuid": "B762B4A7-25F9-4764-BECA-D4461377CE04",
-      "operations": [
-        {
-          "id": "empty",
-          "key": "32AB49F1-A48B-4F2B-86FE-3F2CC0AE4A0A",
-          "name": "Empty { variable }",
-          "value": null
         }
       ]
     },
