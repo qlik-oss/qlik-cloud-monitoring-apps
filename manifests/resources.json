@@ -157,8 +157,8 @@
     {
         "id": 80,
         "name": "Report Analyzer",
-        "version": "v1.1.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-report-analyzer/releases/download/v1.1.0/Report-Analyzer.qvf",
+        "version": "v1.2.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-report-analyzer/releases/download/v1.2.0/Report-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"]
