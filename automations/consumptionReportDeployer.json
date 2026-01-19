@@ -1,0 +1,3182 @@
+{
+  "blocks": [
+    {
+      "id": "6841B156-73A9-4B99-AF20-87BE64A92442",
+      "type": "StartBlock",
+      "disabled": false,
+      "name": "Start",
+      "displayName": "Start",
+      "comment": "",
+      "childId": "E71CFD36-7B6D-4CFC-8F5F-AF73409624B4",
+      "inputs": [
+        {
+          "id": "run_mode",
+          "value": "manual",
+          "type": "select",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2832
+    },
+    {
+      "id": "E71CFD36-7B6D-4CFC-8F5F-AF73409624B4",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output",
+      "displayName": "Output",
+      "comment": "README: Check the variables below, perform a test run, then schedule the run daily around midday Central European time.",
+      "childId": "6AC0239B-01A8-47F9-AD4C-ED09CCB2B83F",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "## Capacity Consumption App deployer\n\nThe capacity consumption app deployer automates the update of the detailed consumption report. Check the variables below, then run manually, or schedule daily around midday Central European time.\n\n**Only available to capacity-based tenants with reports of 100MB or less. Larger reports cannot be deployed via Qlik Automate at this time.**",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2712
+    },
+    {
+      "id": "6AC0239B-01A8-47F9-AD4C-ED09CCB2B83F",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "sharedSpaceName",
+      "displayName": "Variable - sharedSpaceName",
+      "comment": "Enter a space name to use as the staging space. A space will be created if it does not exist.",
+      "childId": "816EE781-6447-4CB2-AE71-07512C23A11E",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2592,
+      "variableGuid": "E3084D5D-4DE7-428E-BDE0-440DCD055EDD",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "14252438-DA6C-489E-BA9F-97F75C4BF373",
+          "name": "Set value of { variable }",
+          "value": "Detailed Consumption Report - staging"
+        }
+      ]
+    },
+    {
+      "id": "816EE781-6447-4CB2-AE71-07512C23A11E",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "managedSpaceName",
+      "displayName": "Variable - managedSpaceName",
+      "comment": "Enter a space name to use as the managed space. A space will be created if it does not exist.",
+      "childId": "749BB890-520A-4E81-8C75-5738241F7586",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2472,
+      "variableGuid": "247B71DE-30E7-4526-AC3D-BE5E17AA9194",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "14252438-DA6C-489E-BA9F-97F75C4BF373",
+          "name": "Set value of { variable }",
+          "value": "Detailed Consumption Report"
+        }
+      ]
+    },
+    {
+      "id": "749BB890-520A-4E81-8C75-5738241F7586",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "versionsToKeep",
+      "displayName": "Variable - versionsToKeep",
+      "comment": "If you wish to keep previously deployed apps in the staging space, enter a number of apps to keep. Set to 0 to always delete all apps from the shared space. Default = 0",
+      "childId": "F9DCB126-6ED4-4D9A-BF35-CFD7A6D9CECD",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2352,
+      "variableGuid": "9679AB7C-F7EB-4A7F-A217-B2F9F14CE7E5",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1CC6616E-100F-4B1E-AB18-98A204CBE862",
+          "name": "Set value of { variable }",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "id": "F9DCB126-6ED4-4D9A-BF35-CFD7A6D9CECD",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "getCurrentUserId",
+      "displayName": "Qlik Cloud Services - Get Current User Id",
+      "comment": "Find current user ID.",
+      "childId": "43D8ED19-F455-48F9-9CC4-7FE2A93B1884",
+      "inputs": [],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2232,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "6e9dbaa0-c7a4-11ea-9bd3-0da55b4cbed9",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "BB38C4E9-A2B4-428B-BAAF-903E14CB56B1",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "getUser",
+      "displayName": "Qlik Cloud Services - Get User",
+      "comment": "Get record for the current user.",
+      "childId": "E9A1664E-7B3A-4333-9DCA-65E34A43AD2D",
+      "inputs": [
+        {
+          "id": "8eedf1d0-c7a5-11ea-9022-0fb2ce625902",
+          "value": "{$.getCurrentUserId}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -1872,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "7e670290-c7a5-11ea-9a9c-6dd2b282df86",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "E9A1664E-7B3A-4333-9DCA-65E34A43AD2D",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output2",
+      "displayName": "Output 2",
+      "comment": "Status output.",
+      "childId": "D0E7DF6C-C216-4DB6-8502-1F3C4ADF5AFE",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Variable | Value |\n| -------- | ------- |\n| sharedSpaceName | {$.sharedSpaceName} |\n| managedSpaceName | {$.managedSpaceName} | \n| versionsToKeep | {$.versionsToKeep} |\n| Current User | {$.getUser.id} |\n| Tenant hostname | { $.tenantHostname } |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -1752
+    },
+    {
+      "id": "D0E7DF6C-C216-4DB6-8502-1F3C4ADF5AFE",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition",
+      "displayName": "Condition",
+      "comment": "Ensures that the current user has the TenantAdmin role. This is required for license checks and the detail app.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "some",
+            "conditions": [
+              {
+                "input1": "{$.getUser.assignedRoles[*].name}",
+                "input2": "TenantAdmin",
+                "operator": "inList"
+              },
+              {
+                "input1": "{$.getUser.assignedGroups[*].assignedRoles[*].name}",
+                "input2": "TenantAdmin",
+                "operator": "inList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -802,
+      "y": -1632,
+      "childTrueId": "9C6779A3-FFA8-49D8-B3AE-ADA3D57BA1D5",
+      "childFalseId": "BE7F53B8-B1FD-48DF-A8A5-D6638F74FA2C"
+    },
+    {
+      "id": "9C6779A3-FFA8-49D8-B3AE-ADA3D57BA1D5",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "getLicenseOverview",
+      "displayName": "Qlik Cloud Services - Get License Overview",
+      "comment": "Get license to check for capacity-based flags.",
+      "childId": "76F9CDFC-1759-4B46-98D0-2D6BE3F93D96",
+      "inputs": [],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -682,
+      "y": -1552,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "0e6d4530-3291-11ed-a2e9-3bc221fc190c",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "6816547D-3106-44B5-9DC0-0EB3B43E4953",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition2",
+      "displayName": "Condition 2",
+      "comment": "Checks if the license contains entitlement for the consumption report, exits if not present.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ count: { $.filterList4 } }",
+                "operator": ">",
+                "input2": "0"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -682,
+      "y": -1312,
+      "childTrueId": "6C0A56A0-B3A3-4740-858E-57ABB5BF2CAC",
+      "childFalseId": "BEFC25D2-18EC-4D4D-B1DE-2A0F028CC592"
+    },
+    {
+      "id": "6C0A56A0-B3A3-4740-858E-57ABB5BF2CAC",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output3",
+      "displayName": "Output 3",
+      "comment": "Status output.",
+      "childId": "F718EF32-99B6-49C3-A5A5-6996F86B0B87",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "## Deployment progress\n\nDeployment is in progress. Status will be updated below.\n\n| Step | Status |\n| -------- | ------- |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": -1232
+    },
+    {
+      "id": "F718EF32-99B6-49C3-A5A5-6996F86B0B87",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "searchSpaces",
+      "displayName": "Qlik Cloud Services - Search Spaces",
+      "comment": "Look for shared space.",
+      "childId": "FEA21EF3-D8E8-48DF-9013-8DC36FE5A54D",
+      "inputs": [
+        {
+          "id": "592e21a0-6d2e-11eb-9985-3ff14fb3335f",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "5935dec0-6d2e-11eb-8365-ab8493d4c237",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "593c5340-6d2e-11eb-a82b-e17cfa6c8a6d",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "59429c60-6d2e-11eb-b7b1-e7ca1f22830c",
+          "value": "{$.sharedSpaceName}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "5949c230-6d2e-11eb-b345-99be61e9908c",
+          "value": null,
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": -1112,
+      "loopBlockId": null,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
+      "endpoint_role": "search"
+    },
+    {
+      "id": "FEA21EF3-D8E8-48DF-9013-8DC36FE5A54D",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "sharedSpaceId",
+      "displayName": "Variable - sharedSpaceId",
+      "comment": "Initialise the variable.",
+      "childId": "34B88617-9583-4EA4-948E-D580D65F3C49",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": -952,
+      "variableGuid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
+      "operations": [
+        {
+          "id": "empty",
+          "key": "D491693B-F764-49C2-94C2-C893014C604B",
+          "name": "Empty { variable }",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "EB27466E-BFCB-4FFC-8B1A-3AA517AB3F4F",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output4",
+      "displayName": "Output 4",
+      "comment": "Status output.",
+      "childId": "3C37421F-9C07-4344-AD2E-1022C48BADF9",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Shared space lookup | Found {$.filterList.item.type} space matching name [{$.sharedSpaceName}]({$.tenantHostname}analytics/catalog?space_filter={$.sharedSpaceId}). |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": -612
+    },
+    {
+      "id": "34B88617-9583-4EA4-948E-D580D65F3C49",
+      "type": "FilterListBlock",
+      "disabled": false,
+      "name": "filterList",
+      "displayName": "Filter over Qlik Cloud Services - Search Spaces - Filter List",
+      "comment": "Filter for exact name match for shared space.",
+      "childId": "E14426D0-F329-44A1-B59F-A27869D8920F",
+      "inputs": [
+        {
+          "id": "list",
+          "value": "{ $.searchSpaces }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "name",
+                "input2": "{$.sharedSpaceName}",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": -832,
+      "loopBlockId": "7E7CFBF2-F088-4F93-9BA8-DE932E22956E"
+    },
+    {
+      "id": "7E7CFBF2-F088-4F93-9BA8-DE932E22956E",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "sharedSpaceId",
+      "displayName": "Variable - sharedSpaceId",
+      "comment": "Store shared space ID.",
+      "childId": "EB27466E-BFCB-4FFC-8B1A-3AA517AB3F4F",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": -732,
+      "variableGuid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "112D67F1-764F-46E4-8CD8-79B8735F30E9",
+          "name": "Set value of { variable }",
+          "value": "{ $.filterList.item.id }"
+        }
+      ]
+    },
+    {
+      "id": "3C37421F-9C07-4344-AD2E-1022C48BADF9",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition3",
+      "displayName": "Condition 3",
+      "comment": "If the space type is not shared, exit; otherwise, apply the Can Manage role.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.filterList[0].type}",
+                "input2": "shared",
+                "operator": "!="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -442,
+      "y": -492,
+      "childTrueId": "A29FDF70-7705-4848-B467-90DD6CD8F293",
+      "childFalseId": "EABD8111-E99F-4C5B-A67D-3D7F0ACE778E"
+    },
+    {
+      "id": "A29FDF70-7705-4848-B467-90DD6CD8F293",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorTitle",
+      "displayName": "Variable - errorTitle",
+      "comment": "A space of the wrong type was found with the configured shared space name.",
+      "childId": "6A1F7D55-1177-4CED-96ED-C5EAB1EF473C",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": -412,
+      "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "A space of the wrong type was found with the configured shared space name."
+        }
+      ]
+    },
+    {
+      "id": "6A1F7D55-1177-4CED-96ED-C5EAB1EF473C",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorDetail",
+      "displayName": "Variable - errorDetail",
+      "comment": "Variable to store detailed error message.",
+      "childId": "4B13B3CA-4EE2-4F26-A4E4-ECBE8AD13378",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": -292,
+      "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Exiting, an existing space with a type other than `shared` was found for the provided shared space name. Try another shared space name."
+        }
+      ]
+    },
+    {
+      "id": "4B13B3CA-4EE2-4F26-A4E4-ECBE8AD13378",
+      "type": "GotoBlock",
+      "disabled": false,
+      "name": "goToLabel",
+      "displayName": "Go To Label",
+      "comment": "Go to the label named error.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "label",
+          "value": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
+          "type": "select",
+          "displayValue": "error",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": -172
+    },
+    {
+      "id": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
+      "type": "LabelBlock",
+      "disabled": false,
+      "name": "label",
+      "displayName": "Label - error",
+      "comment": "Standard error handler which provides standardized error output.",
+      "childId": "D46F6E49-3856-430B-A685-0A07984CDAEB",
+      "inputs": [
+        { "id": "name", "value": "error", "type": "string", "structure": [] }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -9,
+      "y": -2826
+    },
+    {
+      "id": "EABD8111-E99F-4C5B-A67D-3D7F0ACE778E",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition4",
+      "displayName": "Condition 4",
+      "comment": "If not the owner, checks and updates the roles. ",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.filterList.item.ownerId }",
+                "input2": "{ $.getCurrentUserId }",
+                "operator": "!="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -322,
+      "y": -12,
+      "childTrueId": "478E6D39-A231-4808-A8C8-AEE1EDF3121E",
+      "childFalseId": "94B0A4B3-5C6A-4958-BF8D-622F72452977"
+    },
+    {
+      "id": "478E6D39-A231-4808-A8C8-AEE1EDF3121E",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "listMembersFromSpace",
+      "displayName": "Qlik Cloud Services - List Members From Space",
+      "comment": "Get a list of members in the shared space.",
+      "childId": "7CFB4DF1-CB8C-4302-AE53-73BCF1F8BFBC",
+      "inputs": [
+        {
+          "id": "358ee8a0-6d34-11eb-b1f3-91a0d7274b22",
+          "value": "{ $.sharedSpaceId }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "86f34440-dd7e-11ef-91d1-63f16d094078",
+          "value": "{ $.getCurrentUserId }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "972a9800-dd7e-11ef-95ae-93a368f4ba58",
+          "value": "9fecb2a0-dd7e-11ef-85d3-9f8aefa67848",
+          "type": "select",
+          "displayValue": "user",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
+      "x": -202,
+      "y": 68,
+      "loopBlockId": null,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "ffe6d930-6d33-11eb-ad8a-334e25c5e295",
+      "endpoint_role": "list"
+    },
+    {
+      "id": "7CFB4DF1-CB8C-4302-AE53-73BCF1F8BFBC",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition5",
+      "displayName": "Condition 5",
+      "comment": "If the user is found, update; otherwise, add the user to the shared space with the facilitator role.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{count: {$.listMembersFromSpace}}",
+                "input2": "1",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -202,
+      "y": 188,
+      "childTrueId": "35CB70BA-0EC6-4883-829C-D9EF6FB850F3",
+      "childFalseId": "463B5474-1CF6-490D-884A-0A2E6252F64F"
+    },
+    {
+      "id": "35CB70BA-0EC6-4883-829C-D9EF6FB850F3",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition6",
+      "displayName": "Condition 6",
+      "comment": "If the user does not have the facilitator role, add it.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.listMembersFromSpace[0].roles}",
+                "input2": "facilitator",
+                "operator": "notInList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -82,
+      "y": 268,
+      "childTrueId": "824F1EDD-71E4-4833-9634-D37637283AE0",
+      "childFalseId": "A99BD3FB-EB73-41C1-B684-FBFDB4CB6D28"
+    },
+    {
+      "id": "824F1EDD-71E4-4833-9634-D37637283AE0",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "spaceRoles",
+      "displayName": "Variable - spaceRoles",
+      "comment": "List variable to add the facilitator role, along with the existing roles, to the user in the shared space.",
+      "childId": "B6226FFD-EC59-4DB5-91A6-A706091A4FD6",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 348,
+      "variableGuid": "E413E2FB-E4E7-4AFF-8894-6D27792FA8D8",
+      "operations": [
+        {
+          "id": "empty",
+          "key": "9837B21E-F102-462E-A474-E0C7D78117CE",
+          "name": "Empty { variable }",
+          "value": null
+        },
+        {
+          "id": "add_item",
+          "key": "68A49E6D-72F7-47D1-BD36-892E32464CB5",
+          "name": "Add item to { variable }",
+          "value": "facilitator"
+        },
+        {
+          "id": "merge",
+          "key": "680DE388-428C-40C5-97E2-C4FB11F0930D",
+          "name": "Merge other list into { variable }",
+          "value": "{ $.listMembersFromSpace[0].roles }",
+          "allow_duplicates": "no"
+        }
+      ]
+    },
+    {
+      "id": "B6226FFD-EC59-4DB5-91A6-A706091A4FD6",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "updateRolesOfMemberFromSpace",
+      "displayName": "Qlik Cloud Services - Update Roles Of Member From Space",
+      "comment": "Add the facilitator role to the user in the shared space.",
+      "childId": "E4CAC506-9BC8-4BDE-8F96-7A73212BB4B1",
+      "inputs": [
+        {
+          "id": "8c6b43e0-6d42-11eb-85f6-917131a7d145",
+          "value": "{$.sharedSpaceId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "8c72c230-6d42-11eb-837d-b1e5663f20d2",
+          "value": "{$.listMembersFromSpace[0].id}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "01ac8e60-6d43-11eb-9d02-4d69db8c0501",
+          "value": "{json: {$.spaceRoles}}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 468,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
+      "endpoint_role": "update"
+    },
+    {
+      "id": "E4CAC506-9BC8-4BDE-8F96-7A73212BB4B1",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output5",
+      "displayName": "Output 5",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Shared space permissions | Added facilitator role to existing space assignment. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 588
+    },
+    {
+      "id": "A99BD3FB-EB73-41C1-B684-FBFDB4CB6D28",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output6",
+      "displayName": "Output 6",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Shared space permissions | No changes made. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 748
+    },
+    {
+      "id": "463B5474-1CF6-490D-884A-0A2E6252F64F",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "addMemberToSpace",
+      "displayName": "Qlik Cloud Services - Add Member To Space",
+      "comment": "Add user with facilitator role.",
+      "childId": "D2438EC7-D532-4274-8D13-27C2EC31CAAE",
+      "inputs": [
+        {
+          "id": "3162f740-6d33-11eb-a089-71f7ccab24b9",
+          "value": "{$.sharedSpaceId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "27499b00-6d31-11eb-bbe5-5b3db3c974dc",
+          "value": "{$.getCurrentUserId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "2751b870-6d31-11eb-9d77-41c5fae28bc5",
+          "value": "[\"facilitator\"]",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "275e2c50-6d31-11eb-8eeb-157347755492",
+          "value": "aec7c5b0-6d32-11eb-a4b2-f5e181a2c241",
+          "type": "select",
+          "displayValue": "user",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -82,
+      "y": 988,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "272d9c70-6d31-11eb-870f-67624392ed86",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "D2438EC7-D532-4274-8D13-27C2EC31CAAE",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output7",
+      "displayName": "Output 7",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Shared space permissions | Added user to shared space. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -82,
+      "y": 1108
+    },
+    {
+      "id": "94B0A4B3-5C6A-4958-BF8D-622F72452977",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output8",
+      "displayName": "Output 8",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Shared space permissions | Found user is owner of space, no permission updates required. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -202,
+      "y": 1348
+    },
+    {
+      "id": "EF5E86CE-DE0B-4961-BD90-B7355163A6E9",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "managedSpaceId",
+      "displayName": "Variable - managedSpaceId",
+      "comment": "Initialise the variable.",
+      "childId": "8B32EC24-AC36-47A1-B60B-2FC217B835E3",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 1788,
+      "variableGuid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
+      "operations": [
+        {
+          "id": "empty",
+          "key": "CFAB487E-9183-44D8-8990-4AD864BE24A2",
+          "name": "Empty { variable }",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "EA734A3A-B6F0-47F4-BB88-4D3C1DCADBE2",
+      "type": "ErrorBlock",
+      "disabled": false,
+      "name": "error",
+      "displayName": "Error",
+      "comment": "Show the error message and stop the automation.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "message",
+          "value": "Error: { $.errorTitle }",
+          "type": "string",
+          "structure": []
+        },
+        { "id": "action", "value": "stop", "type": "select", "structure": [] }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -9,
+      "y": -2466
+    },
+    {
+      "id": "E14426D0-F329-44A1-B59F-A27869D8920F",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "searchSpaces2",
+      "displayName": "Qlik Cloud Services - Search Spaces 2",
+      "comment": "Look for managed space.",
+      "childId": "EF5E86CE-DE0B-4961-BD90-B7355163A6E9",
+      "inputs": [
+        {
+          "id": "592e21a0-6d2e-11eb-9985-3ff14fb3335f",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "5935dec0-6d2e-11eb-8365-ab8493d4c237",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "593c5340-6d2e-11eb-a82b-e17cfa6c8a6d",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "59429c60-6d2e-11eb-b7b1-e7ca1f22830c",
+          "value": "{$.managedSpaceName}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "5949c230-6d2e-11eb-b345-99be61e9908c",
+          "value": null,
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
+      "x": -562,
+      "y": 1668,
+      "loopBlockId": null,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
+      "endpoint_role": "search"
+    },
+    {
+      "id": "8B32EC24-AC36-47A1-B60B-2FC217B835E3",
+      "type": "FilterListBlock",
+      "disabled": false,
+      "name": "filterList2",
+      "displayName": "Filter over Qlik Cloud Services - Search Spaces 2 - Filter List 2",
+      "comment": "Filter for exact name match for managed space.",
+      "childId": "7C0C15A5-F334-4AD6-A9D4-C0AC674CC34B",
+      "inputs": [
+        {
+          "id": "list",
+          "value": "{ $.searchSpaces2 }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "name",
+                "input2": "{$.managedSpaceName}",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 1908,
+      "loopBlockId": "FCBE0570-D739-43D6-B0AD-B16A2DA6F28A"
+    },
+    {
+      "id": "FCBE0570-D739-43D6-B0AD-B16A2DA6F28A",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "managedSpaceId",
+      "displayName": "Variable - managedSpaceId",
+      "comment": "Store managed space ID.",
+      "childId": "820347D1-83F1-4F4E-A9A3-AACE4DF3685E",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 2008,
+      "variableGuid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "FF599B67-45E6-44E2-9966-4EEEE9F474D4",
+          "name": "Set value of { variable }",
+          "value": "{$.filterList2.item.id}"
+        }
+      ]
+    },
+    {
+      "id": "820347D1-83F1-4F4E-A9A3-AACE4DF3685E",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output9",
+      "displayName": "Output 9",
+      "comment": "Status output.",
+      "childId": "B35B33BE-B45B-4749-813C-64BA4AA4FA1D",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Managed space lookup | Found {$.filterList2.item.type} space matching name [{$.managedSpaceName}]({$.tenantHostname}analytics/catalog?space_filter={$.managedSpaceId}). |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 2128
+    },
+    {
+      "id": "B35B33BE-B45B-4749-813C-64BA4AA4FA1D",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition7",
+      "displayName": "Condition 7",
+      "comment": "If the space type is not managed, exit; otherwise, ensure that the publisher role is present.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.filterList2[0].type}",
+                "input2": "managed",
+                "operator": "!="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -442,
+      "y": 2248,
+      "childTrueId": "F0DEE5BC-C9A2-4F91-964A-EA7C64F90457",
+      "childFalseId": "2FDCB00D-3E41-4B95-A904-51DBFF7345AA"
+    },
+    {
+      "id": "F0DEE5BC-C9A2-4F91-964A-EA7C64F90457",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorTitle",
+      "displayName": "Variable - errorTitle",
+      "comment": "A space of the wrong type was found with the configured managed space name.",
+      "childId": "CDB7C2AB-E721-492F-9238-2A91F9B67CF2",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": 2328,
+      "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "A space of the wrong type was found with the configured managed space name."
+        }
+      ]
+    },
+    {
+      "id": "CDB7C2AB-E721-492F-9238-2A91F9B67CF2",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorDetail",
+      "displayName": "Variable - errorDetail",
+      "comment": "Variable to store detailed error message.",
+      "childId": "1324CB60-D99D-4A46-AB5A-734A7B31D12B",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": 2448,
+      "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Exiting, an existing space with a type other than `managed` was found for the provided managed space name. Try another managed space name."
+        }
+      ]
+    },
+    {
+      "id": "1324CB60-D99D-4A46-AB5A-734A7B31D12B",
+      "type": "GotoBlock",
+      "disabled": false,
+      "name": "goToLabel2",
+      "displayName": "Go To Label 2",
+      "comment": "Go to the label named error.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "label",
+          "value": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
+          "type": "select",
+          "displayValue": "error",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": 2568
+    },
+    {
+      "id": "2FDCB00D-3E41-4B95-A904-51DBFF7345AA",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition8",
+      "displayName": "Condition 8",
+      "comment": "If not the owner, check and update roles.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.filterList2.item.ownerId }",
+                "input2": "{ $.getCurrentUserId }",
+                "operator": "!="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -322,
+      "y": 2728,
+      "childTrueId": "064FC5B0-AF19-4C57-B22A-E171D71F3643",
+      "childFalseId": "F37D6ACE-DF7C-4EB9-A990-E7DBCD31ABDF"
+    },
+    {
+      "id": "064FC5B0-AF19-4C57-B22A-E171D71F3643",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "listMembersFromSpace2",
+      "displayName": "Qlik Cloud Services - List Members From Space 2",
+      "comment": "Get a list of members in the managed space.",
+      "childId": "4C669FE6-61A1-402B-9A79-357A350E8030",
+      "inputs": [
+        {
+          "id": "358ee8a0-6d34-11eb-b1f3-91a0d7274b22",
+          "value": "{ $.managedSpaceId }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "86f34440-dd7e-11ef-91d1-63f16d094078",
+          "value": "{ $.getCurrentUserId }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "972a9800-dd7e-11ef-95ae-93a368f4ba58",
+          "value": "9fecb2a0-dd7e-11ef-85d3-9f8aefa67848",
+          "type": "select",
+          "displayValue": "user",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
+      "x": -202,
+      "y": 2808,
+      "loopBlockId": null,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "ffe6d930-6d33-11eb-ad8a-334e25c5e295",
+      "endpoint_role": "list"
+    },
+    {
+      "id": "4C669FE6-61A1-402B-9A79-357A350E8030",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition9",
+      "displayName": "Condition 9",
+      "comment": "If the use is found, update; otherwise, create an assignment.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{count: {$.listMembersFromSpace2}}",
+                "input2": "1",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -202,
+      "y": 2928,
+      "childTrueId": "D0EEE98C-7DA0-47F5-B8C6-31B0507505FD",
+      "childFalseId": "9CC93349-E133-4BCC-860C-7AAE4991A788"
+    },
+    {
+      "id": "D0EEE98C-7DA0-47F5-B8C6-31B0507505FD",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition10",
+      "displayName": "Condition 10",
+      "comment": "If the user does not have the facilitator and publisher roles, add them.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "some",
+            "conditions": [
+              {
+                "input1": "{$.listMembersFromSpace2[0].roles}",
+                "input2": "facilitator",
+                "operator": "notInList"
+              },
+              {
+                "input1": "{ $.listMembersFromSpace2[0].roles }",
+                "input2": "publisher",
+                "operator": "notInList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -82,
+      "y": 3008,
+      "childTrueId": "BE0D6DE8-CA32-466A-917B-40EA75EB91C9",
+      "childFalseId": "253E7602-5CB9-473C-A66A-ABB7711934A6"
+    },
+    {
+      "id": "BE0D6DE8-CA32-466A-917B-40EA75EB91C9",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "spaceRoles",
+      "displayName": "Variable - spaceRoles",
+      "comment": "List variable to add facilitator and publisher roles along with the existing roles, to the user in the managed space.",
+      "childId": "759EE2C8-9EAF-4D15-9A14-D059BC43154C",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 3088,
+      "variableGuid": "E413E2FB-E4E7-4AFF-8894-6D27792FA8D8",
+      "operations": [
+        {
+          "id": "empty",
+          "key": "9837B21E-F102-462E-A474-E0C7D78117CE",
+          "name": "Empty { variable }",
+          "value": null
+        },
+        {
+          "id": "add_item",
+          "key": "68A49E6D-72F7-47D1-BD36-892E32464CB5",
+          "name": "Add item to { variable }",
+          "value": "facilitator"
+        },
+        {
+          "id": "add_item",
+          "key": "17E5F253-7880-4709-BD29-6CDBC72BC2C2",
+          "name": "Add item to { variable }",
+          "value": "publisher"
+        },
+        {
+          "id": "merge",
+          "key": "680DE388-428C-40C5-97E2-C4FB11F0930D",
+          "name": "Merge other list into { variable }",
+          "value": "{ $.listMembersFromSpace2[0].roles }",
+          "allow_duplicates": "no"
+        }
+      ]
+    },
+    {
+      "id": "759EE2C8-9EAF-4D15-9A14-D059BC43154C",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "updateRolesOfMemberFromSpace2",
+      "displayName": "Qlik Cloud Services - Update Roles Of Member From Space 2",
+      "comment": "Add the facilitator and publisher roles to the user in the managed space.",
+      "childId": "3C75AC47-4371-4B5E-B512-BF7319CADCF4",
+      "inputs": [
+        {
+          "id": "8c6b43e0-6d42-11eb-85f6-917131a7d145",
+          "value": "{$.managedSpaceId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "8c72c230-6d42-11eb-837d-b1e5663f20d2",
+          "value": "{$.listMembersFromSpace2[0].id}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "01ac8e60-6d43-11eb-9d02-4d69db8c0501",
+          "value": "{json: {$.spaceRoles}}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 3208,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "8c54ade0-6d42-11eb-b3a8-75befcc89b0a",
+      "endpoint_role": "update"
+    },
+    {
+      "id": "3C75AC47-4371-4B5E-B512-BF7319CADCF4",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output10",
+      "displayName": "Output 10",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Managed space permissions | Added facilitator and publisher role to existing space assignment. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 3328
+    },
+    {
+      "id": "253E7602-5CB9-473C-A66A-ABB7711934A6",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output11",
+      "displayName": "Output 11",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Managed space permissions | No changes made. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 38,
+      "y": 3488
+    },
+    {
+      "id": "9CC93349-E133-4BCC-860C-7AAE4991A788",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "addMemberToSpace2",
+      "displayName": "Qlik Cloud Services - Add Member To Space 2",
+      "comment": "Add user with facilitator and publisher roles.",
+      "childId": "DD87C70B-9C4F-4DDF-9DFA-4515A73AD2DF",
+      "inputs": [
+        {
+          "id": "3162f740-6d33-11eb-a089-71f7ccab24b9",
+          "value": "{$.managedSpaceId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "27499b00-6d31-11eb-bbe5-5b3db3c974dc",
+          "value": "{$.getCurrentUserId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "2751b870-6d31-11eb-9d77-41c5fae28bc5",
+          "value": "[\"facilitator\",\"publisher\"]",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "275e2c50-6d31-11eb-8eeb-157347755492",
+          "value": "aec7c5b0-6d32-11eb-a4b2-f5e181a2c241",
+          "type": "select",
+          "displayValue": "user",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -82,
+      "y": 3728,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "272d9c70-6d31-11eb-870f-67624392ed86",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "DD87C70B-9C4F-4DDF-9DFA-4515A73AD2DF",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output12",
+      "displayName": "Output 12",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Managed space permissions | Added user to managed space. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -82,
+      "y": 3848
+    },
+    {
+      "id": "F37D6ACE-DF7C-4EB9-A990-E7DBCD31ABDF",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output13",
+      "displayName": "Output 13",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Managed space permissions | Found user is owner of space, no permission updates required. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -202,
+      "y": 4088
+    },
+    {
+      "id": "7C0C15A5-F334-4AD6-A9D4-C0AC674CC34B",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition11",
+      "displayName": "Condition 11",
+      "comment": "If no shared space is found, create it.",
+      "childId": "230E3338-D040-459F-A88C-47CD38B6BD39",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.sharedSpaceId}",
+                "input2": null,
+                "operator": "empty"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -562,
+      "y": 4408,
+      "childTrueId": "A835D799-19FC-450D-BF01-88DB67C89291",
+      "childFalseId": null
+    },
+    {
+      "id": "A835D799-19FC-450D-BF01-88DB67C89291",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "createSpace",
+      "displayName": "Qlik Cloud Services - Create Space",
+      "comment": "Create shared space.",
+      "childId": "19A7E512-81F6-407C-B4F5-A537C5DA9597",
+      "inputs": [
+        {
+          "id": "f0de69a0-6d24-11eb-8c07-ebadb5af2511",
+          "value": "{$.sharedSpaceName}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "79771850-6d25-11eb-8021-177e65e81ac9",
+          "value": "shared",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "f0ecac30-6d24-11eb-a7b6-d15be2d36858",
+          "value": "Managed by the detailed consumption app automation template.",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 4488,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "f0c14620-6d24-11eb-aa67-c519e2671d3d",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "19A7E512-81F6-407C-B4F5-A537C5DA9597",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "sharedSpaceId",
+      "displayName": "Variable - sharedSpaceId",
+      "comment": "Store the newly created shared space ID in this variable.",
+      "childId": "E43BB4EB-9F53-4ACA-9649-051763575EE8",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 4608,
+      "variableGuid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "FF599B67-45E6-44E2-9966-4EEEE9F474D4",
+          "name": "Set value of { variable }",
+          "value": "{$.createSpace.id}"
+        }
+      ]
+    },
+    {
+      "id": "E43BB4EB-9F53-4ACA-9649-051763575EE8",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output14",
+      "displayName": "Output 14",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Shared space created | Created space [{$.sharedSpaceName}]({$.tenantHostname}analytics/catalog?space_filter={$.sharedSpaceId}). |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 4728
+    },
+    {
+      "id": "230E3338-D040-459F-A88C-47CD38B6BD39",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition12",
+      "displayName": "Condition 12",
+      "comment": "If a managed space is not found, create it.",
+      "childId": "9F388A67-F48C-4924-B960-A75275838649",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.managedSpaceId}",
+                "input2": null,
+                "operator": "empty"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -562,
+      "y": 4888,
+      "childTrueId": "ED0FFFF7-7BA3-4BC5-B2CC-37F2AE4C0408",
+      "childFalseId": null
+    },
+    {
+      "id": "ED0FFFF7-7BA3-4BC5-B2CC-37F2AE4C0408",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "createSpace2",
+      "displayName": "Qlik Cloud Services - Create Space 2",
+      "comment": "Create managed space.",
+      "childId": "74016C4D-50A2-4FE0-AB21-3021ED1C263F",
+      "inputs": [
+        {
+          "id": "f0de69a0-6d24-11eb-8c07-ebadb5af2511",
+          "value": "{$.managedSpaceName}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "79771850-6d25-11eb-8021-177e65e81ac9",
+          "value": "managed",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "f0ecac30-6d24-11eb-a7b6-d15be2d36858",
+          "value": "Managed by the detailed consumption app automation template.",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 4968,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "f0c14620-6d24-11eb-aa67-c519e2671d3d",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "74016C4D-50A2-4FE0-AB21-3021ED1C263F",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "managedSpaceId",
+      "displayName": "Variable - managedSpaceId",
+      "comment": "Store the newly created managed space ID in this variable.",
+      "childId": "8EA716DA-A818-45D1-8D97-92171239EAE3",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 5088,
+      "variableGuid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "FF599B67-45E6-44E2-9966-4EEEE9F474D4",
+          "name": "Set value of { variable }",
+          "value": "{$.createSpace2.id}"
+        }
+      ]
+    },
+    {
+      "id": "8EA716DA-A818-45D1-8D97-92171239EAE3",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output15",
+      "displayName": "Output 15",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Managed space created | Created space [{$.managedSpaceName}]({$.tenantHostname}analytics/catalog?space_filter={$.managedSpaceId}). |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 5208
+    },
+    {
+      "id": "9F388A67-F48C-4924-B960-A75275838649",
+      "type": "SnippetBlock",
+      "disabled": false,
+      "name": "ImportConsumptionApp",
+      "displayName": "Qlik Cloud Services - Import Consumption App",
+      "comment": "Import the capacity consumption app to the shared space.",
+      "childId": "D6B855D5-DBD6-4CC4-A910-0C103B38F8FE",
+      "inputs": [
+        {
+          "id": "88dc9ae0-744c-11f0-bd28-67bc47cdbeec",
+          "value": "{ $.sharedSpaceId }",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 5368,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "snippet_guid": "52c25850-73a6-11f0-9c34-07595bb5a9c1"
+    },
+    {
+      "id": "D6B855D5-DBD6-4CC4-A910-0C103B38F8FE",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output16",
+      "displayName": "Output 16",
+      "comment": "Status output.",
+      "childId": "94BF7A43-5E78-4504-AC48-1BC1DDA0E750",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Imported app | Imported [{ $.ImportConsumptionApp.attributes.name }] to shared space [{ $.sharedSpaceName }]({ $.tenantHostname }analytics/catalog?space_filter={ $.sharedSpaceId }). |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 5488
+    },
+    {
+      "id": "94BF7A43-5E78-4504-AC48-1BC1DDA0E750",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "searchItems",
+      "displayName": "Qlik Cloud Services - Search Items",
+      "comment": "Find apps in the managed space named \"Consumption report\" (case insensitive).",
+      "childId": "8D3745B5-9A3F-4B8C-8DF3-A84C240476EE",
+      "inputs": [
+        {
+          "id": "84bbcd50-6f72-11eb-8452-c12329f7d1be",
+          "value": null,
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "b9c76ec0-6f72-11eb-ba14-4f34b1e4e6b4",
+          "value": "app",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "49786610-6f73-11eb-8f0a-2348e669c251",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "58fafe70-6f73-11eb-a310-696500e924d6",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "6eb0af00-6f73-11eb-9663-9f0b522e183f",
+          "value": "{ $.managedSpaceId }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "a80dbc80-6f76-11eb-9648-4d8865fc84c1",
+          "value": null,
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "964119b0-6f77-11eb-a576-3bf4b006d432",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "a7cd85c0-6f77-11eb-8511-2ba53a2a2998",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "d9032100-6f77-11eb-bffb-9bf794dfe9c7",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "fe391860-6f77-11eb-9529-afce50ac48a4",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "212f52c0-6f78-11eb-b09f-1f3e59290268",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "338287a0-6f78-11eb-a90c-152f5cce262e",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "41938660-6f78-11eb-94e2-8b5fb7dad158",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "4dc17010-6f78-11eb-9894-abf8a46a596a",
+          "value": "Consumption report",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 5608,
+      "loopBlockId": null,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "84ad9050-6f72-11eb-aa08-a1dda4364ef5",
+      "endpoint_role": "search"
+    },
+    {
+      "id": "8D3745B5-9A3F-4B8C-8DF3-A84C240476EE",
+      "type": "FilterListBlock",
+      "disabled": false,
+      "name": "filterList3",
+      "displayName": "Filter over Qlik Cloud Services - Search Items - Filter List 3",
+      "comment": "Filter to app name (exact).",
+      "childId": "A85FDE9E-4AF0-48F1-884B-863A13A3B564",
+      "inputs": [
+        {
+          "id": "list",
+          "value": "{ $.searchItems }",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "name",
+                "input2": "Consumption report",
+                "operator": "="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 5768,
+      "loopBlockId": null
+    },
+    {
+      "id": "A85FDE9E-4AF0-48F1-884B-863A13A3B564",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition13",
+      "displayName": "Condition 13",
+      "comment": "If multiple, show an error; otherwise, publish.",
+      "childId": "4BE16981-95D8-4418-B598-B26CA6843820",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{count: {$.filterList3}}",
+                "input2": "1",
+                "operator": ">"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -562,
+      "y": 5928,
+      "childTrueId": "482CEB0E-DA5D-4897-87BD-911D95668D81",
+      "childFalseId": "5CCD27DF-8DCD-4E56-B18E-9B458E44DA7C"
+    },
+    {
+      "id": "482CEB0E-DA5D-4897-87BD-911D95668D81",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorTitle",
+      "displayName": "Variable - errorTitle",
+      "comment": "Managed space contains too many apps with name [Consumption report].",
+      "childId": "3F1A2B05-3B48-405A-9BED-7D82282CBABF",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 6008,
+      "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Managed space contains too many apps with name [Consumption report]."
+        }
+      ]
+    },
+    {
+      "id": "3F1A2B05-3B48-405A-9BED-7D82282CBABF",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorDetail",
+      "displayName": "Variable - errorDetail",
+      "comment": "Variable to store detailed error message.",
+      "childId": "36505C21-0E9D-4F6A-BDB5-8D3B6549A202",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 6128,
+      "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Exiting, found {count: {$.filterList3}} apps with name [Consumption report] in managed space, expected 0 or 1. Delete or rename additional apps."
+        }
+      ]
+    },
+    {
+      "id": "36505C21-0E9D-4F6A-BDB5-8D3B6549A202",
+      "type": "GotoBlock",
+      "disabled": false,
+      "name": "goToLabel3",
+      "displayName": "Go To Label 3",
+      "comment": "Go to the label named error.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "label",
+          "value": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
+          "type": "select",
+          "displayValue": "error",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 6248
+    },
+    {
+      "id": "5CCD27DF-8DCD-4E56-B18E-9B458E44DA7C",
+      "type": "SnippetBlock",
+      "disabled": false,
+      "name": "publishAppToManagedSpace",
+      "displayName": "Qlik Cloud Services - Publish App To Managed Space",
+      "comment": "Publish the capacity consumption app to the managed space.",
+      "childId": "35455384-AECE-4516-BCE3-3F5895DF9E77",
+      "inputs": [
+        {
+          "id": "a0ab6dc0-00e2-11ec-92c0-fb834a93ff56",
+          "value": "{$.ImportConsumptionApp.attributes.id}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "a0ad09d0-00e2-11ec-b2c8-8587b72a110a",
+          "value": "{$.managedSpaceId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "a0ad4d20-00e2-11ec-8cad-07ca8dd4b022",
+          "value": "source",
+          "type": "select",
+          "displayValue": "source",
+          "structure": []
+        },
+        {
+          "id": "03f6be80-22bf-11ec-bd94-cfe02119d15e",
+          "value": "(Re)publish by name",
+          "type": "select",
+          "displayValue": "(Re)publish by name",
+          "structure": []
+        },
+        {
+          "id": "e5b375a0-83ec-11ec-83cd-6d152b88c9ae",
+          "value": "Consumption report",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "e5b45230-83ec-11ec-8c07-d9449d54e6ff",
+          "value": null,
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 6408,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "snippet_guid": "76a45090-00e1-11ec-ad85-b3b86b5b9a24"
+    },
+    {
+      "id": "35455384-AECE-4516-BCE3-3F5895DF9E77",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output17",
+      "displayName": "Output 17",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Published app | Published [{$.ImportConsumptionApp.attributes.name}] to [Consumption report]({ $.tenantHostname }sense/app/{ $.publishAppToManagedSpace.attributes.id }) in managed space [{$.managedSpaceName}]({ $.tenantHostname }analytics/catalog?space_filter={ $.managedSpaceId }). |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 6528
+    },
+    {
+      "id": "4BE16981-95D8-4418-B598-B26CA6843820",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "cleanupCounter",
+      "displayName": "Variable - cleanupCounter",
+      "comment": "Variable to get the number of deployed apps in the shared space. Initially set the value of this variable to 0.",
+      "childId": "5006AC77-27D1-4EA3-AF11-DA559F907DB8",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 6688,
+      "variableGuid": "F6ED0768-9852-46AF-B822-2172586824B7",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "0AA127FF-539F-4311-BF88-189CFE16CC39",
+          "name": "Set value of { variable }",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "id": "5006AC77-27D1-4EA3-AF11-DA559F907DB8",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "searchItems2",
+      "displayName": "Qlik Cloud Services - Search Items 2",
+      "comment": "Find apps in the shared space named \"Consumption report\" (case insensitive).",
+      "childId": "853A4A10-90A1-4C19-81A3-1D1AF00D680B",
+      "inputs": [
+        {
+          "id": "84bbcd50-6f72-11eb-8452-c12329f7d1be",
+          "value": "-createdAt",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "b9c76ec0-6f72-11eb-ba14-4f34b1e4e6b4",
+          "value": "app",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "49786610-6f73-11eb-8f0a-2348e669c251",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "58fafe70-6f73-11eb-a310-696500e924d6",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "6eb0af00-6f73-11eb-9663-9f0b522e183f",
+          "value": "{$.sharedSpaceId}",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "a80dbc80-6f76-11eb-9648-4d8865fc84c1",
+          "value": null,
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "964119b0-6f77-11eb-a576-3bf4b006d432",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "a7cd85c0-6f77-11eb-8511-2ba53a2a2998",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "d9032100-6f77-11eb-bffb-9bf794dfe9c7",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "fe391860-6f77-11eb-9529-afce50ac48a4",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "212f52c0-6f78-11eb-b09f-1f3e59290268",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "338287a0-6f78-11eb-a90c-152f5cce262e",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "41938660-6f78-11eb-94e2-8b5fb7dad158",
+          "value": null,
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "4dc17010-6f78-11eb-9894-abf8a46a596a",
+          "value": "Consumption report",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "maxitemcount",
+          "value": "",
+          "type": "string",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 6808,
+      "loopBlockId": "1B323E62-40BB-40D7-AD9A-D04DA4A5FFB6",
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "84ad9050-6f72-11eb-aa08-a1dda4364ef5",
+      "endpoint_role": "search"
+    },
+    {
+      "id": "1B323E62-40BB-40D7-AD9A-D04DA4A5FFB6",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition14",
+      "displayName": "Condition 14",
+      "comment": "Delete if cleanupCounter value is greater than versionsToKeep value.",
+      "childId": "D5570044-9796-4DC7-81B6-C6D2F937FB1F",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{$.cleanupCounter}",
+                "input2": "{$.versionsToKeep}",
+                "operator": ">="
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": true }
+      ],
+      "x": -442,
+      "y": 6908,
+      "childTrueId": "1C69733A-CADE-4901-9BC2-4CDA59A50DA2",
+      "childFalseId": null
+    },
+    {
+      "id": "1C69733A-CADE-4901-9BC2-4CDA59A50DA2",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "deleteApp",
+      "displayName": "Qlik Cloud Services - Delete App",
+      "comment": "Delete older version of capacity consumption app from the shared space.",
+      "childId": "27388F0E-6FFB-4D16-B4E5-08174412BC75",
+      "inputs": [
+        {
+          "id": "fcd14a20-67b2-11eb-9f5e-9113990ec3b6",
+          "value": "{$.searchItems2.item.resourceAttributes.id}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": 6988,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
+      "endpoint_role": "delete"
+    },
+    {
+      "id": "27388F0E-6FFB-4D16-B4E5-08174412BC75",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output18",
+      "displayName": "Output 18",
+      "comment": "Status output.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Cleanup | Configured to keep {$.versionsToKeep} apps, deleted app {add: {$.cleanupCounter}, 1} from shared space: [{$.searchItems2.item.resourceAttributes.name}]. |",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -322,
+      "y": 7108
+    },
+    {
+      "id": "D5570044-9796-4DC7-81B6-C6D2F937FB1F",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "cleanupCounter",
+      "displayName": "Variable - cleanupCounter",
+      "comment": "Increment the variable by 1 to get the total count of apps that have been backed up in the shared space.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -442,
+      "y": 7268,
+      "variableGuid": "F6ED0768-9852-46AF-B822-2172586824B7",
+      "operations": [
+        {
+          "id": "add",
+          "key": "5B03057A-3746-4B90-83B6-69A9F037542C",
+          "name": "Add to { variable }",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "853A4A10-90A1-4C19-81A3-1D1AF00D680B",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output19",
+      "displayName": "Output 19",
+      "comment": "Status output.",
+      "childId": "1016A08C-CEDB-4669-BCBF-0E7A3DC9C229",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "Complete. App is available at [Consumption report]({ $.tenantHostname }sense/app/{ $.publishAppToManagedSpace.attributes.id }).",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 7428
+    },
+    {
+      "id": "1016A08C-CEDB-4669-BCBF-0E7A3DC9C229",
+      "type": "UpdateJobBlock",
+      "disabled": false,
+      "name": "updateRunTitle",
+      "displayName": "Update Run Title",
+      "comment": "Update the run title to specify that the app deployment has been completed. The run title is visible when looking at the automation history and My Automation Runs Overview.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "title",
+          "value": "Completed app deployment of Consumption report to managed space { $.managedSpaceName }.",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 7548
+    },
+    {
+      "id": "BEFC25D2-18EC-4D4D-B1DE-2A0F028CC592",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorTitle",
+      "displayName": "Variable - errorTitle",
+      "comment": "Could not find the required capacity-based subscription flags.",
+      "childId": "F08A80FE-5470-4934-9D0A-3892F0C8871E",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 7708,
+      "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Couldn't find required capacity-based subscription flags."
+        }
+      ]
+    },
+    {
+      "id": "F08A80FE-5470-4934-9D0A-3892F0C8871E",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorDetail",
+      "displayName": "Variable - errorDetail",
+      "comment": "Variable to store detailed error message.",
+      "childId": "91B6D1D7-EC7B-40B4-9FFF-8B52A3E9A2D8",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 7828,
+      "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Exiting, could not find capacity-based subscription flag. Ensure you are running this on a tenant with a capacity-based subscription."
+        }
+      ]
+    },
+    {
+      "id": "91B6D1D7-EC7B-40B4-9FFF-8B52A3E9A2D8",
+      "type": "GotoBlock",
+      "disabled": false,
+      "name": "goToLabel4",
+      "displayName": "Go To Label 4",
+      "comment": "Go to the label named error.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "label",
+          "value": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
+          "type": "select",
+          "displayValue": "error",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -562,
+      "y": 7948
+    },
+    {
+      "id": "BE7F53B8-B1FD-48DF-A8A5-D6638F74FA2C",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorTitle",
+      "displayName": "Variable - errorTitle",
+      "comment": "Missing the TenantAdmin role on the executing user.",
+      "childId": "A8F7B895-B7BB-4F7A-9189-B757D5A85B52",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -682,
+      "y": 8188,
+      "variableGuid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Missing TenantAdmin role on executing user."
+        }
+      ]
+    },
+    {
+      "id": "A8F7B895-B7BB-4F7A-9189-B757D5A85B52",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "errorDetail",
+      "displayName": "Variable - errorDetail",
+      "comment": "Variable to store detailed error message.",
+      "childId": "1D1FB21E-ADAA-4284-8526-5C849D304B59",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -682,
+      "y": 8308,
+      "variableGuid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
+          "name": "Set value of { variable }",
+          "value": "Exiting, could not find TenantAdmin role assigned to current user either via direct or group assignment."
+        }
+      ]
+    },
+    {
+      "id": "1D1FB21E-ADAA-4284-8526-5C849D304B59",
+      "type": "GotoBlock",
+      "disabled": false,
+      "name": "goToLabel5",
+      "displayName": "Go To Label 5",
+      "comment": "Go to the label named error.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "label",
+          "value": "EF82AD29-E2CF-44C9-A7DB-24C784618756",
+          "type": "select",
+          "displayValue": "error",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -682,
+      "y": 8428
+    },
+    {
+      "id": "D46F6E49-3856-430B-A685-0A07984CDAEB",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output20",
+      "displayName": "Output 20",
+      "comment": "Exit output.",
+      "childId": "D7265A2B-A82F-47D4-B7CA-83E0EA902FCF",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "Error: { $.errorDetail }",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -9,
+      "y": -2706
+    },
+    {
+      "id": "D7265A2B-A82F-47D4-B7CA-83E0EA902FCF",
+      "type": "UpdateJobBlock",
+      "disabled": false,
+      "name": "updateRunTitle2",
+      "displayName": "Update Run Title 2",
+      "comment": "Update run title with the error message.",
+      "childId": "EA734A3A-B6F0-47F4-BB88-4D3C1DCADBE2",
+      "inputs": [
+        {
+          "id": "title",
+          "value": "Error: { $.errorTitle }",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -9,
+      "y": -2586
+    },
+    {
+      "id": "43D8ED19-F455-48F9-9CC4-7FE2A93B1884",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "getCurrentTenantInfo",
+      "displayName": "Qlik Cloud Services - Get Current Tenant Info",
+      "comment": "Get record for the current tenant.",
+      "childId": "DD6471AE-35D5-4348-819C-90FB501F35CD",
+      "inputs": [],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -2112,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "55051480-cb86-11ec-b746-892c1d04114e",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "DD6471AE-35D5-4348-819C-90FB501F35CD",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "tenantHostname",
+      "displayName": "Variable - tenantHostname",
+      "comment": "Determine tenant hostname. Use alias if available.",
+      "childId": "BB38C4E9-A2B4-428B-BAAF-903E14CB56B1",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": -802,
+      "y": -1992,
+      "variableGuid": "3723D829-3B14-4B68-AAFE-63966A7025E6",
+      "operations": [
+        {
+          "id": "set_value",
+          "key": "552A5562-F8C8-4C4C-AB89-C90BD892542E",
+          "name": "Set value of { variable }",
+          "value": "https://{if: { $.getCurrentTenantInfo.hostnames[1] } empty , $.getCurrentTenantInfo.hostnames[0], $.getCurrentTenantInfo.hostnames[1]}/"
+        }
+      ]
+    },
+    {
+      "id": "76F9CDFC-1759-4B46-98D0-2D6BE3F93D96",
+      "type": "FilterListBlock",
+      "disabled": false,
+      "name": "filterList4",
+      "displayName": "Filter List 4",
+      "comment": "Filter the license parameters for usageMetricsAppDistribution with the correct configuration.",
+      "childId": "6816547D-3106-44B5-9DC0-0EB3B43E4953",
+      "inputs": [
+        {
+          "id": "list",
+          "value": "{ $.getLicenseOverview.parameters }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "name",
+                "operator": "=",
+                "input2": "usageMetricsAppDistribution"
+              },
+              { "input1": "values.quantity", "operator": ">", "input2": "0" },
+              {
+                "input1": "values.toggle",
+                "operator": "isTrue",
+                "input2": null
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
+      "x": -682,
+      "y": -1432
+    }
+  ],
+  "variables": [
+    {
+      "guid": "E3084D5D-4DE7-428E-BDE0-440DCD055EDD",
+      "name": "sharedSpaceName",
+      "type": "string"
+    },
+    {
+      "guid": "247B71DE-30E7-4526-AC3D-BE5E17AA9194",
+      "name": "managedSpaceName",
+      "type": "string"
+    },
+    {
+      "guid": "9679AB7C-F7EB-4A7F-A217-B2F9F14CE7E5",
+      "name": "versionsToKeep",
+      "type": "number"
+    },
+    {
+      "guid": "DE390532-B1F9-4098-BBE0-B7E6101BD502",
+      "name": "sharedSpaceId",
+      "type": "string"
+    },
+    {
+      "guid": "407730A6-EC96-4337-BE80-CF4C0D552F08",
+      "name": "errorTitle",
+      "type": "string"
+    },
+    {
+      "guid": "1BF2068B-106E-4D58-BC51-884F1810F03C",
+      "name": "errorDetail",
+      "type": "string"
+    },
+    {
+      "guid": "E413E2FB-E4E7-4AFF-8894-6D27792FA8D8",
+      "name": "spaceRoles",
+      "type": "list"
+    },
+    {
+      "guid": "B6C34135-EF0E-42EF-AC0D-621D8A8A165D",
+      "name": "managedSpaceId",
+      "type": "string"
+    },
+    {
+      "guid": "F6ED0768-9852-46AF-B822-2172586824B7",
+      "name": "cleanupCounter",
+      "type": "number"
+    },
+    {
+      "guid": "3723D829-3B14-4B68-AAFE-63966A7025E6",
+      "name": "tenantHostname",
+      "type": "string"
+    }
+  ]
+}
