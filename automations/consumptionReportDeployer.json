@@ -28,7 +28,7 @@
       "name": "output",
       "displayName": "Output",
       "comment": "README: Check the variables below, perform a test run, then schedule the run daily around midday Central European time.",
-      "childId": "6AC0239B-01A8-47F9-AD4C-ED09CCB2B83F",
+      "childId": "438C09A4-0519-4A2E-9ADE-62F280CFC352",
       "inputs": [
         {
           "id": "input",
@@ -60,8 +60,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -802,
-      "y": -2592,
+      "x": -673.4285714285711,
+      "y": -2532,
       "variableGuid": "E3084D5D-4DE7-428E-BDE0-440DCD055EDD",
       "operations": [
         {
@@ -102,7 +102,7 @@
       "name": "versionsToKeep",
       "displayName": "Variable - versionsToKeep",
       "comment": "If you wish to keep previously deployed apps in the staging space, enter a number of apps to keep. Set to 0 to always delete all apps from the shared space. Default = 0",
-      "childId": "F9DCB126-6ED4-4D9A-BF35-CFD7A6D9CECD",
+      "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -124,7 +124,7 @@
       "disabled": false,
       "name": "getCurrentUserId",
       "displayName": "Qlik Cloud Services - Get Current User Id",
-      "comment": "Find current user ID.",
+      "comment": "RUN: Don't edit below this point.\nFind current user ID.",
       "childId": "43D8ED19-F455-48F9-9CC4-7FE2A93B1884",
       "inputs": [],
       "settings": [
@@ -143,8 +143,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -802,
-      "y": -2232,
+      "x": -781.9999999999995,
+      "y": -2052.0000000000005,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "6e9dbaa0-c7a4-11ea-9bd3-0da55b4cbed9",
       "endpoint_role": "get"
@@ -3125,6 +3125,38 @@
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": -682,
       "y": -1432
+    },
+    {
+      "id": "438C09A4-0519-4A2E-9ADE-62F280CFC352",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition15",
+      "displayName": "Condition 15",
+      "comment": "CONFIGURE: Workflow settings. Edit this section only.",
+      "childId": "F9DCB126-6ED4-4D9A-BF35-CFD7A6D9CECD",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              { "input1": "1", "input2": null, "operator": "isTrue" }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": -826.1428571428571,
+      "y": -2628.571428571429,
+      "childTrueId": "6AC0239B-01A8-47F9-AD4C-ED09CCB2B83F",
+      "childFalseId": null
     }
   ],
   "variables": [
