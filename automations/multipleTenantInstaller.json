@@ -7,7 +7,7 @@
       "name": "Start",
       "displayName": "Start",
       "comment": "",
-      "childId": "B4F1F91D-FEB9-4A2E-B804-9D3C9F53550E",
+      "childId": "793ABBBE-9AE9-4F72-876C-0E742F2E93DA",
       "inputs": [
         {
           "id": "run_mode",
@@ -81,8 +81,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 396,
-      "y": 2995
+      "x": 0,
+      "y": 5680
     },
     {
       "id": "1FC63304-4689-4FEF-9D39-5AF06D38574E",
@@ -95,8 +95,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 418,
-      "y": 1947,
+      "x": 0,
+      "y": 4560,
       "variableGuid": "47CCFA4B-0ADC-40F3-95AC-FCEDD886EC94",
       "operations": [
         {
@@ -139,8 +139,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 120,
-      "y": 7860,
+      "x": 0,
+      "y": 11140,
       "loopBlockId": "794E01BA-DF4F-437F-B709-6C252169791B"
     },
     {
@@ -204,7 +204,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1820
+      "y": 6020
     },
     {
       "id": "ABF45FFC-7945-4244-9A90-22FE024FDF10",
@@ -218,7 +218,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 700,
+      "y": 6260,
       "variableGuid": "CC701ED4-984D-4E17-896A-89FA869476A3",
       "operations": [
         {
@@ -240,8 +240,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 370,
-      "y": 700,
+      "x": 120,
+      "y": 6140,
       "variableGuid": "F08D6858-C076-408D-A99B-C4DE12BFBF37",
       "operations": [
         {
@@ -280,7 +280,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -301,7 +301,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4280,
+      "y": 11600,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7a3d4810-9ca9-11ed-b53f-076542389b5b",
       "endpoint_role": "get"
@@ -337,7 +337,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -355,8 +355,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 9580,
+      "x": 720,
+      "y": 14720,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "b92fb7f0-7aea-11ed-8256-99fbe90dc9aa",
       "endpoint_role": "create"
@@ -398,7 +398,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -423,8 +423,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 892,
-      "y": 8563,
+      "x": 720,
+      "y": 13740,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4736fde0-7ae7-11ed-9273-9b579aaccda3",
@@ -455,7 +455,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -473,8 +473,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 4060,
+      "x": 840,
+      "y": 14560,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "21664090-24c8-11ef-a986-0f4e2eea17f8",
       "endpoint_role": "delete"
@@ -490,8 +490,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1570,
-      "y": 12362,
+      "x": 1200,
+      "y": 20080,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -533,8 +533,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -398,
-      "y": 1875,
+      "x": 360,
+      "y": 12120,
       "childTrueId": "8E9BCCD1-AFED-4A60-A694-B706B4A2B37D",
       "childFalseId": "5FE6B65F-FA10-44E0-A038-536C3D312A9C"
     },
@@ -563,8 +563,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 120,
-      "y": 14920
+      "x": 480,
+      "y": 23440
     },
     {
       "id": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
@@ -591,8 +591,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 655,
-      "y": 7348
+      "x": 360,
+      "y": 12000
     },
     {
       "id": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
@@ -605,8 +605,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 655,
-      "y": 7228,
+      "x": 240,
+      "y": 11800,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -629,7 +629,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 10504,
+      "y": 10780,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -647,19 +647,19 @@
       "name": "sharedSpaceName",
       "displayName": "Variable - sharedSpaceName",
       "comment": "Set the name of the shared space into which parent apps will be deployed. Child apps will land in a shared space suffixed with the tenant hostname.",
-      "childId": "989B5186-B49C-48C4-8E23-2E264E8FB2E5",
+      "childId": "DE73FA04-D1A0-41F6-BEBD-66C89D6087B7",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 120,
+      "x": 120,
+      "y": 440,
       "variableGuid": "201224E7-61F1-4C18-8918-D9C8AF71886C",
       "operations": [
         {
           "id": "set_value",
           "key": "78513C8F-63B3-42ED-A30D-A207EEF04276",
           "name": "Set value of { variable }",
-          "value": "Monitoring"
+          "value": "MonitoringT"
         }
       ]
     },
@@ -737,7 +737,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -762,8 +762,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 770,
-      "y": 5432,
+      "x": 480,
+      "y": 12680,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8accd9c0-ce38-11ed-a5b4-974f79a4f39f",
@@ -805,8 +805,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 240,
-      "y": 6460,
+      "x": 600,
+      "y": 13300,
       "childTrueId": "BBD1BB72-9BEC-464D-9268-A6F930619AA1",
       "childFalseId": "BC0FE9D3-F9F8-4397-A0CC-FFEDA087A21A"
     },
@@ -836,7 +836,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 15240
+      "y": 24000
     },
     {
       "id": "65907A69-1095-426C-BF99-AE79754EF6B6",
@@ -863,8 +863,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -366,
-      "y": 13710
+      "x": 0,
+      "y": 24120
     },
     {
       "id": "794E01BA-DF4F-437F-B709-6C252169791B",
@@ -878,7 +878,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 3300,
+      "y": 11240,
       "variableGuid": "AFCCC997-C4F7-4B12-84F8-A87D8EA34023",
       "operations": [
         {
@@ -934,7 +934,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -952,8 +952,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 7360,
+      "x": 480,
+      "y": 12200,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -968,8 +968,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 223,
-      "y": 761,
+      "x": 0,
+      "y": 2080,
       "variableGuid": "8020627D-CEE4-4E7E-A665-387EC0A7ED59",
       "operations": [
         {
@@ -1011,7 +1011,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1029,8 +1029,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 988,
-      "y": 6218,
+      "x": 720,
+      "y": 13380,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "13b60e00-b538-11ee-8db4-7f4aeae7104c"
     },
@@ -1053,7 +1053,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1071,8 +1071,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 636,
-      "y": 3534,
+      "x": 720,
+      "y": 13500,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "c1c787a0-b5fb-11ee-b35e-a77c39ebc169"
     },
@@ -1122,8 +1122,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -414,
-      "y": 3422,
+      "x": 720,
+      "y": 14220,
       "childTrueId": "95E1A381-5CDF-468E-9F92-13F9C4DD2B43",
       "childFalseId": null
     },
@@ -1168,8 +1168,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 9080,
+      "x": 720,
+      "y": 14460,
       "loopBlockId": "5D55A1FE-33AD-4836-A22C-51B2B90B3AC4"
     },
     {
@@ -1197,8 +1197,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 7960,
+      "x": 480,
+      "y": 16040,
       "loopBlockId": "D4C1C8B4-6847-48A5-AD38-CB3A40E66E1B"
     },
     {
@@ -1237,8 +1237,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 9380
+      "x": 720,
+      "y": 16340
     },
     {
       "id": "D4C1C8B4-6847-48A5-AD38-CB3A40E66E1B",
@@ -1251,8 +1251,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 8820,
+      "x": 600,
+      "y": 16140,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -1307,7 +1307,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1332,8 +1332,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 9260,
+      "x": 720,
+      "y": 16580,
       "loopBlockId": "9F4BC319-AD7E-4EDB-A1D9-EAD7C0F4E595",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8263bab0-fc5c-11ec-8f4a-433e011739ae",
@@ -1371,8 +1371,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 480,
-      "y": 8320,
+      "x": 720,
+      "y": 17400,
       "childTrueId": "8196067B-D152-4CDD-B2E2-4C2861D3B1F6",
       "childFalseId": "7D554635-3108-4E90-B6C3-112C595FDEDF"
     },
@@ -1401,8 +1401,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 8560,
+      "x": 840,
+      "y": 18580,
       "loopBlockId": "60E97180-5C42-45DA-9ADE-CF36A1D24B9E"
     },
     {
@@ -1416,8 +1416,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 1880,
+      "x": 960,
+      "y": 18680,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -1460,8 +1460,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "default", "isCollapsed": false }],
-      "x": 1301,
-      "y": 18483,
+      "x": 960,
+      "y": 18800,
       "statementChildrenIds": [
         "858A5999-B15D-489D-9935-E3A16941E1DF",
         "02E98CD1-1D92-4110-803C-6024431DA22D",
@@ -1503,8 +1503,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -433,
-      "y": 2436,
+      "x": 960,
+      "y": 20980,
       "childTrueId": "96B50B31-D976-4B41-90DD-AEE5C78DA575",
       "childFalseId": null
     },
@@ -1519,8 +1519,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 5460,
+      "x": 960,
+      "y": 21900,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -1562,7 +1562,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1581,8 +1581,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 3000,
+      "x": 1080,
+      "y": 21060,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ba528340-b772-11ed-b492-8bb1aac9fe46",
       "endpoint_role": "get"
@@ -1624,7 +1624,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1643,7 +1643,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 21400,
+      "y": 21660,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ce3b7a60-9804-11ed-bbe1-49da94237f4e",
       "endpoint_role": "create"
@@ -1660,7 +1660,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 18600,
+      "y": 18960,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1682,8 +1682,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1080,
-      "y": 12240,
+      "x": 1200,
+      "y": 19440,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1705,8 +1705,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 12280,
+      "x": 1080,
+      "y": 19840,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1728,8 +1728,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 12280,
+      "x": 1200,
+      "y": 20240,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1751,8 +1751,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 2960,
+      "x": 1080,
+      "y": 20480,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1774,8 +1774,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 13360,
+      "x": 1080,
+      "y": 20640,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1823,7 +1823,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1841,8 +1841,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 10280,
+      "x": 840,
+      "y": 17960,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4bbfdf70-fc5b-11ec-b1c1-311f2248f446",
       "endpoint_role": "create"
@@ -1927,7 +1927,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -1952,8 +1952,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 10680,
+      "x": 840,
+      "y": 18200,
       "loopBlockId": "35AB855C-019E-4461-A9E2-E10475D4CBAF",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "5d8264a0-e8e9-11ed-bf7e-a7275b075e61",
@@ -1996,8 +1996,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 797,
-      "y": 5000,
+      "x": 840,
+      "y": 16680,
       "childTrueId": "D8CCAC5B-D77A-4E8B-BED2-E76DD0C011AB",
       "childFalseId": "3F93BDD6-B1E4-45AA-9509-DA578420D587"
     },
@@ -2026,7 +2026,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -2044,8 +2044,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -373,
-      "y": 5115,
+      "x": 960,
+      "y": 16880,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8fdd2c60-7af2-11ed-bff4-0d91d2a3f5e0",
       "endpoint_role": "delete"
@@ -2061,8 +2061,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 9560,
+      "x": 960,
+      "y": 17000,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -2113,8 +2113,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 5280,
+      "x": 600,
+      "y": 12880,
       "loopBlockId": "A9827659-D927-4F0F-AD75-6C0149D5C114"
     },
     {
@@ -2123,13 +2123,13 @@
       "disabled": false,
       "name": "recreateConnections",
       "displayName": "Variable - recreateConnections",
-      "comment": "Set to 0 for no actions, 1 to recreate data connections on run.",
+      "comment": "Set to 0 for no actions, 1 to create/recreate data connections on run.",
       "childId": "3E2AC43B-4658-4E31-8F05-8E8B0768044F",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 360,
+      "x": 120,
+      "y": 560,
       "variableGuid": "1103231C-BFB8-4426-9C14-ADCC798B8FEA",
       "operations": [
         {
@@ -2171,8 +2171,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 639,
-      "y": 4000,
+      "x": 480,
+      "y": 12800,
       "childTrueId": "F8781128-3670-4823-BA0D-D229D3B1C897",
       "childFalseId": null
     },
@@ -2201,7 +2201,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -2219,8 +2219,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -286,
-      "y": 4334,
+      "x": 720,
+      "y": 12980,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "9e81fbe0-ce39-11ed-9e38-7ffc25cf714f",
       "endpoint_role": "delete"
@@ -2236,8 +2236,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 8280,
+      "x": 840,
+      "y": 17480,
       "variableGuid": "5105E92C-2FE4-4621-9DC7-20694E0A72C5",
       "operations": [
         {
@@ -2259,8 +2259,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 6540,
+      "x": 480,
+      "y": 15800,
       "variableGuid": "5105E92C-2FE4-4621-9DC7-20694E0A72C5",
       "operations": [
         {
@@ -2309,8 +2309,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 382,
-      "y": 1865,
+      "x": 0,
+      "y": 4440,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "33758560-5630-11ee-b86b-d9ef817cf95b",
@@ -2362,7 +2362,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3440,
+      "y": 5920,
       "loopBlockId": "F1DB0E91-A51C-40FE-BFF4-78D4A7CE57EA"
     },
     {
@@ -2377,7 +2377,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4380,
+      "y": 11360,
       "variableGuid": "7C3C9241-D7CC-4450-B3B7-94DE96AACC67",
       "operations": [
         {
@@ -2423,7 +2423,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 2800,
+      "y": 4680,
       "loopBlockId": null
     },
     {
@@ -2437,8 +2437,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 120,
-      "y": 3120,
+      "x": 0,
+      "y": 4800,
       "variableGuid": "47CCFA4B-0ADC-40F3-95AC-FCEDD886EC94",
       "operations": [
         {
@@ -2468,7 +2468,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4380,
+      "y": 11480,
       "variableGuid": "A6B260C4-E449-44CA-B958-E6BB6130E064",
       "operations": [
         {
@@ -2510,8 +2510,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -414,
-      "y": 11199,
+      "x": 1080,
+      "y": 18880,
       "childTrueId": "3227E372-959D-47C3-8345-E8DD0E9B8103",
       "childFalseId": "DFD9F539-02EE-45B1-986E-8178DEAA5432"
     },
@@ -2526,8 +2526,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1210,
-      "y": 11400,
+      "x": 1200,
+      "y": 19120,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -2569,8 +2569,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 1129,
-      "y": 11989,
+      "x": 1080,
+      "y": 20000,
       "childTrueId": "429EDB83-94EB-40EE-9E60-DBA2E8A2A63C",
       "childFalseId": "D381FF6F-CD81-4E63-82C9-62984CB5DCF9"
     },
@@ -2586,7 +2586,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 4180,
+      "y": 10900,
       "variableGuid": "065DA746-CADF-4E58-B325-83499A7A66DE",
       "operations": [
         {
@@ -2608,8 +2608,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1129,
-      "y": 10333,
+      "x": 840,
+      "y": 17840,
       "variableGuid": "065DA746-CADF-4E58-B325-83499A7A66DE",
       "operations": [
         {
@@ -2656,8 +2656,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 1011,
-      "y": 7909,
+      "x": 600,
+      "y": 16260,
       "childTrueId": "A58E6D24-2609-48AB-88CF-41F69E95D9B4",
       "childFalseId": "2A536657-741B-4D02-85E0-4AD1262D90AD"
     },
@@ -2693,7 +2693,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 1080,
-      "y": 20920,
+      "y": 21180,
       "childTrueId": "29BFC479-C72A-4954-901E-D84545FA8BB5",
       "childFalseId": "B9BB634B-B664-487B-96D5-E19011C4E88E"
     },
@@ -2716,8 +2716,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -345,
-      "y": 13315
+      "x": 1200,
+      "y": 21380
     },
     {
       "id": "29BFC479-C72A-4954-901E-D84545FA8BB5",
@@ -2744,7 +2744,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -2762,8 +2762,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -391,
-      "y": 13607,
+      "x": 1200,
+      "y": 21260,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8fdd2c60-7af2-11ed-bff4-0d91d2a3f5e0",
       "endpoint_role": "delete"
@@ -2824,7 +2824,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -2842,8 +2842,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 9900,
+      "x": 840,
+      "y": 15080,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4bf2fbe0-d6de-11ee-bb93-8515374f2012",
       "endpoint_role": "create"
@@ -2867,7 +2867,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -2886,8 +2886,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 556,
-      "y": 2864,
+      "x": 0,
+      "y": 4920,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "6ea9fa20-9d78-11ed-a228-a3d1b7dd2e0f",
       "endpoint_role": "get"
@@ -2923,8 +2923,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -400,
-      "y": 4553,
+      "x": 0,
+      "y": 5040,
       "childTrueId": "1DC51199-4D45-414D-8895-8EB87E88C3F3",
       "childFalseId": "F35448D5-331A-463B-8CA6-89D6B51F1BD5"
     },
@@ -2939,8 +2939,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 4700,
+      "x": 120,
+      "y": 5120,
       "variableGuid": "65330171-12DB-47EB-98CB-8FB805DF6719",
       "operations": [
         {
@@ -2963,7 +2963,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2680,
+      "y": 5280,
       "variableGuid": "65330171-12DB-47EB-98CB-8FB805DF6719",
       "operations": [
         {
@@ -3006,7 +3006,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 3080,
+      "y": 3560,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "df689160-53bc-11ee-b8e0-4d2494612b78",
@@ -3057,8 +3057,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 149,
-      "y": 1005,
+      "x": 0,
+      "y": 3680,
       "loopBlockId": null
     },
     {
@@ -3092,8 +3092,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -428,
-      "y": 1370,
+      "x": 0,
+      "y": 3800,
       "childTrueId": "9BD3791C-64AA-4383-AA5A-63AA2D6C8811",
       "childFalseId": "620D4E68-F326-4866-9D76-22145CE26C43"
     },
@@ -3109,7 +3109,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1640,
+      "y": 3880,
       "variableGuid": "2AE59D02-913F-4BD3-875D-FB8B063C136F",
       "operations": [
         {
@@ -3163,8 +3163,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -376,
-      "y": 1605,
+      "x": 120,
+      "y": 4040,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "b752cb40-5609-11ee-9bb1-014aa10c2b62",
       "endpoint_role": "create"
@@ -3181,7 +3181,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2280,
+      "y": 4280,
       "variableGuid": "2AE59D02-913F-4BD3-875D-FB8B063C136F",
       "operations": [
         {
@@ -3221,7 +3221,7 @@
         },
         {
           "id": "f0683590-5630-11ee-bc41-87f09bdb7cb1",
-          "value": "Parent tenant",
+          "value": "~[{\"tenantId\":\"{ $.getCurrentTenantInfo.id }:}]~",
           "type": "string",
           "structure": []
         },
@@ -3233,7 +3233,7 @@
         },
         {
           "id": "0dc39800-5631-11ee-be4f-83abc7829d44",
-          "value": null,
+          "value": "[\"parent\"]",
           "type": "string",
           "structure": []
         },
@@ -3277,8 +3277,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 466,
-      "y": 2102,
+      "x": 120,
+      "y": 4160,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "82432160-5630-11ee-b2f4-3b97c6c1c76e",
       "endpoint_role": "create"
@@ -3308,8 +3308,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 548,
-      "y": 1321,
+      "x": 0,
+      "y": 2680,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "55051480-cb86-11ec-b746-892c1d04114e",
       "endpoint_role": "get"
@@ -3325,8 +3325,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 223,
-      "y": 881,
+      "x": 120,
+      "y": 920,
       "variableGuid": "C65E4AE0-B0C9-40BD-AAE6-438324B545A4",
       "operations": [
         {
@@ -3368,8 +3368,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -406,
-      "y": 9098,
+      "x": 720,
+      "y": 14840,
       "childTrueId": "F92683FE-AEA7-4886-B30A-81F398FE5128",
       "childFalseId": "F4D45158-9782-4A88-AD42-834FFC45750C"
     },
@@ -3392,8 +3392,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -411,
-      "y": 9245
+      "x": 840,
+      "y": 14920
     },
     {
       "id": "33E323BF-67C3-4FF0-A19D-AB95FB0A1FCE",
@@ -3414,7 +3414,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -3432,8 +3432,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1021,
-      "y": 8712,
+      "x": 720,
+      "y": 13620,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "f96bc780-d552-11ee-944d-a3153a5c7ca0"
     },
@@ -3444,12 +3444,12 @@
       "name": "parentTenant",
       "displayName": "Variable - parentTenant",
       "comment": "Set parent tenant to this tenant",
-      "childId": "83B96FFF-B3D1-4774-B445-F6C100D6F66F",
+      "childId": "DCF81AE5-9EB6-465E-8394-1D0ED09D1ED5",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 508,
-      "y": 1286,
+      "x": 0,
+      "y": 2920,
       "variableGuid": "7F782E8A-190C-4911-BC05-2C9913FBEAE9",
       "operations": [
         {
@@ -3491,8 +3491,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 1287,
-      "y": 12013,
+      "x": 1080,
+      "y": 19360,
       "childTrueId": "0E9FD2FB-98FF-4384-A63A-14CC9332FD04",
       "childFalseId": "D5BD151B-7403-4494-A4D9-D98142C0D1A8"
     },
@@ -3507,8 +3507,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1330,
-      "y": 12240,
+      "x": 1200,
+      "y": 19600,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -3530,7 +3530,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "## Multiple tenant monitoring app manager\n\nThis automation maintains the Qlik Cloud Monitoring apps on multiple tenants. For more information please refer to the [documentation](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.md).\n\n### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | { if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant } |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Add current user to spaces | {$.addCurrentUserToSpaces} |\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | { $.runMode } |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
+          "value": "### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | { if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant } |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | { $.runMode } |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
           "type": "string",
           "structure": []
         }
@@ -3545,7 +3545,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 4400
+      "y": 5560
     },
     {
       "id": "B0F53EA8-15FC-482D-9612-E2756224D632",
@@ -3558,8 +3558,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 3080,
+      "x": 0,
+      "y": 5440,
       "variableGuid": "5C1A8781-B67B-4D16-AD4F-BE978AB2BB60",
       "operations": [
         {
@@ -3595,7 +3595,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -3613,8 +3613,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -338,
-      "y": 7505,
+      "x": 480,
+      "y": 15920,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "f0587940-481e-11ef-85d6-75c3687046d0"
     },
@@ -3644,7 +3644,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3320
+      "y": 5800
     },
     {
       "id": "F91709AC-C27A-46E1-AB38-122EE9E68615",
@@ -3671,8 +3671,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 3320
+      "x": 120,
+      "y": 6380
     },
     {
       "id": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
@@ -3699,8 +3699,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 120,
-      "y": 7980
+      "x": 0,
+      "y": 11020
     },
     {
       "id": "12C5F24F-DB03-46F5-9972-87C1ADA82A9F",
@@ -3713,8 +3713,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 603,
-      "y": 5836,
+      "x": 480,
+      "y": 12560,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3756,8 +3756,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 360,
-      "y": 6300,
+      "x": 480,
+      "y": 13220,
       "childTrueId": "0FB8C177-55A1-4825-BAB1-0A69866AC91F",
       "childFalseId": "D0873ABD-39CC-4395-A803-D44557AF0638"
     },
@@ -3772,8 +3772,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 7920,
+      "x": 720,
+      "y": 15240,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3795,8 +3795,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 8320,
+      "x": 600,
+      "y": 15640,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3818,8 +3818,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 730,
-      "y": 7920,
+      "x": 720,
+      "y": 15400,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3841,8 +3841,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 9320,
+      "x": 960,
+      "y": 16760,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3864,8 +3864,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 14360,
+      "x": 840,
+      "y": 22220,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3907,8 +3907,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -422,
-      "y": 9540,
+      "x": 840,
+      "y": 17600,
       "childTrueId": "8234E09F-7B24-4E21-AD26-9C4EBC034ABC",
       "childFalseId": null
     },
@@ -3923,8 +3923,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 970,
-      "y": 9320,
+      "x": 960,
+      "y": 17680,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3966,7 +3966,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -3984,8 +3984,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 10900,
+      "x": 960,
+      "y": 18300,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "85c38020-44dc-11ef-ba34-b984c74c5e2a"
     },
@@ -4014,8 +4014,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -432,
-      "y": 14381
+      "x": 480,
+      "y": 23600
     },
     {
       "id": "2A536657-741B-4D02-85E0-4AD1262D90AD",
@@ -4028,8 +4028,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 850,
-      "y": 14360,
+      "x": 720,
+      "y": 23200,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -4046,13 +4046,13 @@
       "disabled": false,
       "name": "doReload",
       "displayName": "Variable - doReload",
-      "comment": "Set to 0 for no action, 1 to trigger an immediate reload.",
+      "comment": "Set to 0 for no action, 1 to trigger an immediate reload of every app.",
       "childId": "D415F6E5-6A63-4687-9537-9EB06A0C835C",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 240,
+      "x": 120,
+      "y": 800,
       "variableGuid": "5000C2B1-5FEE-4607-B840-B7D5410E3605",
       "operations": [
         {
@@ -4095,8 +4095,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 480,
-      "y": 15680,
+      "x": 720,
+      "y": 22880,
       "childTrueId": "CB1096A2-2C94-43F3-ADCD-50FA3764FA8D",
       "childFalseId": null
     },
@@ -4111,8 +4111,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 720,
-      "y": 9720,
+      "x": 960,
+      "y": 17160,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -4134,8 +4134,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1165,
-      "y": 10250,
+      "x": 840,
+      "y": 18080,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -4177,7 +4177,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -4195,8 +4195,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 970,
-      "y": 10900,
+      "x": 960,
+      "y": 18420,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "85c38020-44dc-11ef-ba34-b984c74c5e2a"
     },
@@ -4211,8 +4211,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1003,
-      "y": 9134,
+      "x": 720,
+      "y": 16460,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -4250,12 +4250,25 @@
           "type": "select",
           "displayValue": "false",
           "structure": []
+        },
+        {
+          "id": "1e9ad190-8273-11f0-871d-b53deeec8e19",
+          "value": null,
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "4eef39f0-8273-11f0-9bed-7da6aa8bebfd",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": []
         }
       ],
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -4274,34 +4287,11 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -385,
-      "y": 14811,
+      "x": 840,
+      "y": 22960,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "314f2e80-7bbe-11ed-8fc4-ed797f9ebbae",
       "endpoint_role": "create"
-    },
-    {
-      "id": "989B5186-B49C-48C4-8E23-2E264E8FB2E5",
-      "type": "VariableBlock",
-      "disabled": false,
-      "name": "addCurrentUserToSpaces",
-      "displayName": "Variable - addCurrentUserToSpaces",
-      "comment": "Set to 0 for no actions, 1 to add the user running the automation to spaces with full access.",
-      "childId": "DE73FA04-D1A0-41F6-BEBD-66C89D6087B7",
-      "inputs": [],
-      "settings": [],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 565,
-      "y": 224,
-      "variableGuid": "2BA36287-3CD5-4CEC-BDA7-F7D3C30C8A7F",
-      "operations": [
-        {
-          "id": "set_value",
-          "key": "1D8A1E1E-78F1-4A10-8531-9612EC322A34",
-          "name": "Set value of { variable }",
-          "value": "1"
-        }
-      ]
     },
     {
       "id": "20FF7791-E1CB-472C-A0CF-6E1EC463E62E",
@@ -4309,7 +4299,7 @@
       "disabled": false,
       "name": "condition13",
       "displayName": "Condition 13",
-      "comment": "Add current user to space if configured",
+      "comment": "Add bot user if doesn't have create.",
       "childId": "12C5F24F-DB03-46F5-9972-87C1ADA82A9F",
       "inputs": [
         {
@@ -4318,9 +4308,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{ $.addCurrentUserToSpaces }",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ $.createSpaceIfNotExisting.meta.actions }",
+                "operator": "notInList",
+                "input2": "create"
               }
             ]
           },
@@ -4334,8 +4324,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 240,
-      "y": 7360,
+      "x": 480,
+      "y": 12320,
       "childTrueId": "2785D49B-8E6C-47AC-8BEB-E4DDAED478B3",
       "childFalseId": null
     },
@@ -4377,7 +4367,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -4395,8 +4385,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 675,
-      "y": 5555,
+      "x": 600,
+      "y": 12400,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -4425,8 +4415,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -703,
-      "y": 739,
+      "x": 0,
+      "y": 2800,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "6e9dbaa0-c7a4-11ea-9bd3-0da55b4cbed9",
       "endpoint_role": "get"
@@ -4437,13 +4427,13 @@
       "disabled": false,
       "name": "createSchedule",
       "displayName": "Variable - createSchedule",
-      "comment": "Set to 0 for no actions, 1 to recreate app reload schedule.",
+      "comment": "Set to 0 for no actions, 1 to create/recreate app reload schedule.",
       "childId": "7FF6A4FD-06E6-497C-8B42-A21718BCBFFB",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 360,
+      "x": 120,
+      "y": 680,
       "variableGuid": "CDB69F4D-01F2-467E-BCCA-36ABF7812F31",
       "operations": [
         {
@@ -4490,8 +4480,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 730,
-      "y": 15680,
+      "x": 720,
+      "y": 22380,
       "childTrueId": "F11D799A-5B35-4146-9E2D-2E5CB5C9D074",
       "childFalseId": null
     },
@@ -4526,7 +4516,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -4551,8 +4541,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -138,
-      "y": 15975,
+      "x": 840,
+      "y": 22460,
       "loopBlockId": "386D9F7C-BE6A-430C-8283-79AE72B2318F",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "576c5870-443f-11ef-8139-935d17eeda25",
@@ -4583,7 +4573,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -4601,8 +4591,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -121,
-      "y": 15880,
+      "x": 960,
+      "y": 22560,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ef46afb0-7fa8-11ed-ac93-576cd9be1aa8",
       "endpoint_role": "delete"
@@ -4676,7 +4666,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -4694,8 +4684,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -165,
-      "y": 15747,
+      "x": 840,
+      "y": 22720,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7928cff0-7fa6-11ed-a71d-83f3403a9a79",
       "endpoint_role": "create"
@@ -4761,7 +4751,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 1440
+      "y": 1720
     },
     {
       "id": "52BDEF44-8C72-45E6-ADF5-9FE0AE651322",
@@ -4799,8 +4789,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 621,
-      "y": 581,
+      "x": 0,
+      "y": 1840,
       "loopBlockId": null
     },
     {
@@ -4839,8 +4829,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 120,
-      "y": 1180,
+      "x": 0,
+      "y": 2200,
       "childTrueId": "FD3A9017-0630-41E0-B70A-C106DB7497E2",
       "childFalseId": null
     },
@@ -4855,8 +4845,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 840,
+      "x": 0,
+      "y": 1960,
       "variableGuid": "CDE824C4-AABC-4462-914A-256E9FB3757A",
       "operations": [
         {
@@ -4878,7 +4868,7 @@
       "inputs": [
         {
           "id": "message",
-          "value": "This installer is version {$.qcmamtVersion}. This is either out of date, or the relevant manifest could not be found. Please check https://github.com/qlik-oss/qlik-cloud-monitoring-apps for updates.",
+          "value": "This installer is version {$.qcmamtVersion}. This is either out of date, or the relevant manifest could not be found. Please check https://github.com/qlik-oss/qlik-cloud-monitoring-apps for updates.\n\nThe manifest message is: { $.filterList3.message }",
           "type": "string",
           "structure": []
         },
@@ -4886,8 +4876,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -501,
-      "y": 1254
+      "x": 120,
+      "y": 2520
     },
     {
       "id": "FD3A9017-0630-41E0-B70A-C106DB7497E2",
@@ -4914,8 +4904,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -369,
-      "y": 1215
+      "x": 120,
+      "y": 2280
     },
     {
       "id": "3E771AD7-7B2F-42E6-8F7A-30DF705DCF44",
@@ -4928,7 +4918,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "This installer is version { $.qcmamtVersion }. This is either out of date, or the relevant manifest could not be found. Please check the [Qlik Cloud Monitoring Apps repository](https://github.com/qlik-oss/qlik-cloud-monitoring-apps) for updates.",
+          "value": "This installer is version {$.qcmamtVersion}. This is either out of date, or the relevant manifest could not be found. Please check the [Qlik Cloud Monitoring Apps repository](https://github.com/qlik-oss/qlik-cloud-monitoring-apps) for updates.\n\nThe manifest message is: { $.filterList3.message }",
           "type": "string",
           "structure": []
         }
@@ -4942,8 +4932,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -349,
-      "y": 1302
+      "x": 120,
+      "y": 2400
     },
     {
       "id": "DA684624-B2A8-468D-B3D5-544F5C2393D2",
@@ -4956,8 +4946,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 960,
+      "x": 120,
+      "y": 1040,
       "variableGuid": "84920D7D-15FF-4307-B8AC-8211589DE746",
       "operations": [
         {
@@ -4979,8 +4969,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 1080,
+      "x": 120,
+      "y": 1160,
       "variableGuid": "41A84EF7-6F6C-4FDA-A9E0-434A962F9111",
       "operations": [
         {
@@ -5002,8 +4992,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 1200,
+      "x": 120,
+      "y": 1280,
       "variableGuid": "079A8AEF-DD70-4167-BBF0-C51F55ABC843",
       "operations": [
         {
@@ -5075,8 +5065,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 578,
-      "y": 5992,
+      "x": 120,
+      "y": 7580,
       "loopBlockId": "9ED7D007-E198-4907-91BE-A14744109D0D",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
@@ -5118,8 +5108,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 996,
-      "y": 8584,
+      "x": 720,
+      "y": 13980,
       "childTrueId": "C7AD8B3C-71F0-4134-9FC8-0D75A3D5CB2D",
       "childFalseId": null
     },
@@ -5139,13 +5129,6 @@
           "structure": []
         },
         {
-          "id": "1b52f510-b5fe-11ee-a69c-a7aa54966fac",
-          "value": "true",
-          "type": "select",
-          "displayValue": "true",
-          "structure": []
-        },
-        {
           "id": "1b54a470-b5fe-11ee-905e-0f791df52bcb",
           "value": "{if: { $.setMaxApiKey } notEmpty , $.setMaxApiKey, $.GetAPIKeySettings2.max_api_key_expiry}",
           "type": "string",
@@ -5161,7 +5144,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -5179,8 +5162,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 9300,
+      "x": 840,
+      "y": 14300,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "d8bb26a0-b5fd-11ee-a358-7d252eeef155"
     },
@@ -5195,8 +5178,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 480,
-      "y": 8700,
+      "x": 720,
+      "y": 13860,
       "variableGuid": "5574FD9D-5763-4351-8986-774586728936",
       "operations": [
         {
@@ -5218,8 +5201,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 730,
-      "y": 8700,
+      "x": 840,
+      "y": 14060,
       "variableGuid": "5574FD9D-5763-4351-8986-774586728936",
       "operations": [
         {
@@ -5241,8 +5224,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 1200,
+      "x": 120,
+      "y": 1400,
       "variableGuid": "8F994758-D377-47C2-B764-C2F7D62FCEE5",
       "operations": [
         {
@@ -5260,7 +5243,7 @@
       "name": "createSpaceIfNotExisting2",
       "displayName": "Qlik Platform Operations - Create Space If Not Existing 2",
       "comment": "Create the parent space/ return parent space",
-      "childId": "23EA7545-385B-4964-B105-A424082835A3",
+      "childId": "EA2B5242-D675-49CD-9BFF-C8A97DD90E10",
       "inputs": [
         {
           "id": "81071cf0-0b7f-11ee-805d-df260e5bbd58",
@@ -5298,7 +5281,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -5316,8 +5299,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 506,
-      "y": 2380,
+      "x": 0,
+      "y": 3160,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -5328,7 +5311,7 @@
       "name": "AddMemberToSpaceWithAllRoles2",
       "displayName": "Qlik Platform Operations - Add Member To Space With All Roles 2",
       "comment": "Always check the current user has permission to add a glossary/ access space",
-      "childId": "7A6E4308-9662-4E20-9C99-C794C49F3FBF",
+      "childId": null,
       "inputs": [
         {
           "id": "01f7fb00-e5c7-11ed-92b8-8730312b5bc2",
@@ -5359,7 +5342,7 @@
       "settings": [
         {
           "id": "datasource",
-          "value": null,
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
           "type": "select",
           "structure": []
         },
@@ -5378,7 +5361,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2840,
+      "y": 3360,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -5413,8 +5396,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 120,
-      "y": 7360,
+      "x": 240,
+      "y": 11920,
       "childTrueId": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
       "childFalseId": null
     },
@@ -5454,8 +5437,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 370,
-      "y": 7040,
+      "x": 120,
+      "y": 11720,
       "childTrueId": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
       "childFalseId": null
     },
@@ -5466,12 +5449,12 @@
       "name": "runOnTenant",
       "displayName": "Variable - runOnTenant",
       "comment": "Leave empty to run against all tenants, or enter a tenant hostname to run against a single hostname",
-      "childId": "A2DE5D81-1C2C-473D-888D-6F4BFC8AB617",
+      "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 1200,
+      "x": 120,
+      "y": 1520,
       "variableGuid": "FB42F549-35C6-4FF0-8EC5-4577BC09E92D",
       "operations": [
         {
@@ -5493,8 +5476,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 250,
-      "y": 120,
+      "x": 120,
+      "y": 320,
       "variableGuid": "A11EBA34-8F7D-4178-9720-AEA2AB57F98B",
       "operations": [
         {
@@ -5532,8 +5515,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 301,
-      "y": 6097,
+      "x": 0,
+      "y": 6540,
       "childTrueId": "08833C88-D837-413C-B5FC-4DE90D55B144",
       "childFalseId": null
     },
@@ -5561,18 +5544,18 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -532,
-      "y": 6551,
+      "x": 120,
+      "y": 6860,
       "form": [
         {
           "id": "inputs-input-0",
-          "type": "button",
           "label": "Begin deployment",
-          "order": 0,
-          "values": null,
-          "options": [],
           "helpText": null,
-          "isRequired": true
+          "type": "button",
+          "values": null,
+          "isRequired": true,
+          "options": {},
+          "order": 0
         }
       ],
       "persistData": "no"
@@ -5590,8 +5573,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -535,
-      "y": 6309
+      "x": 120,
+      "y": 6620
     },
     {
       "id": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
@@ -5618,8 +5601,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -430,
-      "y": 6265
+      "x": 120,
+      "y": 6740
     },
     {
       "id": "3983393F-3C5A-4B27-912E-F6DCEFC504AA",
@@ -5632,8 +5615,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 165,
-      "y": 7005,
+      "x": 120,
+      "y": 7460,
       "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
       "operations": [
         {
@@ -5655,8 +5638,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 240,
-      "y": 7360,
+      "x": 360,
+      "y": 7760,
       "variableGuid": "2C3EC71F-A135-4DBA-902A-2B073AD26B71",
       "operations": [
         {
@@ -5686,7 +5669,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 360,
-      "y": 7440,
+      "y": 7880,
       "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
       "operations": [
         {
@@ -5733,8 +5716,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -472,
-      "y": 6889,
+      "x": 240,
+      "y": 7680,
       "childTrueId": "602C71BF-790E-4A5A-9F16-8DB29CC794BC",
       "childFalseId": null
     },
@@ -5764,7 +5747,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 240,
-      "y": 9340
+      "y": 9740
     },
     {
       "id": "47D00BB7-D9C1-4573-8774-777C7BC1A2F5",
@@ -5821,8 +5804,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -422,
-      "y": 7342,
+      "x": 120,
+      "y": 8120,
       "loopBlockId": null
     },
     {
@@ -5850,8 +5833,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 0,
-      "y": 7060
+      "x": 120,
+      "y": 7220
     },
     {
       "id": "4A522DB9-B3CD-485F-AB97-1251F2785163",
@@ -5884,8 +5867,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -199,
-      "y": 6917,
+      "x": 0,
+      "y": 7020,
       "childTrueId": "6C4A2E9A-DE9C-4604-9DA2-2FB276982346",
       "childFalseId": null
     },
@@ -5933,8 +5916,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 622,
-      "y": 7996,
+      "x": 240,
+      "y": 8700,
       "loopBlockId": "74396EE8-E9EE-4ED7-A5F7-C7438205443F",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "8cc63340-107b-11ec-ab5d-f9b221ed2dc5",
@@ -5971,8 +5954,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -478,
-      "y": 7703,
+      "x": 360,
+      "y": 8800,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
       "endpoint_role": "delete"
@@ -6008,8 +5991,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 671,
-      "y": 8281,
+      "x": 480,
+      "y": 9420,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "2648d600-f3b2-11ed-a2ea-711f6f8808f6",
       "endpoint_role": "delete"
@@ -6057,37 +6040,43 @@
           "id": "5c0077d0-2c05-11f0-ac44-6d2ece037809",
           "value": null,
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "6b14af90-2c05-11f0-9784-7faf3c3218c8",
           "value": null,
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "7a530260-2c05-11f0-b3a7-4df7dd05ac72",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "91ad2290-2c05-11f0-a02d-f35e01920b5a",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "407a7860-2c05-11f0-832e-c1fbf72ff659",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "a0756a20-3baf-11f0-bf42-47e0c9fe5190",
           "value": null,
           "type": "select",
-          "structure": {}
+          "structure": []
+        },
+        {
+          "id": "de2da1b0-51b3-11f0-b329-af40b9ff0546",
+          "value": null,
+          "type": "string",
+          "structure": []
         }
       ],
       "settings": [
@@ -6113,7 +6102,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 360,
-      "y": 8800,
+      "y": 9320,
       "loopBlockId": "7A40EAC5-7A39-419C-8C37-D7E116D784FA",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "1250db90-f548-11ed-bb5c-31311462577f",
@@ -6167,8 +6156,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 706,
-      "y": 8336,
+      "x": 240,
+      "y": 8960,
       "loopBlockId": "ECB0991D-2C14-4EE2-A825-EB4E1E46C631",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6227,7 +6216,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 360,
-      "y": 8540,
+      "y": 9060,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6277,8 +6266,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 582,
-      "y": 8729,
+      "x": 240,
+      "y": 9220,
       "loopBlockId": "FD7DCC57-8CB1-46D4-8329-C10AD5EC4A28",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6296,7 +6285,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 7020,
+      "y": 7340,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -6318,8 +6307,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 495,
-      "y": 7906,
+      "x": 240,
+      "y": 8460,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -6361,8 +6350,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 628,
-      "y": 9859,
+      "x": 240,
+      "y": 9620,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "5121d8a0-6d30-11eb-8b80-03f36feb4a85",
       "endpoint_role": "delete"
@@ -6399,7 +6388,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 480,
-      "y": 9940,
+      "y": 10180,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "2648d600-f3b2-11ed-a2ea-711f6f8808f6",
       "endpoint_role": "delete"
@@ -6451,8 +6440,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 628,
-      "y": 9179,
+      "x": 240,
+      "y": 9980,
       "loopBlockId": "33EB84B8-07DE-4261-9212-D0225CCE5D6E",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6483,8 +6472,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 618,
-      "y": 7010
+      "x": 120,
+      "y": 7100
     },
     {
       "id": "F084C9BB-89A8-4255-A8A1-938756CF93C3",
@@ -6511,8 +6500,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 513,
-      "y": 7793
+      "x": 240,
+      "y": 8580
     },
     {
       "id": "33EB84B8-07DE-4261-9212-D0225CCE5D6E",
@@ -6567,8 +6556,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -150,
-      "y": 9263,
+      "x": 360,
+      "y": 10080,
       "loopBlockId": "BB033D09-286E-4CA8-99CB-B8EB97BA3FAC",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6605,8 +6594,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 550,
-      "y": 9436,
+      "x": 120,
+      "y": 9900,
       "childTrueId": "B5434E6C-C5E6-4F92-8634-F3AEB5F246AD",
       "childFalseId": "A9B40B31-C0E3-4D2E-A1B6-3C0904A63FB8"
     },
@@ -6636,7 +6625,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 240,
-      "y": 10100
+      "y": 10380
     },
     {
       "id": "A9B40B31-C0E3-4D2E-A1B6-3C0904A63FB8",
@@ -6663,8 +6652,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 490,
-      "y": 10100
+      "x": 240,
+      "y": 10540
     },
     {
       "id": "58037166-78A1-4C36-8962-69A9D648EA80",
@@ -6691,8 +6680,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 457,
-      "y": 7747,
+      "x": 120,
+      "y": 8360,
       "loopBlockId": "FA60E154-1089-41E5-A138-232F31136540"
     },
     {
@@ -6706,8 +6695,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 610,
-      "y": 7440,
+      "x": 120,
+      "y": 8240,
       "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
       "operations": [
         {
@@ -6735,8 +6724,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1474,
-      "y": 20276,
+      "x": 1080,
+      "y": 20800,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -6758,8 +6747,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1512,
-      "y": 21098,
+      "x": 960,
+      "y": 22020,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -6822,8 +6811,148 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1607,
-      "y": 21189
+      "x": 1200,
+      "y": 21540
+    },
+    {
+      "id": "793ABBBE-9AE9-4F72-876C-0E742F2E93DA",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output12",
+      "displayName": "Output 12",
+      "comment": "README: Check the variables below, perform a manual run to successfully deploy all apps the first time, and then schedule this automation to run weekly or monthly.",
+      "childId": "6DBF8678-B993-4FC0-A987-F09FA737693A",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "## Qlik Cloud Multi-tenant Monitoring App deployer\n\nThe Qlik Cloud multi-tenant monitoring app deployer automates the installation and update of the monitoring apps from the [Qlik Cloud monitoring apps repository](https://github.com/qlik-oss/qlik-cloud-monitoring-apps) onto one or many tenants. Check the variables below, then run manually, or schedule for when you'd like your apps updated. For more information please refer to the [documentation](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.md).\n\n**Some apps require specific license entitlements and will not be installed if these criteria are not met.**",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 0,
+      "y": 120
+    },
+    {
+      "id": "6DBF8678-B993-4FC0-A987-F09FA737693A",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition29",
+      "displayName": "Condition 29",
+      "comment": "CONFIGURE: Workflow settings. Edit this section only.",
+      "childId": "A2DE5D81-1C2C-473D-888D-6F4BFC8AB617",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              { "input1": "1", "input2": null, "operator": "isTrue" }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 0,
+      "y": 240,
+      "childTrueId": "B4F1F91D-FEB9-4A2E-B804-9D3C9F53550E",
+      "childFalseId": null
+    },
+    {
+      "id": "DCF81AE5-9EB6-465E-8394-1D0ED09D1ED5",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "GetUserId2",
+      "displayName": "Qlik Platform Operations - Get User Id 2",
+      "comment": "Get user for bot user account. This will be set as the owner for shared resources so they aren't tied to the user executing this automation.",
+      "childId": "83B96FFF-B3D1-4774-B445-F6C100D6F66F",
+      "inputs": [
+        {
+          "id": "7a60eb60-9ca9-11ed-babd-3fa6b11b1f7e",
+          "value": "{$.parentTenant}",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "datasource",
+          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
+          "type": "select",
+          "structure": []
+        },
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": []
+        },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 0,
+      "y": 3040,
+      "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
+      "endpoint_guid": "7a3d4810-9ca9-11ed-b53f-076542389b5b",
+      "endpoint_role": "get"
+    },
+    {
+      "id": "EA2B5242-D675-49CD-9BFF-C8A97DD90E10",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition30",
+      "displayName": "Condition 30",
+      "comment": "Check if bot has create in space. If not, assign all roles.",
+      "childId": "7A6E4308-9662-4E20-9C99-C794C49F3FBF",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "all",
+            "conditions": [
+              {
+                "input1": "{ $.createSpaceIfNotExisting2.meta.actions }",
+                "input2": "create",
+                "operator": "notInList"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": []
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 0,
+      "y": 3280,
+      "childTrueId": "23EA7545-385B-4964-B105-A424082835A3",
+      "childFalseId": null
     }
   ],
   "variables": [
@@ -6956,11 +7085,6 @@
       "guid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "name": "loopReloadAppId",
       "type": "string"
-    },
-    {
-      "guid": "2BA36287-3CD5-4CEC-BDA7-F7D3C30C8A7F",
-      "name": "addCurrentUserToSpaces",
-      "type": "number"
     },
     {
       "guid": "CDB69F4D-01F2-467E-BCCA-36ABF7812F31",
