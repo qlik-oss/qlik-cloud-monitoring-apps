@@ -81,8 +81,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 5970
+      "x": 0,
+      "y": 6040
     },
     {
       "id": "1FC63304-4689-4FEF-9D39-5AF06D38574E",
@@ -96,7 +96,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 4680,
+      "y": 4800,
       "variableGuid": "47CCFA4B-0ADC-40F3-95AC-FCEDD886EC94",
       "operations": [
         {
@@ -133,8 +133,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 11430,
+      "x": 0,
+      "y": 11500,
       "loopBlockId": "794E01BA-DF4F-437F-B709-6C252169791B"
     },
     {
@@ -197,8 +197,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 6310
+      "x": 120,
+      "y": 6380
     },
     {
       "id": "ABF45FFC-7945-4244-9A90-22FE024FDF10",
@@ -211,8 +211,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 6550,
+      "x": 120,
+      "y": 6620,
       "variableGuid": "CC701ED4-984D-4E17-896A-89FA869476A3",
       "operations": [
         {
@@ -234,8 +234,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 6430,
+      "x": 120,
+      "y": 6500,
       "variableGuid": "F08D6858-C076-408D-A99B-C4DE12BFBF37",
       "operations": [
         {
@@ -262,7 +262,7 @@
       "name": "GetUserId",
       "displayName": "Qlik Platform Operations - Get User Id",
       "comment": "Get bot account userId on tenant",
-      "childId": "6620E327-319D-4493-AFE6-91FFB72447A5",
+      "childId": "A2CE8FB8-3618-4878-BE51-48F7DEB8ED0C",
       "inputs": [
         {
           "id": "7a60eb60-9ca9-11ed-babd-3fa6b11b1f7e",
@@ -294,8 +294,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 11890,
+      "x": 480,
+      "y": 12440,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7a3d4810-9ca9-11ed-b53f-076542389b5b",
       "endpoint_role": "get"
@@ -349,8 +349,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 15870,
+      "x": 840,
+      "y": 16020,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "b92fb7f0-7aea-11ed-8256-99fbe90dc9aa",
       "endpoint_role": "create"
@@ -417,8 +417,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 553,
-      "y": 14890,
+      "x": 840,
+      "y": 15040,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4736fde0-7ae7-11ed-9273-9b579aaccda3",
@@ -467,8 +467,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 15710,
+      "x": 960,
+      "y": 15860,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "21664090-24c8-11ef-a986-0f4e2eea17f8",
       "endpoint_role": "delete"
@@ -484,8 +484,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 21230,
+      "x": 1320,
+      "y": 21380,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -503,7 +503,7 @@
       "name": "condition6",
       "displayName": "Condition 6",
       "comment": "If a user id is returned, continue",
-      "childId": null,
+      "childId": "C634BD87-07D2-4329-9C31-CFCCB6E9ADD0",
       "inputs": [
         {
           "id": "conditions",
@@ -527,8 +527,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 193,
-      "y": 12410,
+      "x": 480,
+      "y": 12560,
       "childTrueId": "8E9BCCD1-AFED-4A60-A694-B706B4A2B37D",
       "childFalseId": "5FE6B65F-FA10-44E0-A038-536C3D312A9C"
     },
@@ -557,8 +557,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 25130
+      "x": 600,
+      "y": 25280
     },
     {
       "id": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
@@ -567,7 +567,7 @@
       "name": "updateRunTitle",
       "displayName": "Update Run Title",
       "comment": "",
-      "childId": "A2CE8FB8-3618-4878-BE51-48F7DEB8ED0C",
+      "childId": "2B9B4334-2422-414B-972E-B3184EAC9735",
       "inputs": [
         {
           "id": "title",
@@ -585,8 +585,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 12290
+      "x": 480,
+      "y": 12320
     },
     {
       "id": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
@@ -599,8 +599,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 12090,
+      "x": 360,
+      "y": 12120,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -622,8 +622,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 11070,
+      "x": 0,
+      "y": 11140,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -756,8 +756,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 313,
-      "y": 12970,
+      "x": 600,
+      "y": 13120,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8accd9c0-ce38-11ed-a5b4-974f79a4f39f",
@@ -799,8 +799,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 433,
-      "y": 13590,
+      "x": 720,
+      "y": 13740,
       "childTrueId": "57606E73-66FD-4412-A857-C8EE079F14D0",
       "childFalseId": "BC0FE9D3-F9F8-4397-A0CC-FFEDA087A21A"
     },
@@ -829,8 +829,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 25690
+      "x": 0,
+      "y": 26480
     },
     {
       "id": "65907A69-1095-426C-BF99-AE79754EF6B6",
@@ -857,8 +857,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 25810
+      "x": 0,
+      "y": 26600
     },
     {
       "id": "794E01BA-DF4F-437F-B709-6C252169791B",
@@ -871,8 +871,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 11530,
+      "x": 120,
+      "y": 11600,
       "variableGuid": "AFCCC997-C4F7-4B12-84F8-A87D8EA34023",
       "operations": [
         {
@@ -946,8 +946,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 12490,
+      "x": 600,
+      "y": 12640,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -963,7 +963,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2200,
+      "y": 2320,
       "variableGuid": "8020627D-CEE4-4E7E-A665-387EC0A7ED59",
       "operations": [
         {
@@ -1023,8 +1023,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 13970,
+      "x": 1080,
+      "y": 14120,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "13b60e00-b538-11ee-8db4-7f4aeae7104c"
     },
@@ -1065,8 +1065,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 14650,
+      "x": 840,
+      "y": 14800,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "c1c787a0-b5fb-11ee-b35e-a77c39ebc169"
     },
@@ -1111,8 +1111,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 553,
-      "y": 15370,
+      "x": 840,
+      "y": 15520,
       "childTrueId": "95E1A381-5CDF-468E-9F92-13F9C4DD2B43",
       "childFalseId": null
     },
@@ -1157,8 +1157,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 15610,
+      "x": 840,
+      "y": 15760,
       "loopBlockId": "5D55A1FE-33AD-4836-A22C-51B2B90B3AC4"
     },
     {
@@ -1186,8 +1186,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 17190,
+      "x": 600,
+      "y": 17340,
       "loopBlockId": "D4C1C8B4-6847-48A5-AD38-CB3A40E66E1B"
     },
     {
@@ -1226,8 +1226,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 17490
+      "x": 840,
+      "y": 17640
     },
     {
       "id": "D4C1C8B4-6847-48A5-AD38-CB3A40E66E1B",
@@ -1240,8 +1240,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 433,
-      "y": 17290,
+      "x": 720,
+      "y": 17440,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -1321,8 +1321,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 17730,
+      "x": 840,
+      "y": 17880,
       "loopBlockId": "9F4BC319-AD7E-4EDB-A1D9-EAD7C0F4E595",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8263bab0-fc5c-11ec-8f4a-433e011739ae",
@@ -1360,8 +1360,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 553,
-      "y": 18550,
+      "x": 840,
+      "y": 18700,
       "childTrueId": "8196067B-D152-4CDD-B2E2-4C2861D3B1F6",
       "childFalseId": "7D554635-3108-4E90-B6C3-112C595FDEDF"
     },
@@ -1390,8 +1390,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 19730,
+      "x": 960,
+      "y": 19880,
       "loopBlockId": "60E97180-5C42-45DA-9ADE-CF36A1D24B9E"
     },
     {
@@ -1405,8 +1405,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 19830,
+      "x": 1080,
+      "y": 19980,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -1449,8 +1449,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "default", "isCollapsed": false }],
-      "x": 793,
-      "y": 19950,
+      "x": 1080,
+      "y": 20100,
       "statementChildrenIds": [
         "858A5999-B15D-489D-9935-E3A16941E1DF",
         "02E98CD1-1D92-4110-803C-6024431DA22D",
@@ -1492,8 +1492,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 793,
-      "y": 22130,
+      "x": 1080,
+      "y": 22280,
       "childTrueId": "96B50B31-D976-4B41-90DD-AEE5C78DA575",
       "childFalseId": null
     },
@@ -1508,8 +1508,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 23050,
+      "x": 1080,
+      "y": 23200,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -1570,8 +1570,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 913,
-      "y": 22210,
+      "x": 1200,
+      "y": 22360,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ba528340-b772-11ed-b492-8bb1aac9fe46",
       "endpoint_role": "get"
@@ -1631,8 +1631,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 22810,
+      "x": 1320,
+      "y": 22960,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ce3b7a60-9804-11ed-bbe1-49da94237f4e",
       "endpoint_role": "create"
@@ -1648,8 +1648,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 20110,
+      "x": 1320,
+      "y": 20260,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1671,8 +1671,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 20590,
+      "x": 1320,
+      "y": 20740,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1694,8 +1694,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 913,
-      "y": 20990,
+      "x": 1200,
+      "y": 21140,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1717,8 +1717,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 21390,
+      "x": 1320,
+      "y": 21540,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1740,8 +1740,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 913,
-      "y": 21630,
+      "x": 1200,
+      "y": 21780,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1763,8 +1763,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 913,
-      "y": 21790,
+      "x": 1200,
+      "y": 21940,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1830,8 +1830,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 19110,
+      "x": 960,
+      "y": 19260,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4bbfdf70-fc5b-11ec-b1c1-311f2248f446",
       "endpoint_role": "create"
@@ -1941,8 +1941,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 19350,
+      "x": 960,
+      "y": 19500,
       "loopBlockId": "35AB855C-019E-4461-A9E2-E10475D4CBAF",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "5d8264a0-e8e9-11ed-bf7e-a7275b075e61",
@@ -1985,8 +1985,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 673,
-      "y": 17830,
+      "x": 960,
+      "y": 17980,
       "childTrueId": "D8CCAC5B-D77A-4E8B-BED2-E76DD0C011AB",
       "childFalseId": "3F93BDD6-B1E4-45AA-9509-DA578420D587"
     },
@@ -2033,8 +2033,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 18030,
+      "x": 1080,
+      "y": 18180,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8fdd2c60-7af2-11ed-bff4-0d91d2a3f5e0",
       "endpoint_role": "delete"
@@ -2050,8 +2050,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 18150,
+      "x": 1080,
+      "y": 18300,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -2102,8 +2102,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 433,
-      "y": 13170,
+      "x": 720,
+      "y": 13320,
       "loopBlockId": "A9827659-D927-4F0F-AD75-6C0149D5C114"
     },
     {
@@ -2160,8 +2160,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 313,
-      "y": 13090,
+      "x": 600,
+      "y": 13240,
       "childTrueId": "F8781128-3670-4823-BA0D-D229D3B1C897",
       "childFalseId": null
     },
@@ -2208,8 +2208,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 13270,
+      "x": 840,
+      "y": 13420,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "9e81fbe0-ce39-11ed-9e38-7ffc25cf714f",
       "endpoint_role": "delete"
@@ -2225,8 +2225,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 18630,
+      "x": 960,
+      "y": 18780,
       "variableGuid": "5105E92C-2FE4-4621-9DC7-20694E0A72C5",
       "operations": [
         {
@@ -2248,8 +2248,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 16950,
+      "x": 600,
+      "y": 17100,
       "variableGuid": "5105E92C-2FE4-4621-9DC7-20694E0A72C5",
       "operations": [
         {
@@ -2299,7 +2299,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 4560,
+      "y": 4680,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "33758560-5630-11ee-b86b-d9ef817cf95b",
@@ -2350,8 +2350,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 6210,
+      "x": 0,
+      "y": 6280,
       "loopBlockId": "F1DB0E91-A51C-40FE-BFF4-78D4A7CE57EA"
     },
     {
@@ -2365,8 +2365,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 11650,
+      "x": 120,
+      "y": 11720,
       "variableGuid": "7C3C9241-D7CC-4450-B3B7-94DE96AACC67",
       "operations": [
         {
@@ -2399,7 +2399,8 @@
             {
               "key": "description",
               "value": "{$.transformList.item.description}"
-            }
+            },
+            { "key": "term", "value": "{ $.transformList.item }" }
           ],
           "type": "object",
           "mode": "keyValue",
@@ -2416,7 +2417,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 4920,
+      "y": 5040,
       "loopBlockId": null
     },
     {
@@ -2431,7 +2432,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 5040,
+      "y": 5160,
       "variableGuid": "47CCFA4B-0ADC-40F3-95AC-FCEDD886EC94",
       "operations": [
         {
@@ -2456,12 +2457,12 @@
       "name": "loopSpaceName",
       "displayName": "Variable - loopSpaceName",
       "comment": "Set space name based on loopTenantType",
-      "childId": "2B9B4334-2422-414B-972E-B3184EAC9735",
+      "childId": "EDC52365-8824-40ED-AE1A-CA3A39953ADF",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 11770,
+      "x": 120,
+      "y": 11840,
       "variableGuid": "A6B260C4-E449-44CA-B958-E6BB6130E064",
       "operations": [
         {
@@ -2503,8 +2504,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 913,
-      "y": 20030,
+      "x": 1200,
+      "y": 20180,
       "childTrueId": "3227E372-959D-47C3-8345-E8DD0E9B8103",
       "childFalseId": "DFD9F539-02EE-45B1-986E-8178DEAA5432"
     },
@@ -2519,8 +2520,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 20270,
+      "x": 1320,
+      "y": 20420,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -2562,8 +2563,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 913,
-      "y": 21150,
+      "x": 1200,
+      "y": 21300,
       "childTrueId": "429EDB83-94EB-40EE-9E60-DBA2E8A2A63C",
       "childFalseId": "D381FF6F-CD81-4E63-82C9-62984CB5DCF9"
     },
@@ -2578,8 +2579,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 11190,
+      "x": 0,
+      "y": 11260,
       "variableGuid": "065DA746-CADF-4E58-B325-83499A7A66DE",
       "operations": [
         {
@@ -2601,8 +2602,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 18990,
+      "x": 960,
+      "y": 19140,
       "variableGuid": "065DA746-CADF-4E58-B325-83499A7A66DE",
       "operations": [
         {
@@ -2649,8 +2650,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 433,
-      "y": 17410,
+      "x": 720,
+      "y": 17560,
       "childTrueId": "A58E6D24-2609-48AB-88CF-41F69E95D9B4",
       "childFalseId": "2A536657-741B-4D02-85E0-4AD1262D90AD"
     },
@@ -2685,8 +2686,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 913,
-      "y": 22330,
+      "x": 1200,
+      "y": 22480,
       "childTrueId": "29BFC479-C72A-4954-901E-D84545FA8BB5",
       "childFalseId": "B9BB634B-B664-487B-96D5-E19011C4E88E"
     },
@@ -2709,8 +2710,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 22530
+      "x": 1320,
+      "y": 22680
     },
     {
       "id": "29BFC479-C72A-4954-901E-D84545FA8BB5",
@@ -2755,8 +2756,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 22410,
+      "x": 1320,
+      "y": 22560,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8fdd2c60-7af2-11ed-bff4-0d91d2a3f5e0",
       "endpoint_role": "delete"
@@ -2835,8 +2836,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 16230,
+      "x": 960,
+      "y": 16380,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4bf2fbe0-d6de-11ee-bb93-8515374f2012",
       "endpoint_role": "create"
@@ -2879,8 +2880,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -20,
-      "y": 5132,
+      "x": 0,
+      "y": 5280,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "6ea9fa20-9d78-11ed-a228-a3d1b7dd2e0f",
       "endpoint_role": "get"
@@ -2916,8 +2917,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -167,
-      "y": 5330,
+      "x": 0,
+      "y": 5400,
       "childTrueId": "1DC51199-4D45-414D-8895-8EB87E88C3F3",
       "childFalseId": "F35448D5-331A-463B-8CA6-89D6B51F1BD5"
     },
@@ -2932,8 +2933,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 5410,
+      "x": 120,
+      "y": 5480,
       "variableGuid": "65330171-12DB-47EB-98CB-8FB805DF6719",
       "operations": [
         {
@@ -2955,8 +2956,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 5570,
+      "x": 120,
+      "y": 5640,
       "variableGuid": "65330171-12DB-47EB-98CB-8FB805DF6719",
       "operations": [
         {
@@ -2999,7 +3000,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 3680,
+      "y": 3800,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "df689160-53bc-11ee-b8e0-4d2494612b78",
@@ -3051,7 +3052,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 3800,
+      "y": 3920,
       "loopBlockId": null
     },
     {
@@ -3086,7 +3087,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 0,
-      "y": 3920,
+      "y": 4040,
       "childTrueId": "9BD3791C-64AA-4383-AA5A-63AA2D6C8811",
       "childFalseId": "620D4E68-F326-4866-9D76-22145CE26C43"
     },
@@ -3102,7 +3103,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4000,
+      "y": 4120,
       "variableGuid": "2AE59D02-913F-4BD3-875D-FB8B063C136F",
       "operations": [
         {
@@ -3157,7 +3158,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4160,
+      "y": 4280,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "b752cb40-5609-11ee-9bb1-014aa10c2b62",
       "endpoint_role": "create"
@@ -3174,7 +3175,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4400,
+      "y": 4520,
       "variableGuid": "2AE59D02-913F-4BD3-875D-FB8B063C136F",
       "operations": [
         {
@@ -3214,7 +3215,7 @@
         },
         {
           "id": "f0683590-5630-11ee-bc41-87f09bdb7cb1",
-          "value": "~[{\"tenantId\":\"{ $.getCurrentTenantInfo.id }:}]~",
+          "value": null,
           "type": "string",
           "structure": []
         },
@@ -3271,7 +3272,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4280,
+      "y": 4400,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "82432160-5630-11ee-b2f4-3b97c6c1c76e",
       "endpoint_role": "create"
@@ -3302,7 +3303,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2800,
+      "y": 2920,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "55051480-cb86-11ec-b746-892c1d04114e",
       "endpoint_role": "get"
@@ -3361,8 +3362,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 553,
-      "y": 15990,
+      "x": 840,
+      "y": 16140,
       "childTrueId": "F92683FE-AEA7-4886-B30A-81F398FE5128",
       "childFalseId": "F4D45158-9782-4A88-AD42-834FFC45750C"
     },
@@ -3385,8 +3386,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 16070
+      "x": 960,
+      "y": 16220
     },
     {
       "id": "33E323BF-67C3-4FF0-A19D-AB95FB0A1FCE",
@@ -3425,8 +3426,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 14770,
+      "x": 840,
+      "y": 14920,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "f96bc780-d552-11ee-944d-a3153a5c7ca0"
     },
@@ -3442,7 +3443,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3040,
+      "y": 3160,
       "variableGuid": "7F782E8A-190C-4911-BC05-2C9913FBEAE9",
       "operations": [
         {
@@ -3484,8 +3485,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 913,
-      "y": 20510,
+      "x": 1200,
+      "y": 20660,
       "childTrueId": "0E9FD2FB-98FF-4384-A63A-14CC9332FD04",
       "childFalseId": "D5BD151B-7403-4494-A4D9-D98142C0D1A8"
     },
@@ -3500,8 +3501,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 20750,
+      "x": 1320,
+      "y": 20900,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -3523,7 +3524,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | { if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant } |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | { $.runMode } |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
+          "value": "### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | {if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant} |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Next run delay (seconds) | { $.nextRunDelaySeconds } |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | {$.runMode} |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
           "type": "string",
           "structure": []
         }
@@ -3537,8 +3538,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 5850
+      "x": 0,
+      "y": 5920
     },
     {
       "id": "B0F53EA8-15FC-482D-9612-E2756224D632",
@@ -3551,8 +3552,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 5730,
+      "x": 0,
+      "y": 5800,
       "variableGuid": "5C1A8781-B67B-4D16-AD4F-BE978AB2BB60",
       "operations": [
         {
@@ -3606,8 +3607,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 17070,
+      "x": 600,
+      "y": 17220,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "f0587940-481e-11ef-85d6-75c3687046d0"
     },
@@ -3636,8 +3637,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 6090
+      "x": 0,
+      "y": 6160
     },
     {
       "id": "F91709AC-C27A-46E1-AB38-122EE9E68615",
@@ -3664,8 +3665,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 6670
+      "x": 120,
+      "y": 6740
     },
     {
       "id": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
@@ -3692,8 +3693,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -167,
-      "y": 11310
+      "x": 0,
+      "y": 11380
     },
     {
       "id": "12C5F24F-DB03-46F5-9972-87C1ADA82A9F",
@@ -3706,8 +3707,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 12850,
+      "x": 600,
+      "y": 13000,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3749,8 +3750,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 313,
-      "y": 13510,
+      "x": 600,
+      "y": 13660,
       "childTrueId": "0FB8C177-55A1-4825-BAB1-0A69866AC91F",
       "childFalseId": "D0873ABD-39CC-4395-A803-D44557AF0638"
     },
@@ -3765,8 +3766,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 16390,
+      "x": 840,
+      "y": 16540,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3788,8 +3789,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 433,
-      "y": 16790,
+      "x": 720,
+      "y": 16940,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3811,8 +3812,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 16550,
+      "x": 840,
+      "y": 16700,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3834,8 +3835,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 17910,
+      "x": 1080,
+      "y": 18060,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3857,8 +3858,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 23370,
+      "x": 960,
+      "y": 23520,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3900,8 +3901,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 673,
-      "y": 18750,
+      "x": 960,
+      "y": 18900,
       "childTrueId": "8234E09F-7B24-4E21-AD26-9C4EBC034ABC",
       "childFalseId": null
     },
@@ -3916,8 +3917,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 18830,
+      "x": 1080,
+      "y": 18980,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3977,8 +3978,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 19450,
+      "x": 1080,
+      "y": 19600,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "85c38020-44dc-11ef-ba34-b984c74c5e2a"
     },
@@ -4007,8 +4008,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 25290
+      "x": 600,
+      "y": 25440
     },
     {
       "id": "2A536657-741B-4D02-85E0-4AD1262D90AD",
@@ -4021,8 +4022,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 24890,
+      "x": 840,
+      "y": 25040,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -4088,8 +4089,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 553,
-      "y": 24570,
+      "x": 840,
+      "y": 24720,
       "childTrueId": "CB1096A2-2C94-43F3-ADCD-50FA3764FA8D",
       "childFalseId": null
     },
@@ -4104,8 +4105,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 18310,
+      "x": 1080,
+      "y": 18460,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -4127,8 +4128,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 19230,
+      "x": 960,
+      "y": 19380,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -4188,8 +4189,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 19570,
+      "x": 1080,
+      "y": 19720,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "85c38020-44dc-11ef-ba34-b984c74c5e2a"
     },
@@ -4204,8 +4205,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 17610,
+      "x": 840,
+      "y": 17760,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -4280,8 +4281,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 24650,
+      "x": 960,
+      "y": 24800,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "314f2e80-7bbe-11ed-8fc4-ed797f9ebbae",
       "endpoint_role": "create"
@@ -4317,8 +4318,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 313,
-      "y": 12610,
+      "x": 600,
+      "y": 12760,
       "childTrueId": "2785D49B-8E6C-47AC-8BEB-E4DDAED478B3",
       "childFalseId": null
     },
@@ -4378,8 +4379,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 433,
-      "y": 12690,
+      "x": 720,
+      "y": 12840,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -4409,7 +4410,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2920,
+      "y": 3040,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "6e9dbaa0-c7a4-11ea-9bd3-0da55b4cbed9",
       "endpoint_role": "get"
@@ -4473,8 +4474,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 553,
-      "y": 23530,
+      "x": 840,
+      "y": 23680,
       "childTrueId": "672815AF-06DD-4FF7-95A0-B113BAC0F2F7",
       "childFalseId": null
     },
@@ -4539,7 +4540,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 1840
+      "y": 1960
     },
     {
       "id": "52BDEF44-8C72-45E6-ADF5-9FE0AE651322",
@@ -4578,7 +4579,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 1960,
+      "y": 2080,
       "loopBlockId": null
     },
     {
@@ -4618,7 +4619,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 0,
-      "y": 2320,
+      "y": 2440,
       "childTrueId": "FD3A9017-0630-41E0-B70A-C106DB7497E2",
       "childFalseId": null
     },
@@ -4634,7 +4635,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2080,
+      "y": 2200,
       "variableGuid": "CDE824C4-AABC-4462-914A-256E9FB3757A",
       "operations": [
         {
@@ -4665,7 +4666,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2640
+      "y": 2760
     },
     {
       "id": "FD3A9017-0630-41E0-B70A-C106DB7497E2",
@@ -4693,7 +4694,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2400
+      "y": 2520
     },
     {
       "id": "3E771AD7-7B2F-42E6-8F7A-30DF705DCF44",
@@ -4721,7 +4722,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2520
+      "y": 2640
     },
     {
       "id": "DA684624-B2A8-468D-B3D5-544F5C2393D2",
@@ -4853,8 +4854,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7870,
+      "x": 120,
+      "y": 7940,
       "loopBlockId": "9ED7D007-E198-4907-91BE-A14744109D0D",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "590a1a20-6d2e-11eb-9714-df1bbaac055d",
@@ -4896,8 +4897,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 553,
-      "y": 15130,
+      "x": 840,
+      "y": 15280,
       "childTrueId": "C7AD8B3C-71F0-4134-9FC8-0D75A3D5CB2D",
       "childFalseId": null
     },
@@ -4950,8 +4951,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 15450,
+      "x": 960,
+      "y": 15600,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "d8bb26a0-b5fd-11ee-a358-7d252eeef155"
     },
@@ -4966,8 +4967,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 15010,
+      "x": 840,
+      "y": 15160,
       "variableGuid": "5574FD9D-5763-4351-8986-774586728936",
       "operations": [
         {
@@ -4989,8 +4990,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 15210,
+      "x": 960,
+      "y": 15360,
       "variableGuid": "5574FD9D-5763-4351-8986-774586728936",
       "operations": [
         {
@@ -5088,7 +5089,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3160,
+      "y": 3280,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -5149,7 +5150,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 3480,
+      "y": 3600,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -5182,12 +5183,12 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
+        { "name": "no", "isCollapsed": false }
       ],
-      "x": 73,
-      "y": 12210,
+      "x": 360,
+      "y": 12240,
       "childTrueId": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
-      "childFalseId": null
+      "childFalseId": "DA8CB42F-2A24-40D4-889C-94A0DF59D6AE"
     },
     {
       "id": "6620E327-319D-4493-AFE6-91FFB72447A5",
@@ -5223,12 +5224,12 @@
       "collapsed": [
         { "name": "both", "isCollapsed": false },
         { "name": "yes", "isCollapsed": false },
-        { "name": "no", "isCollapsed": true }
+        { "name": "no", "isCollapsed": false }
       ],
-      "x": -47,
-      "y": 12010,
+      "x": 240,
+      "y": 12040,
       "childTrueId": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
-      "childFalseId": null
+      "childFalseId": "87291F65-480C-4CA5-A341-3F4A7F5F18E4"
     },
     {
       "id": "C68B1F54-9AEB-4601-97C6-1F7FA19271C7",
@@ -5237,7 +5238,7 @@
       "name": "runOnTenant",
       "displayName": "Variable - runOnTenant",
       "comment": "Leave empty to run against all tenants, or enter a tenant hostname to run against a single hostname",
-      "childId": null,
+      "childId": "09B1EC23-B13B-44AB-BF1E-7E357453CCD3",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -5303,8 +5304,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -167,
-      "y": 6830,
+      "x": 0,
+      "y": 6900,
       "childTrueId": "08833C88-D837-413C-B5FC-4DE90D55B144",
       "childFalseId": null
     },
@@ -5332,8 +5333,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7150,
+      "x": 120,
+      "y": 7220,
       "form": [
         {
           "id": "inputs-input-0",
@@ -5361,8 +5362,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 6910
+      "x": 120,
+      "y": 6980
     },
     {
       "id": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
@@ -5389,8 +5390,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7030
+      "x": 120,
+      "y": 7100
     },
     {
       "id": "3983393F-3C5A-4B27-912E-F6DCEFC504AA",
@@ -5403,8 +5404,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7750,
+      "x": 120,
+      "y": 7820,
       "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
       "operations": [
         {
@@ -5426,8 +5427,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 8050,
+      "x": 360,
+      "y": 8120,
       "variableGuid": "2C3EC71F-A135-4DBA-902A-2B073AD26B71",
       "operations": [
         {
@@ -5456,8 +5457,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 8170,
+      "x": 360,
+      "y": 8240,
       "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
       "operations": [
         {
@@ -5504,8 +5505,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 73,
-      "y": 7970,
+      "x": 240,
+      "y": 8040,
       "childTrueId": "602C71BF-790E-4A5A-9F16-8DB29CC794BC",
       "childFalseId": null
     },
@@ -5534,8 +5535,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 10030
+      "x": 240,
+      "y": 10100
     },
     {
       "id": "47D00BB7-D9C1-4573-8774-777C7BC1A2F5",
@@ -5592,8 +5593,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": -47,
-      "y": 8410,
+      "x": 120,
+      "y": 8480,
       "loopBlockId": null
     },
     {
@@ -5621,8 +5622,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7510
+      "x": 120,
+      "y": 7580
     },
     {
       "id": "4A522DB9-B3CD-485F-AB97-1251F2785163",
@@ -5655,8 +5656,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": -167,
-      "y": 7310,
+      "x": 0,
+      "y": 7380,
       "childTrueId": "6C4A2E9A-DE9C-4604-9DA2-2FB276982346",
       "childFalseId": null
     },
@@ -5704,8 +5705,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 8990,
+      "x": 240,
+      "y": 9060,
       "loopBlockId": "74396EE8-E9EE-4ED7-A5F7-C7438205443F",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "8cc63340-107b-11ec-ab5d-f9b221ed2dc5",
@@ -5742,8 +5743,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 9090,
+      "x": 360,
+      "y": 9160,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
       "endpoint_role": "delete"
@@ -5779,8 +5780,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 9710,
+      "x": 480,
+      "y": 9780,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "2648d600-f3b2-11ed-a2ea-711f6f8808f6",
       "endpoint_role": "delete"
@@ -5889,8 +5890,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 9610,
+      "x": 360,
+      "y": 9680,
       "loopBlockId": "7A40EAC5-7A39-419C-8C37-D7E116D784FA",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "1250db90-f548-11ed-bb5c-31311462577f",
@@ -5944,8 +5945,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 9250,
+      "x": 240,
+      "y": 9320,
       "loopBlockId": "ECB0991D-2C14-4EE2-A825-EB4E1E46C631",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6003,8 +6004,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 9350,
+      "x": 360,
+      "y": 9420,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "3b75dd80-2072-11ec-9043-3b2aff6123af",
       "endpoint_role": "create"
@@ -6054,8 +6055,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 9510,
+      "x": 240,
+      "y": 9580,
       "loopBlockId": "FD7DCC57-8CB1-46D4-8329-C10AD5EC4A28",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6072,8 +6073,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7630,
+      "x": 120,
+      "y": 7700,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -6095,8 +6096,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 8750,
+      "x": 240,
+      "y": 8820,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -6138,8 +6139,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 9910,
+      "x": 240,
+      "y": 9980,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "5121d8a0-6d30-11eb-8b80-03f36feb4a85",
       "endpoint_role": "delete"
@@ -6175,8 +6176,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 313,
-      "y": 10470,
+      "x": 480,
+      "y": 10540,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "2648d600-f3b2-11ed-a2ea-711f6f8808f6",
       "endpoint_role": "delete"
@@ -6228,8 +6229,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 10270,
+      "x": 240,
+      "y": 10340,
       "loopBlockId": "33EB84B8-07DE-4261-9212-D0225CCE5D6E",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6260,8 +6261,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 7390
+      "x": 120,
+      "y": 7460
     },
     {
       "id": "F084C9BB-89A8-4255-A8A1-938756CF93C3",
@@ -6288,8 +6289,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 8870
+      "x": 240,
+      "y": 8940
     },
     {
       "id": "33EB84B8-07DE-4261-9212-D0225CCE5D6E",
@@ -6344,8 +6345,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 193,
-      "y": 10370,
+      "x": 360,
+      "y": 10440,
       "loopBlockId": "BB033D09-286E-4CA8-99CB-B8EB97BA3FAC",
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b993580-2072-11ec-8f59-e5aaa8656a36",
@@ -6382,8 +6383,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": -47,
-      "y": 10190,
+      "x": 120,
+      "y": 10260,
       "childTrueId": "B5434E6C-C5E6-4F92-8634-F3AEB5F246AD",
       "childFalseId": "A9B40B31-C0E3-4D2E-A1B6-3C0904A63FB8"
     },
@@ -6412,8 +6413,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 10670
+      "x": 240,
+      "y": 10740
     },
     {
       "id": "A9B40B31-C0E3-4D2E-A1B6-3C0904A63FB8",
@@ -6440,8 +6441,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 73,
-      "y": 10830
+      "x": 240,
+      "y": 10900
     },
     {
       "id": "58037166-78A1-4C36-8962-69A9D648EA80",
@@ -6468,8 +6469,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 8650,
+      "x": 120,
+      "y": 8720,
       "loopBlockId": "FA60E154-1089-41E5-A138-232F31136540"
     },
     {
@@ -6483,8 +6484,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": -47,
-      "y": 8530,
+      "x": 120,
+      "y": 8600,
       "variableGuid": "08C07A3F-AC6F-4991-AE6D-FDCAB750B61D",
       "operations": [
         {
@@ -6512,8 +6513,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 913,
-      "y": 21950,
+      "x": 1200,
+      "y": 22100,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -6535,8 +6536,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 23170,
+      "x": 1080,
+      "y": 23320,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -6599,8 +6600,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 1033,
-      "y": 22690
+      "x": 1320,
+      "y": 22840
     },
     {
       "id": "793ABBBE-9AE9-4F72-876C-0E742F2E93DA",
@@ -6694,7 +6695,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 0,
-      "y": 3400,
+      "y": 3520,
       "childTrueId": "23EA7545-385B-4964-B105-A424082835A3",
       "childFalseId": null
     },
@@ -6761,8 +6762,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 553,
-      "y": 13670,
+      "x": 840,
+      "y": 13820,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -6831,7 +6832,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3280,
+      "y": 3400,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -6867,8 +6868,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 553,
-      "y": 13790,
+      "x": 840,
+      "y": 13940,
       "childTrueId": "64D6FAD1-8162-4746-88F6-C2A91E6F9DB4",
       "childFalseId": null
     },
@@ -6922,8 +6923,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 13870,
+      "x": 960,
+      "y": 14020,
       "loopBlockId": "BBD1BB72-9BEC-464D-9268-A6F930619AA1",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ba493570-b76f-11ed-b6ab-6fd465c15105",
@@ -6984,8 +6985,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 14210,
+      "x": 1080,
+      "y": 14360,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "f5c7f3a0-3575-11f0-abae-c9e5c5218268",
       "endpoint_role": "create"
@@ -7021,8 +7022,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 673,
-      "y": 14130,
+      "x": 960,
+      "y": 14280,
       "childTrueId": "78C99981-7A38-4618-A1BC-4FE5E2709A24",
       "childFalseId": null
     },
@@ -7075,8 +7076,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 14330,
+      "x": 1080,
+      "y": 14480,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "13b60e00-b538-11ee-8db4-7f4aeae7104c"
     },
@@ -7118,7 +7119,7 @@
         },
         {
           "id": "maxitemcount",
-          "value": null,
+          "value": "",
           "type": "string",
           "structure": {}
         },
@@ -7138,8 +7139,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 23610,
+      "x": 960,
+      "y": 23760,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "66e38ad0-c464-11f0-9c49-93ef936524bd",
@@ -7181,8 +7182,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 23770,
+      "x": 960,
+      "y": 23920,
       "loopBlockId": "27A16967-7CF2-4467-AAAC-A3453CEDECB1"
     },
     {
@@ -7249,8 +7250,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 23870,
+      "x": 1080,
+      "y": 24020,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -7293,7 +7294,7 @@
         },
         {
           "id": "maxitemcount",
-          "value": null,
+          "value": "",
           "type": "string",
           "structure": {}
         },
@@ -7312,8 +7313,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 24030,
+      "x": 960,
+      "y": 24180,
       "loopBlockId": "ADB94E28-A6A5-42FD-9D7B-3BE9D8B0EE6B",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "66e38ad0-c464-11f0-9c49-93ef936524bd",
@@ -7383,8 +7384,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 793,
-      "y": 24130,
+      "x": 1080,
+      "y": 24280,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -7425,7 +7426,7 @@
         },
         {
           "id": "7c28a2d0-c463-11f0-a866-73afb2fbaa30",
-          "value": "",
+          "value": null,
           "type": "object",
           "mode": "raw",
           "structure": {}
@@ -7453,8 +7454,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 24410,
+      "x": 960,
+      "y": 24560,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -7531,8 +7532,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 673,
-      "y": 24290
+      "x": 960,
+      "y": 24440
     },
     {
       "id": "D3DDAF5D-D34F-45D1-BC06-267FC9F186CE",
@@ -7580,7 +7581,257 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 4800
+      "y": 4920
+    },
+    {
+      "id": "C634BD87-07D2-4329-9C31-CFCCB6E9ADD0",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "updateTerm",
+      "displayName": "Qlik Cloud Services - Update Term",
+      "comment": "Update term with current timestamp.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "ba39a1a0-56bb-11ee-86d4-83a960d3aa16",
+          "value": "{ $.glossaryId }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ca46af90-56bb-11ee-8fa2-577214891760",
+          "value": "{ $.loop.item.term.id }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba3f08f0-56bb-11ee-a8f0-e3dce9716d8e",
+          "value": "{ $.loop.item.term.name }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba460230-56bb-11ee-b495-6301c5963db3",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba4c54a0-56bb-11ee-9d7a-b7cd04a38fc0",
+          "value": "{ converttimezone: 'now', , 'Etc/UTC', 'U', 'Etc/UTC' }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba5827d0-56bb-11ee-8efc-d11727194140",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba5eea00-56bb-11ee-b563-e15b23a3dc0e",
+          "value": "{ $.loop.item.term.tags }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba6fbc10-56bb-11ee-a354-d3997f0719af",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba7a60a0-56bb-11ee-8865-e71e7c713803",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba7fcde0-56bb-11ee-a83f-ff70f84f324d",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "ba843a80-56bb-11ee-a043-bdb73ca022e6",
+          "value": null,
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 480,
+      "y": 25600,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "ba2a8e90-56bb-11ee-a09e-51ddc742d8df",
+      "endpoint_role": "update"
+    },
+    {
+      "id": "EDC52365-8824-40ED-AE1A-CA3A39953ADF",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition33",
+      "displayName": "Condition 33",
+      "comment": "If tenant hasn't been updated in configured period (or ever), proceed. Otherwise, skip.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "some",
+            "conditions": [
+              {
+                "input1": "{ $.loop.item.term.description }",
+                "operator": "<",
+                "input2": "{subtract: {converttimezone: 'now', , 'Etc/UTC', 'U', 'Etc/UTC'}, $.nextRunDelaySeconds}"
+              },
+              {
+                "input1": "{ $.loop.item.term.description }",
+                "operator": "isNotNumber",
+                "input2": null
+              },
+              {
+                "input1": "{ $.loop.item.term.description }",
+                "operator": "empty",
+                "input2": null
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 120,
+      "y": 11960,
+      "childTrueId": "6620E327-319D-4493-AFE6-91FFB72447A5",
+      "childFalseId": "FBEA5147-91E0-4685-AEB1-DF5924283BC5"
+    },
+    {
+      "id": "09B1EC23-B13B-44AB-BF1E-7E357453CCD3",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "nextRunDelaySeconds",
+      "displayName": "Variable - nextRunDelaySeconds",
+      "comment": "Sets delay for redeploying assets after last automation run. A tenant will be skipped if it was last updated within this timeframe, based on the timestamp in the `description` field.",
+      "childId": null,
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 120,
+      "y": 1760,
+      "variableGuid": "493A6F45-4E4B-4FFB-9EF3-13C22F0D4061",
+      "operations": [
+        {
+          "key": "D3A74DF8-89E0-4875-A560-A538782D01AB",
+          "id": "set_value",
+          "name": "Set value of { variable }",
+          "value": "10800"
+        }
+      ]
+    },
+    {
+      "id": "FBEA5147-91E0-4685-AEB1-DF5924283BC5",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output13",
+      "displayName": "Output 13",
+      "comment": "Output deployment status for skip based on retry delay.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Skipped | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 240,
+      "y": 26240
+    },
+    {
+      "id": "87291F65-480C-4CA5-A341-3F4A7F5F18E4",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output14",
+      "displayName": "Output 14",
+      "comment": "Output deployment status for skip based on tenant specific override.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Skipped | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 360,
+      "y": 26000
+    },
+    {
+      "id": "DA8CB42F-2A24-40D4-889C-94A0DF59D6AE",
+      "type": "ShowBlock",
+      "disabled": false,
+      "name": "output15",
+      "displayName": "Output 15",
+      "comment": "Output deployment status for skip based on skip x tenants.",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "| Skipped | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
+          "type": "string",
+          "structure": []
+        }
+      ],
+      "settings": [
+        {
+          "id": "display_mode",
+          "value": "add",
+          "type": "select",
+          "structure": []
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 480,
+      "y": 25760
     }
   ],
   "variables": [
@@ -7772,6 +8023,11 @@
     {
       "guid": "7A1287B7-5FA4-42A7-95B8-9D67AC018D8C",
       "name": "reloadScheduleHour",
+      "type": "number"
+    },
+    {
+      "guid": "493A6F45-4E4B-4FFB-9EF3-13C22F0D4061",
+      "name": "nextRunDelaySeconds",
       "type": "number"
     }
   ]
