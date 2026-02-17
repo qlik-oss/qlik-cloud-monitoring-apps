@@ -6063,9 +6063,9 @@
             "mode": "all",
             "conditions": [
               {
-                "input1": "{count: { $.compareLists }}{count: { $.existingTenants }}",
-                "input2": "0",
-                "operator": ">"
+                "input1": "{count: { $.existingTenants }}",
+                "operator": ">",
+                "input2": "0"
               }
             ]
           },
@@ -8118,7 +8118,8 @@
             {
               "key": "createdAt",
               "value": "{ $.transformList2.item.createdAt }"
-            }
+            },
+            { "key": "id", "value": "{ $.transformList2.item.id }" }
           ],
           "type": "object",
           "mode": "keyValue",
@@ -8180,16 +8181,6 @@
       "type": "number"
     },
     {
-      "guid": "25260FCD-A9A2-4741-9836-4CACEE15B966",
-      "name": "spaceId",
-      "type": "string"
-    },
-    {
-      "guid": "835538BA-69D7-4A81-9FC5-9D30F5F1C544",
-      "name": "inputTargetTenant",
-      "type": "string"
-    },
-    {
       "guid": "AFCCC997-C4F7-4B12-84F8-A87D8EA34023",
       "name": "loopTenant",
       "type": "string"
@@ -8197,11 +8188,6 @@
     {
       "guid": "8020627D-CEE4-4E7E-A665-387EC0A7ED59",
       "name": "restConnectorName",
-      "type": "string"
-    },
-    {
-      "guid": "1D73E6B7-06D0-4D68-876D-24D27A7D85E8",
-      "name": "fileConnectorConfig",
       "type": "string"
     },
     {
