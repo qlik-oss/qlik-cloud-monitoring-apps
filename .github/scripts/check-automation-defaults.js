@@ -18,14 +18,20 @@ const variablesToCheck = [
   { name: "skipToTenantNumber", expected: "0" },
   { name: "recreateConnections", expected: "1" },
   { name: "replaceAllApps", expected: "0" },
-  { name: "runOnTenant", expected: "" },
-  { name: "addCurrentUserToSpaces", expected: "1" },
+  { name: "runOnTenant", expected: null },
   { name: "autoTenantCleanup", expected: "1" },
   { name: "createSchedule", expected: "1" },
+  { name: "checkVersions", expected: "1" },
   { name: "glossaryName", expected: "TenantList" },
+  { name: "manifestUrl", expected: "https://github.com/qlik-oss/qlik-cloud-monitoring-apps/raw/refs/heads/main/manifests/resources.json" },
+  { name: "nextRunDelaySeconds", expected: "10800" },
+  { name: "reloadScheduleHour", expected: "00" },
   { name: "doReload", expected: "1" },
   { name: "restConnectorName", expected: "monitoring_apps_REST" },
-  { name: "sharedSpaceName", expected: "Monitoring" }
+  { name: "runMode", expected: "0" },
+  { name: "sharedSpaceName", expected: "Monitoring" },
+  { name: "qcmamtVersion", expected: "4" },
+  { name: "parentTenant", expected: "{$.getCurrentTenantInfo.hostnames[0]}" }
 ];
 
 const successResults = [];
@@ -53,17 +59,39 @@ variablesToCheck.forEach(variable => {
     return;
   }
   const op = findSetValueOperation(block);
-  let actualValue = "";
-  if (op && typeof op.value === 'string') {
-    actualValue = op.value.trim();
-  }
-  if (actualValue === variable.expected) {
-    successResults.push(`Variable ${variable.name}: SUCCESS (value: "${actualValue}")`);
+  const actualValueRaw = op ? op.value : undefined;
+  const actualValue = typeof actualValueRaw === 'string' ? actualValueRaw.trim() : actualValueRaw;
+  const expectedValue = variable.expected;
+
+  const isMatch = actualValue === expectedValue;
+  if (isMatch) {
+    successResults.push(`Variable ${variable.name}: SUCCESS (value: ${JSON.stringify(actualValue)})`);
   } else {
-    failureResults.push(`Variable ${variable.name}: FAILURE - expected "${variable.expected}", found "${actualValue}"`);
+    failureResults.push(
+      `Variable ${variable.name}: FAILURE - expected ${JSON.stringify(expectedValue)}, found ${JSON.stringify(actualValue)}`
+    );
     hasFailures = true;
   }
 });
+
+// Ensure the configuration output block references only real variables.
+// This keeps docs/UI output and the installer config block in sync.
+const configOutputBlock = findBlockByName('output5');
+if (configOutputBlock && Array.isArray(configOutputBlock.inputs) && configOutputBlock.inputs.length > 0) {
+  const value = configOutputBlock.inputs[0]?.value;
+  if (typeof value === 'string') {
+    const referenced = Array.from(value.matchAll(/\$\.(\w+)/g)).map(m => m[1]);
+    const uniqueReferenced = [...new Set(referenced)];
+
+    const unknown = uniqueReferenced.filter(varName => !findBlockByName(varName));
+    if (unknown.length > 0) {
+      failureResults.push(
+        `Config output references unknown variables: ${unknown.join(', ')}`
+      );
+      hasFailures = true;
+    }
+  }
+}
 
 let report = "=== Default Values Check Report ===\n";
 if (successResults.length > 0) {
