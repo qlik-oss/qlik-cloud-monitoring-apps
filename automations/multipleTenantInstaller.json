@@ -653,7 +653,7 @@
           "id": "set_value",
           "key": "78513C8F-63B3-42ED-A30D-A207EEF04276",
           "name": "Set value of { variable }",
-          "value": "MonitoringA"
+          "value": "Monitoring"
         }
       ]
     },
@@ -4473,7 +4473,7 @@
       "name": "autoTenantCleanup",
       "displayName": "Variable - autoTenantCleanup",
       "comment": "Set to 0 for no action, 1 to automatically remove any tenants not found in glossary list. This will delete any spaces matching the template pattern, as well as tenant-specific log files.",
-      "childId": "A3AD1F3D-F625-43C9-A6DD-BF8310EC498F",
+      "childId": "09B1EC23-B13B-44AB-BF1E-7E357453CCD3",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -4934,7 +4934,7 @@
       "name": "runOnTenant",
       "displayName": "Variable - runOnTenant",
       "comment": "Leave empty to run against all tenants, or enter a tenant hostname to run against a single hostname",
-      "childId": "09B1EC23-B13B-44AB-BF1E-7E357453CCD3",
+      "childId": null,
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -7361,12 +7361,12 @@
       "name": "nextRunDelaySeconds",
       "displayName": "Variable - nextRunDelaySeconds",
       "comment": "Sets delay for redeploying assets after last automation run. A tenant will be skipped if it was last updated within this timeframe, based on the timestamp in the `description` field.",
-      "childId": null,
+      "childId": "A3AD1F3D-F625-43C9-A6DD-BF8310EC498F",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 120,
-      "y": 1880,
+      "x": 144,
+      "y": 1576,
       "variableGuid": "493A6F45-4E4B-4FFB-9EF3-13C22F0D4061",
       "operations": [
         {
@@ -7374,12 +7374,6 @@
           "key": "D3A74DF8-89E0-4875-A560-A538782D01AB",
           "name": "Set value of { variable }",
           "value": "10800"
-        },
-        {
-          "id": "set_value",
-          "key": "496EE881-B163-4F25-8E69-D30A8E3C1C4C",
-          "name": "Set value of { variable }",
-          "value": "1"
         }
       ]
     },
