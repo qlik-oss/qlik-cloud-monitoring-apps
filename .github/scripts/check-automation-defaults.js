@@ -24,7 +24,7 @@ const variablesToCheck = [
   { name: "checkVersions", expected: "1" },
   { name: "glossaryName", expected: "TenantList" },
   { name: "manifestUrl", expected: "https://github.com/qlik-oss/qlik-cloud-monitoring-apps/raw/refs/heads/main/manifests/resources.json" },
-  { name: "nextRunDelaySeconds", expected: "10800" },
+  { name: "nextRunDelaySeconds", expected: "21600" },
   { name: "reloadScheduleHour", expected: "00" },
   { name: "doReload", expected: "1" },
   { name: "restConnectorName", expected: "monitoring_apps_REST" },
