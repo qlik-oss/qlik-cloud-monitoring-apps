@@ -502,7 +502,7 @@
       "disabled": false,
       "name": "condition6",
       "displayName": "Condition 6",
-      "comment": "If a user id is returned, continue",
+      "comment": "If a user id is returned, and doesn't contain + (float), continue",
       "childId": "C634BD87-07D2-4329-9C31-CFCCB6E9ADD0",
       "inputs": [
         {
@@ -514,6 +514,11 @@
                 "input1": "{$.GetUserId}",
                 "input2": null,
                 "operator": "notEmpty"
+              },
+              {
+                "input1": "{ $.GetUserId }",
+                "input2": "+",
+                "operator": "doesntContain"
               }
             ]
           },
@@ -2623,7 +2628,7 @@
         },
         {
           "id": "automations_censor_data",
-          "value": false,
+          "value": true,
           "type": "checkbox",
           "structure": []
         }
@@ -7321,18 +7326,18 @@
             "conditions": [
               {
                 "input1": "{ $.getTerm.description }",
-                "operator": "<",
-                "input2": "{subtract: {converttimezone: 'now', , 'Etc/UTC', 'U', 'Etc/UTC'}, $.nextRunDelaySeconds}"
+                "input2": "{subtract: {converttimezone: 'now', , 'Etc/UTC', 'U', 'Etc/UTC'}, $.nextRunDelaySeconds}",
+                "operator": "<"
               },
               {
                 "input1": "{ $.getTerm.description }",
-                "operator": "isNotNumber",
-                "input2": null
+                "input2": null,
+                "operator": "isNotNumber"
               },
               {
                 "input1": "{ $.getTerm.description }",
-                "operator": "empty",
-                "input2": null
+                "input2": null,
+                "operator": "empty"
               }
             ]
           },
@@ -8195,13 +8200,13 @@
           "id": "4b92b980-56bb-11ee-a645-1fdda4ea0493",
           "value": "{ $.glossaryId }",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "a9ac9a80-56bb-11ee-8048-fd59a4a47625",
           "value": "{ $.loop.item.term.id }",
           "type": "string",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [
@@ -8209,14 +8214,14 @@
           "id": "blendr_on_error",
           "value": "stop",
           "type": "select",
-          "structure": {}
+          "structure": []
         },
-        { "id": "cache", "value": "0", "type": "select", "structure": {} },
+        { "id": "cache", "value": "0", "type": "select", "structure": [] },
         {
           "id": "automations_censor_data",
           "value": false,
           "type": "checkbox",
-          "structure": {}
+          "structure": []
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
