@@ -41,7 +41,11 @@ To install the automation:
 
 ## Updates
 
-The automation checks its version against the installer manifest. If the automation’s version is lower than that specified in the manifest, it will exit with an error to prevent breaking changes. To update:
+The automation checks its version against the installer manifest. If the automation’s version is lower than that specified in the manifest, it will exit with an error to prevent breaking changes.
+
+Separately, the automation can optionally skip **app version checks** (see `checkVersions`). This does not bypass the installer version guardrail above.
+
+To update:
 
 - Create a new automation using the updated JSON file.
 - Ensure that all configuration variables are correctly set before running the new instance.
@@ -62,7 +66,7 @@ These parameters can significantly impact how the automation runs. Please verify
 | **Skip to tenant number** *(skipToTenantNumber)* | Set to 0 for no action, or an integer to start updating from that tenant. Note that if you update the glossary, the tenant order might change.         | 0                 |
 | **Recreate connections** *(recreateConnections)* | Set to 0 for no action, or 1 to recreate data connections on run.                                                                                        | 1                 |
 | **Replace all apps** *(replaceAllApps)*          | Set to 0 for no action, or 1 to replace all apps irrespective of whether they need an upgrade.                                                           | 0                 |
-| **Run only on tenant** *(runOnTenant)*           | Leave empty to run against all tenants, or enter a tenant hostname to run against a single tenant.                                                      | 0                 |
+| **Run only on tenant** *(runOnTenant)*           | Leave empty to run against all tenants, or enter a tenant hostname to run against a single tenant.                                                      | (empty)           |
 
 ### Base Configuration
 
@@ -70,19 +74,19 @@ These core settings define the core behavior of the monitoring automation.
 
 | **Parameter (Variable Name)**                                                  | **Description**                                                                                                                                                           | **Default Value**                   |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Add current user to spaces** *(addCurrentUserToSpaces)*                     | Set to 0 for no action, or 1 to add the user running the automation to spaces with full access.                                                                           | 1                                   |
 | **Automatic tenant cleanup** *(autoTenantCleanup)*                            | Set to 0 for no action, or 1 to automatically remove any tenants not found in the glossary list. This will delete any spaces matching the template pattern as well as tenant-specific log files. | 1                                   |
 | **Create a reload schedule for apps when creating or updating** *(createSchedule)* | Set to 0 for no action, or 1 to recreate the app reload schedule.                                                                                                         | 1                                   |
+| **Check for new versions** *(checkVersions)*                                   | Set to 1 to check app versions and upgrade when needed. Set to 0 to skip app version checks (the automation will still run, but may redeploy less predictably depending on other overrides). | 1                             |
 | **Glossary name** *(glossaryName)*                                             | Specify the glossary from which to retrieve the tenant list.                                                                                                             | TenantList                          |
-| **Manifest URL** *(manifestURL)*                                               | URL of the installer manifest containing version and configuration details.                                                                                              | (Provide your manifest URL)         |
-| **Parent tenant**                                                              | Specify the hostname of the parent tenant that hosts the monitoring apps.                                                                                                  | (Provide your parent tenant)        |
+| **Manifest URL** *(manifestUrl)*                                               | URL of the resources manifest containing version and configuration details.                                                                                              | https://github.com/qlik-oss/qlik-cloud-monitoring-apps/raw/refs/heads/main/manifests/resources.json |
+| **Next run delay (seconds)** *(nextRunDelaySeconds)*                           | Skip a tenant if it was processed recently. The timestamp is stored per tenant in the glossary term's `description` field (UTC epoch seconds).                           | 21600                               |
+| **Parent tenant** *(parentTenant)*                                             | Hostname of the parent (monitoring/orchestration) tenant. By default this is set automatically to the current tenant.                                                    | (auto-detected)                     |
 | **Reload apps after creating or updating** *(doReload)*                        | Set to 0 for no action, or 1 to trigger an immediate reload of apps after they are created or updated.                                                                     | 1                                   |
+| **Reload schedule hour (UTC)** *(reloadScheduleHour)*                           | Hour of the day (UTC) when scheduled reloads should start. The installer will create schedules and can stagger tenant reloads (see Scheduling notes below).              | 00                                  |
 | **REST connector name** *(restConnectorName)*                                  | Set the name of the REST connector to deploy in child app spaces.                                                                                                          | monitoring_apps_REST                |
-| **Run mode** *(runMode)*                                                       | Set to 1 for interactive (prompts before touching any child tenant to allow you to review configuration) and 0 for automated (no prompts once started). All modes will create the parent space and glossary on the parent tenant.  | 1                |
+| **Run mode** *(runMode)*                                                       | Set to 1 for interactive (prompts before touching any child tenant to allow you to review configuration) and 0 for automated (no prompts once started). All modes will create the parent space and glossary on the parent tenant.  | 0                |
 | **Shared space base name** *(sharedSpaceName)*                                 | Name of the shared space into which parent apps are deployed; child apps will be deployed to a space suffixed with the tenant hostname.                                     | Monitoring                          |
-| **Subscription type**                                                          | Define the subscription type used for the monitoring setup.                                                                                                              | (Specify your subscription type)    |
-| **Tenant count**                                                               | Specify the total number of child tenants to be monitored.                                                                                                               | (Provide the tenant count)          |
-| **Version**                                                                    | Specify the version of the automation installer.                                                                                                                         | (Provide the version)               |
+| **Version** *(qcmamtVersion)*                                                  | Version of this installer. It is recommended you do not change this value.                                                                                                | 4                                   |
 
 #### Automatic tenant cleanup
 
@@ -109,9 +113,33 @@ In normal operation:
 - Set `setMaxApiKey` to `P30D` to provide an expiry longer than the schedule.
 - Ensure that `recreateConnections` remains set to `1` so that it recreates the API key each time the automation runs.
 
+## Scheduling notes
+
+When `createSchedule=1`, schedules are created/updated using the `v1/tasks` API. The legacy `v1/reload-tasks` endpoints are queried for backwards compatibility, but are expected to be removed by Qlik in future.
+
+The schedule timing is generated in a custom code block based on:
+- `reloadScheduleHour` (UTC hour to start)
+- Tenant iteration order (see Tenant list processing below)
+
+If you need to stagger reloads, adjust the minute increment in the custom code block (look for `MINUTE_INCREMENT`). Parent-tenant apps are intentionally scheduled **10 minutes after** the last child tenant offset.
+
+## Permissions and API key management
+
+Child tenants must allow the automation user to create API keys. The automation checks permissions using `v1/accesscontrol/evaluation`. If the required permission is missing, it will attempt to create a custom role named:
+
+`Qlik Cloud multi-tenant monitoring app deployer v<qcmamtVersion>`
+
+and assign that role to the automation user on the child tenant.
+
 ## Tenant list
 
 By default, the automation loads the list of tenants from a glossary named `TenantList` in the `sharedSpaceName` shared space.
+
+### Tenant list processing
+
+- Newly added glossary terms are processed first (sorted by `createdAt`, newest first).
+- Any term tagged `parent` is processed last.
+- The automation stores a per-tenant "last attempted" timestamp in the glossary term `description` field (UTC epoch seconds) and uses `nextRunDelaySeconds` to avoid reprocessing too frequently.
 
 A glossary is used rather than a direct external source as:
 
