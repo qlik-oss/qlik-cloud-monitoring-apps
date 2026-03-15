@@ -600,12 +600,12 @@
       "name": "iter",
       "displayName": "Variable - iter",
       "comment": "",
-      "childId": "72BCBE21-9B12-4D01-9CC1-48002D5D94E1",
+      "childId": "EDC52365-8824-40ED-AE1A-CA3A39953ADF",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 360,
-      "y": 12600,
+      "x": 120,
+      "y": 12440,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -4928,8 +4928,8 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 240,
-      "y": 12520,
-      "childTrueId": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
+      "y": 12640,
+      "childTrueId": "72BCBE21-9B12-4D01-9CC1-48002D5D94E1",
       "childFalseId": "87291F65-480C-4CA5-A341-3F4A7F5F18E4"
     },
     {
@@ -7352,7 +7352,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 120,
-      "y": 12440,
+      "y": 12560,
       "childTrueId": "6620E327-319D-4493-AFE6-91FFB72447A5",
       "childFalseId": "FBEA5147-91E0-4685-AEB1-DF5924283BC5"
     },
@@ -7390,7 +7390,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Skipped | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
+          "value": "| { $.iter } | {$.loopTenant}|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
           "type": "string",
           "structure": []
         }
@@ -7418,7 +7418,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Skipped | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
+          "value": "| { $.iter } | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
           "type": "string",
           "structure": []
         }
@@ -7446,7 +7446,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "| Skipped | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
+          "value": "| { $.iter } | { $.loopTenant }|N/A|N/A|N/A|{regexreplace: {implode: {$.filterList6[*].name}, '|'}, '[^|]+', 'N/A'}|",
           "type": "string",
           "structure": []
         }
@@ -8194,7 +8194,7 @@
       "name": "getTerm",
       "displayName": "Qlik Cloud Services - Get Term",
       "comment": "Get latest term definition - useful when running multiple concurrent jobs.",
-      "childId": "EDC52365-8824-40ED-AE1A-CA3A39953ADF",
+      "childId": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
       "inputs": [
         {
           "id": "4b92b980-56bb-11ee-a645-1fdda4ea0493",
