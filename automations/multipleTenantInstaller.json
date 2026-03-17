@@ -918,9 +918,9 @@
         },
         {
           "id": "f5a723a0-2d77-11ef-b735-db73a23b6ee2",
-          "value": "true",
+          "value": "false",
           "type": "select",
-          "displayValue": "true",
+          "displayValue": "false",
           "structure": []
         },
         {
@@ -951,8 +951,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 600,
-      "y": 13120,
+      "x": 570,
+      "y": 9463,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -5353,7 +5353,7 @@
       ],
       "settings": [],
       "collapsed": [
-        { "name": "both", "isCollapsed": false },
+        { "name": "both", "isCollapsed": true },
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
