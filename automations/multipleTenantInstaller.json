@@ -82,7 +82,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 6400
+      "y": 6520
     },
     {
       "id": "1FC63304-4689-4FEF-9D39-5AF06D38574E",
@@ -96,7 +96,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 5160,
+      "y": 5280,
       "variableGuid": "47CCFA4B-0ADC-40F3-95AC-FCEDD886EC94",
       "operations": [
         {
@@ -134,7 +134,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 11860,
+      "y": 8340,
       "loopBlockId": "794E01BA-DF4F-437F-B709-6C252169791B"
     },
     {
@@ -198,7 +198,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 6740
+      "y": 6860
     },
     {
       "id": "ABF45FFC-7945-4244-9A90-22FE024FDF10",
@@ -212,7 +212,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 6980,
+      "y": 7100,
       "variableGuid": "CC701ED4-984D-4E17-896A-89FA869476A3",
       "operations": [
         {
@@ -235,7 +235,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 6860,
+      "y": 6980,
       "variableGuid": "F08D6858-C076-408D-A99B-C4DE12BFBF37",
       "operations": [
         {
@@ -295,7 +295,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 480,
-      "y": 12920,
+      "y": 9400,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7a3d4810-9ca9-11ed-b53f-076542389b5b",
       "endpoint_role": "get"
@@ -349,8 +349,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 16900,
+      "x": 960,
+      "y": 13200,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "b92fb7f0-7aea-11ed-8256-99fbe90dc9aa",
       "endpoint_role": "create"
@@ -362,7 +362,7 @@
       "name": "listAPIKeys",
       "displayName": "Qlik Platform Operations - List API Keys",
       "comment": "",
-      "childId": "90B4E0A4-FB1E-4497-A8C7-C3E4F26BD374",
+      "childId": "936EF573-C0E6-47ED-9EBC-ABCAA1260243",
       "inputs": [
         {
           "id": "475af100-7ae7-11ed-9999-8df76eade1c8",
@@ -418,7 +418,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 840,
-      "y": 15920,
+      "y": 11980,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4736fde0-7ae7-11ed-9273-9b579aaccda3",
@@ -441,7 +441,7 @@
         },
         {
           "id": "217da9e0-24c8-11ef-9866-b7eed31c0eca",
-          "value": "{ $.filterList2.item.id }",
+          "value": "{ $.loop5.item.id }",
           "type": "string",
           "structure": []
         }
@@ -467,8 +467,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 16740,
+      "x": 1080,
+      "y": 13040,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "21664090-24c8-11ef-a986-0f4e2eea17f8",
       "endpoint_role": "delete"
@@ -485,7 +485,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 23280,
+      "y": 20400,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -533,7 +533,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 480,
-      "y": 13040,
+      "y": 9520,
       "childTrueId": "8E9BCCD1-AFED-4A60-A694-B706B4A2B37D",
       "childFalseId": "5FE6B65F-FA10-44E0-A038-536C3D312A9C"
     },
@@ -563,7 +563,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 27220
+      "y": 24340
     },
     {
       "id": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
@@ -591,7 +591,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 480,
-      "y": 12800
+      "y": 9280
     },
     {
       "id": "E81E41DC-7B6E-4A0C-A03B-0A8A50933733",
@@ -605,7 +605,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 12440,
+      "y": 8920,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -628,7 +628,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 11500,
+      "y": 7980,
       "variableGuid": "469E38D5-E35C-4E16-A02B-783248CA9FE3",
       "operations": [
         {
@@ -646,7 +646,7 @@
       "name": "sharedSpaceName",
       "displayName": "Variable - sharedSpaceName",
       "comment": "Set the name of the shared space into which parent apps will be deployed. Child apps will land in a shared space suffixed with the tenant hostname.",
-      "childId": "DE73FA04-D1A0-41F6-BEBD-66C89D6087B7",
+      "childId": "6A417F7A-4BCE-405A-B8D3-70A14291B74D",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
@@ -669,7 +669,7 @@
       "name": "listDataConnections",
       "displayName": "Qlik Platform Operations - List Data Connections",
       "comment": "Check for existing REST connection",
-      "childId": "99E8F459-3747-4D47-A931-A2447280294B",
+      "childId": "F8781128-3670-4823-BA0D-D229D3B1C897",
       "inputs": [
         {
           "id": "8adf5d40-ce38-11ed-9a06-d1c545d3551c",
@@ -761,8 +761,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
-      "x": 600,
-      "y": 14000,
+      "x": 720,
+      "y": 10560,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "8accd9c0-ce38-11ed-a5b4-974f79a4f39f",
@@ -783,14 +783,14 @@
             "mode": "some",
             "conditions": [
               {
-                "input1": "{ $.listDataConnections[*].qName }",
-                "input2": "{ $.restConnectorName }-{ $.loopTenant }",
-                "operator": "doesntContain"
+                "input1": "{ $.recreateConnections }",
+                "operator": "=",
+                "input2": "1"
               },
               {
-                "input1": "{ $.recreateConnections }",
-                "input2": "1",
-                "operator": "="
+                "input1": "{ count: { $.filterList4 } }",
+                "operator": "!=",
+                "input2": "1"
               }
             ]
           },
@@ -805,7 +805,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 720,
-      "y": 14620,
+      "y": 10800,
       "childTrueId": "57606E73-66FD-4412-A857-C8EE079F14D0",
       "childFalseId": "BC0FE9D3-F9F8-4397-A0CC-FFEDA087A21A"
     },
@@ -835,7 +835,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 28420
+      "y": 25540
     },
     {
       "id": "65907A69-1095-426C-BF99-AE79754EF6B6",
@@ -863,7 +863,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 28540
+      "y": 25660
     },
     {
       "id": "794E01BA-DF4F-437F-B709-6C252169791B",
@@ -877,7 +877,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 11960,
+      "y": 8440,
       "variableGuid": "AFCCC997-C4F7-4B12-84F8-A87D8EA34023",
       "operations": [
         {
@@ -951,8 +951,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 570,
-      "y": 9463,
+      "x": 600,
+      "y": 9600,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -968,7 +968,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2440,
+      "y": 2560,
       "variableGuid": "8020627D-CEE4-4E7E-A665-387EC0A7ED59",
       "operations": [
         {
@@ -1029,7 +1029,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 15000,
+      "y": 11180,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "13b60e00-b538-11ee-8db4-7f4aeae7104c"
     },
@@ -1040,7 +1040,7 @@
       "name": "GetAPIKeySettings2",
       "displayName": "Qlik Platform Operations - Get API Key Settings 2",
       "comment": "",
-      "childId": "33E323BF-67C3-4FF0-A19D-AB95FB0A1FCE",
+      "childId": "F09A85E5-6A42-4C1F-BFB6-BCA33EA36110",
       "inputs": [
         {
           "id": "c1cf3950-b5fb-11ee-b6b4-29ac39a27018",
@@ -1071,7 +1071,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 15680,
+      "y": 11860,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "c1c787a0-b5fb-11ee-b35e-a77c39ebc169"
     },
@@ -1082,7 +1082,7 @@
       "name": "condition14",
       "displayName": "Condition 14",
       "comment": "If set to less than 0 keys per user, or user has less than 1 key available, or change API key set above",
-      "childId": "936EF573-C0E6-47ED-9EBC-ABCAA1260243",
+      "childId": "80FD2B76-98E9-4754-9E8C-ADD20E4D6E10",
       "inputs": [
         {
           "id": "conditions",
@@ -1091,18 +1091,18 @@
             "conditions": [
               {
                 "input1": "{ $.GetAPIKeySettings2.max_keys_per_user }",
-                "input2": "1",
-                "operator": "<"
+                "operator": "<",
+                "input2": "1"
               },
               {
-                "input1": "{ $.CountRemainingAPIKeys.remainingKeys }",
-                "input2": "1",
-                "operator": "<"
+                "input1": "{ subtract: { $.GetAPIKeySettings2.max_keys_per_user }, { count: { $.listAPIKeys } } }",
+                "operator": "<",
+                "input2": "1"
               },
               {
                 "input1": "{ $.loopUpdateAPIKeySettings }",
-                "input2": "1",
-                "operator": "="
+                "operator": "=",
+                "input2": "1"
               }
             ]
           },
@@ -1116,8 +1116,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 840,
-      "y": 16400,
+      "x": 960,
+      "y": 12700,
       "childTrueId": "95E1A381-5CDF-468E-9F92-13F9C4DD2B43",
       "childFalseId": null
     },
@@ -1127,8 +1127,8 @@
       "disabled": false,
       "name": "filterList2",
       "displayName": "Filter over Qlik Platform Operations - List API Keys - Filter List 2",
-      "comment": "Delete old API keys",
-      "childId": "96E85558-3846-4E9B-AE3D-FAB9CB5EBE2F",
+      "comment": "Filter list to API keys for this runner.",
+      "childId": "6E5B26A0-F649-4C0C-83B6-A8C1C5E5D06D",
       "inputs": [
         {
           "id": "list",
@@ -1163,8 +1163,8 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 16640,
-      "loopBlockId": "5D55A1FE-33AD-4836-A22C-51B2B90B3AC4"
+      "y": 12100,
+      "loopBlockId": null
     },
     {
       "id": "7C3D6725-C881-450B-8104-382494E85315",
@@ -1192,7 +1192,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 18260,
+      "y": 15380,
       "loopBlockId": "D4C1C8B4-6847-48A5-AD38-CB3A40E66E1B"
     },
     {
@@ -1232,7 +1232,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 18560
+      "y": 15680
     },
     {
       "id": "D4C1C8B4-6847-48A5-AD38-CB3A40E66E1B",
@@ -1246,7 +1246,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 720,
-      "y": 18360,
+      "y": 15480,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -1290,7 +1290,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 840,
-      "y": 20480,
+      "y": 17600,
       "childTrueId": "8196067B-D152-4CDD-B2E2-4C2861D3B1F6",
       "childFalseId": "7D554635-3108-4E90-B6C3-112C595FDEDF"
     },
@@ -1320,7 +1320,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 21780,
+      "y": 18900,
       "loopBlockId": "60E97180-5C42-45DA-9ADE-CF36A1D24B9E"
     },
     {
@@ -1335,7 +1335,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 21880,
+      "y": 19000,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -1379,7 +1379,7 @@
       "settings": [],
       "collapsed": [{ "name": "default", "isCollapsed": false }],
       "x": 1080,
-      "y": 22000,
+      "y": 19120,
       "statementChildrenIds": [
         "858A5999-B15D-489D-9935-E3A16941E1DF",
         "02E98CD1-1D92-4110-803C-6024431DA22D",
@@ -1422,7 +1422,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 1080,
-      "y": 24180,
+      "y": 21300,
       "childTrueId": "D14C5C59-50AB-4068-A8DA-ACE70FAF56AF",
       "childFalseId": null
     },
@@ -1438,7 +1438,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 24980,
+      "y": 22100,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -1500,7 +1500,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 21540,
+      "y": 18660,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ba528340-b772-11ed-b492-8bb1aac9fe46",
       "endpoint_role": "get"
@@ -1561,7 +1561,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 25260,
+      "y": 22380,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ce3b7a60-9804-11ed-bbe1-49da94237f4e",
       "endpoint_role": "create"
@@ -1578,7 +1578,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 22160,
+      "y": 19280,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1601,7 +1601,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 22640,
+      "y": 19760,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1624,7 +1624,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 23040,
+      "y": 20160,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1647,7 +1647,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 23440,
+      "y": 20560,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1670,7 +1670,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 23680,
+      "y": 20800,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1693,7 +1693,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 23840,
+      "y": 20960,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -1760,7 +1760,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 21040,
+      "y": 18160,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "4bbfdf70-fc5b-11ec-b1c1-311f2248f446",
       "endpoint_role": "create"
@@ -1871,7 +1871,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 21280,
+      "y": 18400,
       "loopBlockId": "35AB855C-019E-4461-A9E2-E10475D4CBAF",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "5d8264a0-e8e9-11ed-bf7e-a7275b075e61",
@@ -1905,7 +1905,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 840,
-      "y": 20060,
+      "y": 17180,
       "childTrueId": "DBA838ED-310F-4D9A-9BC8-64787FBBDE70",
       "childFalseId": null
     },
@@ -1916,7 +1916,7 @@
       "name": "filterList4",
       "displayName": "Filter over Qlik Platform Operations - List Data Connections - Filter List 4",
       "comment": "",
-      "childId": null,
+      "childId": "0FB8C177-55A1-4825-BAB1-0A69866AC91F",
       "inputs": [
         {
           "id": "list",
@@ -1948,10 +1948,10 @@
           "structure": []
         }
       ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 720,
-      "y": 14200,
-      "loopBlockId": "A9827659-D927-4F0F-AD75-6C0149D5C114"
+      "y": 10680,
+      "loopBlockId": null
     },
     {
       "id": "DE73FA04-D1A0-41F6-BEBD-66C89D6087B7",
@@ -1959,20 +1959,20 @@
       "disabled": false,
       "name": "recreateConnections",
       "displayName": "Variable - recreateConnections",
-      "comment": "Set to 0 for no actions, 1 to create/recreate data connections on run.",
-      "childId": "6A417F7A-4BCE-405A-B8D3-70A14291B74D",
+      "comment": "Set to 1 to force recreation of data connections on all tenants.",
+      "childId": "8C6401B5-71A0-4BB9-A3BB-F8E1FDEA1AC8",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 560,
+      "y": 1400,
       "variableGuid": "1103231C-BFB8-4426-9C14-ADCC798B8FEA",
       "operations": [
         {
           "id": "set_value",
           "key": "1D8A1E1E-78F1-4A10-8531-9612EC322A34",
           "name": "Set value of { variable }",
-          "value": "1"
+          "value": "0"
         }
       ]
     },
@@ -1982,8 +1982,8 @@
       "disabled": false,
       "name": "condition",
       "displayName": "Condition",
-      "comment": "If delete connections set",
-      "childId": "BE430E56-DB40-4F29-805E-087BAD434435",
+      "comment": "If recreate (update) connections set, delete existing first",
+      "childId": "353A4683-7807-425E-A527-14E9EC8E86C6",
       "inputs": [
         {
           "id": "conditions",
@@ -1992,8 +1992,13 @@
             "conditions": [
               {
                 "input1": "{ $.recreateConnections }",
-                "input2": "1",
-                "operator": "="
+                "operator": "=",
+                "input2": "1"
+              },
+              {
+                "input1": "{ count: { $.filterList4 } }",
+                "operator": ">",
+                "input2": "0"
               }
             ]
           },
@@ -2007,59 +2012,10 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 600,
-      "y": 14120,
-      "childTrueId": "F8781128-3670-4823-BA0D-D229D3B1C897",
+      "x": 960,
+      "y": 13600,
+      "childTrueId": "AF5E6184-18D2-4FB9-8048-90E408F29F0D",
       "childFalseId": null
-    },
-    {
-      "id": "A9827659-D927-4F0F-AD75-6C0149D5C114",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "deleteDataConnection",
-      "displayName": "Qlik Platform Operations - Delete Data Connection",
-      "comment": "",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "9e9a5c20-ce39-11ed-8e30-39178a211127",
-          "value": "{ $.parentTenant }",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "9ea1c1b0-ce39-11ed-9976-c5d449ec39f1",
-          "value": "{ $.filterList4.item.id }",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "datasource",
-          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 14300,
-      "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
-      "endpoint_guid": "9e81fbe0-ce39-11ed-9e38-7ffc25cf714f",
-      "endpoint_role": "delete"
     },
     {
       "id": "8196067B-D152-4CDD-B2E2-4C2861D3B1F6",
@@ -2073,7 +2029,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 20560,
+      "y": 17680,
       "variableGuid": "5105E92C-2FE4-4621-9DC7-20694E0A72C5",
       "operations": [
         {
@@ -2096,7 +2052,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 17980,
+      "y": 15100,
       "variableGuid": "5105E92C-2FE4-4621-9DC7-20694E0A72C5",
       "operations": [
         {
@@ -2146,7 +2102,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 4920,
+      "y": 5040,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "33758560-5630-11ee-b86b-d9ef817cf95b",
@@ -2198,7 +2154,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 6640,
+      "y": 6760,
       "loopBlockId": "F1DB0E91-A51C-40FE-BFF4-78D4A7CE57EA"
     },
     {
@@ -2213,7 +2169,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 12080,
+      "y": 8560,
       "variableGuid": "7C3C9241-D7CC-4450-B3B7-94DE96AACC67",
       "operations": [
         {
@@ -2264,7 +2220,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 5400,
+      "y": 5520,
       "loopBlockId": null
     },
     {
@@ -2279,7 +2235,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 5520,
+      "y": 5640,
       "variableGuid": "47CCFA4B-0ADC-40F3-95AC-FCEDD886EC94",
       "operations": [
         {
@@ -2309,7 +2265,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 12200,
+      "y": 8680,
       "variableGuid": "A6B260C4-E449-44CA-B958-E6BB6130E064",
       "operations": [
         {
@@ -2352,7 +2308,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 1200,
-      "y": 22080,
+      "y": 19200,
       "childTrueId": "3227E372-959D-47C3-8345-E8DD0E9B8103",
       "childFalseId": "DFD9F539-02EE-45B1-986E-8178DEAA5432"
     },
@@ -2368,7 +2324,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 22320,
+      "y": 19440,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -2411,7 +2367,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 1200,
-      "y": 23200,
+      "y": 20320,
       "childTrueId": "429EDB83-94EB-40EE-9E60-DBA2E8A2A63C",
       "childFalseId": "D381FF6F-CD81-4E63-82C9-62984CB5DCF9"
     },
@@ -2427,7 +2383,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 11620,
+      "y": 8100,
       "variableGuid": "065DA746-CADF-4E58-B325-83499A7A66DE",
       "operations": [
         {
@@ -2450,7 +2406,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 20920,
+      "y": 18040,
       "variableGuid": "065DA746-CADF-4E58-B325-83499A7A66DE",
       "operations": [
         {
@@ -2498,7 +2454,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 720,
-      "y": 18480,
+      "y": 15600,
       "childTrueId": "A58E6D24-2609-48AB-88CF-41F69E95D9B4",
       "childFalseId": "2A536657-741B-4D02-85E0-4AD1262D90AD"
     },
@@ -2534,7 +2490,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 1200,
-      "y": 24260,
+      "y": 21380,
       "childTrueId": "C0CE83B3-562E-4981-9EDB-C2A258D469EC",
       "childFalseId": "B9BB634B-B664-487B-96D5-E19011C4E88E"
     },
@@ -2558,87 +2514,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 24460
-    },
-    {
-      "id": "F4D45158-9782-4A88-AD42-834FFC45750C",
-      "type": "EndpointBlock",
-      "disabled": false,
-      "name": "CreateAnalyticsDataConnection",
-      "displayName": "Qlik Platform Operations - Create Analytics Data Connection",
-      "comment": "",
-      "childId": null,
-      "inputs": [
-        {
-          "id": "4c0ab960-d6de-11ee-8d82-4942a223c1bb",
-          "value": "{ $.parentTenant }",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "9d78cac0-d6df-11ee-9df0-bdc8c8cf0c37",
-          "value": "{ $.restConnectorName }-{ $.loopTenant }",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "d6e56fa0-d6df-11ee-848e-91feaabc3a5c",
-          "value": "rest",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "f4971ca0-d6df-11ee-934c-251b0309fb36",
-          "value": "{\n\"url\": \"https://{$.loopTenant}/api/v1/items\",\n\"queryHeaders\": [\n{\n\"name\": \"Authorization\",\n\"value\": \"Bearer {$.createAPIKey.token}\"\n}\n],\n\"allowWithConnection\": \"true\"\n}",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "a70a54e0-d6df-11ee-9f52-c9cf0415b92e",
-          "value": "{ $.createSpaceIfNotExisting.id }",
-          "type": "string",
-          "structure": []
-        },
-        {
-          "id": "c2fe0120-d6df-11ee-95e7-5deb95ee9665",
-          "value": "c88ad920-d6df-11ee-a3c0-bbaecf517f87",
-          "type": "select",
-          "displayValue": "false",
-          "structure": []
-        },
-        {
-          "id": "6bc304e0-d6e7-11ee-91f4-d9e1a547e378",
-          "value": "[\"multipleTenantInstaller\"]",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "datasource",
-          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": true,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 17260,
-      "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
-      "endpoint_guid": "4bf2fbe0-d6de-11ee-bb93-8515374f2012",
-      "endpoint_role": "create"
+      "y": 21580
     },
     {
       "id": "E9D15206-6B5A-473C-BE01-82C38F32A5D5",
@@ -2679,7 +2555,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 5640,
+      "y": 5760,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "6ea9fa20-9d78-11ed-a228-a3d1b7dd2e0f",
       "endpoint_role": "get"
@@ -2716,7 +2592,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 0,
-      "y": 5760,
+      "y": 5880,
       "childTrueId": "1DC51199-4D45-414D-8895-8EB87E88C3F3",
       "childFalseId": "F35448D5-331A-463B-8CA6-89D6B51F1BD5"
     },
@@ -2732,7 +2608,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 5840,
+      "y": 5960,
       "variableGuid": "65330171-12DB-47EB-98CB-8FB805DF6719",
       "operations": [
         {
@@ -2755,7 +2631,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 6000,
+      "y": 6120,
       "variableGuid": "65330171-12DB-47EB-98CB-8FB805DF6719",
       "operations": [
         {
@@ -2798,7 +2674,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 4040,
+      "y": 4160,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "df689160-53bc-11ee-b8e0-4d2494612b78",
@@ -2850,7 +2726,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 4160,
+      "y": 4280,
       "loopBlockId": null
     },
     {
@@ -2885,7 +2761,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 0,
-      "y": 4280,
+      "y": 4400,
       "childTrueId": "9BD3791C-64AA-4383-AA5A-63AA2D6C8811",
       "childFalseId": "620D4E68-F326-4866-9D76-22145CE26C43"
     },
@@ -2901,7 +2777,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4360,
+      "y": 4480,
       "variableGuid": "2AE59D02-913F-4BD3-875D-FB8B063C136F",
       "operations": [
         {
@@ -2956,7 +2832,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4520,
+      "y": 4640,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "b752cb40-5609-11ee-9bb1-014aa10c2b62",
       "endpoint_role": "create"
@@ -2973,7 +2849,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4760,
+      "y": 4880,
       "variableGuid": "2AE59D02-913F-4BD3-875D-FB8B063C136F",
       "operations": [
         {
@@ -3070,7 +2946,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 4640,
+      "y": 4760,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "82432160-5630-11ee-b2f4-3b97c6c1c76e",
       "endpoint_role": "create"
@@ -3101,7 +2977,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3040,
+      "y": 3160,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "55051480-cb86-11ec-b746-892c1d04114e",
       "endpoint_role": "get"
@@ -3118,7 +2994,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1160,
+      "y": 1040,
       "variableGuid": "C65E4AE0-B0C9-40BD-AAE6-438324B545A4",
       "operations": [
         {
@@ -3136,7 +3012,7 @@
       "name": "condition22",
       "displayName": "Condition 22",
       "comment": "If API key not active, exit. Likely due to expiry being an invalid duration.",
-      "childId": "C95E46BD-C17F-45B0-9E6B-DFDBE311F6CB",
+      "childId": "99E8F459-3747-4D47-A931-A2447280294B",
       "inputs": [
         {
           "id": "conditions",
@@ -3160,10 +3036,10 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": false }
       ],
-      "x": 840,
-      "y": 17020,
+      "x": 960,
+      "y": 13320,
       "childTrueId": "F92683FE-AEA7-4886-B30A-81F398FE5128",
-      "childFalseId": "F4D45158-9782-4A88-AD42-834FFC45750C"
+      "childFalseId": null
     },
     {
       "id": "F92683FE-AEA7-4886-B30A-81F398FE5128",
@@ -3184,50 +3060,8 @@
       ],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 17100
-    },
-    {
-      "id": "33E323BF-67C3-4FF0-A19D-AB95FB0A1FCE",
-      "type": "SnippetBlock",
-      "disabled": false,
-      "name": "CountRemainingAPIKeys",
-      "displayName": "Qlik Platform Operations - Count Remaining API Keys",
-      "comment": "",
-      "childId": "F09A85E5-6A42-4C1F-BFB6-BCA33EA36110",
-      "inputs": [
-        {
-          "id": "80a65ff0-d570-11ee-bf54-fd6364168594",
-          "value": "{$.loopTenant}",
-          "type": "string",
-          "structure": []
-        }
-      ],
-      "settings": [
-        {
-          "id": "datasource",
-          "value": "cccc14a0-d233-11ed-b0d0-33e7e8bc635b",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "blendr_on_error",
-          "value": "stop",
-          "type": "select",
-          "structure": []
-        },
-        {
-          "id": "automations_censor_data",
-          "value": false,
-          "type": "checkbox",
-          "structure": []
-        }
-      ],
-      "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 15800,
-      "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
-      "snippet_guid": "f96bc780-d552-11ee-944d-a3153a5c7ca0"
+      "x": 1080,
+      "y": 13400
     },
     {
       "id": "E56177FC-87D9-454C-B99B-02CEB39F1500",
@@ -3241,7 +3075,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3160,
+      "y": 3280,
       "variableGuid": "7F782E8A-190C-4911-BC05-2C9913FBEAE9",
       "operations": [
         {
@@ -3284,7 +3118,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 1200,
-      "y": 22560,
+      "y": 19680,
       "childTrueId": "0E9FD2FB-98FF-4384-A63A-14CC9332FD04",
       "childFalseId": "D5BD151B-7403-4494-A4D9-D98142C0D1A8"
     },
@@ -3300,7 +3134,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 22800,
+      "y": 19920,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -3322,7 +3156,7 @@
       "inputs": [
         {
           "id": "input",
-          "value": "### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration override | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being recreated*', 'No changes made to existing REST connections or API keys'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | {if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant} |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Check for new versions | { $.checkVersions } |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Next run delay (seconds) | {$.nextRunDelaySeconds} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | {$.runMode} |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
+          "value": "### Overrides\n\nThese overrides may have a large impact on how this automation runs, ensure these are configured correctly.\n\n| Param | Value |\n|------------------------|---------------------------|\n| API key expiration (max duration) | {if: {$.setMaxApiKey} notEmpty , '*Will set all tenants to { $.setMaxApiKey }*', 'Current tenant settings will be used'} |\n| Skip to tenant number | {$.skipToTenantNumber} |\n| Required API key validity (days) | {$.requiredApiKeyValidity} |\n| Force recreate connections | {if: {$.recreateConnections} = 1, '*All REST connections & API keys being forcefully recreated*', 'Normal lifecycle - connections updated as needed'} |\n| Replace all apps | {if: {$.replaceAllApps} = 1, '*All apps being fully replaced due to override*', 'Replacing outdated apps only'} |\n| Run only on tenant | {if: {$.runOnTenant} empty , '<all tenants>', $.runOnTenant} |\n\n### Base configuration\n\n| Param | Value |\n|------------------------|---------------------------|\n| Automatic tenant cleanup | {if: { $.autoTenantCleanup } = 1, '*Auto delete missing tenant data*', 'No'} |\n| Create a reload schedule for apps when creating or updating | {$.createSchedule} |\n| Check for new versions | { $.checkVersions } |\n| Glossary name | {$.glossaryName} |\n| Manifest URL | {$.manifestUrl} |\n| Next run delay (seconds) | {$.nextRunDelaySeconds} |\n| Parent tenant | {$.parentTenant} |\n| Reload apps after creating or updating | {$.doReload} |\n| REST connector name | {$.restConnectorName} |\n| Run mode | {$.runMode} |\n| Shared space base name | {$.sharedSpaceName} |\n| Subscription type | {$.subscriptionType} |\n| Tenant count | {count: {$.tenantList}}|\n| Version | {$.qcmamtVersion} |",
           "type": "string",
           "structure": []
         }
@@ -3337,7 +3171,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 6280
+      "y": 6400
     },
     {
       "id": "B0F53EA8-15FC-482D-9612-E2756224D632",
@@ -3351,7 +3185,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 6160,
+      "y": 6280,
       "variableGuid": "5C1A8781-B67B-4D16-AD4F-BE978AB2BB60",
       "operations": [
         {
@@ -3388,7 +3222,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 6520
+      "y": 6640
     },
     {
       "id": "F91709AC-C27A-46E1-AB38-122EE9E68615",
@@ -3416,7 +3250,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 7100
+      "y": 7220
     },
     {
       "id": "4FBF5D86-955C-43D4-900B-1F366B81DB61",
@@ -3444,7 +3278,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 11740
+      "y": 8220
     },
     {
       "id": "12C5F24F-DB03-46F5-9972-87C1ADA82A9F",
@@ -3453,12 +3287,12 @@
       "name": "outputRow",
       "displayName": "Variable - outputRow",
       "comment": "Output row builder for table",
-      "childId": "B97E3A59-5759-42A4-9B63-BEF5CDA6BA04",
+      "childId": "BE430E56-DB40-4F29-805E-087BAD434435",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 13880,
+      "y": 10360,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3501,8 +3335,8 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 600,
-      "y": 14540,
-      "childTrueId": "0FB8C177-55A1-4825-BAB1-0A69866AC91F",
+      "y": 10480,
+      "childTrueId": "B97E3A59-5759-42A4-9B63-BEF5CDA6BA04",
       "childFalseId": "D0873ABD-39CC-4395-A803-D44557AF0638"
     },
     {
@@ -3516,8 +3350,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 17420,
+      "x": 960,
+      "y": 14420,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3540,7 +3374,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 720,
-      "y": 17820,
+      "y": 14940,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3563,7 +3397,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 17580,
+      "y": 14700,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3586,7 +3420,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 19660,
+      "y": 16780,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3609,7 +3443,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 26500,
+      "y": 23620,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3652,7 +3486,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 960,
-      "y": 20680,
+      "y": 17800,
       "childTrueId": "8234E09F-7B24-4E21-AD26-9C4EBC034ABC",
       "childFalseId": null
     },
@@ -3668,7 +3502,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 20760,
+      "y": 17880,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3729,7 +3563,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 21380,
+      "y": 18500,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "85c38020-44dc-11ef-ba34-b984c74c5e2a"
     },
@@ -3759,7 +3593,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 27380
+      "y": 24500
     },
     {
       "id": "2A536657-741B-4D02-85E0-4AD1262D90AD",
@@ -3773,7 +3607,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 26980,
+      "y": 24100,
       "variableGuid": "05EFE0DB-E887-420D-8F2E-27735E36B40C",
       "operations": [
         {
@@ -3796,7 +3630,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1040,
+      "y": 920,
       "variableGuid": "5000C2B1-5FEE-4607-B840-B7D5410E3605",
       "operations": [
         {
@@ -3840,7 +3674,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 840,
-      "y": 26660,
+      "y": 23780,
       "childTrueId": "CB1096A2-2C94-43F3-ADCD-50FA3764FA8D",
       "childFalseId": null
     },
@@ -3856,7 +3690,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 19820,
+      "y": 16940,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -3879,7 +3713,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 21160,
+      "y": 18280,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -3902,7 +3736,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 18680,
+      "y": 15800,
       "variableGuid": "9A0C1661-6568-45DC-8C41-9A5F514E566E",
       "operations": [
         {
@@ -3978,7 +3812,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 26740,
+      "y": 23860,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "314f2e80-7bbe-11ed-8fc4-ed797f9ebbae",
       "endpoint_role": "create"
@@ -4020,7 +3854,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 600,
-      "y": 13240,
+      "y": 9720,
       "childTrueId": "2785D49B-8E6C-47AC-8BEB-E4DDAED478B3",
       "childFalseId": null
     },
@@ -4081,7 +3915,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 720,
-      "y": 13320,
+      "y": 9800,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -4111,7 +3945,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3400,
+      "y": 3520,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "6e9dbaa0-c7a4-11ea-9bd3-0da55b4cbed9",
       "endpoint_role": "get"
@@ -4128,7 +3962,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 800,
+      "y": 680,
       "variableGuid": "CDB69F4D-01F2-467E-BCCA-36ABF7812F31",
       "operations": [
         {
@@ -4176,7 +4010,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 960,
-      "y": 25380,
+      "y": 22500,
       "childTrueId": "672815AF-06DD-4FF7-95A0-B113BAC0F2F7",
       "childFalseId": null
     },
@@ -4241,7 +4075,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2080
+      "y": 2200
     },
     {
       "id": "52BDEF44-8C72-45E6-ADF5-9FE0AE651322",
@@ -4280,7 +4114,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 2200,
+      "y": 2320,
       "loopBlockId": null
     },
     {
@@ -4320,7 +4154,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 0,
-      "y": 2560,
+      "y": 2680,
       "childTrueId": "FD3A9017-0630-41E0-B70A-C106DB7497E2",
       "childFalseId": null
     },
@@ -4336,7 +4170,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 2320,
+      "y": 2440,
       "variableGuid": "CDE824C4-AABC-4462-914A-256E9FB3757A",
       "operations": [
         {
@@ -4367,7 +4201,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2880
+      "y": 3000
     },
     {
       "id": "FD3A9017-0630-41E0-B70A-C106DB7497E2",
@@ -4395,7 +4229,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2640
+      "y": 2760
     },
     {
       "id": "3E771AD7-7B2F-42E6-8F7A-30DF705DCF44",
@@ -4423,7 +4257,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 2760
+      "y": 2880
     },
     {
       "id": "DA684624-B2A8-468D-B3D5-544F5C2393D2",
@@ -4432,19 +4266,19 @@
       "name": "setMaxApiKey",
       "displayName": "Variable - setMaxApiKey",
       "comment": "Set to a value to reconfigure the tenant's max API key expiry to this value when the automation runs. Any generated API key will match this value. (e.g. \"P30D\"). ",
-      "childId": "8C6401B5-71A0-4BB9-A3BB-F8E1FDEA1AC8",
+      "childId": "CF0E6003-3C69-4607-9ADC-465B23F7B740",
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1280,
+      "y": 1160,
       "variableGuid": "84920D7D-15FF-4307-B8AC-8211589DE746",
       "operations": [
         {
           "id": "set_value",
           "key": "FD6DC736-182B-413C-A045-F97D399CB461",
           "name": "Set value of { variable }",
-          "value": "P30D"
+          "value": "P90D"
         }
       ]
     },
@@ -4460,7 +4294,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1400,
+      "y": 1520,
       "variableGuid": "41A84EF7-6F6C-4FDA-A9E0-434A962F9111",
       "operations": [
         {
@@ -4483,7 +4317,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1520,
+      "y": 1640,
       "variableGuid": "079A8AEF-DD70-4167-BBF0-C51F55ABC843",
       "operations": [
         {
@@ -4598,8 +4432,8 @@
         { "name": "yes", "isCollapsed": false },
         { "name": "no", "isCollapsed": true }
       ],
-      "x": 840,
-      "y": 16160,
+      "x": 960,
+      "y": 12460,
       "childTrueId": "C7AD8B3C-71F0-4134-9FC8-0D75A3D5CB2D",
       "childFalseId": null
     },
@@ -4626,7 +4460,7 @@
         },
         {
           "id": "1b555170-b5fe-11ee-bc88-d191ed4eebdb",
-          "value": "{ if: {$.CountRemainingAPIKeys.deployedKeys} > {$.CountRemainingAPIKeys.maxKeys}, { add: {$.CountRemainingAPIKeys.deployedKeys}, 1 }, { add: {$.CountRemainingAPIKeys.maxKeys}, 1 } }",
+          "value": "{if: { count: { $.listAPIKeys } } > { $.GetAPIKeySettings2.max_keys_per_user }, {add: { count: { $.listAPIKeys } }, 10}, {add: { $.GetAPIKeySettings2.max_keys_per_user }, 10}}",
           "type": "string",
           "structure": []
         }
@@ -4652,8 +4486,8 @@
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 16480,
+      "x": 1080,
+      "y": 12780,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "d8bb26a0-b5fd-11ee-a358-7d252eeef155"
     },
@@ -4668,8 +4502,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 840,
-      "y": 16040,
+      "x": 960,
+      "y": 12340,
       "variableGuid": "5574FD9D-5763-4351-8986-774586728936",
       "operations": [
         {
@@ -4691,8 +4525,8 @@
       "inputs": [],
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
-      "x": 960,
-      "y": 16240,
+      "x": 1080,
+      "y": 12540,
       "variableGuid": "5574FD9D-5763-4351-8986-774586728936",
       "operations": [
         {
@@ -4715,7 +4549,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1760,
+      "y": 1880,
       "variableGuid": "8F994758-D377-47C2-B764-C2F7D62FCEE5",
       "operations": [
         {
@@ -4790,7 +4624,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3520,
+      "y": 3640,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "1235c1c0-0b7f-11ee-8218-8b26bad2c475"
     },
@@ -4851,7 +4685,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 3840,
+      "y": 3960,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -4887,7 +4721,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 360,
-      "y": 12720,
+      "y": 9200,
       "childTrueId": "A170315C-9FB8-4A19-A2BD-B377EEFCD93B",
       "childFalseId": "DA8CB42F-2A24-40D4-889C-94A0DF59D6AE"
     },
@@ -4928,7 +4762,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 240,
-      "y": 12640,
+      "y": 9120,
       "childTrueId": "72BCBE21-9B12-4D01-9CC1-48002D5D94E1",
       "childFalseId": "87291F65-480C-4CA5-A341-3F4A7F5F18E4"
     },
@@ -4944,7 +4778,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1880,
+      "y": 2000,
       "variableGuid": "FB42F549-35C6-4FF0-8EC5-4577BC09E92D",
       "operations": [
         {
@@ -5006,7 +4840,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 0,
-      "y": 7260,
+      "y": 7380,
       "childTrueId": "08833C88-D837-413C-B5FC-4DE90D55B144",
       "childFalseId": null
     },
@@ -5035,7 +4869,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 7580,
+      "y": 7700,
       "form": [
         {
           "id": "inputs-input-0",
@@ -5064,7 +4898,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 7340
+      "y": 7460
     },
     {
       "id": "4F9E89F8-47F0-4F1E-BAE1-119DD701ECDA",
@@ -5092,7 +4926,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 7460
+      "y": 7580
     },
     {
       "id": "3983393F-3C5A-4B27-912E-F6DCEFC504AA",
@@ -5358,7 +5192,7 @@
         { "name": "no", "isCollapsed": true }
       ],
       "x": 0,
-      "y": 7740,
+      "y": 7860,
       "childTrueId": "6C4A2E9A-DE9C-4604-9DA2-2FB276982346",
       "childFalseId": null
     },
@@ -6215,7 +6049,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 24000,
+      "y": 21120,
       "variableGuid": "3949C04E-2CFD-498D-8687-A1EE10F31B85",
       "operations": [
         {
@@ -6238,7 +6072,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 25100,
+      "y": 22220,
       "variableGuid": "78C37A26-6056-40F7-A857-E84298458883",
       "operations": [
         {
@@ -6299,7 +6133,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 24620
+      "y": 21740
     },
     {
       "id": "793ABBBE-9AE9-4F72-876C-0E742F2E93DA",
@@ -6393,7 +6227,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 0,
-      "y": 3760,
+      "y": 3880,
       "childTrueId": "23EA7545-385B-4964-B105-A424082835A3",
       "childFalseId": null
     },
@@ -6461,7 +6295,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 14700,
+      "y": 10880,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -6498,7 +6332,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 840,
-      "y": 14820,
+      "y": 11000,
       "childTrueId": "64D6FAD1-8162-4746-88F6-C2A91E6F9DB4",
       "childFalseId": null
     },
@@ -6553,7 +6387,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 14900,
+      "y": 11080,
       "loopBlockId": "BBD1BB72-9BEC-464D-9268-A6F930619AA1",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "ba493570-b76f-11ed-b6ab-6fd465c15105",
@@ -6615,7 +6449,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 15240,
+      "y": 11420,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "f5c7f3a0-3575-11f0-abae-c9e5c5218268",
       "endpoint_role": "create"
@@ -6652,7 +6486,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 960,
-      "y": 15160,
+      "y": 11340,
       "childTrueId": "78C99981-7A38-4618-A1BC-4FE5E2709A24",
       "childFalseId": null
     },
@@ -6706,7 +6540,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 15360,
+      "y": 11540,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "13b60e00-b538-11ee-8db4-7f4aeae7104c"
     },
@@ -6769,7 +6603,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 25460,
+      "y": 22580,
       "loopBlockId": null,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "66e38ad0-c464-11f0-9c49-93ef936524bd",
@@ -6812,7 +6646,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 25620,
+      "y": 22740,
       "loopBlockId": "27A16967-7CF2-4467-AAAC-A3453CEDECB1"
     },
     {
@@ -6880,7 +6714,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 25720,
+      "y": 22840,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -6943,7 +6777,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 25880,
+      "y": 23000,
       "loopBlockId": "ADB94E28-A6A5-42FD-9D7B-3BE9D8B0EE6B",
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "66e38ad0-c464-11f0-9c49-93ef936524bd",
@@ -7014,7 +6848,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1200,
-      "y": 25980,
+      "y": 23100,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -7084,7 +6918,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 26260,
+      "y": 23380,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7b5d4040-c463-11f0-9b81-e7987de54c81",
       "endpoint_role": "create"
@@ -7101,7 +6935,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 120,
-      "y": 920,
+      "y": 800,
       "variableGuid": "7A1287B7-5FA4-42A7-95B8-9D67AC018D8C",
       "operations": [
         {
@@ -7163,7 +6997,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 26140
+      "y": 23260
     },
     {
       "id": "D3DDAF5D-D34F-45D1-BC06-267FC9F186CE",
@@ -7211,7 +7045,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 5280
+      "y": 5400
     },
     {
       "id": "C634BD87-07D2-4329-9C31-CFCCB6E9ADD0",
@@ -7305,7 +7139,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 480,
-      "y": 27540,
+      "y": 24660,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "ba2a8e90-56bb-11ee-a09e-51ddc742d8df",
       "endpoint_role": "update"
@@ -7352,7 +7186,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 120,
-      "y": 12560,
+      "y": 9040,
       "childTrueId": "6620E327-319D-4493-AFE6-91FFB72447A5",
       "childFalseId": "FBEA5147-91E0-4685-AEB1-DF5924283BC5"
     },
@@ -7368,7 +7202,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 1640,
+      "y": 1760,
       "variableGuid": "493A6F45-4E4B-4FFB-9EF3-13C22F0D4061",
       "operations": [
         {
@@ -7405,7 +7239,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 240,
-      "y": 28180
+      "y": 25300
     },
     {
       "id": "87291F65-480C-4CA5-A341-3F4A7F5F18E4",
@@ -7433,7 +7267,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 360,
-      "y": 27940
+      "y": 25060
     },
     {
       "id": "DA8CB42F-2A24-40D4-889C-94A0DF59D6AE",
@@ -7461,7 +7295,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 480,
-      "y": 27700
+      "y": 24820
     },
     {
       "id": "6A417F7A-4BCE-405A-B8D3-70A14291B74D",
@@ -7475,7 +7309,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 680,
+      "y": 560,
       "variableGuid": "9AA6A57A-B111-416C-898C-DF1048230569",
       "operations": [
         {
@@ -7532,7 +7366,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 18100,
+      "y": 15220,
       "loopBlockId": null,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "9f6166e0-bbb2-11f0-acdd-bd47067b5fbf",
@@ -7570,7 +7404,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 20240,
+      "y": 17360,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
       "endpoint_role": "delete"
@@ -7607,7 +7441,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 24340,
+      "y": 21460,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "fcc108b0-67b2-11eb-806a-3957ec36f31b",
       "endpoint_role": "delete"
@@ -7644,7 +7478,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 600,
-      "y": 13600,
+      "y": 10080,
       "childTrueId": "DA24AF31-82A9-4D64-9835-5CA4334EDBBB",
       "childFalseId": null
     },
@@ -7705,7 +7539,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 720,
-      "y": 13680,
+      "y": 10160,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "snippet_guid": "ebf86390-e5bc-11ed-b4d6-877460d526d5"
     },
@@ -7762,7 +7596,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 600,
-      "y": 13480,
+      "y": 9960,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "72d48530-bbb0-11f0-875a-b322bf237aeb",
       "endpoint_role": "create"
@@ -7800,7 +7634,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3640,
+      "y": 3760,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "92afefd0-6d2d-11eb-aee2-055653605a8e",
       "endpoint_role": "get"
@@ -7845,7 +7679,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 0,
-      "y": 3280,
+      "y": 3400,
       "datasourcetype_guid": "c7e48240-e0f2-11ec-ada1-d5ef75014b77",
       "endpoint_guid": "7a3d4810-9ca9-11ed-b53f-076542389b5b",
       "endpoint_role": "get"
@@ -7891,7 +7725,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 18800,
+      "y": 15920,
       "loopBlockId": null
     },
     {
@@ -7920,7 +7754,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 19360,
+      "y": 16480,
       "loopBlockId": "2AA6AE20-5924-4015-8F92-DF1F6D511A39"
     },
     {
@@ -7935,7 +7769,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 840,
-      "y": 18960,
+      "y": 16080,
       "variableGuid": "7CE7D6B8-B60A-4C01-AD95-65E0E8A59CD7",
       "operations": [
         {
@@ -7978,7 +7812,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 840,
-      "y": 19080,
+      "y": 16200,
       "childTrueId": "08F4E87E-658D-4F9B-83A1-CF47A6C7074B",
       "childFalseId": null
     },
@@ -7994,7 +7828,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 19160,
+      "y": 16280,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -8042,7 +7876,7 @@
         { "name": "no", "isCollapsed": false }
       ],
       "x": 960,
-      "y": 19460,
+      "y": 16580,
       "childTrueId": "89F89990-147D-4545-8F0F-E5DC1DF27EDF",
       "childFalseId": "3F93BDD6-B1E4-45AA-9509-DA578420D587"
     },
@@ -8058,7 +7892,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1080,
-      "y": 19540,
+      "y": 16660,
       "variableGuid": "BAA5B8AA-EC89-427E-A3D3-390061BDD136",
       "operations": [
         {
@@ -8095,7 +7929,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 20140,
+      "y": 17260,
       "loopBlockId": "DC2A45AC-35D4-4DFD-ABB9-EE38E8B522BA"
     },
     {
@@ -8138,7 +7972,7 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": 0,
-      "y": 5040,
+      "y": 5160,
       "loopBlockId": null
     },
     {
@@ -8153,7 +7987,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 960,
-      "y": 21660,
+      "y": 18780,
       "variableGuid": "8EA81C89-7B05-47C5-9729-1272F5AAABED",
       "operations": [
         {
@@ -8176,7 +8010,7 @@
       "settings": [],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 1320,
-      "y": 24740,
+      "y": 21860,
       "variableGuid": "8EA81C89-7B05-47C5-9729-1272F5AAABED",
       "operations": [
         {
@@ -8226,10 +8060,357 @@
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": false }],
       "x": 120,
-      "y": 12320,
+      "y": 8800,
       "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
       "endpoint_guid": "4b753f00-56bb-11ee-aaa3-2d83c0b655b2",
       "endpoint_role": "get"
+    },
+    {
+      "id": "CF0E6003-3C69-4607-9ADC-465B23F7B740",
+      "type": "VariableBlock",
+      "disabled": false,
+      "name": "requiredApiKeyValidity",
+      "displayName": "Variable - requiredApiKeyValidity",
+      "comment": "Determines when API keys are renewed, based on the number of days before they expire. Set to 0 to always renew.",
+      "childId": "DE73FA04-D1A0-41F6-BEBD-66C89D6087B7",
+      "inputs": [],
+      "settings": [],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 120,
+      "y": 1280,
+      "variableGuid": "8AB95724-6328-4FEB-8D34-0692A46463FA",
+      "operations": [
+        {
+          "key": "43BDD0DE-7592-4BA9-9A2C-6652CD236202",
+          "id": "set_value",
+          "name": "Set value of { variable }",
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "id": "6E5B26A0-F649-4C0C-83B6-A8C1C5E5D06D",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition37",
+      "displayName": "Condition 37",
+      "comment": "If more than 1 key, first key is not active, first key will expire within period, recreate connections is set",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "some",
+            "conditions": [
+              {
+                "input1": "{ count: { $.filterList2 } }",
+                "operator": "!=",
+                "input2": "1"
+              },
+              {
+                "input1": "{ $.filterList2[0].status }",
+                "operator": "!=",
+                "input2": "active"
+              },
+              {
+                "input1": "{ $.filterList2[0].expiry }",
+                "operator": "<=",
+                "input2": "{ date: 'now - { $.requiredApiKeyValidity } days', 'c' }"
+              },
+              {
+                "input1": "{ $.recreateConnections }",
+                "operator": "=",
+                "input2": "1"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 840,
+      "y": 12260,
+      "childTrueId": "90B4E0A4-FB1E-4497-A8C7-C3E4F26BD374",
+      "childFalseId": null
+    },
+    {
+      "id": "80FD2B76-98E9-4754-9E8C-ADD20E4D6E10",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop5",
+      "displayName": "Loop 5",
+      "comment": "",
+      "childId": "96E85558-3846-4E9B-AE3D-FAB9CB5EBE2F",
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{ $.filterList2 }",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 960,
+      "y": 12940,
+      "loopBlockId": "5D55A1FE-33AD-4836-A22C-51B2B90B3AC4"
+    },
+    {
+      "id": "EF885731-2C38-470F-8700-734EE7B929FB",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIRequest3",
+      "displayName": "Qlik Cloud Services - Raw API Request 3",
+      "comment": "Create new connection",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "734cbcc0-bbb0-11f0-b998-f73920377683",
+          "value": "v1/data-connections",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "7322a550-bbb0-11f0-9c8c-43f143a32456",
+          "value": "7347ee10-bbb0-11f0-8cdc-59311dd108b3",
+          "type": "select",
+          "displayValue": "POST",
+          "structure": {}
+        },
+        {
+          "id": "73000fe0-bbb0-11f0-8a80-59ece3571bd9",
+          "value": "{\n    \"dataSourceId\": \"rest\",\n\"qName\": \"{ $.restConnectorName }-{ $.loopTenant }\",\n\"space\": \"{ $.createSpaceIfNotExisting.id }\",\n\"connectionProperties\": {\n\"url\": \"https://{$.loopTenant}/api/v1/items\",\n\"queryHeaders\": [\n{\n\"name\": \"Authorization\",\n\"value\": \"Bearer {$.createAPIKey.token}\",\n\"encrypt\": true\n}\n],\n\"allowWithConnection\": \"true\"\n}\n}",
+          "type": "object",
+          "mode": "raw",
+          "structure": {}
+        },
+        {
+          "id": "736fae60-bbb0-11f0-ad62-c98a0046f418",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": true,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1080,
+      "y": 14100,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "72d48530-bbb0-11f0-875a-b322bf237aeb",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "E90CC1A2-35A9-4720-8AE1-4B858F72275B",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIRequest7",
+      "displayName": "Qlik Cloud Services - Raw API Request 7",
+      "comment": "Delete existing connection",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "734cbcc0-bbb0-11f0-b998-f73920377683",
+          "value": "v1/data-connections/{ $.loop6.item.id }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "7322a550-bbb0-11f0-9c8c-43f143a32456",
+          "value": "73465660-bbb0-11f0-b65a-eb94ca86d22a",
+          "type": "select",
+          "displayValue": "DELETE",
+          "structure": {}
+        },
+        {
+          "id": "73000fe0-bbb0-11f0-8a80-59ece3571bd9",
+          "value": "",
+          "type": "object",
+          "mode": "raw",
+          "structure": {}
+        },
+        {
+          "id": "736fae60-bbb0-11f0-ad62-c98a0046f418",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1200,
+      "y": 13780,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "72d48530-bbb0-11f0-875a-b322bf237aeb",
+      "endpoint_role": "create"
+    },
+    {
+      "id": "AF5E6184-18D2-4FB9-8048-90E408F29F0D",
+      "type": "ForEachBlock",
+      "disabled": false,
+      "name": "loop6",
+      "displayName": "Loop 6",
+      "comment": "",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "input",
+          "value": "{ $.filterList4 }",
+          "type": "string",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "automations_censor_data",
+          "value": false,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1080,
+      "y": 13680,
+      "loopBlockId": "E90CC1A2-35A9-4720-8AE1-4B858F72275B"
+    },
+    {
+      "id": "353A4683-7807-425E-A527-14E9EC8E86C6",
+      "type": "IfElseBlock",
+      "disabled": false,
+      "name": "condition38",
+      "displayName": "Condition 38",
+      "comment": "If no connection, or recreate set, new, otherwise update",
+      "childId": "C95E46BD-C17F-45B0-9E6B-DFDBE311F6CB",
+      "inputs": [
+        {
+          "id": "conditions",
+          "value": {
+            "mode": "some",
+            "conditions": [
+              {
+                "input1": "{ $.recreateConnections }",
+                "operator": "=",
+                "input2": "1"
+              },
+              {
+                "input1": "{ count: { $.filterList4 } }",
+                "operator": "=",
+                "input2": "0"
+              }
+            ]
+          },
+          "type": "custom",
+          "structure": {}
+        }
+      ],
+      "settings": [],
+      "collapsed": [
+        { "name": "both", "isCollapsed": false },
+        { "name": "yes", "isCollapsed": false },
+        { "name": "no", "isCollapsed": false }
+      ],
+      "x": 960,
+      "y": 14020,
+      "childTrueId": "EF885731-2C38-470F-8700-734EE7B929FB",
+      "childFalseId": "234D117A-4BE2-45D9-8345-384C1E74828F"
+    },
+    {
+      "id": "234D117A-4BE2-45D9-8345-384C1E74828F",
+      "type": "EndpointBlock",
+      "disabled": false,
+      "name": "rawAPIRequest9",
+      "displayName": "Qlik Cloud Services - Raw API Request 9",
+      "comment": "Update existing connection",
+      "childId": null,
+      "inputs": [
+        {
+          "id": "734cbcc0-bbb0-11f0-b998-f73920377683",
+          "value": "v1/data-connections/{ $.filterList4[0].id }",
+          "type": "string",
+          "structure": {}
+        },
+        {
+          "id": "7322a550-bbb0-11f0-9c8c-43f143a32456",
+          "value": "7344d390-bbb0-11f0-bf61-29979124fe25",
+          "type": "select",
+          "displayValue": "PATCH",
+          "structure": {}
+        },
+        {
+          "id": "73000fe0-bbb0-11f0-8a80-59ece3571bd9",
+          "value": "[\n    {\"op\": \"replace\", \"path\": \"/connectionProperties/queryHeaders/0/value\", \"Value\": \"Bearer {$.createAPIKey.token}\"}\n]",
+          "type": "object",
+          "mode": "raw",
+          "structure": {}
+        },
+        {
+          "id": "736fae60-bbb0-11f0-ad62-c98a0046f418",
+          "value": null,
+          "type": "object",
+          "mode": "keyValue",
+          "structure": {}
+        }
+      ],
+      "settings": [
+        {
+          "id": "blendr_on_error",
+          "value": "stop",
+          "type": "select",
+          "structure": {}
+        },
+        {
+          "id": "automations_censor_data",
+          "value": true,
+          "type": "checkbox",
+          "structure": {}
+        }
+      ],
+      "collapsed": [{ "name": "loop", "isCollapsed": false }],
+      "x": 1080,
+      "y": 14260,
+      "datasourcetype_guid": "61a87510-c7a3-11ea-95da-0fb0c241e75c",
+      "endpoint_guid": "72d48530-bbb0-11f0-875a-b322bf237aeb",
+      "endpoint_role": "create"
     }
   ],
   "variables": [
@@ -8427,6 +8608,11 @@
       "guid": "8EA81C89-7B05-47C5-9729-1272F5AAABED",
       "name": "appLoadScript",
       "type": "string"
+    },
+    {
+      "guid": "8AB95724-6328-4FEB-8D34-0692A46463FA",
+      "name": "requiredApiKeyValidity",
+      "type": "number"
     }
   ]
 }

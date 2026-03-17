@@ -14,9 +14,9 @@ try {
 
 // List of variables to check with their expected default values
 const variablesToCheck = [
-  { name: "setMaxApiKey", expected: "P30D" },
+  { name: "setMaxApiKey", expected: "P90D" },
   { name: "skipToTenantNumber", expected: "0" },
-  { name: "recreateConnections", expected: "1" },
+  { name: "recreateConnections", expected: "0" },
   { name: "replaceAllApps", expected: "0" },
   { name: "runOnTenant", expected: null },
   { name: "autoTenantCleanup", expected: "1" },
@@ -27,6 +27,7 @@ const variablesToCheck = [
   { name: "nextRunDelaySeconds", expected: "21600" },
   { name: "reloadScheduleHour", expected: "00" },
   { name: "doReload", expected: "1" },
+  { name: "requiredApiKeyValidity", expected: "14" },
   { name: "restConnectorName", expected: "monitoring_apps_REST" },
   { name: "runMode", expected: "0" },
   { name: "sharedSpaceName", expected: "Monitoring" },

@@ -16,7 +16,7 @@ This automation implements a multiple tenant monitoring pattern by:
 - **Automated API Key Management:**  
   API keys on each child tenant are automatically created and maintained (if `recreateConnections=1`), eliminating the need for interactive logins or manual configuration on each child tenant.
 
-This automation does not install any monitoring for the parent tenant. To do this activity, please use the standard Qlik Cloud monitoring app installer.
+This automation does not install any monitoring for the parent tenant. To do this activity, please use the standard Qlik Cloud monitoring app installer, or add the alias for the monitoring tenant into the glossary as a new term. As long as you do not use the primary hostname of the host, it'll deploy a set of child apps for the tenant as well as the parent apps.
 
 For more details on the monitoring apps, please refer to the [Qlik Cloud Monitoring Apps repository](https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/README.md).
 
@@ -62,9 +62,10 @@ These parameters can significantly impact how the automation runs. Please verify
 
 | **Parameter (Variable Name)**                   | **Description**                                                                                                                                          | **Default Value** |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **API key expiration override** *(setMaxApiKey)* | Set to a value to reconfigure the child tenant's max API key expiry when the automation runs. Any generated API key will match this value (e.g., "P30D" for 30 days). Leave empty to make no changes. | P30D           |
+| **API key expiration (max duration)** *(setMaxApiKey)* | Set to a value to reconfigure the child tenant's max API key expiry when the automation runs. Any generated API key will match this value (e.g., "P90D" for 90 days). Leave empty to make no changes. | P90D           |
 | **Skip to tenant number** *(skipToTenantNumber)* | Set to 0 for no action, or an integer to start updating from that tenant. Note that if you update the glossary, the tenant order might change.         | 0                 |
-| **Recreate connections** *(recreateConnections)* | Set to 0 for no action, or 1 to recreate data connections on run.                                                                                        | 1                 |
+| **Required API key validity** *(requiredApiKeyValidity)* | Number of days before API key expiry that triggers renewal. The automation will renew API keys when they are within this period of expiration (e.g., 14 days means API keys will be renewed when they have 14 days or less remaining). | 14                 |
+| **Force recreate connections** *(recreateConnections)* | Set to 0 for normal automated operation, or 1 to force immediate recreation of all data connections. Force recreation should only be used in exceptional circumstances and is not part of the normal lifecycle. | 0                 |
 | **Replace all apps** *(replaceAllApps)*          | Set to 0 for no action, or 1 to replace all apps irrespective of whether they need an upgrade.                                                           | 0                 |
 | **Run only on tenant** *(runOnTenant)*           | Leave empty to run against all tenants, or enter a tenant hostname to run against a single tenant.                                                      | (empty)           |
 
@@ -104,14 +105,13 @@ It will not delete:
 
 When `runMode` is set to 1, the automation will prompt a user to interactively click a button to proceed with the deployment.
 
-When set to 0, no user intervention is required. This mode is designed for scheduled runs of the automation, which will automate the refresh of data connections, update of apps, and clean up of removed tenants. This is the intended function of the automation.
+When set to 0, no user intervention is required. This mode is designed for scheduled runs of the automation, which will automate the lifecycle of data connections, update of apps, and clean up of removed tenants. This is the intended function of the automation.
 
 In normal operation:
 
 - Set `runMode` to 0 to skip the prompt.
-- Schedule the automation to run every `5` days.
-- Set `setMaxApiKey` to `P30D` to provide an expiry longer than the schedule.
-- Ensure that `recreateConnections` remains set to `1` so that it recreates the API key each time the automation runs.
+- Schedule the automation to run every 5 days.
+- Set `setMaxApiKey` to `P90D` to ensure API keys have sufficient lifetime for your operational needs.
 
 ## Scheduling notes
 
