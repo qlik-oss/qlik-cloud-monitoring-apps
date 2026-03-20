@@ -2837,7 +2837,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "Installer template is not up to date. Update the installer via the Automation template picker and try again."
+          "value": "Cancelled - please view the run output for more information."
         }
       ]
     },
@@ -2860,7 +2860,7 @@
           "id": "set_value",
           "key": "1BC10F4C-68C2-42E9-9000-25865B076073",
           "name": "Set value of { variable }",
-          "value": "Exiting, automation template version \"{$.currentTemplateVersionNum}\" is not greater than or equal to the latest version \"{ $.callURL.installers[?(@.template=='qcmad')].version }\" |\n{linebreak}\n{linebreak}\nThis template is out of date and cannot be used. Please navigate to the Qlik Automate Templates library and select the \"Qlik Cloud Monitoring Apps Deployer\" template to receive the latest. This automation can be deleted, but make sure you backup any changes made to the variables and transfer them to the new automation."
+          "value": "Exiting, this deployer template is version \"{$.currentTemplateVersionNum}\", which is less than the required version \"{$.callURL.installers[?(@.template=='qcmad')].version}\" \n{linebreak}\n{linebreak}\nThe manifest message is: {$.callURL.installers[?(@.template=='qcmad')].message}"
         }
       ]
     },
