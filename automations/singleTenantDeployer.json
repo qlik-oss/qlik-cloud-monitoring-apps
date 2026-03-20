@@ -2626,8 +2626,13 @@
             "conditions": [
               {
                 "input1": "{ $.currentTemplateVersionNum }",
-                "input2": "{ $.callURL.installers[?(@.template=='qcmad')].version }",
-                "operator": ">="
+                "operator": ">=",
+                "input2": "{ $.callURL.installers[?(@.template=='qcmad')].version }"
+              },
+              {
+                "input1": "{ $.callURL.installers[?(@.template=='qcmad')].version }",
+                "operator": "notEmpty",
+                "input2": null
               }
             ]
           },
