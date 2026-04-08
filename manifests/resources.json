@@ -2,8 +2,8 @@
     {
         "id": 10,
         "name": "Console Settings Collector",
-        "version": "v2.2.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.0/Console-Settings-Collector.qvf",
+        "version": "v2.2.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.1/Console-Settings-Collector.qvf",
         "qcmaInstaller": false,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
@@ -31,8 +31,8 @@
     {
         "id": 20,
         "name": "App Analyzer",
-        "version": "v6.6.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.6.0/App-Analyzer.qvf",
+        "version": "v6.6.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-app-analyzer/releases/download/v6.6.1/App-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
@@ -97,8 +97,8 @@
     {
         "id": 40,
         "name": "Reload Analyzer",
-        "version": "v4.3.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.3.0/Reload-Analyzer.qvf",
+        "version": "v4.3.2",
+        "source": "https://github.com/qlik-oss/qlik-cloud-reload-analyzer/releases/download/v4.3.2/Reload-Analyzer.qvf",
         "qcmaInstaller": true,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
@@ -166,8 +166,8 @@
     {
         "id": 90,
         "name": "OEM Dashboard",
-        "version": "v2.2.0",
-        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.0/OEM-Dashboard.qvf",
+        "version": "v2.2.1",
+        "source": "https://github.com/qlik-oss/qlik-cloud-oem-dashboard/releases/download/v2.2.1/OEM-Dashboard.qvf",
         "qcmaInstaller": false,
         "subscriptionTypes": ["user","capacity"],
         "requiredRoles": ["TenantAdmin"],
