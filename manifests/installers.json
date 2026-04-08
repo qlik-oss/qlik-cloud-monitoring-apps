@@ -8,7 +8,7 @@
     {
       "template": "qcmamt",
       "description": "Qlik Cloud multiple tenant monitoring app installer",
-      "version": "3",
+      "version": "4",
       "message": "Please disable or delete this automation, and redeploy by creating a new automation and uploading the workspace from https://github.com/qlik-oss/qlik-cloud-monitoring-apps/blob/main/automations/multipleTenantInstaller.json. Ensure you take a note of any custom variable configuration in your current automation, amending the variable values in the new automation where relevant."
     },
     {
