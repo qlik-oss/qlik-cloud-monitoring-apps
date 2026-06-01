@@ -302,8 +302,8 @@
             "conditions": [
               {
                 "input1": "{ count: { $.filterList } }",
-                "operator": ">",
-                "input2": "0"
+                "operator": "=",
+                "input2": "1"
               }
             ]
           },
@@ -3090,7 +3090,7 @@
           "id": "list",
           "value": "{ $.getLicenseOverview.parameters }",
           "type": "string",
-          "structure": {}
+          "structure": []
         },
         {
           "id": "conditions",
@@ -3102,16 +3102,11 @@
                 "operator": "=",
                 "input2": "usageMetricsAppDistribution"
               },
-              { "input1": "values.quantity", "operator": ">", "input2": "0" },
-              {
-                "input1": "values.toggle",
-                "operator": "isTrue",
-                "input2": null
-              }
+              { "input1": "values.quantity", "operator": "=", "input2": "1" }
             ]
           },
           "type": "custom",
-          "structure": {}
+          "structure": []
         }
       ],
       "settings": [
@@ -3119,12 +3114,13 @@
           "id": "automations_censor_data",
           "value": false,
           "type": "checkbox",
-          "structure": {}
+          "structure": []
         }
       ],
       "collapsed": [{ "name": "loop", "isCollapsed": true }],
       "x": -682,
-      "y": -1272
+      "y": -1272,
+      "loopBlockId": null
     },
     {
       "id": "438C09A4-0519-4A2E-9ADE-62F280CFC352",
