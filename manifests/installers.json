@@ -14,7 +14,7 @@
     {
       "template": "qcmad",
       "description": "Qlik Cloud monitoring app deployer",
-      "version": "2",
+      "version": "4",
       "message": "Please disable or delete this automation, and redeploy by creating a new automation using the Qlik Cloud Monitoring Apps deployer template from the App Installers category. Ensure you take a note of any custom variable configuration in your current automation, amending the variable values in the new automation where relevant."
     }
   ]
