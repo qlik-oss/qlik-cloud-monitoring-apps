@@ -202,5 +202,14 @@
                 "value": "SET vConsoleSettingsCollector = 1; // comment out rest of this line"
             }
         ]
+    },
+    {
+        "id": 100,
+        "name": "AI Analyzer",
+        "version": "v1.0.0",
+        "source": "https://github.com/qlik-oss/qlik-cloud-ai-analyzer/releases/download/v1.0.0/AI-Analyzer.qvf",
+        "qcmaInstaller": true,
+        "subscriptionTypes": ["user","capacity"],
+        "requiredRoles": ["TenantAdmin"]
     }
 ]
